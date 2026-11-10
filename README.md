@@ -2,7 +2,7 @@
 
 Enochaeon is a spoken cipher. A text file is transliterated, letter by letter, from English into Hebrew and then into Enochian. Each English word is spoken as one breath of the sounds assigned to those Enochian letters. A phone recognizer hears the breath, the same key turns the letters back into English, and a word list corrects a reading that is not an English word.
 
-`fox` is the pattern for every word.
+Every word is spelled the same way. The reference is the pangram in [`example/pangram.txt`](example/pangram.txt), and `fox` is one word from it:
 
 - `f` is peh without a dagesh, פ. Its Enochian letter is Mals.
 - `o` is vav with a cholam, וֹ. Its Enochian letter is Vau.
@@ -75,12 +75,16 @@ The stage files go in a hidden folder next to the source. For `notes-test.txt` t
 
 Hebrew is the pointed transliteration. Enochian is the letter names. Phonetic is one espeak string per English word, the breath espeak speaks.
 
+## Example
+
+[`example/pangram.txt`](example/pangram.txt) is the pangram used above. Encoding it writes the WAV and the three stage files.
+
+- [`example/.enochaeon/pangram-hebrew.txt`](example/.enochaeon/pangram-hebrew.txt) is the pointed Hebrew spelling.
+- [`example/.enochaeon/pangram-enochian.txt`](example/.enochaeon/pangram-enochian.txt) is the Enochian letter names.
+- [`example/.enochaeon/pangram-phonetic.txt`](example/.enochaeon/pangram-phonetic.txt) is the espeak string, one breath per English word.
+- [`example/pangram.wav`](example/pangram.wav) is that breath spoken.
+- [`example/pangram.decoded.txt`](example/pangram.decoded.txt) is the English recovered from that WAV.
+
+[`example/First Call.wav`](example/First%20Call.wav) is the first Call spoken from the Latin letters in [`calls/01.txt`](calls/01.txt).
+
 An output that is already there is left alone unless you pass `--force`. A WAV made here carries a short comment with the gap lengths and no plaintext. A WAV without that comment is still decoded, with a warning.
-
-The first real check is `fox`:
-
-```bash
-printf 'fox\n' > /tmp/fox.txt
-enochaeon /tmp/fox.txt
-enochaeon /tmp/fox.wav
-```
