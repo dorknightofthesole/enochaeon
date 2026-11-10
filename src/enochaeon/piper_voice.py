@@ -64,7 +64,7 @@ def ipa_of(espeak: str) -> str:
 
 
 def render(text: str, voice: CallVoice, gaps: Gaps) -> np.ndarray:
-    """One Piper breath per Call word, with the same gaps espeak uses."""
+    """One Piper breath per Call word, with the gaps it is given."""
     model = Path(voice.piper_voice)
     if not voice.piper_voice or not model.is_file():
         raise EnochaeonError(

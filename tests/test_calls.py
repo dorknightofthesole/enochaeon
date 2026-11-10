@@ -9,9 +9,9 @@ from pathlib import Path
 import numpy as np
 
 from enochaeon.alphabet import Alphabet
-from enochaeon.audio import SAMPLE_RATE
+from enochaeon.audio import SAMPLE_RATE, WORD_MS
 from enochaeon.config import CallVoice, load_call_voice
-from enochaeon.enochian import call_files, parse, phonetic_text, render
+from enochaeon.enochian import call_files, call_gaps, parse, phonetic_text, render
 from enochaeon.errors import EnochaeonError
 from enochaeon.piper_voice import ipa_of
 from enochaeon.synthesize import speak
@@ -53,11 +53,30 @@ class CallPronunciationTest(unittest.TestCase):
         self.assertEqual(ipa_of("g Q h oU"), "ɡɒhoʊ")
         self.assertEqual(ipa_of("d'i: 'Es"), "dˈiːˈɛs")
 
-    def test_the_shipped_config_keeps_espeak(self) -> None:
+    def test_the_shipped_config_uses_piper(self) -> None:
         root = Path(__file__).resolve().parents[1] / "enochaeon.json"
         voice = load_call_voice(root)
-        self.assertEqual(voice.engine, "espeak")
+        self.assertEqual(voice.engine, "piper")
         self.assertGreater(voice.length_scale, 1)
+        self.assertEqual(voice.word_ms, 400)
+        self.assertIn("john", voice.piper_voice)
+
+    def test_a_piper_breath_can_be_shorter(self) -> None:
+        shorter = CallVoice(engine="piper", word_ms=400)
+        self.assertEqual(call_gaps(shorter).word_ms, 400)
+        self.assertEqual(call_gaps(shorter).nl_ms, 1000)
+        self.assertEqual(call_gaps(CallVoice(word_ms=400)).word_ms, WORD_MS)
+        self.assertEqual(call_gaps(CallVoice(engine="piper")).word_ms, WORD_MS)
+        with tempfile.TemporaryDirectory() as directory:
+            path = Path(directory) / "enochaeon.json"
+            path.write_text(
+                '{"calls": {"engine": "piper", "piper": {"word_ms": 400}}}\n',
+                encoding="utf-8",
+            )
+            self.assertEqual(load_call_voice(path).word_ms, 400)
+            path.write_text('{"calls": {"piper": {"word_ms": 0}}}\n', encoding="utf-8")
+            with self.assertRaises(EnochaeonError):
+                load_call_voice(path)
 
     def test_the_call_voice_defaults_to_espeak(self) -> None:
         missing = Path("/no/such/enochaeon.json")

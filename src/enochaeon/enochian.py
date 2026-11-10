@@ -8,7 +8,7 @@ A word-initial I before a vowel is Y, which is how Dee said Iad.
 
 from __future__ import annotations
 
-from dataclasses import dataclass
+from dataclasses import dataclass, replace
 from pathlib import Path
 
 import numpy as np
@@ -179,10 +179,19 @@ def _speak_word(word: list[Letter]) -> np.ndarray:
     return _slower(" ".join(tokens), audio)
 
 
+def call_gaps(voice: CallVoice | None = None, gaps: Gaps | None = None) -> Gaps:
+    """Silences for one Call. Piper may shorten the breath; espeak keeps the shared gap."""
+    voice = voice or CallVoice()
+    chosen = gaps or Gaps()
+    if voice.engine == "piper" and voice.word_ms is not None:
+        return replace(chosen, word_ms=voice.word_ms)
+    return chosen
+
+
 def render(text: str, gaps: Gaps | None = None, voice: CallVoice | None = None) -> np.ndarray:
     """One spoken breath per word, with a silence between words and lines."""
-    gaps = gaps or Gaps()
     voice = voice or CallVoice()
+    gaps = call_gaps(voice, gaps)
     if voice.engine == "piper":
         from enochaeon.piper_voice import render as render_piper
 
@@ -203,6 +212,8 @@ def write_call(path: Path, force: bool, voice: CallVoice | None = None) -> Path:
     dest = path.with_suffix(".wav")
     if dest.exists() and not force:
         raise EnochaeonError(f"{dest} already exists. Pass --force to replace it.")
+    voice = voice or CallVoice()
+    gaps = call_gaps(voice)
     text = path.read_text(encoding="utf-8")
     phonetic = phonetic_text(text)
     if phonetic and not phonetic.endswith("\n"):
@@ -212,7 +223,7 @@ def write_call(path: Path, force: bool, voice: CallVoice | None = None) -> Path:
     trace = folder / f"{path.stem}-phonetic.txt"
     trace.write_text(phonetic, encoding="utf-8")
     print(trace)
-    write_wav(dest, render(text, voice=voice), comment=Gaps().comment())
+    write_wav(dest, render(text, gaps=gaps, voice=voice), comment=gaps.comment())
     print(dest)
     return dest
 

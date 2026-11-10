@@ -19,6 +19,7 @@ class CallVoice:
     engine: str = "espeak"
     length_scale: float = 1.6
     piper_voice: str = ""
+    word_ms: int | None = None
 
     def chosen(self, engine: str | None) -> CallVoice:
         """The voice for one run. A command-line engine replaces the file."""
@@ -41,10 +42,22 @@ def load_call_voice(path: Path | None = None) -> CallVoice:
         engine = calls.get("engine", "espeak")
         scale = float(piper.get("length_scale", 1.6))
         voice = str(piper.get("voice", ""))
+        word_ms = _word_ms(piper.get("word_ms"))
     except (OSError, json.JSONDecodeError, TypeError, ValueError, AttributeError) as exc:
         raise EnochaeonError(f"{source} is not a Calls config. {exc}") from exc
     if engine not in ENGINES:
         raise EnochaeonError(f"{source} engine must be espeak or piper, not {engine!r}.")
     if scale <= 0:
         raise EnochaeonError(f"{source} calls.piper.length_scale must be positive, not {scale}.")
-    return CallVoice(engine=engine, length_scale=scale, piper_voice=voice)
+    if word_ms is not None and word_ms <= 0:
+        raise EnochaeonError(f"{source} calls.piper.word_ms must be positive, not {word_ms}.")
+    return CallVoice(engine=engine, length_scale=scale, piper_voice=voice, word_ms=word_ms)
+
+
+def _word_ms(value: object) -> int | None:
+    """The Piper breath gap, or None when the config leaves it unset."""
+    if value is None:
+        return None
+    if isinstance(value, bool) or not isinstance(value, int):
+        raise ValueError(f"word_ms must be a whole number of milliseconds, not {value!r}")
+    return value

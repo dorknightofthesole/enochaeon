@@ -74,7 +74,7 @@ pip install piper-tts
 python3 -m piper.download_voices --download-dir scratch/piper-voices en_US-john-medium
 ```
 
-`calls.piper.voice` is the `.onnx` file that command writes. `calls.piper.length_scale` is how long Piper holds each phoneme. `1.0` is conversational, and higher is slower. It does not change espeak.
+`calls.piper.voice` is the `.onnx` file that command writes. `calls.piper.length_scale` is how long Piper holds each phoneme. `1.0` is conversational, and higher is slower. `calls.piper.word_ms` is the silence between breaths, in milliseconds. `400` is a little under the `600` espeak uses. Leave it out and Piper keeps `600`. Neither setting changes espeak.
 
 The stage files go in a hidden folder next to the source. For `notes-test.txt` they are:
 
