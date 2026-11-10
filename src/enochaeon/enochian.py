@@ -13,14 +13,14 @@ from pathlib import Path
 
 import numpy as np
 
-from enochaeon.alphabet import TransliterationError, pronounce_syllables
+from enochaeon.alphabet import PUNCT_BREAKS, PUNCT_SKIP, TransliterationError, pronounce_syllables
 from enochaeon.audio import Gaps, silence, write_wav
 from enochaeon.errors import EnochaeonError
 from enochaeon.synthesize import speak
 
-# A comma stays inside the line. A stop ends it.
-_BREAKS = {",": " ", ";": " ", ":": " ", "-": " ", ".": "\n", "!": "\n", "?": "\n"}
-_SKIP = set("()[]{}'’\"“”0123456789")
+# A comma stays inside the line. A stop ends it. Digits have no Enochian letter.
+_BREAKS = PUNCT_BREAKS
+_SKIP = PUNCT_SKIP | set("0123456789")
 
 
 @dataclass(frozen=True)

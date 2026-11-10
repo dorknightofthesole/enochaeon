@@ -134,10 +134,16 @@ class KeyTest(unittest.TestCase):
         self.assertEqual(self.alphabet.phonetic_text("at"), "b'i: t'a")
         self.assertEqual(self.alphabet.phonetic_text("the"), "t'i: p'u:")
 
+    def test_punctuation_is_a_pause(self) -> None:
+        fox = self.alphabet.phonetic_text("fox")
+        self.assertEqual(self.alphabet.phonetic_text("fox, fox"), f"{fox} {fox}")
+        self.assertEqual(self.alphabet.phonetic_text("fox. Fox"), f"{fox}\n{fox}")
+        self.assertEqual(self.alphabet.hebrew("nation, conceived"), self.alphabet.hebrew("nation conceived"))
+
     def test_unknown_character(self) -> None:
         with self.assertRaises(EnochaeonError) as caught:
-            self.alphabet.parse("fox!")
-        self.assertIn("'!'", str(caught.exception))
+            self.alphabet.parse("fox@")
+        self.assertIn("'@'", str(caught.exception))
         self.assertIn("position 3", str(caught.exception))
 
     def test_failed_syllable_is_marked(self) -> None:

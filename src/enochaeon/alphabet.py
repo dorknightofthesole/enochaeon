@@ -22,6 +22,9 @@ UNKNOWN = "�"
 # V is English o. Its Enochian letter is Vau, and the call alphabet keeps V as
 # a consonant of its own.
 VOWELS = frozenset({"A", "E", "I", "O", "U", "V"})
+# A comma stays in the line. A stop ends it. Marks with no sound are skipped.
+PUNCT_BREAKS = {",": " ", ";": " ", ":": " ", "-": " ", ".": "\n", "!": "\n", "?": "\n"}
+PUNCT_SKIP = set("()[]{}'’\"“”")
 
 
 def syllable_forms(syllables: tuple[Atom, ...] | list[Atom]) -> list[tuple[Atom, str]]:
@@ -191,7 +194,9 @@ class Alphabet:
         """Turn a document into words and the gaps between them.
 
         Runs of spaces become one space. A run of whitespace that contains a
-        newline becomes one newline. Letters are matched longest-first, so
+        newline becomes one newline. A comma, semicolon, colon, or hyphen is a
+        space. A period, question mark, or exclamation mark is a newline.
+        Quotes and brackets are skipped. Letters are matched longest-first, so
         ``th`` is one row and ``x`` is the row for the two letters kuf and samekh.
         """
         cleaned = text.replace("\r\n", "\n").replace("\r", "\n")
@@ -201,10 +206,18 @@ class Alphabet:
         index = 0
         length = len(cleaned)
         while index < length:
-            if cleaned[index].isspace():
+            if cleaned[index] in PUNCT_SKIP:
+                index += 1
+                continue
+            if cleaned[index].isspace() or cleaned[index] in PUNCT_BREAKS:
                 newline = False
-                while index < length and cleaned[index].isspace():
-                    newline = newline or cleaned[index] == "\n"
+                while index < length and (
+                    cleaned[index].isspace()
+                    or cleaned[index] in PUNCT_BREAKS
+                    or cleaned[index] in PUNCT_SKIP
+                ):
+                    mark = cleaned[index]
+                    newline = newline or mark == "\n" or PUNCT_BREAKS.get(mark) == "\n"
                     index += 1
                 segments.append(Gap("\n" if newline else " "))
                 continue
@@ -215,7 +228,7 @@ class Alphabet:
     def _match_word(self, text: str, start: int) -> tuple[Word, int]:
         entries: list[Entry] = []
         index = start
-        while index < len(text) and not text[index].isspace():
+        while index < len(text) and not text[index].isspace() and text[index] not in PUNCT_BREAKS and text[index] not in PUNCT_SKIP:
             matched = None
             folded = text[index:].lower()
             for entry in self._encode:

@@ -1,0 +1,21 @@
+---
+description: Experimental runs and their output stay in the repo's scratch directory
+alwaysApply: true
+---
+
+# Local experiments
+
+Do not run probes, comparisons, or one-off tests from `/tmp`, and do not write their scripts or results there.
+
+Put the script and the output in `scratch/` at the repo root. Create that directory if it is missing. It is gitignored, so the trial can stay on disk for inspection without being committed.
+
+The speech path and the unit tests stay as they are until a trial is kept. A result that is discarded leaves the script and the output in `scratch/` rather than disappearing with the temp directory.
+
+```text
+# Bad
+/tmp/probe_syllable_pause.py
+
+# Good
+scratch/syllable-pause.py
+scratch/syllable-pause.txt
+```
