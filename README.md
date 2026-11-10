@@ -10,13 +10,23 @@ Enochaeon is a spoken cipher. A text file is transliterated, letter by letter, f
 
 In Latin letters that spelling is `PVQS`. O counts as a vowel, so fox is one breath of syllables, not letter-names. A vowel left open is long, a vowel closed by a consonant is short, and a doubled consonant is spoken twice. `Hello` is `HELLV`. Capitals are folded to lowercase.
 
+## Two alphabets
+
+English and the Calls do not use the same table.
+
+English goes through Hebrew on purpose. Dee's own table pairs each of the 21 Enochian characters with one Elizabethan letter, so `fox` would be Orth, Med, Pal: F, O, X. That table has one letter for `u` and `v`, and one letter for `c` and `k`. `w` is two Vans. `th` and `sh` are two letters each, so `the` is Gisg, Na-hath, Graph. The way back cannot spell a distinction that was never spoken. A word list can prefer `over` to `ouer` only when one of them is a word.
+
+The Hebrew key keeps those distinctions. `u` and `v` are different letters, and so are `c` and `k`. `th` and `sh` are one letter each, which is why `the` and `she` are a consonant plus a vowel. `x` is two letters, Ger and Pal, and that is the same pair a written `k` followed by `s` becomes. The Hebrew line in the trace is only a reading of the row. The speech and the round trip use the Enochian letters that row chose.
+
+The Calls use Dee's Latin table, not this key. A file in `calls/` is already Enochian written in Latin letters, and `src/enochaeon/enochian.py` speaks those letters directly. `C` and `K` are both the k sound. A word-initial `I` before a vowel is `Y`, which is how Dee said `Iad`. Nothing in a call is transliterated into Hebrew or into the English cipher.
+
 ## How it works
 
 The key is `src/enochaeon/data/alphabet.json`. Matching is longest-first, so `ch`, `sh`, `th`, `ts`, and `x` are one row each. `tz` is the same Hebrew and the same Enochian letters as `ts`, and it comes back as `ts`. A written `k` followed by `s` is the same letters as `x`, so `foks` comes back as `fox`.
 
 An English word is always those in-word syllables, including a word with no vowel. The espeak phones in the key are this project's, chosen so a recognizer can tell the letters apart. They are not a historical pronunciation.
 
-A call is the other path. `calls` reads letters that are already Enochian, in Dee's Latin spelling, and does not run them through the English cipher. The same length rule applies inside a call word. A call word with no vowel is spoken as letter-names. A word-initial `I` before a vowel is `Y`, which is how Dee said `Iad`. A comma stays on the line, and a period starts a new line.
+A call uses the same length rule inside a word. A call word with no vowel is spoken as letter-names. A comma stays on the line, and a period starts a new line.
 
 Hearing uses [espeak-ng](https://github.com/espeak-ng/espeak-ng) and `facebook/wav2vec2-lv-60-espeak-cv-ft`. Calibration speaks every letter sound once, in a short carrier, and stores what the model actually hears. Two hearings are the same when they match after length, the a/ɑ difference, and a few recognizer spellings of the same phone are ignored. Encoding and decoding both refuse to run until that file exists. If two letters collide, change the `phone` or `long` string for one of them and calibrate again.
 
