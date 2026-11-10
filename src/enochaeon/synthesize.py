@@ -14,7 +14,8 @@ import soundfile as sf
 from enochaeon.audio import normalize, resample, trim_silence
 from enochaeon.errors import EnochaeonError
 
-_CACHE: dict[str, np.ndarray] = {}
+SPEED = 110
+_CACHE: dict[tuple[str, int], np.ndarray] = {}
 
 
 def espeak_binary() -> str:
@@ -27,9 +28,9 @@ def espeak_binary() -> str:
     raise EnochaeonError("espeak-ng is required. Install it with: brew install espeak-ng")
 
 
-def speak(phonemes: str) -> np.ndarray:
+def speak(phonemes: str, speed: int = SPEED) -> np.ndarray:
     """Return one espeak phoneme string as 16 kHz mono audio."""
-    cached = _CACHE.get(phonemes)
+    cached = _CACHE.get((phonemes, speed))
     if cached is not None:
         return cached
     binary = espeak_binary()
@@ -38,7 +39,7 @@ def speak(phonemes: str) -> np.ndarray:
     path = Path(name)
     try:
         completed = subprocess.run(
-            [binary, "-v", "en", "-s", "110", "-w", str(path), f"[[{phonemes}]]"],
+            [binary, "-v", "en", "-s", str(speed), "-w", str(path), f"[[{phonemes}]]"],
             check=False,
             capture_output=True,
             text=True,
@@ -57,5 +58,5 @@ def speak(phonemes: str) -> np.ndarray:
     audio = normalize(trim_silence(resample(audio, sample_rate)))
     if audio.size < 16_000 * 0.04:
         raise EnochaeonError(f"[[{phonemes}]] produced no speech")
-    _CACHE[phonemes] = audio
+    _CACHE[(phonemes, speed)] = audio
     return audio

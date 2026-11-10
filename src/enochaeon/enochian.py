@@ -13,10 +13,16 @@ from pathlib import Path
 
 import numpy as np
 
-from enochaeon.alphabet import PUNCT_BREAKS, PUNCT_SKIP, TransliterationError, pronounce_syllables
-from enochaeon.audio import Gaps, silence, write_wav
+from enochaeon.alphabet import (
+    PUNCT_BREAKS,
+    PUNCT_SKIP,
+    TransliterationError,
+    pronounce_syllables,
+    syllable_forms,
+)
+from enochaeon.audio import SAMPLE_RATE, Gaps, silence, write_wav
 from enochaeon.errors import EnochaeonError
-from enochaeon.synthesize import speak
+from enochaeon.synthesize import SPEED, speak
 
 # A comma stays inside the line. A stop ends it. Digits have no Enochian letter.
 _BREAKS = PUNCT_BREAKS
@@ -116,6 +122,62 @@ def phonetic_text(text: str) -> str:
     return "".join(parts)
 
 
+# A one-vowel call word shorter than this is held until it is a syllable you can hear.
+_FLOOR_S = 0.40
+# espeak will not hold Q past one length mark. O is the next monophthong, not the open oU.
+_HELD = {"Q": "O", "I": "I:", "a": "a:", "E": "E:", "U": "U:"}
+
+
+def _seconds(audio: np.ndarray) -> float:
+    return audio.size / SAMPLE_RATE
+
+
+def _slower(phones: str, audio: np.ndarray) -> np.ndarray:
+    """Slow a breath that is already as long as its vowel can be."""
+    duration = _seconds(audio)
+    if duration <= 0:
+        return audio
+    speed = int(SPEED * duration / _FLOOR_S)
+    speed = max(80, min(speed, SPEED - 1))
+    slowed = speak(phones, speed)
+    if _seconds(slowed) >= _FLOOR_S or speed == 80:
+        return slowed
+    return speak(phones, 80)
+
+
+def _speak_word(word: list[Letter]) -> np.ndarray:
+    """Speak one call word.
+
+    A word with one vowel that comes out under the floor is spoken again with
+    that vowel lengthened. If one length mark is still too short, the vowel
+    steps to the next monophthong. A vowel that is already long is slowed
+    instead. Words with no vowel stay letter-names, and a breath that is
+    already long enough is left as spoken. The phonetic trace keeps the
+    unstretched spelling.
+    """
+    phones = pronounce_syllables(word)
+    audio = speak(phones)
+    if sum(letter.vowel for letter in word) != 1 or _seconds(audio) >= _FLOOR_S:
+        return audio
+    index = next(i for i, letter in enumerate(word) if letter.vowel)
+    form = syllable_forms(word)[index][1]
+    if form == "long":
+        return _slower(phones, audio)
+    tokens = phones.split()
+    base = tokens[index]
+    tokens[index] = base + ":"
+    audio = speak(" ".join(tokens))
+    if _seconds(audio) >= _FLOOR_S:
+        return audio
+    held = _HELD.get(base)
+    if held and held != tokens[index]:
+        tokens[index] = held
+        audio = speak(" ".join(tokens))
+        if _seconds(audio) >= _FLOOR_S:
+            return audio
+    return _slower(" ".join(tokens), audio)
+
+
 def render(text: str, gaps: Gaps | None = None) -> np.ndarray:
     """One spoken breath per word, with a silence between words and lines."""
     gaps = gaps or Gaps()
@@ -124,7 +186,7 @@ def render(text: str, gaps: Gaps | None = None) -> np.ndarray:
         if isinstance(segment, str):
             pieces.append(silence(gaps.nl_ms if segment == "\n" else gaps.word_ms))
             continue
-        pieces.append(speak(pronounce_syllables(segment)))
+        pieces.append(_speak_word(segment))
     if not pieces:
         return silence(gaps.word_ms)
     return np.concatenate(pieces)

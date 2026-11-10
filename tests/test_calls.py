@@ -6,15 +6,32 @@ import tempfile
 import unittest
 from pathlib import Path
 
+import numpy as np
+
 from enochaeon.alphabet import Alphabet
-from enochaeon.enochian import call_files, parse, phonetic_text
+from enochaeon.audio import SAMPLE_RATE
+from enochaeon.enochian import call_files, parse, phonetic_text, render
 from enochaeon.errors import EnochaeonError
+from enochaeon.synthesize import speak
 
 
 class CallPronunciationTest(unittest.TestCase):
     def test_a_closed_vowel_stays_short(self) -> None:
         self.assertEqual(phonetic_text("Ol"), "Q l")
         self.assertEqual(phonetic_text("sonf"), "s Q n f")
+
+    def test_a_short_one_vowel_word_is_held(self) -> None:
+        plain = speak("Q l")
+        held = render("Ol")
+        self.assertGreaterEqual(held.size / SAMPLE_RATE, 0.40)
+        self.assertGreaterEqual(render("od").size / SAMPLE_RATE, 0.40)
+        self.assertGreaterEqual(render("ror").size / SAMPLE_RATE, 0.40)
+        self.assertGreater(held.size, plain.size)
+        self.assertEqual(phonetic_text("Ol"), "Q l")
+        self.assertTrue(np.array_equal(render("goho"), speak("g Q h oU")))
+        self.assertTrue(np.array_equal(render("Iad"), speak("j a d")))
+        self.assertTrue(np.array_equal(render("balt"), speak("b a l t")))
+        self.assertTrue(np.array_equal(render("ds"), speak("d'i: 'Es")))
 
     def test_a_leading_i_before_a_vowel_is_y(self) -> None:
         # Dee read Iad as Yad. The A is closed by D, so it stays short.
