@@ -1,0 +1,94 @@
+{
+  "version": 3,
+  "atoms": {
+    "un": {
+      "phone": "b i",
+      "long": "d uː"
+    },
+    "pa": {
+      "phone": "b a"
+    },
+    "pa_rafe": {
+      "phone": "v a"
+    },
+    "ged": {
+      "phone": "ɡ ʉ n"
+    },
+    "ged_j": {
+      "phone": "dʒ a"
+    },
+    "gal": {
+      "phone": "m iː d"
+    },
+    "graph": {
+      "phone": "p i",
+      "long": "p uː"
+    },
+    "vau": {
+      "phone": "s i",
+      "long": "z uː"
+    },
+    "vau_u": {
+      "phone": "m i",
+      "long": "s uː"
+    },
+    "vau_w": {
+      "phone": "h iː"
+    },
+    "ceph": {
+      "phone": "z a"
+    },
+    "nahath": {
+      "phone": "h ɑ"
+    },
+    "gisg": {
+      "phone": "t a"
+    },
+    "gon": {
+      "phone": "f i",
+      "long": "v ʉ"
+    },
+    "gon_y": {
+      "phone": "h uː"
+    },
+    "veh": {
+      "phone": "k i"
+    },
+    "ur": {
+      "phone": "l a"
+    },
+    "tal": {
+      "phone": "m a"
+    },
+    "drux": {
+      "phone": "n iː"
+    },
+    "pal": {
+      "phone": "s a"
+    },
+    "mals": {
+      "phone": "f a"
+    },
+    "mals_dagesh": {
+      "phone": "p a"
+    },
+    "ger": {
+      "phone": "ɹ i"
+    },
+    "ger_q": {
+      "phone": "k uː"
+    },
+    "don": {
+      "phone": "ɹ a"
+    },
+    "fam": {
+      "phone": "ʃ a"
+    },
+    "orth": {
+      "phone": "t iː"
+    },
+    "ch": {
+      "phone": "tʃ a"
+    }
+  }
+}

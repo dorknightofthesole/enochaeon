@@ -1,0 +1,22 @@
+---
+description: Code solutions stay generic and do not hardcode words or phrases
+alwaysApply: true
+---
+
+# Generic solutions
+
+Speech and decode code must work for any text the key can spell. Do not special-case a word, a phrase, or a test sentence in the implementation.
+
+A word list or fixture loaded as data is fine. A branch that names a word is not.
+
+```python
+# Bad: the pangram is baked into the decoder
+if heard == "coicl":
+    return "quick"
+
+# Good: the same rule applies to every word
+if raw_word not in lexicon:
+    return nearest_word(heard, lexicon)
+```
+
+Tests may quote example sentences. The code under test must not know which sentences those are.

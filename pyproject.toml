@@ -1,0 +1,26 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "enochaeon"
+version = "0.1.0"
+description = "Transliterate English through Hebrew into Enochian and speak it."
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+  "numpy",
+  "soundfile",
+  "soxr",
+  "torch",
+  "transformers",
+]
+
+[project.scripts]
+enochaeon = "enochaeon.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+enochaeon = ["data/alphabet.json", "data/words.txt", "data/SCOWL-Copyright.txt"]
