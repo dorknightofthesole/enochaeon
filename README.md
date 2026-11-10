@@ -1,6 +1,6 @@
 # Enochaeon
 
-Enochaeon is a spoken cipher. A text file is transliterated, letter by letter, from English into Hebrew and then into Enochian. Each English word is spoken as one breath of the sounds assigned to those Enochian letters. A phone recognizer hears the breath, the same key turns the letters back into English, and a word list corrects a reading that is not an English word.
+Enochaeon is a spoken cipher. A text file is transliterated, letter by letter, from English into Hebrew and then into Enochian. Each English word is spoken as one breath of the sounds assigned to those Enochian letters. A phone recognizer hears the breath, the same key turns the letters back into English, and a word list corrects a reading that is not an English word. An English phrase can be spoken as Enochian words. The phrase is matched to the English glosses in the lexicon, and each match is spoken from that word's pronunciation. The Calls can be spoken too. A file in `calls/` is already Enochian, and each spelling is spoken from the pronunciation stored for it.
 
 Every word is spelled the same way. The reference is the pangram in [`example/pangram.txt`](example/pangram.txt), and `fox` is one word from it:
 
