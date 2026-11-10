@@ -1,0 +1,3994 @@
+[
+  {
+    "root": "A",
+    "variants": [
+      "A"
+    ],
+    "pos": "preposition",
+    "english_glosses": [
+      "in",
+      "with",
+      "on"
+    ],
+    "hebrew_skeleton": "א",
+    "dee_ipa": "/ɑː/",
+    "golden_dawn_ipa": "/ɑː/",
+    "sources": [
+      "Key 1",
+      "Key 2",
+      "Key 7"
+    ]
+  },
+  {
+    "root": "AAN",
+    "variants": [
+      "AANO"
+    ],
+    "pos": "noun",
+    "english_glosses": [
+      "mercy",
+      "favor"
+    ],
+    "hebrew_skeleton": "א-א-נ",
+    "dee_ipa": "/ɑːn/",
+    "golden_dawn_ipa": "/ɑː.ɑː.nuː/",
+    "sources": [
+      "Key 2"
+    ]
+  },
+  {
+    "root": "ABRAASSA",
+    "variants": [
+      "ABRAASSA"
+    ],
+    "pos": "verb",
+    "english_glosses": [
+      "provided",
+      "prepared"
+    ],
+    "hebrew_skeleton": "א-ב-ר-א-ס-א",
+    "dee_ipa": "/əˈbrɑː.əs.sə/",
+    "golden_dawn_ipa": "/ɑː.bɛr.ɑː.ɑːs.sɑː/",
+    "sources": [
+      "Key 5"
+    ]
+  },
+  {
+    "root": "ACROODZI",
+    "variants": [
+      "ACROODZI"
+    ],
+    "pos": "noun",
+    "english_glosses": [
+      "beginning"
+    ],
+    "hebrew_skeleton": "א-כ-ר-ו-ו-ד-ז-י",
+    "dee_ipa": "/æˈkroʊ.ɒd.ziː/",
+    "golden_dawn_ipa": "/ɑː.kɛ.roʊ.oʊ.də.zɒd.iː/",
+    "sources": [
+      "Key 1"
+    ]
+  },
+  {
+    "root": "ADGT",
+    "variants": [
+      "ADGT"
+    ],
+    "pos": "verb",
+    "english_glosses": [
+      "can",
+      "are able"
+    ],
+    "hebrew_skeleton": "א-ד-ג-ת",
+    "dee_ipa": "/ædɡt/",
+    "golden_dawn_ipa": "/ɑː.də.ɡɛt/",
+    "sources": [
+      "Key 5"
+    ]
+  },
+  {
+    "root": "ADNA",
+    "variants": [
+      "ADNA"
+    ],
+    "pos": "noun",
+    "english_glosses": [
+      "obedience"
+    ],
+    "hebrew_skeleton": "א-ד-נ-א",
+    "dee_ipa": "/ˈæd.nə/",
+    "golden_dawn_ipa": "/ɑː.də.nɑː/",
+    "sources": [
+      "Key 2"
+    ]
+  },
+  {
+    "root": "ADOHO",
+    "variants": [
+      "ADOHO"
+    ],
+    "pos": "verb",
+    "english_glosses": [
+      "confound",
+      "face of"
+    ],
+    "hebrew_skeleton": "א-ד-ו-ה-ו",
+    "dee_ipa": "/əˈdoʊ.hoʊ/",
+    "golden_dawn_ipa": "/ɑː.doʊ.huː/",
+    "sources": [
+      "Key 8"
+    ]
+  },
+  {
+    "root": "AF",
+    "variants": [
+      "AF"
+    ],
+    "pos": "noun",
+    "english_glosses": [
+      "nineteen"
+    ],
+    "hebrew_skeleton": "א-פ",
+    "dee_ipa": "/æf/",
+    "golden_dawn_ipa": "/ɑːf/",
+    "sources": [
+      "Key 9",
+      "Key 10"
+    ]
+  },
+  {
+    "root": "AFFA",
+    "variants": [
+      "AFFA"
+    ],
+    "pos": "noun",
+    "english_glosses": [
+      "empty",
+      "emptiness"
+    ],
+    "hebrew_skeleton": "א-פ-א",
+    "dee_ipa": "/ˈæf.ə/",
+    "golden_dawn_ipa": "/ɑːf.fɑː/",
+    "sources": [
+      "Key 12"
+    ]
+  },
+  {
+    "root": "AG",
+    "variants": [
+      "AG"
+    ],
+    "pos": "pronoun",
+    "english_glosses": [
+      "none",
+      "no one"
+    ],
+    "hebrew_skeleton": "א-ג",
+    "dee_ipa": "/æɡ/",
+    "golden_dawn_ipa": "/ɑːɡ/",
+    "sources": [
+      "Key 12"
+    ]
+  },
+  {
+    "root": "AGIOL",
+    "variants": [
+      "AGIOL"
+    ],
+    "pos": "adjective",
+    "english_glosses": [
+      "none",
+      "no"
+    ],
+    "hebrew_skeleton": "א-ג-י-ו-ל",
+    "dee_ipa": "/ˈæɡ.iː.ɒl/",
+    "golden_dawn_ipa": "/ɑː.ɡiː.oʊl/",
+    "sources": [
+      "Key 12"
+    ]
+  },
+  {
+    "root": "ALDI",
+    "variants": [
+      "ALDON",
+      "ALLAR"
+    ],
+    "pos": "noun",
+    "english_glosses": [
+      "gathering",
+      "bind",
+      "gather together"
+    ],
+    "hebrew_skeleton": "א-ל-ד-י",
+    "dee_ipa": "/ˈæl.diː/",
+    "golden_dawn_ipa": "/ɑːl.diː/",
+    "sources": [
+      "Key 3",
+      "Key 4"
+    ]
+  },
+  {
+    "root": "ALHUT",
+    "variants": [
+      "ALHUT"
+    ],
+    "pos": "noun",
+    "english_glosses": [
+      "habitations"
+    ],
+    "hebrew_skeleton": "א-ל-ה-ו-ת",
+    "dee_ipa": "/ˈæl.hʌt/",
+    "golden_dawn_ipa": "/ɑːl.huːt/",
+    "sources": [
+      "Key 8"
+    ]
+  },
+  {
+    "root": "AMIRAN",
+    "variants": [
+      "AMIRAN"
+    ],
+    "pos": "noun",
+    "english_glosses": [
+      "ourselves"
+    ],
+    "hebrew_skeleton": "א-מ-י-ר-נ",
+    "dee_ipa": "/ˈæm.ɪ.ræn/",
+    "golden_dawn_ipa": "/ɑː.miː.rɑːn/",
+    "sources": [
+      "Key 4"
+    ]
+  },
+  {
+    "root": "AMMA",
+    "variants": [
+      "AMMA"
+    ],
+    "pos": "verb",
+    "english_glosses": [
+      "cursed",
+      "curse"
+    ],
+    "hebrew_skeleton": "א-מ-א",
+    "dee_ipa": "/ˈæm.mə/",
+    "golden_dawn_ipa": "/ɑːm.mɑː/",
+    "sources": [
+      "Key 14"
+    ]
+  },
+  {
+    "root": "AOIVEAE",
+    "variants": [
+      "AOIVEAE"
+    ],
+    "pos": "noun",
+    "english_glosses": [
+      "stars"
+    ],
+    "hebrew_skeleton": "א-ו-י-ו-ע-א-ע",
+    "dee_ipa": "/eɪ.oʊˈaɪv.iː/",
+    "golden_dawn_ipa": "/ɑː.oʊ.iː.vɛ.ɑː.ɛ/",
+    "sources": [
+      "Key 18"
+    ]
+  },
+  {
+    "root": "APILA",
+    "variants": [
+      "APILA"
+    ],
+    "pos": "verb",
+    "english_glosses": [
+      "live",
+      "liveth"
+    ],
+    "hebrew_skeleton": "א-פ-י-ל-א",
+    "dee_ipa": "/əˈpɪl.ə/",
+    "golden_dawn_ipa": "/ɑː.piː.lɑː/",
+    "sources": [
+      "Key 1"
+    ]
+  },
+  {
+    "root": "AS",
+    "variants": [
+      "ASA",
+      "ASAM"
+    ],
+    "pos": "adverb",
+    "english_glosses": [
+      "was",
+      "as"
+    ],
+    "hebrew_skeleton": "א-ס",
+    "dee_ipa": "/æs/",
+    "golden_dawn_ipa": "/ɑːs/",
+    "sources": [
+      "Key 1",
+      "Key 3"
+    ]
+  },
+  {
+    "root": "ASPT",
+    "variants": [
+      "ASPT"
+    ],
+    "pos": "preposition",
+    "english_glosses": [
+      "before"
+    ],
+    "hebrew_skeleton": "א-ס-פ-ת",
+    "dee_ipa": "/ˈæs.pət/",
+    "golden_dawn_ipa": "/ɑː.sɛ.pɛt/",
+    "sources": [
+      "Key 1",
+      "Key 2"
+    ]
+  },
+  {
+    "root": "AVAVAGO",
+    "variants": [
+      "AVAVAGO"
+    ],
+    "pos": "noun",
+    "english_glosses": [
+      "thunder",
+      "thunders"
+    ],
+    "hebrew_skeleton": "א-ו-א-ו-א-ג-ו",
+    "dee_ipa": "/ˌæv.əˈvæɡ.oʊ/",
+    "golden_dawn_ipa": "/ɑː.vɑː.vɑː.ɡoʊ/",
+    "sources": [
+      "Key 6",
+      "Key 7"
+    ]
+  },
+  {
+    "root": "AZIAZOR",
+    "variants": [
+      "AZIAZOR"
+    ],
+    "pos": "noun",
+    "english_glosses": [
+      "likeness",
+      "in the likeness of"
+    ],
+    "hebrew_skeleton": "א-ז-י-א-ז-ו-ר",
+    "dee_ipa": "/əˈzaɪ.ə.zɔːr/",
+    "golden_dawn_ipa": "/ɑː.zɒd.iː.ɑː.zɒd.oʊr/",
+    "sources": [
+      "Key 8"
+    ]
+  },
+  {
+    "root": "BABALON",
+    "variants": [
+      "BABALON",
+      "BABALOND"
+    ],
+    "pos": "noun",
+    "english_glosses": [
+      "wicked",
+      "harlot",
+      "wickedness"
+    ],
+    "hebrew_skeleton": "ב-ב-ל-ו-נ",
+    "dee_ipa": "/ˈbæb.ə.lɒn/",
+    "golden_dawn_ipa": "/bɑː.bɑː.lɒn/",
+    "sources": [
+      "Key 14"
+    ]
+  },
+  {
+    "root": "BAGLE",
+    "variants": [
+      "BAGLEN"
+    ],
+    "pos": "conjunction",
+    "english_glosses": [
+      "for",
+      "because",
+      "for why"
+    ],
+    "hebrew_skeleton": "ב-א-ג-ל-ע",
+    "dee_ipa": "/ˈbæɡ.əl/",
+    "golden_dawn_ipa": "/bɑː.ɡɛ.lɛ/",
+    "sources": [
+      "Key 1",
+      "Key 2",
+      "Key 5"
+    ]
+  },
+  {
+    "root": "BAHAL",
+    "variants": [
+      "BAHAL"
+    ],
+    "pos": "verb",
+    "english_glosses": [
+      "cried",
+      "roared"
+    ],
+    "hebrew_skeleton": "ב-א-ה-א-ל",
+    "dee_ipa": "/ˈbɑː.hæl/",
+    "golden_dawn_ipa": "/bɑː.hɑːl/",
+    "sources": [
+      "Key 4"
+    ]
+  },
+  {
+    "root": "BALT",
+    "variants": [
+      "BALTIM",
+      "BALTOH",
+      "BALZIZRAS"
+    ],
+    "pos": "noun",
+    "english_glosses": [
+      "justice",
+      "righteousness",
+      "judgment"
+    ],
+    "hebrew_skeleton": "ב-א-ל-ת",
+    "dee_ipa": "/bɑːlt/",
+    "golden_dawn_ipa": "/bɑːl.tə/",
+    "sources": [
+      "Key 1",
+      "Key 5",
+      "Key 11"
+    ]
+  },
+  {
+    "root": "BASTI",
+    "variants": [
+      "BASTIS"
+    ],
+    "pos": "noun",
+    "english_glosses": [
+      "pace",
+      "paces"
+    ],
+    "hebrew_skeleton": "ב-א-ס-ת-י",
+    "dee_ipa": "/ˈbæs.tiː/",
+    "golden_dawn_ipa": "/bɑː.sɛ.tiː/",
+    "sources": [
+      "Key 18"
+    ]
+  },
+  {
+    "root": "BAZME",
+    "variants": [
+      "BAZM"
+    ],
+    "pos": "noun",
+    "english_glosses": [
+      "midst"
+    ],
+    "hebrew_skeleton": "ב-א-ז-מ-ע",
+    "dee_ipa": "/ˈbæz.miː/",
+    "golden_dawn_ipa": "/bɑː.zɒd.mɛ/",
+    "sources": [
+      "Key 1",
+      "Key 2"
+    ]
+  },
+  {
+    "root": "BIEN",
+    "variants": [
+      "BIEN",
+      "BIENS"
+    ],
+    "pos": "noun",
+    "english_glosses": [
+      "voice",
+      "voices"
+    ],
+    "hebrew_skeleton": "ב-י-ע-נ",
+    "dee_ipa": "/biːn/",
+    "golden_dawn_ipa": "/biː.ɛn/",
+    "sources": [
+      "Key 1",
+      "Key 2",
+      "Key 10"
+    ]
+  },
+  {
+    "root": "BLIAR",
+    "variants": [
+      "BLIORA",
+      "BLIORAX"
+    ],
+    "pos": "noun",
+    "english_glosses": [
+      "comfort",
+      "continual comforters"
+    ],
+    "hebrew_skeleton": "ב-ל-י-א-ר",
+    "dee_ipa": "/ˈblaɪ.ər/",
+    "golden_dawn_ipa": "/bɛ.liː.ɑːr/",
+    "sources": [
+      "Key 1",
+      "Key 8"
+    ]
+  },
+  {
+    "root": "BOALUA",
+    "variants": [
+      "BOALUA"
+    ],
+    "pos": "verb",
+    "english_glosses": [
+      "worshipped",
+      "adore"
+    ],
+    "hebrew_skeleton": "ב-ו-א-ל-ו-א",
+    "dee_ipa": "/boʊˈɑː.luː.ə/",
+    "golden_dawn_ipa": "/boʊ.ɑː.luː.ɑː/",
+    "sources": [
+      "Key 1"
+    ]
+  },
+  {
+    "root": "BOGPA",
+    "variants": [
+      "BOGPA"
+    ],
+    "pos": "verb",
+    "english_glosses": [
+      "reign",
+      "among"
+    ],
+    "hebrew_skeleton": "ב-ג-פ-א",
+    "dee_ipa": "/ˈbɒɡ.pə/",
+    "golden_dawn_ipa": "/bɒ.ɡɛ.pɑː/",
+    "sources": [
+      "Key 6"
+    ]
+  },
+  {
+    "root": "BOLP",
+    "variants": [
+      "BOLP"
+    ],
+    "pos": "verb",
+    "english_glosses": [
+      "be thou",
+      "be"
+    ],
+    "hebrew_skeleton": "ב-ו-ל-פ",
+    "dee_ipa": "/bɒlp/",
+    "golden_dawn_ipa": "/boʊ.lɛp/",
+    "sources": [
+      "Key 11"
+    ]
+  },
+  {
+    "root": "BRGDA",
+    "variants": [
+      "BRGDA",
+      "BRGDO"
+    ],
+    "pos": "noun",
+    "english_glosses": [
+      "sleep",
+      "slumber"
+    ],
+    "hebrew_skeleton": "ב-ר-ג-ד-א",
+    "dee_ipa": "/ˈbrɪɡ.də/",
+    "golden_dawn_ipa": "/bɛ.rɛ.ɡɛ.dɑː/",
+    "sources": [
+      "Key 12"
+    ]
+  },
+  {
+    "root": "BRIN",
+    "variants": [
+      "BRINTS"
+    ],
+    "pos": "verb",
+    "english_glosses": [
+      "have",
+      "possess"
+    ],
+    "hebrew_skeleton": "ב-ר-י-נ",
+    "dee_ipa": "/brɪn/",
+    "golden_dawn_ipa": "/bɛ.riːn/",
+    "sources": [
+      "Key 1",
+      "Key 7"
+    ]
+  },
+  {
+    "root": "BSLO",
+    "variants": [
+      "BSLO"
+    ],
+    "pos": "noun",
+    "english_glosses": [
+      "branches"
+    ],
+    "hebrew_skeleton": "ב-ס-ל-ו",
+    "dee_ipa": "/ˈbɪz.loʊ/",
+    "golden_dawn_ipa": "/bɛ.sɛ.loʊ/",
+    "sources": [
+      "Key 4"
+    ]
+  },
+  {
+    "root": "BUSDIR",
+    "variants": [
+      "BUSDIR"
+    ],
+    "pos": "noun",
+    "english_glosses": [
+      "glory"
+    ],
+    "hebrew_skeleton": "ב-ו-ס-ד-י-ר",
+    "dee_ipa": "/ˈbʊs.dɪr/",
+    "golden_dawn_ipa": "/buː.sɛ.diːr/",
+    "sources": [
+      "Key 1",
+      "Key 2"
+    ]
+  },
+  {
+    "root": "BUTMONA",
+    "variants": [
+      "BUTMONI"
+    ],
+    "pos": "noun",
+    "english_glosses": [
+      "mouth",
+      "mouths"
+    ],
+    "hebrew_skeleton": "ב-ת-מ-ו-נ-א",
+    "dee_ipa": "/bʌtˈmoʊ.nə/",
+    "golden_dawn_ipa": "/buː.tɛ.moʊ.nɑː/",
+    "sources": [
+      "Key 5",
+      "Key 11"
+    ]
+  },
+  {
+    "root": "C",
+    "variants": [
+      "C"
+    ],
+    "pos": "preposition",
+    "english_glosses": [
+      "on",
+      "with",
+      "in"
+    ],
+    "hebrew_skeleton": "כ",
+    "dee_ipa": "/k/",
+    "golden_dawn_ipa": "/kɛ/",
+    "sources": [
+      "Key 1",
+      "Key 3",
+      "Key 7"
+    ]
+  },
+  {
+    "root": "CA",
+    "variants": [
+      "CAC"
+    ],
+    "pos": "conjunction",
+    "english_glosses": [
+      "therefore"
+    ],
+    "hebrew_skeleton": "כ-א",
+    "dee_ipa": "/kɑː/",
+    "golden_dawn_ipa": "/kɑː/",
+    "sources": [
+      "Key 1",
+      "Key 2",
+      "Key 6"
+    ]
+  },
+  {
+    "root": "CAB",
+    "variants": [
+      "CAB"
+    ],
+    "pos": "noun",
+    "english_glosses": [
+      "rod"
+    ],
+    "hebrew_skeleton": "כ-א-ב",
+    "dee_ipa": "/kæb/",
+    "golden_dawn_ipa": "/kɑːb/",
+    "sources": [
+      "Key 17"
+    ]
+  },
+  {
+    "root": "CACOCASB",
+    "variants": [
+      "CACOCASB"
+    ],
+    "pos": "noun",
+    "english_glosses": [
+      "another time",
+      "time"
+    ],
+    "hebrew_skeleton": "כ-א-כ-ו-כ-א-ס-ב",
+    "dee_ipa": "/kæˈkoʊ.kæzb/",
+    "golden_dawn_ipa": "/kɑː.koʊ.kɑː.sɛb/",
+    "sources": [
+      "Key 11"
+    ]
+  },
+  {
+    "root": "CAMLIAX",
+    "variants": [
+      "CAMLIAX"
+    ],
+    "pos": "verb",
+    "english_glosses": [
+      "speak",
+      "spake"
+    ],
+    "hebrew_skeleton": "כ-מ-ל-י-א-צ",
+    "dee_ipa": "/ˈkæm.liː.æks/",
+    "golden_dawn_ipa": "/kɑː.mɛ.liː.ɑː.ɛks/",
+    "sources": [
+      "Key 18"
+    ]
+  },
+  {
+    "root": "CANAL",
+    "variants": [
+      "CANALS"
+    ],
+    "pos": "noun",
+    "english_glosses": [
+      "work",
+      "workmen",
+      "laborers"
+    ],
+    "hebrew_skeleton": "כ-נ-א-ל",
+    "dee_ipa": "/ˈkæn.əl/",
+    "golden_dawn_ipa": "/kɑː.nɑːl/",
+    "sources": [
+      "Key 5",
+      "Key 17"
+    ]
+  },
+  {
+    "root": "CAPIMAO",
+    "variants": [
+      "CAPIMAON"
+    ],
+    "pos": "noun",
+    "english_glosses": [
+      "time",
+      "period",
+      "seasons"
+    ],
+    "hebrew_skeleton": "כ-פ-י-מ-א-ו",
+    "dee_ipa": "/kæp.ɪˈmeɪ.oʊ/",
+    "golden_dawn_ipa": "/kɑː.piː.mɑː.oʊ/",
+    "sources": [
+      "Key 11"
+    ]
+  },
+  {
+    "root": "CARBAF",
+    "variants": [
+      "CARBAF"
+    ],
+    "pos": "verb",
+    "english_glosses": [
+      "sink"
+    ],
+    "hebrew_skeleton": "כ-א-ר-ב-א-פ",
+    "dee_ipa": "/ˈkɑːr.bæf/",
+    "golden_dawn_ipa": "/kɑː.rɛ.bɑːf/",
+    "sources": [
+      "Key 13"
+    ]
+  },
+  {
+    "root": "CARMA",
+    "variants": [
+      "CARMA"
+    ],
+    "pos": "noun",
+    "english_glosses": [
+      "presence"
+    ],
+    "hebrew_skeleton": "כ-א-ר-מ-א",
+    "dee_ipa": "/ˈkɑːr.mə/",
+    "golden_dawn_ipa": "/kɑː.rɛ.mɑː/",
+    "sources": [
+      "Key 11"
+    ]
+  },
+  {
+    "root": "CASARM",
+    "variants": [
+      "CASARMI",
+      "CASARMG"
+    ],
+    "pos": "pronoun",
+    "english_glosses": [
+      "to whom",
+      "under whom",
+      "whose"
+    ],
+    "hebrew_skeleton": "כ-א-ס-א-ר-מ",
+    "dee_ipa": "/kəˈzɑːrm/",
+    "golden_dawn_ipa": "/kɑː.sɑː.rɛm/",
+    "sources": [
+      "Key 1",
+      "Key 2",
+      "Key 3"
+    ]
+  },
+  {
+    "root": "CHIS",
+    "variants": [
+      "CHISO",
+      "CHISAN"
+    ],
+    "pos": "verb",
+    "english_glosses": [
+      "are",
+      "shall be"
+    ],
+    "hebrew_skeleton": "ח-י-ס",
+    "dee_ipa": "/kɪs/",
+    "golden_dawn_ipa": "/kiːs/",
+    "sources": [
+      "Key 1",
+      "Key 2",
+      "Key 3"
+    ]
+  },
+  {
+    "root": "CHIRLAN",
+    "variants": [
+      "CHIRLAN"
+    ],
+    "pos": "verb",
+    "english_glosses": [
+      "rejoice"
+    ],
+    "hebrew_skeleton": "ח-י-ר-ל-א-נ",
+    "dee_ipa": "/ˈkɪr.læn/",
+    "golden_dawn_ipa": "/kiː.rɛ.lɑːn/",
+    "sources": [
+      "Key 11"
+    ]
+  },
+  {
+    "root": "CHRESTEO",
+    "variants": [
+      "CHRESTEO"
+    ],
+    "pos": "noun",
+    "english_glosses": [
+      "general praise",
+      "glory"
+    ],
+    "hebrew_skeleton": "ח-ר-ע-ס-ת-ע-ו",
+    "dee_ipa": "/krɛsˈtiː.oʊ/",
+    "golden_dawn_ipa": "/kɛ.rɛ.sɛ.tɛ.oʊ/",
+    "sources": [
+      "Key 11"
+    ]
+  },
+  {
+    "root": "CIAL",
+    "variants": [
+      "CIAL"
+    ],
+    "pos": "noun",
+    "english_glosses": [
+      "earth",
+      "ground"
+    ],
+    "hebrew_skeleton": "כ-י-א-ל",
+    "dee_ipa": "/siːˈæl/",
+    "golden_dawn_ipa": "/siː.ɑːl/",
+    "sources": [
+      "Key 7"
+    ]
+  },
+  {
+    "root": "CICLE",
+    "variants": [
+      "CICLES"
+    ],
+    "pos": "noun",
+    "english_glosses": [
+      "mysteries"
+    ],
+    "hebrew_skeleton": "ס-י-כ-ל",
+    "dee_ipa": "/ˈsɪk.əl/",
+    "golden_dawn_ipa": "/siː.kɛl/",
+    "sources": [
+      "Key 1"
+    ]
+  },
+  {
+    "root": "CINXIR",
+    "variants": [
+      "CINXIR"
+    ],
+    "pos": "noun",
+    "english_glosses": [
+      "mingled",
+      "mingle"
+    ],
+    "hebrew_skeleton": "כ-י-נ-צ-י-ר",
+    "dee_ipa": "/ˈsɪŋk.sɪr/",
+    "golden_dawn_ipa": "/siː.nɛ.kɛ.siːr/",
+    "sources": [
+      "Key 17"
+    ]
+  },
+  {
+    "root": "CLA",
+    "variants": [
+      "CLA"
+    ],
+    "pos": "noun",
+    "english_glosses": [
+      "coat",
+      "clothing"
+    ],
+    "hebrew_skeleton": "כ-ל-א",
+    "dee_ipa": "/klɑː/",
+    "golden_dawn_ipa": "/kɛ.lɑː/",
+    "sources": [
+      "Key 15"
+    ]
+  },
+  {
+    "root": "CNILA",
+    "variants": [
+      "CNILA"
+    ],
+    "pos": "noun",
+    "english_glosses": [
+      "blood"
+    ],
+    "hebrew_skeleton": "כ-נ-י-ל-א",
+    "dee_ipa": "/ˈknɪl.ə/",
+    "golden_dawn_ipa": "/kɛ.niː.lɑː/",
+    "sources": [
+      "Key 7"
+    ]
+  },
+  {
+    "root": "COLLAL",
+    "variants": [
+      "COLLAL"
+    ],
+    "pos": "noun",
+    "english_glosses": [
+      "sleeves"
+    ],
+    "hebrew_skeleton": "כ-ו-ל-ל-א-ל",
+    "dee_ipa": "/ˈkɒl.æl/",
+    "golden_dawn_ipa": "/koʊ.lɛ.lɑːl/",
+    "sources": [
+      "Key 15"
+    ]
+  },
+  {
+    "root": "COMSELH",
+    "variants": [
+      "COMSELH"
+    ],
+    "pos": "noun",
+    "english_glosses": [
+      "circle"
+    ],
+    "hebrew_skeleton": "כ-ו-מ-ס-ע-ל-ה",
+    "dee_ipa": "/ˈkɒm.sɛlh/",
+    "golden_dawn_ipa": "/koʊ.mɛ.sɛl.hɛ/",
+    "sources": [
+      "Key 8"
+    ]
+  },
+  {
+    "root": "CONSQ",
+    "variants": [
+      "CONSQ"
+    ],
+    "pos": "noun",
+    "english_glosses": [
+      "account"
+    ],
+    "hebrew_skeleton": "כ-ו-נ-ס-ק",
+    "dee_ipa": "/ˈkɒnsk/",
+    "golden_dawn_ipa": "/koʊ.nɛ.sɛk/",
+    "sources": [
+      "Key 15"
+    ]
+  },
+  {
+    "root": "CORAXO",
+    "variants": [
+      "CORAXO"
+    ],
+    "pos": "noun",
+    "english_glosses": [
+      "cormorants",
+      "desolation"
+    ],
+    "hebrew_skeleton": "כ-ר-א-צ-ו",
+    "dee_ipa": "/kɒˈræks.oʊ/",
+    "golden_dawn_ipa": "/kɒ.rɑː.ɛks.oʊ/",
+    "sources": [
+      "Key 10"
+    ]
+  },
+  {
+    "root": "CORDZIZ",
+    "variants": [
+      "CORDZIZ"
+    ],
+    "pos": "noun",
+    "english_glosses": [
+      "man",
+      "human"
+    ],
+    "hebrew_skeleton": "כ-ו-ר-ד-ז-י-ז",
+    "dee_ipa": "/ˈkɔːrd.zɪz/",
+    "golden_dawn_ipa": "/koʊ.rɛ.də.zɒd.iː.zɒd/",
+    "sources": [
+      "Key 2"
+    ]
+  },
+  {
+    "root": "CORS",
+    "variants": [
+      "CORSI"
+    ],
+    "pos": "verb",
+    "english_glosses": [
+      "such as"
+    ],
+    "hebrew_skeleton": "כ-ר-ס",
+    "dee_ipa": "/kɔːrs/",
+    "golden_dawn_ipa": "/kɒ.rɛs/",
+    "sources": [
+      "Key 2",
+      "Key 12"
+    ]
+  },
+  {
+    "root": "CRIP",
+    "variants": [
+      "CRIP"
+    ],
+    "pos": "adjective",
+    "english_glosses": [
+      "equal",
+      "degree"
+    ],
+    "hebrew_skeleton": "כ-ר-י-פ",
+    "dee_ipa": "/krɪp/",
+    "golden_dawn_ipa": "/kɛ.riːp/",
+    "sources": [
+      "Key 4"
+    ]
+  },
+  {
+    "root": "CROODZI",
+    "variants": [
+      "CROODZI"
+    ],
+    "pos": "noun",
+    "english_glosses": [
+      "beginning"
+    ],
+    "hebrew_skeleton": "כ-ר-ו-ו-ד-ז-י",
+    "dee_ipa": "/ˈkroʊ.ɒd.ziː/",
+    "golden_dawn_ipa": "/kɛ.roʊ.oʊ.də.zɒd.iː/",
+    "sources": [
+      "Key 1"
+    ]
+  },
+  {
+    "root": "DA",
+    "variants": [
+      "DAO"
+    ],
+    "pos": "pronoun",
+    "english_glosses": [
+      "there",
+      "thither"
+    ],
+    "hebrew_skeleton": "ד-א",
+    "dee_ipa": "/dɑː/",
+    "golden_dawn_ipa": "/dɑː/",
+    "sources": [
+      "Key 4",
+      "Key 5"
+    ]
+  },
+  {
+    "root": "DAMPLOZ",
+    "variants": [
+      "DAMPLOZ"
+    ],
+    "pos": "noun",
+    "english_glosses": [
+      "variety"
+    ],
+    "hebrew_skeleton": "ד-א-מ-פ-ל-ו-ז",
+    "dee_ipa": "/ˈdæm.plɒz/",
+    "golden_dawn_ipa": "/dɑː.mɛ.pɛ.loʊ.zɒd/",
+    "sources": [
+      "Key 6"
+    ]
+  },
+  {
+    "root": "DAR",
+    "variants": [
+      "DAR"
+    ],
+    "pos": "noun",
+    "english_glosses": [
+      "here",
+      "place"
+    ],
+    "hebrew_skeleton": "ד-א-ר",
+    "dee_ipa": "/dɑːr/",
+    "golden_dawn_ipa": "/dɑːr/",
+    "sources": [
+      "Key 18"
+    ]
+  },
+  {
+    "root": "DARG",
+    "variants": [
+      "DARG"
+    ],
+    "pos": "noun",
+    "english_glosses": [
+      "contents",
+      "quantity"
+    ],
+    "hebrew_skeleton": "ד-א-ר-ג",
+    "dee_ipa": "/dɑːrɡ/",
+    "golden_dawn_ipa": "/dɑː.rɛ.ɡɛ/",
+    "sources": [
+      "Key 8"
+    ]
+  },
+  {
+    "root": "DAVLX",
+    "variants": [
+      "DAVLX"
+    ],
+    "pos": "verb",
+    "english_glosses": [
+      "evil",
+      "end"
+    ],
+    "hebrew_skeleton": "ד-א-ו-ל-צ",
+    "dee_ipa": "/ˈdæv.əlks/",
+    "golden_dawn_ipa": "/dɑː.vɛ.lɛks/",
+    "sources": [
+      "Key 12"
+    ]
+  },
+  {
+    "root": "DAX",
+    "variants": [
+      "DAX"
+    ],
+    "pos": "noun",
+    "english_glosses": [
+      "loins"
+    ],
+    "hebrew_skeleton": "ד-א-צ",
+    "dee_ipa": "/dæks/",
+    "golden_dawn_ipa": "/dɑː.ɛks/",
+    "sources": [
+      "Key 14"
+    ]
+  },
+  {
+    "root": "DE",
+    "variants": [
+      "DE"
+    ],
+    "pos": "preposition",
+    "english_glosses": [
+      "of"
+    ],
+    "hebrew_skeleton": "ד",
+    "dee_ipa": "/deɪ/",
+    "golden_dawn_ipa": "/dɛ/",
+    "sources": [
+      "Key 1",
+      "Key 18"
+    ]
+  },
+  {
+    "root": "DIAL",
+    "variants": [
+      "DIAL"
+    ],
+    "pos": "noun",
+    "english_glosses": [
+      "speech",
+      "giving"
+    ],
+    "hebrew_skeleton": "ד-י-א-ל",
+    "dee_ipa": "/ˈdiː.əl/",
+    "golden_dawn_ipa": "/diː.ɑːl/",
+    "sources": [
+      "Key 17"
+    ]
+  },
+  {
+    "root": "DILZMO",
+    "variants": [
+      "DILZMO"
+    ],
+    "pos": "noun",
+    "english_glosses": [
+      "differing"
+    ],
+    "hebrew_skeleton": "ד-י-ל-ז-מ-ו",
+    "dee_ipa": "/ˈdɪlz.moʊ/",
+    "golden_dawn_ipa": "/diː.lɛ.zɒd.moʊ/",
+    "sources": [
+      "Key 14"
+    ]
+  },
+  {
+    "root": "DIU",
+    "variants": [
+      "DIU"
+    ],
+    "pos": "noun",
+    "english_glosses": [
+      "angles"
+    ],
+    "hebrew_skeleton": "ד-י-ו",
+    "dee_ipa": "/ˈdiː.juː/",
+    "golden_dawn_ipa": "/diː.uː/",
+    "sources": [
+      "Key 10"
+    ]
+  },
+  {
+    "root": "DOALIM",
+    "variants": [
+      "DOALIM"
+    ],
+    "pos": "noun",
+    "english_glosses": [
+      "sin",
+      "wickedness"
+    ],
+    "hebrew_skeleton": "ד-ו-א-ל-י-מ",
+    "dee_ipa": "/doʊˈæ.lɪm/",
+    "golden_dawn_ipa": "/doʊ.ɑː.liːm/",
+    "sources": [
+      "Key 14"
+    ]
+  },
+  {
+    "root": "DODPAL",
+    "variants": [
+      "DODPAL"
+    ],
+    "pos": "verb",
+    "english_glosses": [
+      "vex",
+      "punish"
+    ],
+    "hebrew_skeleton": "ד-ד-פ-א-ל",
+    "dee_ipa": "/ˈdɒd.pæl/",
+    "golden_dawn_ipa": "/dɒ.də.pɑːl/",
+    "sources": [
+      "Key 16"
+    ]
+  },
+  {
+    "root": "DODRMNI",
+    "variants": [
+      "DODRMNI"
+    ],
+    "pos": "verb",
+    "english_glosses": [
+      "vexed"
+    ],
+    "hebrew_skeleton": "ד-ד-ר-מ-נ-י",
+    "dee_ipa": "/ˈdɒd.rəm.niː/",
+    "golden_dawn_ipa": "/dɒ.də.rɛ.mɛ.niː/",
+    "sources": [
+      "Key 16"
+    ]
+  },
+  {
+    "root": "DOOAIP",
+    "variants": [
+      "DOOAIP",
+      "DOOAIN",
+      "DOOAIA"
+    ],
+    "pos": "noun",
+    "english_glosses": [
+      "in the name of",
+      "his name",
+      "name"
+    ],
+    "hebrew_skeleton": "ד-ו-א-י-פ",
+    "dee_ipa": "/doʊˈɑː.ɪp/",
+    "golden_dawn_ipa": "/doʊ.oʊ.ɑː.iːp/",
+    "sources": [
+      "Key 1",
+      "Key 2",
+      "Key 6"
+    ]
+  },
+  {
+    "root": "DORPHAL",
+    "variants": [
+      "DORPHAL"
+    ],
+    "pos": "verb",
+    "english_glosses": [
+      "look about",
+      "behold"
+    ],
+    "hebrew_skeleton": "ד-ר-פ-א-ל",
+    "dee_ipa": "/ˈdɔːr.fæl/",
+    "golden_dawn_ipa": "/dɒ.rɛ.fɑːl/",
+    "sources": [
+      "Key 4"
+    ]
+  },
+  {
+    "root": "DOSIG",
+    "variants": [
+      "DOSIG"
+    ],
+    "pos": "noun",
+    "english_glosses": [
+      "night"
+    ],
+    "hebrew_skeleton": "ד-ו-ס-י-ג",
+    "dee_ipa": "/ˈdoʊ.sɪɡ/",
+    "golden_dawn_ipa": "/doʊ.siːɡ/",
+    "sources": [
+      "Key 12"
+    ]
+  },
+  {
+    "root": "DRILPA",
+    "variants": [
+      "DRILPI"
+    ],
+    "pos": "adjective",
+    "english_glosses": [
+      "great",
+      "mighty"
+    ],
+    "hebrew_skeleton": "ד-ר-י-ל-פ-א",
+    "dee_ipa": "/ˈdrɪl.pə/",
+    "golden_dawn_ipa": "/dɛ.riːl.pɑː/",
+    "sources": [
+      "Key 5",
+      "Key 7"
+    ]
+  },
+  {
+    "root": "DRIX",
+    "variants": [
+      "DRIX"
+    ],
+    "pos": "verb",
+    "english_glosses": [
+      "bring down"
+    ],
+    "hebrew_skeleton": "ד-ר-י-צ",
+    "dee_ipa": "/drɪks/",
+    "golden_dawn_ipa": "/dɛ.riːks/",
+    "sources": [
+      "Key 15"
+    ]
+  },
+  {
+    "root": "DS",
+    "variants": [
+      "DS"
+    ],
+    "pos": "pronoun",
+    "english_glosses": [
+      "which",
+      "that"
+    ],
+    "hebrew_skeleton": "ד-ס",
+    "dee_ipa": "/ds/",
+    "golden_dawn_ipa": "/dɑːs/",
+    "sources": [
+      "Key 1",
+      "Key 2",
+      "Key 3"
+    ]
+  },
+  {
+    "root": "ECA",
+    "variants": [
+      "ECA"
+    ],
+    "pos": "adverb",
+    "english_glosses": [
+      "therefore"
+    ],
+    "hebrew_skeleton": "ע-כ-א",
+    "dee_ipa": "/ˈeɪ.kə/",
+    "golden_dawn_ipa": "/ɛ.kɑː/",
+    "sources": [
+      "Key 1",
+      "Key 2"
+    ]
+  },
+  {
+    "root": "ECRIN",
+    "variants": [
+      "ECRIN"
+    ],
+    "pos": "noun",
+    "english_glosses": [
+      "praise"
+    ],
+    "hebrew_skeleton": "ע-כ-ר-י-נ",
+    "dee_ipa": "/ˈeɪ.krɪn/",
+    "golden_dawn_ipa": "/ɛ.kɛ.riːn/",
+    "sources": [
+      "Key 7"
+    ]
+  },
+  {
+    "root": "EDNAS",
+    "variants": [
+      "EDNAS"
+    ],
+    "pos": "verb",
+    "english_glosses": [
+      "received",
+      "visited"
+    ],
+    "hebrew_skeleton": "ע-ד-נ-א-ס",
+    "dee_ipa": "/ˈɛd.næs/",
+    "golden_dawn_ipa": "/ɛ.də.nɑːs/",
+    "sources": [
+      "Key 3"
+    ]
+  },
+  {
+    "root": "EFAFAFE",
+    "variants": [
+      "EFAFAFE"
+    ],
+    "pos": "noun",
+    "english_glosses": [
+      "vessels"
+    ],
+    "hebrew_skeleton": "ע-פ-א-פ-א-פ-ע",
+    "dee_ipa": "/ˌɛf.əˈfeɪ.fiː/",
+    "golden_dawn_ipa": "/ɛ.fɑː.fɑː.fɛ/",
+    "sources": [
+      "Key 11"
+    ]
+  },
+  {
+    "root": "EL",
+    "variants": [
+      "EL"
+    ],
+    "pos": "noun",
+    "english_glosses": [
+      "one",
+      "first"
+    ],
+    "hebrew_skeleton": "א-ל",
+    "dee_ipa": "/ɛl/",
+    "golden_dawn_ipa": "/ɛl/",
+    "sources": [
+      "Key 1",
+      "Key 8"
+    ]
+  },
+  {
+    "root": "ELO",
+    "variants": [
+      "ELO"
+    ],
+    "pos": "noun",
+    "english_glosses": [
+      "first"
+    ],
+    "hebrew_skeleton": "ע-ל-ו",
+    "dee_ipa": "/ˈeɪ.loʊ/",
+    "golden_dawn_ipa": "/ɛ.loʊ/",
+    "sources": [
+      "Key 3"
+    ]
+  },
+  {
+    "root": "ELZAP",
+    "variants": [
+      "ELZAP"
+    ],
+    "pos": "noun",
+    "english_glosses": [
+      "course",
+      "way"
+    ],
+    "hebrew_skeleton": "ע-ל-ז-א-פ",
+    "dee_ipa": "/ˈɛl.zæp/",
+    "golden_dawn_ipa": "/ɛl.zɒd.ɑːp/",
+    "sources": [
+      "Key 7"
+    ]
+  },
+  {
+    "root": "EMETGIS",
+    "variants": [
+      "EMETGIS"
+    ],
+    "pos": "noun",
+    "english_glosses": [
+      "seal"
+    ],
+    "hebrew_skeleton": "ע-מ-ת-ג-י-ס",
+    "dee_ipa": "/ˈɛm.ɛt.ɡɪs/",
+    "golden_dawn_ipa": "/ɛ.mɛ.tɛ.ɡiːs/",
+    "sources": [
+      "Key 10"
+    ]
+  },
+  {
+    "root": "EMNA",
+    "variants": [
+      "EMNA"
+    ],
+    "pos": "adverb",
+    "english_glosses": [
+      "herein",
+      "here"
+    ],
+    "hebrew_skeleton": "ע-מ-נ-א",
+    "dee_ipa": "/ˈɛm.nə/",
+    "golden_dawn_ipa": "/ɛ.mɛ.nɑː/",
+    "sources": [
+      "Key 4"
+    ]
+  },
+  {
+    "root": "ENAY",
+    "variants": [
+      "ENAY"
+    ],
+    "pos": "noun",
+    "english_glosses": [
+      "lord"
+    ],
+    "hebrew_skeleton": "ע-נ-א-י",
+    "dee_ipa": "/ˈeɪ.neɪ/",
+    "golden_dawn_ipa": "/ɛ.nɑː.iː/",
+    "sources": [
+      "Key 14"
+    ]
+  },
+  {
+    "root": "EOL",
+    "variants": [
+      "EOLIS"
+    ],
+    "pos": "verb",
+    "english_glosses": [
+      "make",
+      "made"
+    ],
+    "hebrew_skeleton": "ע-ו-ל",
+    "dee_ipa": "/ˈeɪ.ɒl/",
+    "golden_dawn_ipa": "/ɛ.oʊl/",
+    "sources": [
+      "Key 7",
+      "Key 14"
+    ]
+  },
+  {
+    "root": "ERAN",
+    "variants": [
+      "ERAN"
+    ],
+    "pos": "noun",
+    "english_glosses": [
+      "six thousand three hundred thirty-two"
+    ],
+    "hebrew_skeleton": "ע-ר-א-נ",
+    "dee_ipa": "/ˈeɪ.ræn/",
+    "golden_dawn_ipa": "/ɛ.rɑːn/",
+    "sources": [
+      "Key 8"
+    ]
+  },
+  {
+    "root": "ERM",
+    "variants": [
+      "ERM"
+    ],
+    "pos": "noun",
+    "english_glosses": [
+      "ark"
+    ],
+    "hebrew_skeleton": "ע-ר-מ",
+    "dee_ipa": "/ɛrm/",
+    "golden_dawn_ipa": "/ɛ.rɛm/",
+    "sources": [
+      "Key 5"
+    ]
+  },
+  {
+    "root": "ETHARZI",
+    "variants": [
+      "ETHARZI"
+    ],
+    "pos": "noun",
+    "english_glosses": [
+      "peace"
+    ],
+    "hebrew_skeleton": "ע-ת-ה-א-ר-ז-י",
+    "dee_ipa": "/ɛθˈɑːr.ziː/",
+    "golden_dawn_ipa": "/ɛ.tɛ.hɑː.rɛ.zɒd.iː/",
+    "sources": [
+      "Key 2"
+    ]
+  },
+  {
+    "root": "FAORGT",
+    "variants": [
+      "FAORGT"
+    ],
+    "pos": "noun",
+    "english_glosses": [
+      "dwelling place",
+      "abode"
+    ],
+    "hebrew_skeleton": "פ-א-ו-ר-ג-ת",
+    "dee_ipa": "/ˈfeɪ.ɔːrɡt/",
+    "golden_dawn_ipa": "/fɑː.oʊ.rɛ.ɡɛt/",
+    "sources": [
+      "Key 6"
+    ]
+  },
+  {
+    "root": "FBLIARD",
+    "variants": [
+      "FBLIARD"
+    ],
+    "pos": "noun",
+    "english_glosses": [
+      "continual comforters"
+    ],
+    "hebrew_skeleton": "פ-ב-ל-י-א-ר-ד",
+    "dee_ipa": "/fəˈblaɪ.ərd/",
+    "golden_dawn_ipa": "/fɛ.bɛ.liː.ɑː.rɛd/",
+    "sources": [
+      "Key 1"
+    ]
+  },
+  {
+    "root": "GA",
+    "variants": [
+      "GA"
+    ],
+    "pos": "verb",
+    "english_glosses": [
+      "thou art",
+      "art"
+    ],
+    "hebrew_skeleton": "ג-א",
+    "dee_ipa": "/ɡɑː/",
+    "golden_dawn_ipa": "/ɡɑː/",
+    "sources": [
+      "Key 1"
+    ]
+  },
+  {
+    "root": "GCHISGE",
+    "variants": [
+      "GCHISGE"
+    ],
+    "pos": "verb",
+    "english_glosses": [
+      "are not"
+    ],
+    "hebrew_skeleton": "ג-ח-י-ס-ג-ע",
+    "dee_ipa": "/ɡəˈkɪs.ɡiː/",
+    "golden_dawn_ipa": "/ɡɛ.kiːs.ɡɛ/",
+    "sources": [
+      "Key 13"
+    ]
+  },
+  {
+    "root": "GEDOTBAR",
+    "variants": [
+      "GEDOTBAR"
+    ],
+    "pos": "verb",
+    "english_glosses": [
+      "begotten"
+    ],
+    "hebrew_skeleton": "ג-ע-ד-ו-ת-ב-א-ר",
+    "dee_ipa": "/ˈɡɛd.ɒt.bɑːr/",
+    "golden_dawn_ipa": "/ɡɛ.doʊ.tɛ.bɑːr/",
+    "sources": [
+      "Key 11"
+    ]
+  },
+  {
+    "root": "GEH",
+    "variants": [
+      "GEH"
+    ],
+    "pos": "verb",
+    "english_glosses": [
+      "art",
+      "thou art"
+    ],
+    "hebrew_skeleton": "ג-ע-ה",
+    "dee_ipa": "/ɡɛh/",
+    "golden_dawn_ipa": "/ɡɛh/",
+    "sources": [
+      "Key 3",
+      "Key 7"
+    ]
+  },
+  {
+    "root": "GENETAAB",
+    "variants": [
+      "GENETAAB"
+    ],
+    "pos": "noun",
+    "english_glosses": [
+      "proper",
+      "sovereign",
+      "kingdom"
+    ],
+    "hebrew_skeleton": "ג-ע-נ-ע-ת-א-א-ב",
+    "dee_ipa": "/ɡɛn.ɛˈtɑːb/",
+    "golden_dawn_ipa": "/ɡɛ.nɛ.tɑː.ɑːb/",
+    "sources": [
+      "Key 1"
+    ]
+  },
+  {
+    "root": "GIGIPAH",
+    "variants": [
+      "GIGIPAH"
+    ],
+    "pos": "noun",
+    "english_glosses": [
+      "breath",
+      "living breath"
+    ],
+    "hebrew_skeleton": "ג-י-ג-י-פ-א-ה",
+    "dee_ipa": "/ˈɡɪɡ.ɪ.pɑː/",
+    "golden_dawn_ipa": "/ɡiː.ɡiː.pɑː/",
+    "sources": [
+      "Key 6"
+    ]
+  },
+  {
+    "root": "GIRAA",
+    "variants": [
+      "GIRAA"
+    ],
+    "pos": "noun",
+    "english_glosses": [
+      "moon",
+      "the moon"
+    ],
+    "hebrew_skeleton": "ג-י-ר-א-א",
+    "dee_ipa": "/ˈɡɪr.ɑː/",
+    "golden_dawn_ipa": "/ɡiː.rɑː.ɑː/",
+    "sources": [
+      "Key 18"
+    ]
+  },
+  {
+    "root": "GIVE",
+    "variants": [
+      "GIVE"
+    ],
+    "pos": "verb",
+    "english_glosses": [
+      "strong",
+      "stronger"
+    ],
+    "hebrew_skeleton": "ג-י-ו-ע",
+    "dee_ipa": "/ˈɡɪv/",
+    "golden_dawn_ipa": "/ɡiː.vɛ/",
+    "sources": [
+      "Key 13"
+    ]
+  },
+  {
+    "root": "GNAY",
+    "variants": [
+      "GNAY"
+    ],
+    "pos": "verb",
+    "english_glosses": [
+      "does",
+      "plagued"
+    ],
+    "hebrew_skeleton": "ג-נ-א-י",
+    "dee_ipa": "/ɡneɪ/",
+    "golden_dawn_ipa": "/ɡɛ.nɑː.iː/",
+    "sources": [
+      "Key 14"
+    ]
+  },
+  {
+    "root": "GOBLE",
+    "variants": [
+      "GOBLE"
+    ],
+    "pos": "noun",
+    "english_glosses": [
+      "windows"
+    ],
+    "hebrew_skeleton": "ג-ו-ב-ל-ע",
+    "dee_ipa": "/ˈɡɒb.əl/",
+    "golden_dawn_ipa": "/ɡoʊ.bɛ.lɛ/",
+    "sources": [
+      "Key 4"
+    ]
+  },
+  {
+    "root": "GOHO",
+    "variants": [
+      "GOHUS",
+      "GOHIA",
+      "GOHOL",
+      "GOHEL",
+      "GOHON"
+    ],
+    "pos": "verb",
+    "english_glosses": [
+      "saith",
+      "I say",
+      "saying",
+      "spoken"
+    ],
+    "hebrew_skeleton": "ג-ו-ה-ו",
+    "dee_ipa": "/ˈɡoʊ.hoʊ/",
+    "golden_dawn_ipa": "/ɡoʊ.huː/",
+    "sources": [
+      "Key 1",
+      "Key 2",
+      "Key 3",
+      "Key 4"
+    ]
+  },
+  {
+    "root": "GRAA",
+    "variants": [
+      "GRAA"
+    ],
+    "pos": "noun",
+    "english_glosses": [
+      "moon"
+    ],
+    "hebrew_skeleton": "ג-ר-א-א",
+    "dee_ipa": "/ɡrɑː/",
+    "golden_dawn_ipa": "/ɡɛ.rɑː.ɑː/",
+    "sources": [
+      "Key 18"
+    ]
+  },
+  {
+    "root": "HAALA",
+    "variants": [
+      "HAALA"
+    ],
+    "pos": "noun",
+    "english_glosses": [
+      "mantle"
+    ],
+    "hebrew_skeleton": "ה-א-א-ל-א",
+    "dee_ipa": "/ˈhɑː.lə/",
+    "golden_dawn_ipa": "/hɑː.ɑː.lɑː/",
+    "sources": [
+      "Key 15"
+    ]
+  },
+  {
+    "root": "HARG",
+    "variants": [
+      "HARG"
+    ],
+    "pos": "verb",
+    "english_glosses": [
+      "planted"
+    ],
+    "hebrew_skeleton": "ה-א-ר-ג",
+    "dee_ipa": "/hɑːrɡ/",
+    "golden_dawn_ipa": "/hɑː.rɛ.ɡɛ/",
+    "sources": [
+      "Key 15"
+    ]
+  },
+  {
+    "root": "HELECH",
+    "variants": [
+      "HELECH"
+    ],
+    "pos": "verb",
+    "english_glosses": [
+      "iniquity"
+    ],
+    "hebrew_skeleton": "ה-ל-ע-ח",
+    "dee_ipa": "/ˈhɛl.ɛk/",
+    "golden_dawn_ipa": "/hɛ.lɛk/",
+    "sources": [
+      "Key 15"
+    ]
+  },
+  {
+    "root": "HOATH",
+    "variants": [
+      "HOATH"
+    ],
+    "pos": "noun",
+    "english_glosses": [
+      "worshipper",
+      "servant"
+    ],
+    "hebrew_skeleton": "ה-ו-א-ת-ה",
+    "dee_ipa": "/hoʊˈɑːθ/",
+    "golden_dawn_ipa": "/hoʊ.ɑːt/",
+    "sources": [
+      "Key 13"
+    ]
+  },
+  {
+    "root": "HOMIL",
+    "variants": [
+      "HOMIN"
+    ],
+    "pos": "noun",
+    "english_glosses": [
+      "true",
+      "age"
+    ],
+    "hebrew_skeleton": "ה-ו-מ-י-ל",
+    "dee_ipa": "/ˈhɒm.ɪl/",
+    "golden_dawn_ipa": "/hoʊ.miːl/",
+    "sources": [
+      "Key 12"
+    ]
+  },
+  {
+    "root": "HUBAR",
+    "variants": [
+      "HUBARDO",
+      "HUBAIO"
+    ],
+    "pos": "noun",
+    "english_glosses": [
+      "lamp",
+      "lanterns",
+      "lamps of living breath"
+    ],
+    "hebrew_skeleton": "ה-ו-ב-א-ר",
+    "dee_ipa": "/ˈhjuː.bər/",
+    "golden_dawn_ipa": "/huː.bɑːr/",
+    "sources": [
+      "Key 7",
+      "Key 12"
+    ]
+  },
+  {
+    "root": "I",
+    "variants": [
+      "I"
+    ],
+    "pos": "verb",
+    "english_glosses": [
+      "is",
+      "art"
+    ],
+    "hebrew_skeleton": "י",
+    "dee_ipa": "/aɪ/",
+    "golden_dawn_ipa": "/iː/",
+    "sources": [
+      "Key 1",
+      "Key 2",
+      "Key 3"
+    ]
+  },
+  {
+    "root": "IAD",
+    "variants": [
+      "IAD",
+      "IADO"
+    ],
+    "pos": "noun",
+    "english_glosses": [
+      "God",
+      "the Divine"
+    ],
+    "hebrew_skeleton": "י-א-ד",
+    "dee_ipa": "/jɑːd/",
+    "golden_dawn_ipa": "/iː.ɑːd/",
+    "sources": [
+      "Key 1",
+      "Key 2",
+      "Key 5"
+    ]
+  },
+  {
+    "root": "IADNAH",
+    "variants": [
+      "IADNAH"
+    ],
+    "pos": "noun",
+    "english_glosses": [
+      "knowledge",
+      "divine knowledge"
+    ],
+    "hebrew_skeleton": "י-א-ד-נ-א-ה",
+    "dee_ipa": "/ˈjɑːd.nɑː/",
+    "golden_dawn_ipa": "/iː.ɑː.də.nɑː/",
+    "sources": [
+      "Key 1",
+      "Key 2"
+    ]
+  },
+  {
+    "root": "IALPRG",
+    "variants": [
+      "IALPIRG",
+      "IALPURG"
+    ],
+    "pos": "noun",
+    "english_glosses": [
+      "flames",
+      "burning flames",
+      "flame of first glory"
+    ],
+    "hebrew_skeleton": "י-א-ל-פ-ר-ג",
+    "dee_ipa": "/ˈjɑːl.pɜːrɡ/",
+    "golden_dawn_ipa": "/iː.ɑːl.pɛr.ɡɛ/",
+    "sources": [
+      "Key 1",
+      "Key 6",
+      "Key 7"
+    ]
+  },
+  {
+    "root": "IALPON",
+    "variants": [
+      "IALPON"
+    ],
+    "pos": "verb",
+    "english_glosses": [
+      "burn",
+      "flaming"
+    ],
+    "hebrew_skeleton": "י-א-ל-פ-ו-נ",
+    "dee_ipa": "/ˈjæl.pɒn/",
+    "golden_dawn_ipa": "/iː.ɑːl.poʊn/",
+    "sources": [
+      "Key 6"
+    ]
+  },
+  {
+    "root": "IL",
+    "variants": [
+      "ILS",
+      "ILSI"
+    ],
+    "pos": "pronoun",
+    "english_glosses": [
+      "thou",
+      "thee",
+      "ye"
+    ],
+    "hebrew_skeleton": "י-ל",
+    "dee_ipa": "/ɪl/",
+    "golden_dawn_ipa": "/iːl/",
+    "sources": [
+      "Key 1",
+      "Key 3",
+      "Key 4"
+    ]
+  },
+  {
+    "root": "ILROS",
+    "variants": [
+      "ILROS"
+    ],
+    "pos": "verb",
+    "english_glosses": [
+      "rock"
+    ],
+    "hebrew_skeleton": "י-ל-ר-ו-ס",
+    "dee_ipa": "/ˈɪl.rɒs/",
+    "golden_dawn_ipa": "/iː.lɛ.roʊs/",
+    "sources": [
+      "Key 11"
+    ]
+  },
+  {
+    "root": "IMVAMAR",
+    "variants": [
+      "IMVAMAR"
+    ],
+    "pos": "verb",
+    "english_glosses": [
+      "apply",
+      "applied"
+    ],
+    "hebrew_skeleton": "י-מ-ו-א-מ-א-ר",
+    "dee_ipa": "/ɪmˈvæm.ər/",
+    "golden_dawn_ipa": "/iː.mɛ.vɑː.mɑːr/",
+    "sources": [
+      "Key 5"
+    ]
+  },
+  {
+    "root": "IP",
+    "variants": [
+      "IPA",
+      "IPAM"
+    ],
+    "pos": "adverb",
+    "english_glosses": [
+      "not",
+      "is not"
+    ],
+    "hebrew_skeleton": "י-פ",
+    "dee_ipa": "/ɪp/",
+    "golden_dawn_ipa": "/iːp/",
+    "sources": [
+      "Key 1",
+      "Key 2"
+    ]
+  },
+  {
+    "root": "IXOMAXIP",
+    "variants": [
+      "IXOMAXIP"
+    ],
+    "pos": "verb",
+    "english_glosses": [
+      "known"
+    ],
+    "hebrew_skeleton": "י-צ-ו-מ-א-צ-י-פ",
+    "dee_ipa": "/ɪks.oʊˈmæks.ɪp/",
+    "golden_dawn_ipa": "/iː.kɛ.soʊ.mɑː.kɛ.siːp/",
+    "sources": [
+      "Key 14"
+    ]
+  },
+  {
+    "root": "L",
+    "variants": [
+      "L"
+    ],
+    "pos": "noun",
+    "english_glosses": [
+      "first",
+      "one"
+    ],
+    "hebrew_skeleton": "ל",
+    "dee_ipa": "/ɛl/",
+    "golden_dawn_ipa": "/ɛl/",
+    "sources": [
+      "Key 1"
+    ]
+  },
+  {
+    "root": "LAIAD",
+    "variants": [
+      "LAIAD"
+    ],
+    "pos": "noun",
+    "english_glosses": [
+      "secrets",
+      "secret truth"
+    ],
+    "hebrew_skeleton": "ל-א-י-א-ד",
+    "dee_ipa": "/ˈleɪ.æd/",
+    "golden_dawn_ipa": "/lɑː.iː.ɑːd/",
+    "sources": [
+      "Key 10"
+    ]
+  },
+  {
+    "root": "LANG",
+    "variants": [
+      "LANG"
+    ],
+    "pos": "verb",
+    "english_glosses": [
+      "ministering",
+      "ministers"
+    ],
+    "hebrew_skeleton": "ל-א-נ-ג",
+    "dee_ipa": "/læŋ/",
+    "golden_dawn_ipa": "/lɑːn.ɡɛ/",
+    "sources": [
+      "Key 17"
+    ]
+  },
+  {
+    "root": "LAUACON",
+    "variants": [
+      "LAUACON"
+    ],
+    "pos": "noun",
+    "english_glosses": [
+      "attributes",
+      "worship"
+    ],
+    "hebrew_skeleton": "ל-א-ו-א-כ-ו-נ",
+    "dee_ipa": "/ləˈwæk.ɒn/",
+    "golden_dawn_ipa": "/lɑː.uː.ɑː.koʊn/",
+    "sources": [
+      "Key 1"
+    ]
+  },
+  {
+    "root": "LEVITHMONG",
+    "variants": [
+      "LEVITHMONG"
+    ],
+    "pos": "noun",
+    "english_glosses": [
+      "beasts of the field"
+    ],
+    "hebrew_skeleton": "ל-ע-ו-י-ת-ה-מ-ו-נ-ג",
+    "dee_ipa": "/ˈlɛv.ɪθ.mɒŋ/",
+    "golden_dawn_ipa": "/lɛ.viː.tɛ.hɛ.moʊn.ɡɛ/",
+    "sources": [
+      "Key 6"
+    ]
+  },
+  {
+    "root": "LIL",
+    "variants": [
+      "LIL"
+    ],
+    "pos": "noun",
+    "english_glosses": [
+      "first aethyr",
+      "heaven"
+    ],
+    "hebrew_skeleton": "ל-י-ל",
+    "dee_ipa": "/lɪl/",
+    "golden_dawn_ipa": "/liːl/",
+    "sources": [
+      "Key 19"
+    ]
+  },
+  {
+    "root": "LIMLAL",
+    "variants": [
+      "LIMLAL"
+    ],
+    "pos": "noun",
+    "english_glosses": [
+      "treasure"
+    ],
+    "hebrew_skeleton": "ל-י-מ-ל-א-ל",
+    "dee_ipa": "/ˈlɪm.læl/",
+    "golden_dawn_ipa": "/liː.mɛ.lɑːl/",
+    "sources": [
+      "Key 11"
+    ]
+  },
+  {
+    "root": "LONSHI",
+    "variants": [
+      "LONCHO",
+      "LONSH"
+    ],
+    "pos": "noun",
+    "english_glosses": [
+      "power",
+      "fall"
+    ],
+    "hebrew_skeleton": "ל-ו-נ-ש-י",
+    "dee_ipa": "/ˈlɒn.ʃiː/",
+    "golden_dawn_ipa": "/loʊ.nɛ.ʃiː/",
+    "sources": [
+      "Key 1",
+      "Key 2",
+      "Key 7"
+    ]
+  },
+  {
+    "root": "LORSLQ",
+    "variants": [
+      "LORSLQ"
+    ],
+    "pos": "noun",
+    "english_glosses": [
+      "flowers"
+    ],
+    "hebrew_skeleton": "ל-ו-ר-ס-ל-ק",
+    "dee_ipa": "/ˈlɔːrz.lək/",
+    "golden_dawn_ipa": "/loʊ.rɛ.sɛ.lɛk/",
+    "sources": [
+      "Key 18"
+    ]
+  },
+  {
+    "root": "LUCAL",
+    "variants": [
+      "LUCAL"
+    ],
+    "pos": "noun",
+    "english_glosses": [
+      "north"
+    ],
+    "hebrew_skeleton": "ל-ו-כ-א-ל",
+    "dee_ipa": "/ˈluː.kəl/",
+    "golden_dawn_ipa": "/luː.kɑːl/",
+    "sources": [
+      "Key 1"
+    ]
+  },
+  {
+    "root": "LUCIEL",
+    "variants": [
+      "LUCIEL"
+    ],
+    "pos": "noun",
+    "english_glosses": [
+      "one",
+      "bright"
+    ],
+    "hebrew_skeleton": "ל-ו-כ-י-ע-ל",
+    "dee_ipa": "/ˈluː.siː.ɛl/",
+    "golden_dawn_ipa": "/luː.siː.ɛl/",
+    "sources": [
+      "Key 1"
+    ]
+  },
+  {
+    "root": "LUSD",
+    "variants": [
+      "LUSDAN"
+    ],
+    "pos": "noun",
+    "english_glosses": [
+      "feet",
+      "member"
+    ],
+    "hebrew_skeleton": "ל-ו-ס-ד",
+    "dee_ipa": "/lʌzd/",
+    "golden_dawn_ipa": "/luː.sɛd/",
+    "sources": [
+      "Key 18"
+    ]
+  },
+  {
+    "root": "MAD",
+    "variants": [
+      "MADA",
+      "MADRIAX"
+    ],
+    "pos": "noun",
+    "english_glosses": [
+      "God",
+      "the same your God",
+      "heavens"
+    ],
+    "hebrew_skeleton": "מ-א-ד",
+    "dee_ipa": "/mæd/",
+    "golden_dawn_ipa": "/mɑːd/",
+    "sources": [
+      "Key 1",
+      "Key 2",
+      "Key 3"
+    ]
+  },
+  {
+    "root": "MALPIRG",
+    "variants": [
+      "MALPIRGI"
+    ],
+    "pos": "noun",
+    "english_glosses": [
+      "fiery darts",
+      "fires of life"
+    ],
+    "hebrew_skeleton": "מ-א-ל-פ-י-ר-ג",
+    "dee_ipa": "/ˈmæl.pɪrɡ/",
+    "golden_dawn_ipa": "/mɑːl.piː.rɛ.ɡɛ/",
+    "sources": [
+      "Key 14"
+    ]
+  },
+  {
+    "root": "MANIN",
+    "variants": [
+      "MANIN"
+    ],
+    "pos": "noun",
+    "english_glosses": [
+      "mind",
+      "the mind"
+    ],
+    "hebrew_skeleton": "מ-א-נ-י-נ",
+    "dee_ipa": "/ˈmæn.ɪn/",
+    "golden_dawn_ipa": "/mɑː.niːn/",
+    "sources": [
+      "Key 18"
+    ]
+  },
+  {
+    "root": "MAASI",
+    "variants": [
+      "MAASI"
+    ],
+    "pos": "verb",
+    "english_glosses": [
+      "laid up"
+    ],
+    "hebrew_skeleton": "מ-א-א-ס-י",
+    "dee_ipa": "/ˈmɑː.siː/",
+    "golden_dawn_ipa": "/mɑː.ɑː.siː/",
+    "sources": [
+      "Key 7"
+    ]
+  },
+  {
+    "root": "MED",
+    "variants": [
+      "MED"
+    ],
+    "pos": "noun",
+    "english_glosses": [
+      "middle",
+      "quarter"
+    ],
+    "hebrew_skeleton": "מ-ע-ד",
+    "dee_ipa": "/mɛd/",
+    "golden_dawn_ipa": "/mɛd/",
+    "sources": [
+      "Key 1"
+    ]
+  },
+  {
+    "root": "MICMA",
+    "variants": [
+      "MICMA"
+    ],
+    "pos": "interjection",
+    "english_glosses": [
+      "behold"
+    ],
+    "hebrew_skeleton": "מ-י-כ-מ-א",
+    "dee_ipa": "/ˈmɪk.mə/",
+    "golden_dawn_ipa": "/miː.kɛ.mɑː/",
+    "sources": [
+      "Key 1",
+      "Key 2"
+    ]
+  },
+  {
+    "root": "MIAN",
+    "variants": [
+      "MIAN"
+    ],
+    "pos": "noun",
+    "english_glosses": [
+      "continuance",
+      "always"
+    ],
+    "hebrew_skeleton": "מ-י-א-נ",
+    "dee_ipa": "/ˈmaɪ.ən/",
+    "golden_dawn_ipa": "/miː.ɑːn/",
+    "sources": [
+      "Key 11"
+    ]
+  },
+  {
+    "root": "MIRC",
+    "variants": [
+      "MIRC"
+    ],
+    "pos": "preposition",
+    "english_glosses": [
+      "upon"
+    ],
+    "hebrew_skeleton": "מ-י-ר-כ",
+    "dee_ipa": "/mɪrk/",
+    "golden_dawn_ipa": "/miː.rɛk/",
+    "sources": [
+      "Key 14"
+    ]
+  },
+  {
+    "root": "MIR",
+    "variants": [
+      "MIR"
+    ],
+    "pos": "noun",
+    "english_glosses": [
+      "torment"
+    ],
+    "hebrew_skeleton": "מ-י-ר",
+    "dee_ipa": "/mɪr/",
+    "golden_dawn_ipa": "/miːr/",
+    "sources": [
+      "Key 14"
+    ]
+  },
+  {
+    "root": "MOLAP",
+    "variants": [
+      "MOLAP"
+    ],
+    "pos": "noun",
+    "english_glosses": [
+      "man",
+      "men"
+    ],
+    "hebrew_skeleton": "מ-ו-ל-א-פ",
+    "dee_ipa": "/ˈmoʊ.læp/",
+    "golden_dawn_ipa": "/moʊ.lɑːp/",
+    "sources": [
+      "Key 13"
+    ]
+  },
+  {
+    "root": "MOSPLEH",
+    "variants": [
+      "MOSPLEH"
+    ],
+    "pos": "noun",
+    "english_glosses": [
+      "horns"
+    ],
+    "hebrew_skeleton": "מ-ו-ס-פ-ל-ע-ה",
+    "dee_ipa": "/ˈmɒs.plɛh/",
+    "golden_dawn_ipa": "/moʊ.sɛ.pɛ.lɛh/",
+    "sources": [
+      "Key 14"
+    ]
+  },
+  {
+    "root": "NANBA",
+    "variants": [
+      "NANBA"
+    ],
+    "pos": "noun",
+    "english_glosses": [
+      "thorns"
+    ],
+    "hebrew_skeleton": "נ-א-נ-ב-א",
+    "dee_ipa": "/ˈnæn.bə/",
+    "golden_dawn_ipa": "/nɑː.nɛ.bɑː/",
+    "sources": [
+      "Key 14"
+    ]
+  },
+  {
+    "root": "NAPEA",
+    "variants": [
+      "NAPEAI"
+    ],
+    "pos": "noun",
+    "english_glosses": [
+      "sword",
+      "swords"
+    ],
+    "hebrew_skeleton": "נ-א-פ-ע-א",
+    "dee_ipa": "/ˈneɪ.piː/",
+    "golden_dawn_ipa": "/nɑː.pɛ.ɑː.iː/",
+    "sources": [
+      "Key 8"
+    ]
+  },
+  {
+    "root": "NAZPS",
+    "variants": [
+      "NAZPS"
+    ],
+    "pos": "noun",
+    "english_glosses": [
+      "sword"
+    ],
+    "hebrew_skeleton": "נ-א-ז-פ-ס",
+    "dee_ipa": "/ˈnæz.pəs/",
+    "golden_dawn_ipa": "/nɑː.zɒd.pɛs/",
+    "sources": [
+      "Key 8"
+    ]
+  },
+  {
+    "root": "NETAAB",
+    "variants": [
+      "NETAAB"
+    ],
+    "pos": "noun",
+    "english_glosses": [
+      "government",
+      "rule"
+    ],
+    "hebrew_skeleton": "נ-ע-ת-א-א-ב",
+    "dee_ipa": "/nɛˈtɑːb/",
+    "golden_dawn_ipa": "/nɛ.tɑː.ɑːb/",
+    "sources": [
+      "Key 1",
+      "Key 9"
+    ]
+  },
+  {
+    "root": "NIIRO",
+    "variants": [
+      "NIIRO"
+    ],
+    "pos": "noun",
+    "english_glosses": [
+      "vessels"
+    ],
+    "hebrew_skeleton": "נ-י-י-ר-ו",
+    "dee_ipa": "/ˈnaɪ.roʊ/",
+    "golden_dawn_ipa": "/niː.iː.roʊ/",
+    "sources": [
+      "Key 11"
+    ]
+  },
+  {
+    "root": "NOAN",
+    "variants": [
+      "NOAS",
+      "NOALN",
+      "NOASMI"
+    ],
+    "pos": "verb",
+    "english_glosses": [
+      "be",
+      "become",
+      "are become"
+    ],
+    "hebrew_skeleton": "נ-ו-א-נ",
+    "dee_ipa": "/ˈnoʊ.ən/",
+    "golden_dawn_ipa": "/noʊ.ɑːn/",
+    "sources": [
+      "Key 1",
+      "Key 2",
+      "Key 3"
+    ]
+  },
+  {
+    "root": "NOBLOH",
+    "variants": [
+      "NOBLOH"
+    ],
+    "pos": "noun",
+    "english_glosses": [
+      "palms of hands"
+    ],
+    "hebrew_skeleton": "נ-ו-ב-ל-ו-ה",
+    "dee_ipa": "/ˈnɒb.loʊ/",
+    "golden_dawn_ipa": "/noʊ.bɛ.loʊ.hɛ/",
+    "sources": [
+      "Key 15"
+    ]
+  },
+  {
+    "root": "NOCO",
+    "variants": [
+      "NOCO"
+    ],
+    "pos": "noun",
+    "english_glosses": [
+      "servant"
+    ],
+    "hebrew_skeleton": "נ-ו-כ-ו",
+    "dee_ipa": "/ˈnoʊ.koʊ/",
+    "golden_dawn_ipa": "/noʊ.koʊ/",
+    "sources": [
+      "Key 13"
+    ]
+  },
+  {
+    "root": "NONCA",
+    "variants": [
+      "NONCA"
+    ],
+    "pos": "pronoun",
+    "english_glosses": [
+      "you",
+      "to you"
+    ],
+    "hebrew_skeleton": "נ-ו-נ-כ-א",
+    "dee_ipa": "/ˈnɒn.kə/",
+    "golden_dawn_ipa": "/noʊ.nɛ.kɑː/",
+    "sources": [
+      "Key 1",
+      "Key 2"
+    ]
+  },
+  {
+    "root": "NOTHOA",
+    "variants": [
+      "NOTHOA"
+    ],
+    "pos": "preposition",
+    "english_glosses": [
+      "in the midst"
+    ],
+    "hebrew_skeleton": "נ-ו-ת-ה-ו-א",
+    "dee_ipa": "/ˈnɒθ.oʊ.ə/",
+    "golden_dawn_ipa": "/noʊ.tɛ.hoʊ.ɑː/",
+    "sources": [
+      "Key 1",
+      "Key 2"
+    ]
+  },
+  {
+    "root": "O",
+    "variants": [
+      "O"
+    ],
+    "pos": "preposition",
+    "english_glosses": [
+      "of",
+      "five"
+    ],
+    "hebrew_skeleton": "ו",
+    "dee_ipa": "/oʊ/",
+    "golden_dawn_ipa": "/oʊ/",
+    "sources": [
+      "Key 1",
+      "Key 3"
+    ]
+  },
+  {
+    "root": "OALI",
+    "variants": [
+      "OALI"
+    ],
+    "pos": "verb",
+    "english_glosses": [
+      "placed",
+      "put"
+    ],
+    "hebrew_skeleton": "ו-א-ל-י",
+    "dee_ipa": "/ˈoʊ.əl.iː/",
+    "golden_dawn_ipa": "/oʊ.ɑː.liː/",
+    "sources": [
+      "Key 11"
+    ]
+  },
+  {
+    "root": "OBELISONG",
+    "variants": [
+      "OBELISONG"
+    ],
+    "pos": "noun",
+    "english_glosses": [
+      "pleasurable deliverer",
+      "deliverer"
+    ],
+    "hebrew_skeleton": "ו-ב-ע-ל-י-ס-ו-נ-ג",
+    "dee_ipa": "/oʊˈbɛl.ɪ.sɒŋ/",
+    "golden_dawn_ipa": "/oʊ.bɛ.liː.sɒn.ɡɛ/",
+    "sources": [
+      "Key 7"
+    ]
+  },
+  {
+    "root": "OBNEX",
+    "variants": [
+      "OBNEX"
+    ],
+    "pos": "noun",
+    "english_glosses": [
+      "halves"
+    ],
+    "hebrew_skeleton": "ו-ב-נ-ע-צ",
+    "dee_ipa": "/ˈɒb.nɛks/",
+    "golden_dawn_ipa": "/oʊ.bɛ.nɛks/",
+    "sources": [
+      "Key 16"
+    ]
+  },
+  {
+    "root": "OD",
+    "variants": [
+      "OD"
+    ],
+    "pos": "conjunction",
+    "english_glosses": [
+      "and"
+    ],
+    "hebrew_skeleton": "ו-ד",
+    "dee_ipa": "/ɒd/",
+    "golden_dawn_ipa": "/oʊd/",
+    "sources": [
+      "Key 1",
+      "Key 2",
+      "Key 3"
+    ]
+  },
+  {
+    "root": "ODO",
+    "variants": [
+      "ODO"
+    ],
+    "pos": "verb",
+    "english_glosses": [
+      "open"
+    ],
+    "hebrew_skeleton": "ו-ד-ו",
+    "dee_ipa": "/ˈoʊ.doʊ/",
+    "golden_dawn_ipa": "/oʊ.duː/",
+    "sources": [
+      "Key 1",
+      "Key 2"
+    ]
+  },
+  {
+    "root": "OECRIMI",
+    "variants": [
+      "OECRIMI"
+    ],
+    "pos": "verb",
+    "english_glosses": [
+      "sing praises",
+      "praise"
+    ],
+    "hebrew_skeleton": "ו-ע-כ-ר-י-מ-י",
+    "dee_ipa": "/oʊˈeɪ.krɪm.iː/",
+    "golden_dawn_ipa": "/oʊ.ɛ.kɛ.riː.miː/",
+    "sources": [
+      "Key 7"
+    ]
+  },
+  {
+    "root": "OHIO",
+    "variants": [
+      "OHIO"
+    ],
+    "pos": "noun",
+    "english_glosses": [
+      "woe"
+    ],
+    "hebrew_skeleton": "ו-ה-י-ו",
+    "dee_ipa": "/oʊˈhaɪ.oʊ/",
+    "golden_dawn_ipa": "/oʊ.hiː.oʊ/",
+    "sources": [
+      "Key 14"
+    ]
+  },
+  {
+    "root": "OHORELA",
+    "variants": [
+      "OHORELA"
+    ],
+    "pos": "verb",
+    "english_glosses": [
+      "made law"
+    ],
+    "hebrew_skeleton": "ו-ה-ו-ר-ע-ל-א",
+    "dee_ipa": "/oʊ.hɔːˈrɛl.ə/",
+    "golden_dawn_ipa": "/oʊ.hoʊ.rɛ.lɑː/",
+    "sources": [
+      "Key 1"
+    ]
+  },
+  {
+    "root": "OL",
+    "variants": [
+      "OL"
+    ],
+    "pos": "pronoun",
+    "english_glosses": [
+      "I",
+      "myself"
+    ],
+    "hebrew_skeleton": "ו-ל",
+    "dee_ipa": "/ɒl/",
+    "golden_dawn_ipa": "/oʊl/",
+    "sources": [
+      "Key 1",
+      "Key 2"
+    ]
+  },
+  {
+    "root": "OLLOG",
+    "variants": [
+      "OLLOG"
+    ],
+    "pos": "noun",
+    "english_glosses": [
+      "man"
+    ],
+    "hebrew_skeleton": "ו-ל-ל-ו-ג",
+    "dee_ipa": "/ˈɒl.ɒɡ/",
+    "golden_dawn_ipa": "/oʊ.lɛ.lɒɡ/",
+    "sources": [
+      "Key 18"
+    ]
+  },
+  {
+    "root": "OLN",
+    "variants": [
+      "OLN"
+    ],
+    "pos": "verb",
+    "english_glosses": [
+      "made"
+    ],
+    "hebrew_skeleton": "ו-ל-נ",
+    "dee_ipa": "/ɒln/",
+    "golden_dawn_ipa": "/oʊ.lɛn/",
+    "sources": [
+      "Key 8"
+    ]
+  },
+  {
+    "root": "OM",
+    "variants": [
+      "OMA"
+    ],
+    "pos": "verb",
+    "english_glosses": [
+      "understand",
+      "know"
+    ],
+    "hebrew_skeleton": "ו-מ",
+    "dee_ipa": "/ɒm/",
+    "golden_dawn_ipa": "/oʊm/",
+    "sources": [
+      "Key 1",
+      "Key 2"
+    ]
+  },
+  {
+    "root": "OMAX",
+    "variants": [
+      "OMAX"
+    ],
+    "pos": "verb",
+    "english_glosses": [
+      "know"
+    ],
+    "hebrew_skeleton": "ו-מ-א-צ",
+    "dee_ipa": "/ˈoʊ.mæks/",
+    "golden_dawn_ipa": "/oʊ.mɑː.ɛks/",
+    "sources": [
+      "Key 14"
+    ]
+  },
+  {
+    "root": "OOANOAN",
+    "variants": [
+      "OOANOAN"
+    ],
+    "pos": "noun",
+    "english_glosses": [
+      "eyes"
+    ],
+    "hebrew_skeleton": "ו-ו-א-נ-ו-א-נ",
+    "dee_ipa": "/oʊˈæn.oʊ.ən/",
+    "golden_dawn_ipa": "/oʊ.oʊ.ɑː.noʊ.ɑːn/",
+    "sources": [
+      "Key 18"
+    ]
+  },
+  {
+    "root": "OQ",
+    "variants": [
+      "OQ"
+    ],
+    "pos": "verb",
+    "english_glosses": [
+      "but"
+    ],
+    "hebrew_skeleton": "ו-ק",
+    "dee_ipa": "/ɒk/",
+    "golden_dawn_ipa": "/oʊk/",
+    "sources": [
+      "Key 8"
+    ]
+  },
+  {
+    "root": "OROSBA",
+    "variants": [
+      "OROSBA"
+    ],
+    "pos": "verb",
+    "english_glosses": [
+      "diminish",
+      "overthrow"
+    ],
+    "hebrew_skeleton": "ו-ר-ו-ס-ב-א",
+    "dee_ipa": "/ɒˈrɒz.bə/",
+    "golden_dawn_ipa": "/oʊ.roʊ.sɛ.bɑː/",
+    "sources": [
+      "Key 10"
+    ]
+  },
+  {
+    "root": "ORS",
+    "variants": [
+      "ORSBA",
+      "ORSCATBL"
+    ],
+    "pos": "noun",
+    "english_glosses": [
+      "darkness",
+      "drunken"
+    ],
+    "hebrew_skeleton": "ו-ר-ס",
+    "dee_ipa": "/ɔːrs/",
+    "golden_dawn_ipa": "/oʊ.rɛs/",
+    "sources": [
+      "Key 14",
+      "Key 15"
+    ]
+  },
+  {
+    "root": "OTHIL",
+    "variants": [
+      "OTHIL"
+    ],
+    "pos": "verb",
+    "english_glosses": [
+      "set",
+      "seated",
+      "I have set"
+    ],
+    "hebrew_skeleton": "ו-ת-ה-י-ל",
+    "dee_ipa": "/ˈɒθ.ɪl/",
+    "golden_dawn_ipa": "/oʊ.tɛ.hiːl/",
+    "sources": [
+      "Key 1"
+    ]
+  },
+  {
+    "root": "PANPIR",
+    "variants": [
+      "PANPIR"
+    ],
+    "pos": "noun",
+    "english_glosses": [
+      "pour down"
+    ],
+    "hebrew_skeleton": "פ-א-נ-פ-י-ר",
+    "dee_ipa": "/ˈpæn.pɪr/",
+    "golden_dawn_ipa": "/pɑː.nɛ.piːr/",
+    "sources": [
+      "Key 18"
+    ]
+  },
+  {
+    "root": "PAOMBA",
+    "variants": [
+      "PAOMBA"
+    ],
+    "pos": "noun",
+    "english_glosses": [
+      "members"
+    ],
+    "hebrew_skeleton": "פ-א-ו-מ-ב-א",
+    "dee_ipa": "/peɪˈɒm.bə/",
+    "golden_dawn_ipa": "/pɑː.oʊ.mɛ.bɑː/",
+    "sources": [
+      "Key 14"
+    ]
+  },
+  {
+    "root": "PAPNOR",
+    "variants": [
+      "PAPNOR"
+    ],
+    "pos": "noun",
+    "english_glosses": [
+      "remembrance"
+    ],
+    "hebrew_skeleton": "פ-א-פ-נ-ו-ר",
+    "dee_ipa": "/ˈpæp.nɔːr/",
+    "golden_dawn_ipa": "/pɑː.pɛ.noʊr/",
+    "sources": [
+      "Key 11"
+    ]
+  },
+  {
+    "root": "PARACALEDA",
+    "variants": [
+      "PARACALEDA"
+    ],
+    "pos": "noun",
+    "english_glosses": [
+      "vessels of wrath"
+    ],
+    "hebrew_skeleton": "פ-א-ר-א-כ-א-ל-ע-ד-א",
+    "dee_ipa": "/pær.ə.kəˈliː.də/",
+    "golden_dawn_ipa": "/pɑː.rɑː.kɑː.lɛ.dɑː/",
+    "sources": [
+      "Key 11"
+    ]
+  },
+  {
+    "root": "PARACH",
+    "variants": [
+      "PARACH"
+    ],
+    "pos": "noun",
+    "english_glosses": [
+      "equal"
+    ],
+    "hebrew_skeleton": "פ-א-ר-א-ח",
+    "dee_ipa": "/ˈpær.æk/",
+    "golden_dawn_ipa": "/pɑː.rɑːk/",
+    "sources": [
+      "Key 4"
+    ]
+  },
+  {
+    "root": "PETAHEL",
+    "variants": [
+      "PETAHEL"
+    ],
+    "pos": "noun",
+    "english_glosses": [
+      "firmament",
+      "rock"
+    ],
+    "hebrew_skeleton": "פ-ע-ת-א-ה-ע-ל",
+    "dee_ipa": "/pɛˈtɑː.hɛl/",
+    "golden_dawn_ipa": "/pɛ.tɑː.hɛl/",
+    "sources": [
+      "Key 18"
+    ]
+  },
+  {
+    "root": "PIR",
+    "variants": [
+      "PIRO",
+      "PIRIA"
+    ],
+    "pos": "noun",
+    "english_glosses": [
+      "holy",
+      "holy ones"
+    ],
+    "hebrew_skeleton": "פ-י-ר",
+    "dee_ipa": "/pɪr/",
+    "golden_dawn_ipa": "/piːr/",
+    "sources": [
+      "Key 1",
+      "Key 8"
+    ]
+  },
+  {
+    "root": "POAMAL",
+    "variants": [
+      "POAMAL"
+    ],
+    "pos": "noun",
+    "english_glosses": [
+      "palace"
+    ],
+    "hebrew_skeleton": "פ-ו-א-מ-א-ל",
+    "dee_ipa": "/poʊˈæm.əl/",
+    "golden_dawn_ipa": "/poʊ.ɑː.mɑːl/",
+    "sources": [
+      "Key 1"
+    ]
+  },
+  {
+    "root": "POILP",
+    "variants": [
+      "POILP"
+    ],
+    "pos": "verb",
+    "english_glosses": [
+      "divided",
+      "are divided"
+    ],
+    "hebrew_skeleton": "פ-ו-י-ל-פ",
+    "dee_ipa": "/pɔɪlp/",
+    "golden_dawn_ipa": "/poʊ.iː.lɛp/",
+    "sources": [
+      "Key 1"
+    ]
+  },
+  {
+    "root": "PRGE",
+    "variants": [
+      "PRGEL",
+      "PRG"
+    ],
+    "pos": "noun",
+    "english_glosses": [
+      "fire",
+      "flame"
+    ],
+    "hebrew_skeleton": "פ-ר-ג-ע",
+    "dee_ipa": "/pɜːrɡ/",
+    "golden_dawn_ipa": "/pɛ.rɛ.ɡɛ/",
+    "sources": [
+      "Key 6",
+      "Key 7"
+    ]
+  },
+  {
+    "root": "PUGO",
+    "variants": [
+      "PUGO"
+    ],
+    "pos": "verb",
+    "english_glosses": [
+      "unto"
+    ],
+    "hebrew_skeleton": "פ-ו-ג-ו",
+    "dee_ipa": "/ˈpjuː.ɡoʊ/",
+    "golden_dawn_ipa": "/puː.ɡoʊ/",
+    "sources": [
+      "Key 14"
+    ]
+  },
+  {
+    "root": "QAA",
+    "variants": [
+      "QAAN",
+      "QAAL"
+    ],
+    "pos": "noun",
+    "english_glosses": [
+      "creation",
+      "garments",
+      "creator"
+    ],
+    "hebrew_skeleton": "ק-א-א",
+    "dee_ipa": "/kɑː/",
+    "golden_dawn_ipa": "/kɑː.ɑː/",
+    "sources": [
+      "Key 1",
+      "Key 2"
+    ]
+  },
+  {
+    "root": "QUASB",
+    "variants": [
+      "QUASB"
+    ],
+    "pos": "verb",
+    "english_glosses": [
+      "destroy"
+    ],
+    "hebrew_skeleton": "ק-ו-א-ס-ב",
+    "dee_ipa": "/kwæzb/",
+    "golden_dawn_ipa": "/kʊ.ɑː.sɛb/",
+    "sources": [
+      "Key 13"
+    ]
+  },
+  {
+    "root": "QUIIN",
+    "variants": [
+      "QUIIN"
+    ],
+    "pos": "noun",
+    "english_glosses": [
+      "wherein"
+    ],
+    "hebrew_skeleton": "ק-ו-י-י-נ",
+    "dee_ipa": "/kwiːn/",
+    "golden_dawn_ipa": "/kʊ.iː.iːn/",
+    "sources": [
+      "Key 1"
+    ]
+  },
+  {
+    "root": "RAAS",
+    "variants": [
+      "RAASI"
+    ],
+    "pos": "noun",
+    "english_glosses": [
+      "east"
+    ],
+    "hebrew_skeleton": "ר-א-א-ס",
+    "dee_ipa": "/rɑːs/",
+    "golden_dawn_ipa": "/rɑː.ɑːs/",
+    "sources": [
+      "Key 1",
+      "Key 2"
+    ]
+  },
+  {
+    "root": "RESTEL",
+    "variants": [
+      "RESTEL"
+    ],
+    "pos": "verb",
+    "english_glosses": [
+      "praise"
+    ],
+    "hebrew_skeleton": "ר-ע-ס-ת-ע-ל",
+    "dee_ipa": "/ˈrɛs.tɛl/",
+    "golden_dawn_ipa": "/rɛ.sɛ.tɛl/",
+    "sources": [
+      "Key 11"
+    ]
+  },
+  {
+    "root": "RIIOR",
+    "variants": [
+      "RIIOR"
+    ],
+    "pos": "noun",
+    "english_glosses": [
+      "widow"
+    ],
+    "hebrew_skeleton": "ר-י-י-ו-ר",
+    "dee_ipa": "/ˈraɪ.ər/",
+    "golden_dawn_ipa": "/riː.iː.oʊr/",
+    "sources": [
+      "Key 14"
+    ]
+  },
+  {
+    "root": "ROR",
+    "variants": [
+      "ROR"
+    ],
+    "pos": "noun",
+    "english_glosses": [
+      "sun"
+    ],
+    "hebrew_skeleton": "ר-ו-ר",
+    "dee_ipa": "/rɔːr/",
+    "golden_dawn_ipa": "/roʊr/",
+    "sources": [
+      "Key 18"
+    ]
+  },
+  {
+    "root": "SALMAN",
+    "variants": [
+      "SALMAN"
+    ],
+    "pos": "noun",
+    "english_glosses": [
+      "house"
+    ],
+    "hebrew_skeleton": "ס-א-ל-מ-א-נ",
+    "dee_ipa": "/ˈsæl.mən/",
+    "golden_dawn_ipa": "/sɑː.lɛ.mɑːn/",
+    "sources": [
+      "Key 2",
+      "Key 3"
+    ]
+  },
+  {
+    "root": "SER",
+    "variants": [
+      "SER"
+    ],
+    "pos": "verb",
+    "english_glosses": [
+      "mourning"
+    ],
+    "hebrew_skeleton": "ס-ע-ר",
+    "dee_ipa": "/sɛr/",
+    "golden_dawn_ipa": "/sɛr/",
+    "sources": [
+      "Key 14"
+    ]
+  },
+  {
+    "root": "SIAION",
+    "variants": [
+      "SIAION"
+    ],
+    "pos": "noun",
+    "english_glosses": [
+      "temple"
+    ],
+    "hebrew_skeleton": "ס-י-א-י-ו-נ",
+    "dee_ipa": "/ˈsaɪ.ən/",
+    "golden_dawn_ipa": "/siː.ɑː.iː.oʊn/",
+    "sources": [
+      "Key 15"
+    ]
+  },
+  {
+    "root": "SOBAM",
+    "variants": [
+      "SOBHA",
+      "SOBOL",
+      "SOBAP"
+    ],
+    "pos": "pronoun",
+    "english_glosses": [
+      "whom",
+      "whose"
+    ],
+    "hebrew_skeleton": "ס-ו-ב-א-מ",
+    "dee_ipa": "/ˈsoʊ.bæm/",
+    "golden_dawn_ipa": "/soʊ.bɑːm/",
+    "sources": [
+      "Key 1",
+      "Key 2",
+      "Key 5"
+    ]
+  },
+  {
+    "root": "SOLPETH",
+    "variants": [
+      "SOLPETH"
+    ],
+    "pos": "verb",
+    "english_glosses": [
+      "hearken"
+    ],
+    "hebrew_skeleton": "ס-ו-ל-פ-ע-ת-ה",
+    "dee_ipa": "/ˈsɒl.pɛθ/",
+    "golden_dawn_ipa": "/soʊ.lɛ.pɛt/",
+    "sources": [
+      "Key 1"
+    ]
+  },
+  {
+    "root": "SONF",
+    "variants": [
+      "SONUF"
+    ],
+    "pos": "verb",
+    "english_glosses": [
+      "reign",
+      "rule"
+    ],
+    "hebrew_skeleton": "ס-ו-נ-פ",
+    "dee_ipa": "/sɒnf/",
+    "golden_dawn_ipa": "/soʊ.nuːf/",
+    "sources": [
+      "Key 1"
+    ]
+  },
+  {
+    "root": "SYMP",
+    "variants": [
+      "SYMP"
+    ],
+    "pos": "noun",
+    "english_glosses": [
+      "another"
+    ],
+    "hebrew_skeleton": "ס-י-מ-פ",
+    "dee_ipa": "/sɪmp/",
+    "golden_dawn_ipa": "/siː.mɛp/",
+    "sources": [
+      "Key 14"
+    ]
+  },
+  {
+    "root": "TA",
+    "variants": [
+      "TA"
+    ],
+    "pos": "conjunction",
+    "english_glosses": [
+      "as"
+    ],
+    "hebrew_skeleton": "ת-א",
+    "dee_ipa": "/tɑː/",
+    "golden_dawn_ipa": "/tɑː/",
+    "sources": [
+      "Key 1",
+      "Key 2"
+    ]
+  },
+  {
+    "root": "TALHO",
+    "variants": [
+      "TALHO"
+    ],
+    "pos": "verb",
+    "english_glosses": [
+      "cup",
+      "company"
+    ],
+    "hebrew_skeleton": "ת-א-ל-ה-ו",
+    "dee_ipa": "/ˈtæl.hoʊ/",
+    "golden_dawn_ipa": "/tɑː.lɛ.huː/",
+    "sources": [
+      "Key 1",
+      "Key 11"
+    ]
+  },
+  {
+    "root": "TAOAGLA",
+    "variants": [
+      "TAOAGLA"
+    ],
+    "pos": "noun",
+    "english_glosses": [
+      "all creatures"
+    ],
+    "hebrew_skeleton": "ת-א-ו-א-ג-ל-א",
+    "dee_ipa": "/teɪ.oʊˈæɡ.lə/",
+    "golden_dawn_ipa": "/tɑː.oʊ.ɑː.ɡɛ.lɑː/",
+    "sources": [
+      "Key 5"
+    ]
+  },
+  {
+    "root": "TABA",
+    "variants": [
+      "TABAAN"
+    ],
+    "pos": "verb",
+    "english_glosses": [
+      "govern",
+      "governor"
+    ],
+    "hebrew_skeleton": "ת-א-ב-א",
+    "dee_ipa": "/ˈteɪ.bə/",
+    "golden_dawn_ipa": "/tɑː.bɑːn/",
+    "sources": [
+      "Key 6"
+    ]
+  },
+  {
+    "root": "TIBIBP",
+    "variants": [
+      "TIBIBP"
+    ],
+    "pos": "noun",
+    "english_glosses": [
+      "sorrow"
+    ],
+    "hebrew_skeleton": "ת-י-ב-י-ב-פ",
+    "dee_ipa": "/ˈtɪb.ɪbp/",
+    "golden_dawn_ipa": "/tiː.biː.bɛp/",
+    "sources": [
+      "Key 14"
+    ]
+  },
+  {
+    "root": "TOATAR",
+    "variants": [
+      "TOATAR"
+    ],
+    "pos": "verb",
+    "english_glosses": [
+      "hearkened"
+    ],
+    "hebrew_skeleton": "ת-ו-א-ת-א-ר",
+    "dee_ipa": "/toʊˈeɪ.tər/",
+    "golden_dawn_ipa": "/toʊ.ɑː.tɑːr/",
+    "sources": [
+      "Key 11"
+    ]
+  },
+  {
+    "root": "TOL",
+    "variants": [
+      "TOLO",
+      "TORGU"
+    ],
+    "pos": "noun",
+    "english_glosses": [
+      "all",
+      "creature"
+    ],
+    "hebrew_skeleton": "ת-ו-ל",
+    "dee_ipa": "/tɒl/",
+    "golden_dawn_ipa": "/toʊl/",
+    "sources": [
+      "Key 1",
+      "Key 3"
+    ]
+  },
+  {
+    "root": "TORZU",
+    "variants": [
+      "TORZUL"
+    ],
+    "pos": "verb",
+    "english_glosses": [
+      "arise"
+    ],
+    "hebrew_skeleton": "ת-ו-ר-ז-ו",
+    "dee_ipa": "/ˈtɔːr.zuː/",
+    "golden_dawn_ipa": "/toʊ.rɛ.zɒd.uː/",
+    "sources": [
+      "Key 1",
+      "Key 2"
+    ]
+  },
+  {
+    "root": "UCIM",
+    "variants": [
+      "UCIM"
+    ],
+    "pos": "noun",
+    "english_glosses": [
+      "frown not"
+    ],
+    "hebrew_skeleton": "ו-כ-י-מ",
+    "dee_ipa": "/ˈjuː.sɪm/",
+    "golden_dawn_ipa": "/uː.siːm/",
+    "sources": [
+      "Key 11"
+    ]
+  },
+  {
+    "root": "UGAR",
+    "variants": [
+      "UGARG"
+    ],
+    "pos": "noun",
+    "english_glosses": [
+      "strength"
+    ],
+    "hebrew_skeleton": "ו-ג-א-ר",
+    "dee_ipa": "/ˈjuː.ɡər/",
+    "golden_dawn_ipa": "/uː.ɡɑːr/",
+    "sources": [
+      "Key 11"
+    ]
+  },
+  {
+    "root": "ULCININ",
+    "variants": [
+      "ULCININ"
+    ],
+    "pos": "verb",
+    "english_glosses": [
+      "happy"
+    ],
+    "hebrew_skeleton": "ו-ל-כ-י-נ-י-נ",
+    "dee_ipa": "/ʌlˈsɪn.ɪn/",
+    "golden_dawn_ipa": "/uː.lɛ.siː.niːn/",
+    "sources": [
+      "Key 17"
+    ]
+  },
+  {
+    "root": "UM",
+    "variants": [
+      "UM"
+    ],
+    "pos": "verb",
+    "english_glosses": [
+      "are",
+      "be"
+    ],
+    "hebrew_skeleton": "ו-מ",
+    "dee_ipa": "/ʌm/",
+    "golden_dawn_ipa": "/uːm/",
+    "sources": [
+      "Key 8"
+    ]
+  },
+  {
+    "root": "UNPHEL",
+    "variants": [
+      "UNPHEL"
+    ],
+    "pos": "noun",
+    "english_glosses": [
+      "anger",
+      "wrath"
+    ],
+    "hebrew_skeleton": "ו-נ-פ-ה-ע-ל",
+    "dee_ipa": "/ˈʌn.fɛl/",
+    "golden_dawn_ipa": "/uː.nɛ.fɛl/",
+    "sources": [
+      "Key 1",
+      "Key 2"
+    ]
+  },
+  {
+    "root": "UNAL",
+    "variants": [
+      "UNAL"
+    ],
+    "pos": "pronoun",
+    "english_glosses": [
+      "these"
+    ],
+    "hebrew_skeleton": "ו-נ-א-ל",
+    "dee_ipa": "/ˈjuː.nəl/",
+    "golden_dawn_ipa": "/uː.nɑːl/",
+    "sources": [
+      "Key 2"
+    ]
+  },
+  {
+    "root": "URBS",
+    "variants": [
+      "URBS"
+    ],
+    "pos": "verb",
+    "english_glosses": [
+      "beautified"
+    ],
+    "hebrew_skeleton": "ו-ר-ב-ס",
+    "dee_ipa": "/ɜːrbz/",
+    "golden_dawn_ipa": "/uː.rɛ.bɛs/",
+    "sources": [
+      "Key 18"
+    ]
+  },
+  {
+    "root": "VAUN",
+    "variants": [
+      "VAUNS"
+    ],
+    "pos": "verb",
+    "english_glosses": [
+      "work",
+      "works"
+    ],
+    "hebrew_skeleton": "ו-א-ו-נ",
+    "dee_ipa": "/vɔːn/",
+    "golden_dawn_ipa": "/vɑː.uːn/",
+    "sources": [
+      "Key 6"
+    ]
+  },
+  {
+    "root": "VEP",
+    "variants": [
+      "VEP"
+    ],
+    "pos": "noun",
+    "english_glosses": [
+      "flame"
+    ],
+    "hebrew_skeleton": "ו-ע-פ",
+    "dee_ipa": "/vɛp/",
+    "golden_dawn_ipa": "/vɛp/",
+    "sources": [
+      "Key 8"
+    ]
+  },
+  {
+    "root": "VIRG",
+    "variants": [
+      "VIRG"
+    ],
+    "pos": "noun",
+    "english_glosses": [
+      "nests"
+    ],
+    "hebrew_skeleton": "ו-י-ר-ג",
+    "dee_ipa": "/vɜːrɡ/",
+    "golden_dawn_ipa": "/viː.rɛ.ɡɛ/",
+    "sources": [
+      "Key 6"
+    ]
+  },
+  {
+    "root": "VOADIS",
+    "variants": [
+      "VOADIS"
+    ],
+    "pos": "noun",
+    "english_glosses": [
+      "crown"
+    ],
+    "hebrew_skeleton": "ו-ו-א-ד-י-ס",
+    "dee_ipa": "/ˈvoʊ.æd.ɪs/",
+    "golden_dawn_ipa": "/voʊ.ɑː.diːs/",
+    "sources": [
+      "Key 18"
+    ]
+  },
+  {
+    "root": "VOMSA",
+    "variants": [
+      "VOMSARG"
+    ],
+    "pos": "noun",
+    "english_glosses": [
+      "every one",
+      "wrath"
+    ],
+    "hebrew_skeleton": "ו-ו-מ-ס-א",
+    "dee_ipa": "/ˈvɒm.sə/",
+    "golden_dawn_ipa": "/voʊ.mɛ.sɑː/",
+    "sources": [
+      "Key 1"
+    ]
+  },
+  {
+    "root": "VONPH",
+    "variants": [
+      "VONPHO"
+    ],
+    "pos": "noun",
+    "english_glosses": [
+      "wrath"
+    ],
+    "hebrew_skeleton": "ו-ו-נ-פ-ה",
+    "dee_ipa": "/vɒnf/",
+    "golden_dawn_ipa": "/voʊ.nɛ.fɛ/",
+    "sources": [
+      "Key 1",
+      "Key 7"
+    ]
+  },
+  {
+    "root": "VORSG",
+    "variants": [
+      "VORS"
+    ],
+    "pos": "preposition",
+    "english_glosses": [
+      "over you",
+      "over"
+    ],
+    "hebrew_skeleton": "ו-ו-ר-ס-ג",
+    "dee_ipa": "/vɔːrzɡ/",
+    "golden_dawn_ipa": "/voʊ.rɛ.sɛ.ɡɛ/",
+    "sources": [
+      "Key 1"
+    ]
+  },
+  {
+    "root": "VOVIN",
+    "variants": [
+      "VOVINA"
+    ],
+    "pos": "noun",
+    "english_glosses": [
+      "dragon"
+    ],
+    "hebrew_skeleton": "ו-ו-ו-י-נ",
+    "dee_ipa": "/ˈvoʊ.vɪn/",
+    "golden_dawn_ipa": "/voʊ.viː.nɑː/",
+    "sources": [
+      "Key 1",
+      "Key 17"
+    ]
+  },
+  {
+    "root": "ZACAR",
+    "variants": [
+      "ZACARE"
+    ],
+    "pos": "verb",
+    "english_glosses": [
+      "move",
+      "come forth",
+      "show yourselves"
+    ],
+    "hebrew_skeleton": "ז-א-כ-א-ר",
+    "dee_ipa": "/zæˈkɑːr/",
+    "golden_dawn_ipa": "/zɒd.ɑː.kɑːr/",
+    "sources": [
+      "Key 1",
+      "Key 2",
+      "Key 3"
+    ]
+  },
+  {
+    "root": "ZAMRAN",
+    "variants": [
+      "ZAMRAN"
+    ],
+    "pos": "verb",
+    "english_glosses": [
+      "show yourselves",
+      "appear"
+    ],
+    "hebrew_skeleton": "ז-א-מ-ר-א-נ",
+    "dee_ipa": "/ˈzæm.ræn/",
+    "golden_dawn_ipa": "/zɒd.ɑː.mɛ.rɑːn/",
+    "sources": [
+      "Key 1",
+      "Key 2"
+    ]
+  },
+  {
+    "root": "ZCHIS",
+    "variants": [
+      "ZCHIS"
+    ],
+    "pos": "verb",
+    "english_glosses": [
+      "they are"
+    ],
+    "hebrew_skeleton": "ז-ח-י-ס",
+    "dee_ipa": "/zkɪs/",
+    "golden_dawn_ipa": "/zɒd.kiːs/",
+    "sources": [
+      "Key 1",
+      "Key 2"
+    ]
+  },
+  {
+    "root": "ZIROP",
+    "variants": [
+      "ZIROM"
+    ],
+    "pos": "verb",
+    "english_glosses": [
+      "were"
+    ],
+    "hebrew_skeleton": "ז-י-ר-ו-פ",
+    "dee_ipa": "/ˈzɪr.ɒp/",
+    "golden_dawn_ipa": "/zɒd.iː.rɒp/",
+    "sources": [
+      "Key 1",
+      "Key 2"
+    ]
+  },
+  {
+    "root": "ZIXLAY",
+    "variants": [
+      "ZIXLAY"
+    ],
+    "pos": "verb",
+    "english_glosses": [
+      "stir up"
+    ],
+    "hebrew_skeleton": "ז-י-צ-ל-א-י",
+    "dee_ipa": "/ˈzɪks.leɪ/",
+    "golden_dawn_ipa": "/zɒd.iː.kɛ.sɛ.lɑː.iː/",
+    "sources": [
+      "Key 17"
+    ]
+  },
+  {
+    "root": "ZLDAR",
+    "variants": [
+      "ZLDAR"
+    ],
+    "pos": "noun",
+    "english_glosses": [
+      "water"
+    ],
+    "hebrew_skeleton": "ז-ל-ד-א-ר",
+    "dee_ipa": "/zəlˈdɑːr/",
+    "golden_dawn_ipa": "/zɒd.lɛ.dɑːr/",
+    "sources": [
+      "Key 18"
+    ]
+  },
+  {
+    "root": "ZONG",
+    "variants": [
+      "ZONG"
+    ],
+    "pos": "noun",
+    "english_glosses": [
+      "wind",
+      "winds"
+    ],
+    "hebrew_skeleton": "ז-ו-נ-ג",
+    "dee_ipa": "/zɒŋ/",
+    "golden_dawn_ipa": "/zɒd.oʊn.ɡɛ/",
+    "sources": [
+      "Key 5"
+    ]
+  }
+]

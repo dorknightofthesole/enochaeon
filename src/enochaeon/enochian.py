@@ -1,9 +1,8 @@
 """Speak a text that is already written in Enochian letters.
 
-A call is not English. The letters are the ones Dee wrote (A, B, C, and the
-rest), and the same syllable rule used for a cipher word reads them: an open
-vowel is long, a closed vowel is short, and a word with no vowel is letter-names.
-A word-initial I before a vowel is Y, which is how Dee said Iad.
+A call is not English. A listed word is spoken from dee_ipa or golden_dawn_ipa.
+Piper speaks that IPA. espeak speaks the phonemes derived from it. A word
+with no reading is left out. The cipher does not come here.
 """
 
 from __future__ import annotations
@@ -18,12 +17,11 @@ from enochaeon.alphabet import (
     PUNCT_SKIP,
     TransliterationError,
     pronounce_syllables,
-    syllable_forms,
 )
-from enochaeon.audio import SAMPLE_RATE, Gaps, silence, write_wav
+from enochaeon.audio import Gaps, silence, write_wav
 from enochaeon.config import CallVoice
 from enochaeon.errors import EnochaeonError
-from enochaeon.synthesize import SPEED, speak
+from enochaeon.synthesize import speak
 
 # A comma stays inside the line. A stop ends it. Digits have no Enochian letter.
 _BREAKS = PUNCT_BREAKS
@@ -108,75 +106,53 @@ def parse(text: str) -> list[list[Letter] | str]:
                 raise TransliterationError(cleaned[index], index)
             word.append(letter)
             index += 1
-        segments.append(_initial_i(word))
+        segments.append(word)
     return _trim_gaps(segments)
 
 
 def phonetic_text(text: str) -> str:
-    """One espeak string per Enochian word."""
+    """The letter rule. Calls speak a lexicon reading, and leave other words out."""
     parts: list[str] = []
     for segment in parse(text):
         if isinstance(segment, str):
             parts.append(segment)
             continue
-        parts.append(pronounce_syllables(segment))
+        parts.append(pronounce_syllables(_initial_i(segment)))
     return "".join(parts)
 
 
-# A one-vowel call word shorter than this is held until it is a syllable you can hear.
-_FLOOR_S = 0.40
-# espeak will not hold Q past one length mark. O is the next monophthong, not the open oU.
-_HELD = {"Q": "O", "I": "I:", "a": "a:", "E": "E:", "U": "U:"}
+def audible(text: str, readings: dict[str, str]) -> tuple[list[list[Letter] | str], tuple[str, ...]]:
+    """Words that have a reading, and the spellings left out.
 
-
-def _seconds(audio: np.ndarray) -> float:
-    return audio.size / SAMPLE_RATE
-
-
-def _slower(phones: str, audio: np.ndarray) -> np.ndarray:
-    """Slow a breath that is already as long as its vowel can be."""
-    duration = _seconds(audio)
-    if duration <= 0:
-        return audio
-    speed = int(SPEED * duration / _FLOOR_S)
-    speed = max(80, min(speed, SPEED - 1))
-    slowed = speak(phones, speed)
-    if _seconds(slowed) >= _FLOOR_S or speed == 80:
-        return slowed
-    return speak(phones, 80)
-
-
-def _speak_word(word: list[Letter]) -> np.ndarray:
-    """Speak one call word.
-
-    A word with one vowel that comes out under the floor is spoken again with
-    that vowel lengthened. If one length mark is still too short, the vowel
-    steps to the next monophthong. A vowel that is already long is slowed
-    instead. Words with no vowel stay letter-names, and a breath that is
-    already long enough is left as spoken. The phonetic trace keeps the
-    unstretched spelling.
+    A gap is kept only between words that are spoken. A line break wins over a
+    space when a dropped word sat between them.
     """
-    phones = pronounce_syllables(word)
-    audio = speak(phones)
-    if sum(letter.vowel for letter in word) != 1 or _seconds(audio) >= _FLOOR_S:
-        return audio
-    index = next(i for i, letter in enumerate(word) if letter.vowel)
-    form = syllable_forms(word)[index][1]
-    if form == "long":
-        return _slower(phones, audio)
-    tokens = phones.split()
-    base = tokens[index]
-    tokens[index] = base + ":"
-    audio = speak(" ".join(tokens))
-    if _seconds(audio) >= _FLOOR_S:
-        return audio
-    held = _HELD.get(base)
-    if held and held != tokens[index]:
-        tokens[index] = held
-        audio = speak(" ".join(tokens))
-        if _seconds(audio) >= _FLOOR_S:
-            return audio
-    return _slower(" ".join(tokens), audio)
+    kept: list[list[Letter] | str] = []
+    dropped: list[str] = []
+    pending: str | None = None
+    for segment in parse(text):
+        if isinstance(segment, str):
+            pending = "\n" if "\n" in (pending, segment) else segment
+            continue
+        if not _listed(segment, readings):
+            dropped.append(_spelling(segment))
+            continue
+        if kept and pending:
+            kept.append(pending)
+        pending = None
+        kept.append(segment)
+    return kept, tuple(dropped)
+
+
+def spoken_text(segments: list[list[Letter] | str]) -> str:
+    """The spellings that will be spoken, with their gaps."""
+    parts: list[str] = []
+    for segment in segments:
+        if isinstance(segment, str):
+            parts.append("\n" if segment == "\n" else " ")
+            continue
+        parts.append(_spelling(segment))
+    return "".join(parts).strip()
 
 
 def call_gaps(voice: CallVoice | None = None, gaps: Gaps | None = None) -> Gaps:
@@ -188,41 +164,65 @@ def call_gaps(voice: CallVoice | None = None, gaps: Gaps | None = None) -> Gaps:
     return chosen
 
 
-def render(text: str, gaps: Gaps | None = None, voice: CallVoice | None = None) -> np.ndarray:
+def render(
+    text: str,
+    gaps: Gaps | None = None,
+    voice: CallVoice | None = None,
+    readings: dict[str, str] | None = None,
+) -> np.ndarray:
     """One spoken breath per word, with a silence between words and lines."""
     voice = voice or CallVoice()
     gaps = call_gaps(voice, gaps)
+    readings = _readings(voice) if readings is None else readings
+    segments, _dropped = audible(text, readings)
     if voice.engine == "piper":
         from enochaeon.piper_voice import render as render_piper
 
-        return render_piper(text, voice, gaps)
+        return render_piper(text, voice, gaps, readings)
     pieces: list[np.ndarray] = []
-    for segment in parse(text):
+    for segment in segments:
         if isinstance(segment, str):
             pieces.append(silence(gaps.nl_ms if segment == "\n" else gaps.word_ms))
             continue
-        pieces.append(_speak_word(segment))
+        pieces.append(_speak_segment(segment, readings))
     if not pieces:
         return silence(gaps.word_ms)
     return np.concatenate(pieces)
 
 
+def _readings(voice: CallVoice) -> dict[str, str]:
+    from enochaeon.roots import load_readings
+
+    return load_readings(voice.ipa)
+
+
+def _speak_segment(word: list[Letter], readings: dict[str, str]) -> np.ndarray:
+    from enochaeon.word_ipa import espeak_phones
+
+    return speak(espeak_phones(_listed(word, readings)))
+
+
+def _listed(word: list[Letter], readings: dict[str, str]) -> str:
+    return readings.get(_spelling(word), "")
+
+
+def _spelling(word: list[Letter]) -> str:
+    return "".join(letter.latin for letter in word).lower()
+
+
 def write_call(path: Path, force: bool, voice: CallVoice | None = None) -> Path:
-    """Write the phonetic line and the WAV for one call file."""
+    """Write the WAV for one call file."""
     dest = path.with_suffix(".wav")
     if dest.exists() and not force:
         raise EnochaeonError(f"{dest} already exists. Pass --force to replace it.")
     voice = voice or CallVoice()
     gaps = call_gaps(voice)
     text = path.read_text(encoding="utf-8")
-    phonetic = phonetic_text(text)
-    if phonetic and not phonetic.endswith("\n"):
-        phonetic += "\n"
-    folder = path.parent / ".enochaeon"
-    folder.mkdir(parents=True, exist_ok=True)
-    trace = folder / f"{path.stem}-phonetic.txt"
-    trace.write_text(phonetic, encoding="utf-8")
-    print(trace)
+    _segments, dropped = audible(text, _readings(voice))
+    if not _segments:
+        raise EnochaeonError(f"Nothing in {path.name} has a {voice.ipa} reading.")
+    if dropped:
+        print("left out: " + " ".join(dropped))
     write_wav(dest, render(text, gaps=gaps, voice=voice), comment=gaps.comment())
     print(dest)
     return dest

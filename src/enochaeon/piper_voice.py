@@ -12,7 +12,7 @@ import numpy as np
 
 from enochaeon.audio import SAMPLE_RATE, Gaps, resample, silence
 from enochaeon.config import CallVoice
-from enochaeon.enochian import parse, pronounce_syllables
+from enochaeon.enochian import audible
 from enochaeon.errors import EnochaeonError
 
 # Longest match first. kw and ks are two IPA letters and no space: a space
@@ -63,7 +63,7 @@ def ipa_of(espeak: str) -> str:
     return "".join(_map_token(token) for token in espeak.split())
 
 
-def render(text: str, voice: CallVoice, gaps: Gaps) -> np.ndarray:
+def render(text: str, voice: CallVoice, gaps: Gaps, readings: dict[str, str] | None = None) -> np.ndarray:
     """One Piper breath per Call word, with the gaps it is given."""
     model = Path(voice.piper_voice)
     if not voice.piper_voice or not model.is_file():
@@ -79,14 +79,24 @@ def render(text: str, voice: CallVoice, gaps: Gaps) -> np.ndarray:
         ) from exc
     speaker = PiperVoice.load(model)
     pieces: list[np.ndarray] = []
-    for segment in parse(text):
+    segments, _dropped = audible(text, readings or {})
+    for segment in segments:
         if isinstance(segment, str):
             pieces.append(silence(gaps.nl_ms if segment == "\n" else gaps.word_ms))
             continue
-        pieces.append(_speak(speaker, SynthesisConfig, ipa_of(pronounce_syllables(segment)), voice.length_scale))
+        pieces.append(
+            _speak(speaker, SynthesisConfig, _word_ipa(segment, readings or {}), voice.length_scale)
+        )
     if not pieces:
         return silence(gaps.word_ms)
     return np.concatenate(pieces)
+
+
+def _word_ipa(word: list, readings: dict[str, str]) -> str:
+    from enochaeon.enochian import _listed
+    from enochaeon.word_ipa import piper_phones
+
+    return piper_phones(_listed(word, readings))
 
 
 def _speak(speaker: object, config_type: type, ipa: str, length_scale: float) -> np.ndarray:

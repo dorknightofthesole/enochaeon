@@ -9,12 +9,14 @@ from pathlib import Path
 import numpy as np
 
 from enochaeon.alphabet import Alphabet
-from enochaeon.audio import SAMPLE_RATE, WORD_MS
+from enochaeon.audio import WORD_MS
 from enochaeon.config import CallVoice, load_call_voice
 from enochaeon.enochian import call_files, call_gaps, parse, phonetic_text, render
 from enochaeon.errors import EnochaeonError
 from enochaeon.piper_voice import ipa_of
+from enochaeon.roots import load_readings
 from enochaeon.synthesize import speak
+from enochaeon.word_ipa import espeak_phones, piper_phones
 
 
 class CallPronunciationTest(unittest.TestCase):
@@ -22,18 +24,24 @@ class CallPronunciationTest(unittest.TestCase):
         self.assertEqual(phonetic_text("Ol"), "Q l")
         self.assertEqual(phonetic_text("sonf"), "s Q n f")
 
-    def test_a_short_one_vowel_word_is_held(self) -> None:
-        plain = speak("Q l")
-        held = render("Ol")
-        self.assertGreaterEqual(held.size / SAMPLE_RATE, 0.40)
-        self.assertGreaterEqual(render("od").size / SAMPLE_RATE, 0.40)
-        self.assertGreaterEqual(render("ror").size / SAMPLE_RATE, 0.40)
-        self.assertGreater(held.size, plain.size)
-        self.assertEqual(phonetic_text("Ol"), "Q l")
-        self.assertTrue(np.array_equal(render("goho"), speak("g Q h oU")))
-        self.assertTrue(np.array_equal(render("Iad"), speak("j a d")))
-        self.assertTrue(np.array_equal(render("balt"), speak("b a l t")))
-        self.assertTrue(np.array_equal(render("ds"), speak("d'i: 'Es")))
+    def test_an_unlisted_word_is_left_out(self) -> None:
+        readings = {"iad": "/jɑːd/", "balt": "/bɑːlt/"}
+        kept = render("Iad balt", readings=readings)
+        self.assertTrue(np.array_equal(render("Iad Ol balt", readings=readings), kept))
+        quiet = render("Ol", readings={})
+        self.assertLess(float(np.max(np.abs(quiet))), 0.01)
+
+    def test_a_listed_word_is_spoken_from_the_lexicon(self) -> None:
+        self.assertEqual(espeak_phones("/jɑːd/"), "j A: d")
+        self.assertEqual(espeak_phones("/ˈɡoʊ.hoʊ/"), "g 'oU h oU")
+        self.assertEqual(piper_phones("/jɑːd/"), "jɑːd")
+        self.assertEqual(piper_phones("/ˈɡoʊ.hoʊ/"), "ɡˈoʊhoʊ")
+        self.assertEqual(piper_phones("/bɑːl.tə/"), "bɑːltə")
+        self.assertEqual(load_readings("dee_ipa")["iad"], "/jɑːd/")
+        self.assertEqual(load_readings("golden_dawn_ipa")["iad"], "/iː.ɑːd/")
+        self.assertEqual(load_readings("dee_ipa")["balzizras"], "/bɑːlt/")
+        self.assertTrue(np.array_equal(render("Iad", readings={"iad": "/jɑːd/"}), speak("j A: d")))
+        self.assertTrue(np.array_equal(render("Iad"), speak("j A: d")))
 
     def test_a_leading_i_before_a_vowel_is_y(self) -> None:
         # Dee read Iad as Yad. The A is closed by D, so it stays short.
@@ -57,8 +65,9 @@ class CallPronunciationTest(unittest.TestCase):
         root = Path(__file__).resolve().parents[1] / "enochaeon.json"
         voice = load_call_voice(root)
         self.assertEqual(voice.engine, "piper")
+        self.assertEqual(voice.ipa, "dee_ipa")
         self.assertGreater(voice.length_scale, 1)
-        self.assertEqual(voice.word_ms, 400)
+        self.assertEqual(voice.word_ms, 200)
         self.assertIn("john", voice.piper_voice)
 
     def test_a_piper_breath_can_be_shorter(self) -> None:
@@ -75,6 +84,9 @@ class CallPronunciationTest(unittest.TestCase):
             )
             self.assertEqual(load_call_voice(path).word_ms, 400)
             path.write_text('{"calls": {"piper": {"word_ms": 0}}}\n', encoding="utf-8")
+            with self.assertRaises(EnochaeonError):
+                load_call_voice(path)
+            path.write_text('{"calls": {"ipa": "laycock"}}\n', encoding="utf-8")
             with self.assertRaises(EnochaeonError):
                 load_call_voice(path)
 
@@ -126,8 +138,7 @@ class CallPronunciationTest(unittest.TestCase):
             self.assertEqual(main(["calls", str(root)]), 0)
             self.assertTrue((root / "01-ol.wav").is_file())
             self.assertTrue((root / "02-iad.wav").is_file())
-            phonetic = (root / ".enochaeon" / "01-ol-phonetic.txt").read_text(encoding="utf-8")
-            self.assertEqual(phonetic.strip(), "Q l s Q n f")
+            self.assertFalse((root / ".enochaeon").exists())
             self.assertEqual(main(["calls", str(root)]), 1)
             self.assertEqual(main(["calls", str(first), "--force"]), 0)
             self.assertEqual(main(["notes.txt", "--engine", "piper"]), 1)

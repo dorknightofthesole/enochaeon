@@ -63,9 +63,9 @@ enochaeon calls        # speaks every .txt in ./calls
 enochaeon calls calls/01.txt
 ```
 
-Add a call by putting another `.txt` in `calls/`, or pass its path. Each file gets a sibling `.wav` and a phonetic trace in `.enochaeon`.
+Add a call by putting another `.txt` in `calls/`, or pass its path. Each file gets a sibling `.wav`.
 
-Calls use the voice in `enochaeon.json`. `calls.engine` is `espeak` or `piper`. `--engine espeak` or `--engine piper` overrides that for one run. The English cipher stays on espeak either way.
+Calls use the voice in `enochaeon.json`. `calls.engine` is `espeak` or `piper`. `--engine espeak` or `--engine piper` overrides that for one run. The English cipher stays on espeak either way. `calls.ipa` is `dee_ipa` or `golden_dawn_ipa`, and it defaults to `dee_ipa`. A listed spelling is spoken from that field. Piper speaks the IPA. espeak speaks the phonemes derived from that same string. A variant uses the pronunciation stored on its root. A spelling with no reading is left out of the recording. A translation already leaves out an English word that is not an exact gloss and not close enough to one.
 
 Piper needs its own install and John's voice:
 
@@ -75,6 +75,15 @@ python3 -m piper.download_voices --download-dir scratch/piper-voices en_US-john-
 ```
 
 `calls.piper.voice` is the `.onnx` file that command writes. `calls.piper.length_scale` is how long Piper holds each phoneme. `1.0` is conversational, and higher is slower. `calls.piper.word_ms` is the silence between breaths, in milliseconds. `400` is a little under the `600` espeak uses. Leave it out and Piper keeps `600`. Neither setting changes espeak.
+
+A phrase can be spoken as Call words. This is not the cipher, and the wav is not read back into English.
+
+```bash
+pip install sentence-transformers
+enochaeon translate ritual.txt
+```
+
+`ritual.txt` is the English phrase. The command writes `ritual.wav` beside it, and `.enochaeon/ritual-enochian.txt` lists the Call words that wav speaks. An English word with nothing close stays in that file in brackets, such as `[into]`, and is left out of the wav. There is no Hebrew file and no separate phonetic file: the wav uses the same `calls.ipa` reading as the Calls. The meanings live in [`calls/lexicon.json`](calls/lexicon.json). Each entry has a root, any variant spellings, and an `english_glosses` list. `balt` lists `justice`, `righteousness`, and `judgment`, so `justice` is spoken as `balt`. A variant such as `gohus` shares the English words and the pronunciation of its root. A word that is not listed is compared with the English words that are. The closest one of the same part of speech is spoken, so a noun such as `goddess` prefers `iad` over a verb that scores higher. If no same part is close enough, the highest score is spoken. English with nothing close is printed as left out, and a file with no Call word writes no wav. The recording uses the Call voice in `enochaeon.json`.
 
 The stage files go in a hidden folder next to the source. For `notes-test.txt` they are:
 

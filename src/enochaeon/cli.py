@@ -1,4 +1,4 @@
-"""Command line: English becomes a cipher WAV, a call becomes spoken Enochian, and a WAV becomes text."""
+"""Command line: a cipher WAV, a spoken Call, a text file spoken as Call words, or a WAV read back."""
 
 from __future__ import annotations
 
@@ -21,16 +21,16 @@ AUDIO_SUFFIXES = {".wav"}
 def main(argv: list[str] | None = None) -> int:
     parser = argparse.ArgumentParser(
         prog="enochaeon",
-        description="Transliterate a text file into Enochian audio, speak a call, or read that audio back.",
+        description="Transliterate a text file, speak a call, speak a text file as Call words, or read a cipher wav back.",
     )
     parser.add_argument(
         "target",
-        help="A .txt or .md file, a .wav file, 'calibrate', or 'calls'",
+        help="A .txt or .md file, a .wav file, 'calibrate', 'calls', or 'translate'",
     )
     parser.add_argument(
         "calls_path",
         nargs="?",
-        help="With 'calls', a .txt file or a directory of them. Defaults to ./calls",
+        help="With 'calls', a .txt file or a directory. With 'translate', a .txt or .md file.",
     )
     parser.add_argument(
         "--force",
@@ -46,6 +46,8 @@ def main(argv: list[str] | None = None) -> int:
     try:
         if args.engine is not None and args.target != "calls":
             raise EnochaeonError("--engine is only used with 'calls'.")
+        if args.target == "translate":
+            return _translate(args.calls_path, args.force)
         if args.target == "calibrate":
             return calibrate()
         if args.target == "calls":
@@ -66,6 +68,32 @@ def main(argv: list[str] | None = None) -> int:
     except EnochaeonError as exc:
         print(exc, file=sys.stderr)
         return 1
+
+
+def _translate(source: str | None, force: bool) -> int:
+    if not source:
+        raise EnochaeonError("translate needs a .txt or .md file.")
+    path = Path(source)
+    if not path.is_file():
+        raise EnochaeonError(f"No such file: {path}")
+    if path.suffix.lower() not in TEXT_SUFFIXES:
+        raise EnochaeonError(f"{path.name} is not a .txt or .md file")
+    dest = path.with_suffix(".wav")
+    if dest.exists() and not force:
+        raise EnochaeonError(f"{dest} already exists. Pass --force to replace it.")
+    from enochaeon.roots import load_roots
+    from enochaeon.translate import MiniLM, part_tags, speak_file
+
+    result, trace, dest = speak_file(
+        path, load_roots(), MiniLM(), load_call_voice(), force, part_tags
+    )
+    for english, spelling in result.matched:
+        print(f"{english} {spelling}")
+    if result.left_out:
+        print("left out: " + " ".join(result.left_out))
+    print(trace)
+    print(dest)
+    return 0
 
 
 def _encode(path: Path, alphabet: Alphabet, force: bool) -> int:

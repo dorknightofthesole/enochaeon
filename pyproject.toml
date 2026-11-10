@@ -18,6 +18,7 @@ dependencies = [
 
 [project.optional-dependencies]
 piper = ["piper-tts"]
+translate = ["sentence-transformers", "nltk"]
 
 [project.scripts]
 enochaeon = "enochaeon.cli:main"
