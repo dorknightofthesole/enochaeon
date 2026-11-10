@@ -21,6 +21,7 @@ from enochaeon.alphabet import (
     syllable_forms,
 )
 from enochaeon.audio import SAMPLE_RATE, Gaps, silence, write_wav
+from enochaeon.config import CallVoice
 from enochaeon.errors import EnochaeonError
 from enochaeon.synthesize import SPEED, speak
 
@@ -178,9 +179,14 @@ def _speak_word(word: list[Letter]) -> np.ndarray:
     return _slower(" ".join(tokens), audio)
 
 
-def render(text: str, gaps: Gaps | None = None) -> np.ndarray:
+def render(text: str, gaps: Gaps | None = None, voice: CallVoice | None = None) -> np.ndarray:
     """One spoken breath per word, with a silence between words and lines."""
     gaps = gaps or Gaps()
+    voice = voice or CallVoice()
+    if voice.engine == "piper":
+        from enochaeon.piper_voice import render as render_piper
+
+        return render_piper(text, voice, gaps)
     pieces: list[np.ndarray] = []
     for segment in parse(text):
         if isinstance(segment, str):
@@ -192,7 +198,7 @@ def render(text: str, gaps: Gaps | None = None) -> np.ndarray:
     return np.concatenate(pieces)
 
 
-def write_call(path: Path, force: bool) -> Path:
+def write_call(path: Path, force: bool, voice: CallVoice | None = None) -> Path:
     """Write the phonetic line and the WAV for one call file."""
     dest = path.with_suffix(".wav")
     if dest.exists() and not force:
@@ -206,7 +212,7 @@ def write_call(path: Path, force: bool) -> Path:
     trace = folder / f"{path.stem}-phonetic.txt"
     trace.write_text(phonetic, encoding="utf-8")
     print(trace)
-    write_wav(dest, render(text), comment=Gaps().comment())
+    write_wav(dest, render(text, voice=voice), comment=Gaps().comment())
     print(dest)
     return dest
 
@@ -229,14 +235,14 @@ def call_files(path: Path) -> list[Path]:
     return files
 
 
-def generate_calls(path: Path, force: bool) -> int:
+def generate_calls(path: Path, force: bool, voice: CallVoice | None = None) -> int:
     files = call_files(path)
     destinations = [item.with_suffix(".wav") for item in files]
     blocked = [dest for dest in destinations if dest.exists() and not force]
     if blocked:
         raise EnochaeonError(f"{blocked[0]} already exists. Pass --force to replace it.")
     for item in files:
-        write_call(item, force)
+        write_call(item, force, voice)
     return 0
 
 

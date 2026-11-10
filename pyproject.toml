@@ -16,6 +16,9 @@ dependencies = [
   "transformers",
 ]
 
+[project.optional-dependencies]
+piper = ["piper-tts"]
+
 [project.scripts]
 enochaeon = "enochaeon.cli:main"
 

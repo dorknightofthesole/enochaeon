@@ -1,0 +1,9 @@
+{
+  "calls": {
+    "engine": "piper",
+    "piper": {
+      "length_scale": 1.6,
+      "voice": "scratch/piper-voices/en_US-john-medium.onnx"
+    }
+  }
+}

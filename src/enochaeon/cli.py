@@ -8,6 +8,7 @@ from pathlib import Path
 
 from enochaeon.alphabet import Alphabet
 from enochaeon.calibrate import calibrate
+from enochaeon.config import load_call_voice
 from enochaeon.decode import decode_file, require_calibration
 from enochaeon.encode import write_document, write_traces
 from enochaeon.enochian import generate_calls
@@ -36,12 +37,20 @@ def main(argv: list[str] | None = None) -> int:
         action="store_true",
         help="Replace an output file that is already there",
     )
+    parser.add_argument(
+        "--engine",
+        choices=["espeak", "piper"],
+        help="Call voice for this run. Overrides enochaeon.json. The cipher stays on espeak.",
+    )
     args = parser.parse_args(argv)
     try:
+        if args.engine is not None and args.target != "calls":
+            raise EnochaeonError("--engine is only used with 'calls'.")
         if args.target == "calibrate":
             return calibrate()
         if args.target == "calls":
-            return generate_calls(Path(args.calls_path or "calls"), args.force)
+            voice = load_call_voice().chosen(args.engine)
+            return generate_calls(Path(args.calls_path or "calls"), args.force, voice)
         if args.calls_path is not None:
             raise EnochaeonError("A second path is only used with 'calls'.")
         path = Path(args.target)

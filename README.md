@@ -65,6 +65,17 @@ enochaeon calls calls/01.txt
 
 Add a call by putting another `.txt` in `calls/`, or pass its path. Each file gets a sibling `.wav` and a phonetic trace in `.enochaeon`.
 
+Calls use the voice in `enochaeon.json`. `calls.engine` is `espeak` or `piper`. `--engine espeak` or `--engine piper` overrides that for one run. The English cipher stays on espeak either way.
+
+Piper needs its own install and John's voice:
+
+```bash
+pip install piper-tts
+python3 -m piper.download_voices --download-dir scratch/piper-voices en_US-john-medium
+```
+
+`calls.piper.voice` is the `.onnx` file that command writes. `calls.piper.length_scale` is how long Piper holds each phoneme. `1.0` is conversational, and higher is slower. It does not change espeak.
+
 The stage files go in a hidden folder next to the source. For `notes-test.txt` they are:
 
 ```text

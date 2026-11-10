@@ -10,8 +10,10 @@ import numpy as np
 
 from enochaeon.alphabet import Alphabet
 from enochaeon.audio import SAMPLE_RATE
+from enochaeon.config import CallVoice, load_call_voice
 from enochaeon.enochian import call_files, parse, phonetic_text, render
 from enochaeon.errors import EnochaeonError
+from enochaeon.piper_voice import ipa_of
 from enochaeon.synthesize import speak
 
 
@@ -45,6 +47,26 @@ class CallPronunciationTest(unittest.TestCase):
 
     def test_punctuation_breaks_the_line(self) -> None:
         self.assertEqual(phonetic_text("Ol sonf, goho. Iad"), "Q l s Q n f g Q h oU\nj a d")
+
+    def test_piper_hears_the_vowel_in_lot(self) -> None:
+        self.assertEqual(ipa_of("Q l"), "ɒl")
+        self.assertEqual(ipa_of("g Q h oU"), "ɡɒhoʊ")
+        self.assertEqual(ipa_of("d'i: 'Es"), "dˈiːˈɛs")
+
+    def test_the_shipped_config_keeps_espeak(self) -> None:
+        root = Path(__file__).resolve().parents[1] / "enochaeon.json"
+        voice = load_call_voice(root)
+        self.assertEqual(voice.engine, "espeak")
+        self.assertGreater(voice.length_scale, 1)
+
+    def test_the_call_voice_defaults_to_espeak(self) -> None:
+        missing = Path("/no/such/enochaeon.json")
+        voice = load_call_voice(missing)
+        self.assertEqual(voice, CallVoice())
+        self.assertEqual(voice.chosen("piper").engine, "piper")
+        self.assertEqual(voice.chosen(None).engine, "espeak")
+        with self.assertRaises(EnochaeonError):
+            voice.chosen("mbrola")
 
     def test_a_call_is_not_the_english_cipher(self) -> None:
         english = Alphabet.load().phonetic_text("ol")
@@ -89,6 +111,7 @@ class CallPronunciationTest(unittest.TestCase):
             self.assertEqual(phonetic.strip(), "Q l s Q n f")
             self.assertEqual(main(["calls", str(root)]), 1)
             self.assertEqual(main(["calls", str(first), "--force"]), 0)
+            self.assertEqual(main(["notes.txt", "--engine", "piper"]), 1)
 
 
 if __name__ == "__main__":
