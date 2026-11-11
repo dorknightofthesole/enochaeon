@@ -9,9 +9,10 @@ from pathlib import Path
 
 from enochaeon.audio import read_comment
 from enochaeon.config import CallVoice
-from enochaeon.enochian import call_files, phonetic_text
+from enochaeon.enochian import call_files, letter_ipa, phonetic_text
 from enochaeon.errors import EnochaeonError
-from enochaeon.roots import Root, load_roots
+from enochaeon.roots import Root, load_readings, load_roots
+from enochaeon.word_ipa import espeak_phones
 from enochaeon.page import render_page
 from enochaeon.translate import match_phrase, speak_file, speak_phrase
 
@@ -56,6 +57,12 @@ class DictionaryTest(unittest.TestCase):
                     continue
                 self.assertIn(spelling, roots)
                 self.assertEqual(roots[spelling].phones, phonetic_text(spelling).strip())
+        dee = load_readings("dee_ipa", folder)
+        self.assertEqual(load_readings("golden_dawn_ipa", folder), {})
+        for spelling, root in roots.items():
+            self.assertEqual(dee[spelling], letter_ipa(spelling))
+            spoken = espeak_phones(dee[spelling]).replace(" ", "")
+            self.assertEqual(spoken, root.phones.replace(" ", ""))
         self.assertEqual(roots["balt"].glosses, ("justice", "righteousness", "judgment"))
         self.assertEqual(roots["iad"].glosses, ("god", "the divine"))
         self.assertEqual(roots["iad"].pos, "noun")
@@ -66,6 +73,7 @@ class DictionaryTest(unittest.TestCase):
         self.assertEqual(roots["altathiera"].glosses, ())
         self.assertEqual(roots["tutulu"].glosses, ())
         self.assertEqual(roots["ararnay"].glosses, ("hither, o holy one",))
+        self.assertEqual(roots["calz"].glosses, ())
 
     def test_a_lexicon_entry_holds_several_english_words(self) -> None:
         with tempfile.TemporaryDirectory() as directory:

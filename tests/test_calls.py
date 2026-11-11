@@ -37,11 +37,12 @@ class CallPronunciationTest(unittest.TestCase):
         self.assertEqual(piper_phones("/jɑːd/"), "jɑːd")
         self.assertEqual(piper_phones("/ˈɡoʊ.hoʊ/"), "ɡˈoʊhoʊ")
         self.assertEqual(piper_phones("/bɑːl.tə/"), "bɑːltə")
-        self.assertEqual(load_readings("dee_ipa")["iad"], "/jɑːd/")
-        self.assertEqual(load_readings("golden_dawn_ipa")["iad"], "/iː.ɑːd/")
-        self.assertEqual(load_readings("dee_ipa")["balzizras"], "/bɑːlt/")
+        self.assertEqual(piper_phones("/ˈɑr/"), "ˈɑɹ")
+        self.assertEqual(load_readings("dee_ipa")["iad"], "/j.æ.d/")
+        self.assertNotIn("iad", load_readings("golden_dawn_ipa"))
+        self.assertEqual(load_readings("dee_ipa")["balzizras"], "/b.æ.l.z.ɪ.z.r.æ.s/")
         self.assertTrue(np.array_equal(render("Iad", readings={"iad": "/jɑːd/"}), speak("j A: d")))
-        self.assertTrue(np.array_equal(render("Iad"), speak("j A: d")))
+        self.assertTrue(np.array_equal(render("Iad"), speak("j a d")))
 
     def test_a_leading_i_before_a_vowel_is_y(self) -> None:
         # Dee read Iad as Yad. The A is closed by D, so it stays short.

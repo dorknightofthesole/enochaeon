@@ -1,6 +1,7 @@
 """Turn a lexicon IPA string into the phones a Call voice speaks.
 
-The cipher does not come here. A variant wears the IPA stored on its root.
+The cipher does not come here. A Golden Dawn reading is the string stored
+on the root. The Dee reading is the letter rule of the spelling itself.
 Stress sits on the vowel, and a syllable dot is not a sound. Piper's r is the
 English ɹ.
 """
@@ -9,7 +10,7 @@ from __future__ import annotations
 
 from enochaeon.errors import EnochaeonError
 
-# Longest symbol first. Bare ɑ is spoken long because espeak's bare A is silent.
+# Longest symbol first. Bare ɑ is the letter-name A in "'Ar". Long ɑː is "A:".
 _SYMBOLS = (
     ("ɑː", "A:"),
     ("iː", "i:"),
@@ -20,7 +21,7 @@ _SYMBOLS = (
     ("eɪ", "eI"),
     ("aɪ", "aI"),
     ("æ", "a"),
-    ("ɑ", "A:"),
+    ("ɑ", "A"),
     ("ɒ", "Q"),
     ("ɔ", "O"),
     ("ə", "@"),
@@ -57,6 +58,7 @@ _SYMBOLS = (
 )
 _VOWELS = {
     "A:",
+    "A",
     "a",
     "Q",
     "O:",
@@ -77,11 +79,51 @@ _VOWELS = {
     "@",
 }
 _PIPER_VOWELS = set("ɑæɒɔəɚɛɜɪʊʌaeiou")
+# Espeak symbols the letter rule emits, longest first. Bare ɜ is only a
+# spoken form of ɜː, so it is not a source here.
+_FROM_ESPEAK = tuple(
+    sorted(
+        ((espeak, ipa) for ipa, espeak in _SYMBOLS if ipa != "ɜ"),
+        key=lambda item: len(item[0]),
+        reverse=True,
+    )
+)
 
 
 def espeak_phones(ipa: str) -> str:
     """One lexicon reading as the espeak phonemes inside [[]]."""
     return " ".join(_tokens(ipa))
+
+
+def ipa_of_espeak(phones: str) -> str:
+    """Slash IPA for one letter-rule string. Stress stays on the vowel."""
+    body = phones.strip()
+    if not body:
+        raise EnochaeonError("Empty phonemes.")
+    return "/" + ".".join(_ipa_token(token) for token in body.split()) + "/"
+
+
+def _ipa_token(token: str) -> str:
+    pieces: list[str] = []
+    index = 0
+    stress = False
+    while index < len(token):
+        if token[index] == "'":
+            stress = True
+            index += 1
+            continue
+        pair = next((item for item in _FROM_ESPEAK if token.startswith(item[0], index)), None)
+        if pair is None:
+            raise EnochaeonError(f"No IPA for {token[index:]!r} in {token!r}.")
+        espeak, ipa = pair
+        if stress and espeak in _VOWELS:
+            ipa = "ˈ" + ipa
+            stress = False
+        pieces.append(ipa)
+        index += len(espeak)
+    if stress:
+        raise EnochaeonError(f"Stress with no vowel in {token!r}.")
+    return "".join(pieces)
 
 
 def piper_phones(ipa: str) -> str:
@@ -144,6 +186,10 @@ def _piper_token(token: str) -> str:
         if token.startswith("A:", index):
             pieces.append("ɑː")
             index += 2
+            continue
+        if token.startswith("A", index):
+            pieces.append("ɑ")
+            index += 1
             continue
         if token.startswith("i:", index):
             pieces.append("iː")

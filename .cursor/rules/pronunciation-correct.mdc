@@ -1,0 +1,20 @@
+---
+description: A pronunciation is correct only when it is the way the word is supposed to be said
+alwaysApply: true
+---
+
+# Correct pronunciation
+
+Correct means the way the word is supposed to be said. A recording that matches a rule this project wrote is not correct when that rule was filled in because the pronunciation is unknown.
+
+Say that the pronunciation is unknown. Do not call it correct, confident, or a reading of Dee because the code followed the letter table, the lexicon string, or a test.
+
+```text
+# Bad
+The recording is correct: ds is the letter-names, and the code spoke them.
+
+# Good
+The pronunciation of ds is unknown. The recording is spelling English letter-names because the table has no vowel to speak.
+```
+
+A check that the stored string matches the code is a check of the code. Report it as that. It is not evidence the word is pronounced that way.

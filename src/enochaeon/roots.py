@@ -2,7 +2,8 @@
 
 The cipher does not read this. Translate reads the English glosses.
 Calls and translations speak dee_ipa or golden_dawn_ipa. A variant shares
-its root's English and its root's pronunciation. Hebrew is not spoken.
+its root's English. Its Dee reading is the letter rule of that spelling.
+Its Golden Dawn reading is the string stored on the root. Hebrew is not spoken.
 """
 
 from __future__ import annotations
@@ -12,7 +13,7 @@ import re
 from dataclasses import dataclass
 from pathlib import Path
 
-from enochaeon.enochian import phonetic_text
+from enochaeon.enochian import _CALL_NAME, letter_ipa, phonetic_text
 from enochaeon.errors import EnochaeonError
 
 _WORD = re.compile(r"[A-Za-z]+")
@@ -74,11 +75,7 @@ def _calls_dir() -> Path:
 
 
 def _call_texts(folder: Path) -> list[tuple[str, str]]:
-    files = sorted(
-        path
-        for path in folder.iterdir()
-        if path.is_file() and path.suffix.lower() == ".txt" and not path.name.startswith(".")
-    )
+    files = sorted(path for path in folder.iterdir() if _CALL_NAME.fullmatch(path.name))
     if not files:
         raise EnochaeonError(f"No call files in {folder}.")
     return [(path.stem, path.read_text(encoding="utf-8")) for path in files]
@@ -118,9 +115,10 @@ def _lexicon(
             if spelling == root or spelling not in parts:
                 if part:
                     parts[spelling] = part
-            for name, ipa in spoken.items():
-                if ipa:
-                    readings[name][spelling] = ipa
+            readings["dee_ipa"][spelling] = letter_ipa(spelling)
+            golden = spoken["golden_dawn_ipa"]
+            if golden:
+                readings["golden_dawn_ipa"][spelling] = golden
     return {spelling: tuple(glosses) for spelling, glosses in found.items()}, parts, readings
 
 

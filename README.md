@@ -12,6 +12,8 @@ How the three paths work, and the files they read, is in [`docs/enochaeon-in-the
 
 The name Enochaeon joins Enoch, the prophet who spoke with the angels, and the Greek *aeon*, an epoch or age.
 
+**This is still a WIP, and I am currently building out and verifying the lexicon.**
+
 ## Setup
 
 ```bash
@@ -40,7 +42,7 @@ Calls and translations are spoken with [`enochaeon.json`](enochaeon.json). The c
 ```
 
 - `calls.engine` is `piper` or `espeak`. `--engine` overrides one Call run.
-- `calls.ipa` is `dee_ipa` or `golden_dawn_ipa`. A listed spelling is spoken from that field.
+- `calls.ipa` is `dee_ipa` or `golden_dawn_ipa`. `dee_ipa` is the letter rule of the spelling. `golden_dawn_ipa` is empty.
 - `calls.piper.voice` is the model downloaded in Setup.
 - `calls.piper.length_scale` is how long Piper holds each phoneme. `1.0` is conversational, and higher is slower.
 - `calls.piper.word_ms` is the silence between Piper breaths, in milliseconds. Leave it out and Piper keeps the 600 milliseconds espeak uses.

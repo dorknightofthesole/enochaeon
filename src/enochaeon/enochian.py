@@ -10,6 +10,8 @@ from __future__ import annotations
 from dataclasses import dataclass, replace
 from pathlib import Path
 
+import re
+
 import numpy as np
 
 from enochaeon.alphabet import (
@@ -26,6 +28,7 @@ from enochaeon.synthesize import speak
 # A comma stays inside the line. A stop ends it. Digits have no Enochian letter.
 _BREAKS = PUNCT_BREAKS
 _SKIP = PUNCT_SKIP | set("0123456789")
+_CALL_NAME = re.compile(r"^\d{2}(?:-[a-z]+)?\.txt$")
 
 
 @dataclass(frozen=True)
@@ -122,6 +125,13 @@ def phonetic_text(text: str) -> str:
             continue
         parts.append(pronounce_syllables(_initial_i(segment)))
     return "".join(parts)
+
+
+def letter_ipa(spelling: str) -> str:
+    """The letter rule for one spelling, stored as slash IPA."""
+    from enochaeon.word_ipa import ipa_of_espeak
+
+    return ipa_of_espeak(phonetic_text(spelling).strip())
 
 
 def audible(text: str, readings: dict[str, str]) -> tuple[list[list[Letter] | str], tuple[str, ...]]:
@@ -239,11 +249,7 @@ def call_files(path: Path) -> list[Path]:
         return [path]
     if not path.is_dir():
         raise EnochaeonError(f"No such file or directory: {path}")
-    files = sorted(
-        item
-        for item in path.iterdir()
-        if item.is_file() and item.suffix.lower() == ".txt" and not item.name.startswith(".")
-    )
+    files = sorted(item for item in path.iterdir() if _CALL_NAME.fullmatch(item.name))
     if not files:
         raise EnochaeonError(f"No call files in {path}")
     return files
