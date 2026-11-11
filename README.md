@@ -4,7 +4,7 @@
 
 Enochaeon is a spoken cipher. A text file is transliterated, letter by letter, from English into Hebrew and then into [Enochian](https://en.wikipedia.org/wiki/Enochian), the angelic language John Dee, Elizabeth I's astrologer, recorded in 1583. Each English word is spoken as one breath of the sounds assigned to those Enochian letters. A phone recognizer hears the breath, the same key turns the letters back into English, and a word list corrects a reading that is not an English word. [Deciphered text](example/pangram.decoded.txt) will likely have imperfections, which was decoded from this [file](https://github.com/user-attachments/assets/8c50c9ac-33a0-4877-99f9-c73b2ea6ccb7). English to Enochian translations use a more natural sounding TTS (see mp4 example below).
 
-**Translation** speaks an English phrase as Enochian words. The phrase is matched to the English glosses in the lexicon, and each match is spoken from that word's pronunciation. 
+**Translation** speaks an English phrase as Enochian words. The phrase is matched to the English glosses in the [lexicon](calls/lexicon.json), and each match is spoken from that word's pronunciation. 
 
 The **Calls** can be spoken too. A file in `calls/` is already Enochian, and each spelling is spoken from the pronunciation stored for it.
 
