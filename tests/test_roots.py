@@ -2,6 +2,7 @@
 
 from __future__ import annotations
 
+import base64
 import tempfile
 import unittest
 from pathlib import Path
@@ -11,6 +12,7 @@ from enochaeon.config import CallVoice
 from enochaeon.enochian import call_files, phonetic_text
 from enochaeon.errors import EnochaeonError
 from enochaeon.roots import Root, load_roots
+from enochaeon.page import render_page
 from enochaeon.translate import match_phrase, speak_file, speak_phrase
 
 
@@ -198,6 +200,14 @@ class PhraseTest(unittest.TestCase):
                 speak_phrase("into the", dest, _roots(), _Near(), CallVoice())
             self.assertFalse(dest.is_file())
 
+    def test_a_bracketed_word_is_left_off_the_page(self) -> None:
+        page = render_page("kavan [jay] w.", "ritual.wav")
+        self.assertIn(">cauan<", page)
+        self.assertNotIn("jay", page)
+        self.assertNotIn("kavan w.", page)
+        self.assertIn(">uu<", page)
+        self.assertIn("background: white", page)
+
     def test_a_text_file_names_the_wav_and_writes_the_spoken_words(self) -> None:
         import shutil
 
@@ -214,6 +224,12 @@ class PhraseTest(unittest.TestCase):
             self.assertFalse((source.parent / ".enochaeon" / "ritual-phonetic.txt").is_file())
             self.assertIsNone(read_comment(dest))
             self.assertGreater(dest.stat().st_size, 44)
+            page = dest.with_suffix(".html").read_text(encoding="utf-8")
+            self.assertIn("balt", page)
+            self.assertIn("@font-face", page)
+            self.assertIn("<audio controls", page)
+            encoded = base64.b64encode(dest.read_bytes()).decode("ascii")
+            self.assertIn(f'src="data:audio/wav;base64,{encoded}"', page)
 
     def test_an_existing_wav_is_left_in_place(self) -> None:
         with tempfile.TemporaryDirectory() as directory:
@@ -225,6 +241,7 @@ class PhraseTest(unittest.TestCase):
                 speak_file(source, _roots(), _ExactOnly(), CallVoice())
             self.assertEqual(dest.read_bytes(), b"kept")
             self.assertFalse((source.parent / ".enochaeon" / "ritual-enochian.txt").is_file())
+            self.assertFalse(dest.with_suffix(".html").is_file())
 
     def test_nothing_close_in_a_file_writes_no_trace(self) -> None:
         with tempfile.TemporaryDirectory() as directory:
@@ -233,6 +250,7 @@ class PhraseTest(unittest.TestCase):
             with self.assertRaises(EnochaeonError):
                 speak_file(source, _roots(), _Near(), CallVoice())
             self.assertFalse(source.with_suffix(".wav").is_file())
+            self.assertFalse(source.with_suffix(".html").is_file())
             self.assertFalse((source.parent / ".enochaeon").exists())
 
     def test_the_wav_has_no_cipher_comment(self) -> None:

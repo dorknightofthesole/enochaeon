@@ -55,7 +55,9 @@ enochaeon translate ritual.txt #translate English text into spoken Enochian
 
 Pass a `.txt` file of Enochian spellings to `enochaeon calls`. The wav is written beside that file.
 
-`enochaeon translate` writes a wav beside the English file, and `.enochaeon/<stem>-enochian.txt` lists the Call words that wav speaks. An English word with nothing close stays in that file in brackets and is left out of the wav. The wav is not read back.
+`enochaeon translate` writes a wav beside the English file, and `.enochaeon/<stem>-enochian.txt` lists the Call words that wav speaks. The same run writes `<stem>.html` beside the wav, showing the spoken spellings in Enochian letters and playing the recording. An English word with nothing close stays in that file in brackets and is left out of the wav. The wav is not read back.
+
+An [example](example/pangram.html) of the Enochian generated text.
 
 ### Stage files
 

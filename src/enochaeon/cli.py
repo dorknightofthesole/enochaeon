@@ -93,6 +93,7 @@ def _translate(source: str | None, force: bool) -> int:
         print("left out: " + " ".join(result.left_out))
     print(trace)
     print(dest)
+    print(dest.with_suffix(".html"))
     return 0
 
 

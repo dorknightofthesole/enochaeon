@@ -2,8 +2,9 @@
 
 An exact English word wins. Otherwise a local embedding ranks the English
 words listed in calls/lexicon.json. This does not cipher the file or read
-the wav back. The wav takes the source file's name, and the spoken spellings
-are written beside it.
+the wav back. The wav takes the source file's name. The spoken spellings
+are written beside it, and an HTML page of those spellings is written
+next to the wav.
 """
 
 from __future__ import annotations
@@ -17,6 +18,7 @@ from enochaeon.audio import write_wav
 from enochaeon.config import CallVoice
 from enochaeon.enochian import _readings, audible, render, spoken_text
 from enochaeon.errors import EnochaeonError
+from enochaeon.page import render_page
 from enochaeon.roots import Root
 
 # Cosine similarity at or above this line may speak a Call word.
@@ -156,7 +158,7 @@ def speak_file(
     force: bool = False,
     tagger=None,
 ) -> tuple[Translation, Path, Path]:
-    """Write the spoken spellings and a wav named from the source."""
+    """Write the spoken spellings, a wav, and an HTML page of that trace."""
     if not source.is_file():
         raise EnochaeonError(f"No such file: {source}")
     if source.suffix.lower() not in {".txt", ".md"}:
@@ -172,6 +174,9 @@ def speak_file(
     enochian = folder / f"{source.stem}-enochian.txt"
     enochian.write_text(_with_newline(result.trace), encoding="utf-8")
     write_wav(dest, render(text, voice=voice), comment="")
+    dest.with_suffix(".html").write_text(
+        render_page(result.trace, dest.name, dest.read_bytes()), encoding="utf-8"
+    )
     return result, enochian, dest
 
 

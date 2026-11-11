@@ -1,0 +1,14 @@
+Enochian letter drawings
+
+The letter shapes in enochian.ttf are the drawings published as individual
+SVG files on Wikimedia Commons by Лорд Алекс (Xena the Rebel Girl) on
+28 March 2018, under the Creative Commons Attribution-ShareAlike 3.0
+Unported license.
+
+https://creativecommons.org/licenses/by-sa/3.0/
+
+The files are listed in Category:Enochian letters:
+https://commons.wikimedia.org/wiki/Category:Enochian_letters
+
+This font embeds those drawings so a page can show them from disk. It is
+a derivative of those drawings and stays under the same license.

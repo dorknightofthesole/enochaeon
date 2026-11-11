@@ -116,7 +116,7 @@ A comma stays on the line, and a period starts a new line.
 
 ## Translate
 
-`enochaeon translate ritual.txt` speaks an English phrase as Call words. This is not the cipher, and the wav is not read back. The command writes `ritual.wav` beside the source. `.enochaeon/ritual-enochian.txt` lists the Call words that wav speaks. There is no Hebrew file and no phonetic file. The wav uses the same `calls.ipa` reading as the Calls, and the same voice in `enochaeon.json`.
+`enochaeon translate ritual.txt` speaks an English phrase as Call words. This is not the cipher, and the wav is not read back. The command writes `ritual.wav` beside the source, and `ritual.html` beside that wav, showing the spoken spellings in Enochian letters and playing the recording. `.enochaeon/ritual-enochian.txt` lists the Call words that wav speaks. There is no Hebrew file and no phonetic file. The wav uses the same `calls.ipa` reading as the Calls, and the same voice in `enochaeon.json`.
 
 An exact gloss wins, and it does not ask the model. A gloss may cover up to four English words. Otherwise the phrase is compared with the English glosses in the lexicon by `all-MiniLM-L6-v2`. A score under 0.50 is left unmatched. Among the glosses at or above that line, the one with the same part of speech is spoken. If no gloss of that part clears the line, the highest score is spoken. The part of speech comes from `nltk`.
 
@@ -143,3 +143,35 @@ The word list is American SCOWL, size 50: the English and American `words` lists
 > Permission to use, copy, modify, distribute and sell these word lists, the associated scripts, the output created from the scripts, and its documentation for any purpose is hereby granted without fee, provided that the above copyright notice appears in all copies and that both that copyright notice and this permission notice appear in supporting documentation. Kevin Atkinson makes no representations about the suitability of this array for any purpose. It is provided "as is" without express or implied warranty.
 
 The list is built with the inflection data and the American spelling variants, so the WordNet 1.6 notice (Copyright 1997 by Princeton University), the VarCon notices, and Geoff Kuenning's Ispell terms apply as well. Those notices are reproduced in full in `src/enochaeon/data/SCOWL-Copyright.txt`, which is installed with the package. The same permission notice is at the top of `src/enochaeon/data/words.txt`.
+
+
+## Theory
+
+The 48 Calls also known as Keys are in sympatico with the 50 Gates of Understanding. The term understanding is literally the meaning of the third sephiroth Binah, the Great Mother. She is the Fiftieth Gate. This means that the lower seven sephiroth are the source of the 49 gates, the lower seven multipled by themselves. Thus the first gate is **Malkuth of Malkuth**, the second is **Malkuth of Yesod**, and the 49th is **Chesed of Chesed**. Between the 49th gate and the 50th is the Abyss. Attainment of the 50th is akin to advancement into those Supernal spheres. In the Hermetic Order of the Golden Dawn it was speculated that mortal men and women could not attain to these heights but were the realm of the Secret Chiefs or the Masters. Tradition says that even the 50th Gate was beyond Moses. One question is where is the 49th and the 50th Enochian Key?
+
+Dee recorded the explanation of the 49 Tables of Liber Loagaeth and how they correspond to the 48 practical Angelic Keys (or Calls), explaining that the 49th gate remains completely closed to humanity:
+
+*“I am therefore to instruct and inform you, according to your doctrine delivered, which is contained in 49 Tables. In 49 voices, or callings: which are the Natural Keys to open those, not 49 but 48 (for one is not to be opened) Gates of Understanding; whereby you shall have knowledge to move every Gate...”*
+
+It is my belief that [Aleister Crowley](https://en.wikipedia.org/wiki/Aleister_Crowley) discovered the 49th key during the Amalantrah Working in New York. At the end of this ritual is this barbarous incantation:
+
+> Ol! Altathiera zazare tofaa Miwela rono darala zabaa Re! Re! zacar tofaa marada Ata bewela to rafor rom kalom Bawa! Bawa!
+Ol! ata ludu to rafor balong Um -- zala mala tummri charlo (krory) <<?krong>> Upala forlo marana palaa Bewala Rela ra tofor banaa Bawa! Bawa!
+Upmara rada tofagile kor Nara dala tofare caralor Mewa topi dodalare tomaa Utta bewale no ropi garaa Bawa! Bawa!
+Ol kore kore kunura coralo Bajil ke -- n -- Ol rafutala pilo Mawa bewala radara kolat Mawalado peruba korabat Bawa! Bawa!
+
+There are five words, like zacar, that are found within the Enochian Calls. I am sure it would be controversial amongst Enochian scholars to claim that this verse is Enochian, including new words not found in the original Calls. Just as it would be controversial to Kabbalists to claim that the Enochian *Keys* unlock the 48 *Gates*.
+
+<img src="imgs/Lam.png" alt="Lam" width="320">
+
+Around the time of the Amalantrah Working, Crowley drew the portrait of Lam, who bears a strong resemblence to the Grey aliens of UFO lore. Kenneth Grant speculated that Lam was connected with the Amalantrah Working. I think a key supporting this is the Tibetan letters at the bottom of the Lam portrait that appear to be a stylized rendering of the number 49! Lam I would argue is the key to understanding the cryptic expression from Amalantrah, "It's all in the egg". The solution to this enigma is found in the expression itself. What is in the egg, the All, i.e. Pan. The goat god represented generation and creation. It was the original Goat of Mendes, that replaced, under Greek rule, the Egyptian *ram* god Banebdjedet, who was also a god of procreation, generation. Pan is equivilant of Eros, and also the Orphic god of light Phanes that emerges from the cosmic egg. The shape of Lam's head further alludes to this riddle. The egg is the quintesence, the cosmic egg that proceeds the Big Bang.
+
+The 50th key, the final missing key, I think is found in the vision of the Aethyr of ZAA. In it appears this incantation:
+
+> ARARNAY OBOLO MAHARNA TUTULU NOM LAHARA EN NEDIEZO LO SAD FONUSA SOBANA ARANA BINUF LA LA LA ARPAZNA UOHULU
+
+In a footnote Crowley interprets it to mean:
+
+*Hither, O Holy one/ whose burden pulls at thy spine/ Ho! Ho! Ho! The two-headed God (Janus) ploughs thy back/ sows habitations upon thy back/ thou many-phallused queen/ of princely loves/ which are all sodomies/ so that the holy ones laugh and shake with laughter/ while the lords of mischief/ spend upon thee/ TUTULU (this word cannot be translated. See Liber VII). down bounces from thy back/ the merry mad foetus-faces/ an emission/ Gather ye sun-roses, sun-roses gather ye from the split backside of the Virgin (Earth).*
+
+The only word not translated is **Tutulu**. I refer to this incantation as the Call of [Tutulu](https://www.hplovecraft.com/writings/texts/fiction/cc.aspx). This is the Call of the Abyss, the final Gate to the Beyond.

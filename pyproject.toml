@@ -26,4 +26,10 @@ enochaeon = "enochaeon.cli:main"
 where = ["src"]
 
 [tool.setuptools.package-data]
-enochaeon = ["data/alphabet.json", "data/words.txt", "data/SCOWL-Copyright.txt"]
+enochaeon = [
+  "data/alphabet.json",
+  "data/words.txt",
+  "data/SCOWL-Copyright.txt",
+  "data/enochian.ttf",
+  "data/enochian-letters-license.txt",
+]
