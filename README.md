@@ -10,6 +10,8 @@ The **Calls** can be spoken too. A file in `calls/` is already Enochian, and eac
 
 How the three paths work, and the files they read, is in [`docs/enochaeon-in-theory-and-practice.md`](docs/enochaeon-in-theory-and-practice.md).
 
+The name Enochaeon joins Enoch, the prophet who spoke with the angels, and the Greek *aeon*, an epoch or age.
+
 ## Setup
 
 ```bash
@@ -88,3 +90,9 @@ https://github.com/user-attachments/assets/b02d0d59-9c8a-4435-b4ad-e28aa0a2aa8d
 [`example/First Call.wav`](example/First%20Call.wav) is a spoken reading of [`calls/01.txt`](calls/01.txt).
 
 An output that is already there is left alone unless you pass `--force`. A WAV made here carries a short comment with the gap lengths and no plaintext. A WAV without that comment is still decoded, with a warning.
+
+## License
+
+Copyright 2026 Eddie Gonzales. This work is licensed under a [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0/).
+
+`src/enochaeon/data/words.txt` is SCOWL and keeps the terms in [`SCOWL-Copyright.txt`](src/enochaeon/data/SCOWL-Copyright.txt). The Enochian letters in [`enochian.ttf`](src/enochaeon/data/enochian.ttf) are by Лорд Алекс and stay under [CC BY-SA 3.0](src/enochaeon/data/enochian-letters-license.txt).
