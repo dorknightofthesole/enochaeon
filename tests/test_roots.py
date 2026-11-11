@@ -63,6 +63,9 @@ class DictionaryTest(unittest.TestCase):
         self.assertEqual(roots["gohus"].glosses, roots["goho"].glosses)
         self.assertEqual(roots["vorsg"].glosses, ("over you", "over"))
         self.assertEqual(roots["od"].glosses, ("and",))
+        self.assertEqual(roots["altathiera"].glosses, ())
+        self.assertEqual(roots["tutulu"].glosses, ())
+        self.assertEqual(roots["ararnay"].glosses, ("hither, o holy one",))
 
     def test_a_lexicon_entry_holds_several_english_words(self) -> None:
         with tempfile.TemporaryDirectory() as directory:

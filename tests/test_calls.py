@@ -109,10 +109,13 @@ class CallPronunciationTest(unittest.TestCase):
         self.assertIn("'@'", str(caught.exception))
         self.assertIn("position 2", str(caught.exception))
 
-    def test_the_forty_eight_calls_are_files(self) -> None:
+    def test_the_call_files_are_present(self) -> None:
         root = Path(__file__).resolve().parents[1] / "calls"
         files = call_files(root)
-        self.assertEqual(len(files), 48)
+        self.assertEqual(len(files), 50)
+        names = {path.name for path in files}
+        self.assertIn("49.txt", names)
+        self.assertIn("50.txt", names)
         first = (root / "01.txt").read_text(encoding="utf-8")
         self.assertTrue(first.startswith("Ol sonf vorsg"))
         lil = (root / "19-lil.txt").read_text(encoding="utf-8")

@@ -147,7 +147,7 @@ def _reading(path: Path, index: int, name: str, raw: object) -> str:
 
 
 def _glosses(path: Path, index: int, raw: object) -> list[str]:
-    if not isinstance(raw, list) or not raw:
+    if not isinstance(raw, list):
         raise EnochaeonError(f"{path.name} entry {index} needs english_glosses.")
     glosses: list[str] = []
     for item in raw:
@@ -156,6 +156,6 @@ def _glosses(path: Path, index: int, raw: object) -> list[str]:
         gloss = " ".join(item.lower().split())
         if gloss and gloss not in glosses:
             glosses.append(gloss)
-    if not glosses:
+    if raw and not glosses:
         raise EnochaeonError(f"{path.name} entry {index} needs an English word.")
     return glosses

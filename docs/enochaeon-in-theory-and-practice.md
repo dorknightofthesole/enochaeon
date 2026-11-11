@@ -96,7 +96,7 @@ A file in [`calls/`](../calls) is already Enochian, written in Dee's Latin lette
 
 `enochaeon calls` speaks every `.txt` in `./calls`. `enochaeon calls calls/01.txt` speaks one file. Each file gets a sibling `.wav`. A spelling is looked up in the lexicon, and the field named by `calls.ipa` is what is spoken. A spelling with no reading is left out of the recording and printed. A file with no readable word writes no wav.
 
-The letter rule in the cipher section is not this pronunciation. It still describes how the cipher speaks an English word. A Call does not speak it.
+The letter rule in the cipher section is not this pronunciation. It still describes how the cipher speaks an English word. Dee's forty-eight Keys do not speak it. Calls 49 and 50 are not part of those Keys; their new spellings are pronounced by the letter rule, and only the 50th call has English, from Crowley's footnote.
 
 Piper speaks the IPA. espeak speaks phonemes derived from that same string. `calls.engine` in [`enochaeon.json`](../enochaeon.json) chooses which one. `--engine espeak` or `--engine piper` overrides that for one Call run. `calls.piper.voice` is John's model, downloaded into `scratch/piper-voices/`. `calls.piper.length_scale` is how long Piper holds each phoneme. `1.0` is conversational, and higher is slower. `calls.piper.word_ms` is the silence between Piper breaths. espeak keeps 600 milliseconds between words. A Call wav carries the same gap comment as a cipher wav.
 
@@ -136,7 +136,7 @@ An English word with nothing close stays in the Enochian file in brackets and is
 
 The syllable rule comes from Aaron Leitch's reading of John Dee's phonetic notes: a vowel followed by a consonant in its syllable is short, a vowel left open is long, and a letter standing alone takes its letter-name. He states that rule in the pronunciation essay ["Angelical Pronunciation"](http://kheph777.tripod.com/art_angelical_pronunciation.pdf) and again in the introduction to *The Angelical Language, Volume II: An Encyclopedic Lexicon of the Tongue of Angels* (Llewellyn, 2010). This program applies it to a whole English word on the cipher path. It does not use Dee's syllable divisions. *Volume I: The Complete History and Mythos of the Tongue of Angels* (Llewellyn, 2010) is the account of the alphabet this key follows: Dee's letter names, the Hebrew letter each one answers to, the correspondence used by the Golden Dawn, and the Latin letters Leitch reads. None of Leitch's prose is copied here. The cipher does not include the lexicon, the glosses, or Leitch's own phonetic spellings from that book.
 
-The texts in `calls/` are Dee's forty-eight Keys. They are not taken from Leitch's lexicon. The glosses and the two pronunciations used by Calls and translate are [`calls/lexicon.json`](../calls/lexicon.json).
+The texts in `calls/` are Dee's forty-eight Keys. Calls 49 and 50 are not part of those Keys; their new spellings are pronounced by the letter rule, and only the 50th call has English, from Crowley's footnote. The texts are not taken from Leitch's lexicon. The glosses and the two pronunciations used by Calls and translate are [`calls/lexicon.json`](../calls/lexicon.json).
 
 The word list is American SCOWL, size 50: the English and American `words` lists through that size, lowercased to ASCII letters. Proper names, abbreviations, contractions, and the uppercase lists are not included. SCOWL is Copyright 2000-2018 by Kevin Atkinson.
 

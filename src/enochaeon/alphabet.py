@@ -24,7 +24,7 @@ UNKNOWN = "�"
 VOWELS = frozenset({"A", "E", "I", "O", "U", "V"})
 # A comma stays in the line. A stop ends it. Marks with no sound are skipped.
 PUNCT_BREAKS = {",": " ", ";": " ", ":": " ", "-": " ", ".": "\n", "!": "\n", "?": "\n"}
-PUNCT_SKIP = set("()[]{}'’\"“”")
+PUNCT_SKIP = set("()[]{}<>'’\"“”")
 
 
 def syllable_forms(syllables: tuple[Atom, ...] | list[Atom]) -> list[tuple[Atom, str]]:

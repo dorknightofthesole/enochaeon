@@ -37,7 +37,8 @@ class Letter:
 
     @property
     def vowel(self) -> bool:
-        return self.latin in {"A", "E", "I", "O", "U"}
+        # J is the vowel I. Dee's alphabet has no separate J.
+        return self.latin in {"A", "E", "I", "J", "O", "U"}
 
 
 def _letter(latin: str, phone: str, name: str, long: str = "") -> Letter:
@@ -46,10 +47,12 @@ def _letter(latin: str, phone: str, name: str, long: str = "") -> Letter:
 
 # Dee's alphabet in Latin letters. C and K are both the k sound. Y is the
 # consonant used when a word starts with I and the next letter is a vowel.
+# J is not its own letter. A Latin J is the vowel I.
 LETTERS: dict[str, Letter] = {
     "A": _letter("A", "a", "A:", "A:"),
     "E": _letter("E", "E", "eI", "eI"),
     "I": _letter("I", "I", "i:", "i:"),
+    "J": _letter("J", "I", "i:", "i:"),
     "O": _letter("O", "Q", "oU", "oU"),
     "U": _letter("U", "U", "u:", "u:"),
     "B": _letter("B", "b", "b'i:"),

@@ -224,6 +224,19 @@
     ]
   },
   {
+    "root": "ALTATHIERA",
+    "variants": [
+      "ALTATHIERA"
+    ],
+    "pos": "noun",
+    "english_glosses": [],
+    "dee_ipa": "/æ.l.t.æ.t.h.iː.ɛ.r.ɑː/",
+    "golden_dawn_ipa": "/æ.l.t.æ.t.h.iː.ɛ.r.ɑː/",
+    "sources": [
+      "Key 49"
+    ]
+  },
+  {
     "root": "AMIRAN",
     "variants": [
       "AMIRAN"
@@ -290,6 +303,51 @@
     ]
   },
   {
+    "root": "ARANA",
+    "variants": [
+      "ARANA"
+    ],
+    "pos": "noun",
+    "english_glosses": [
+      "the merry mad foetus-faces"
+    ],
+    "dee_ipa": "/æ.r.æ.n.ɑː/",
+    "golden_dawn_ipa": "/æ.r.æ.n.ɑː/",
+    "sources": [
+      "Key 50"
+    ]
+  },
+  {
+    "root": "ARARNAY",
+    "variants": [
+      "ARARNAY"
+    ],
+    "pos": "noun",
+    "english_glosses": [
+      "hither, o holy one"
+    ],
+    "dee_ipa": "/æ.r.æ.r.n.æ.j/",
+    "golden_dawn_ipa": "/æ.r.æ.r.n.æ.j/",
+    "sources": [
+      "Key 50"
+    ]
+  },
+  {
+    "root": "ARPAZNA",
+    "variants": [
+      "ARPAZNA"
+    ],
+    "pos": "noun",
+    "english_glosses": [
+      "gather ye sun-roses, sun-roses gather ye from the split backside of the virgin (earth)"
+    ],
+    "dee_ipa": "/æ.r.p.æ.z.n.ɑː/",
+    "golden_dawn_ipa": "/æ.r.p.æ.z.n.ɑː/",
+    "sources": [
+      "Key 50"
+    ]
+  },
+  {
     "root": "AS",
     "variants": [
       "ASA",
@@ -323,6 +381,19 @@
     "sources": [
       "Key 1",
       "Key 2"
+    ]
+  },
+  {
+    "root": "ATA",
+    "variants": [
+      "ATA"
+    ],
+    "pos": "noun",
+    "english_glosses": [],
+    "dee_ipa": "/æ.t.ɑː/",
+    "golden_dawn_ipa": "/æ.t.ɑː/",
+    "sources": [
+      "Key 49"
     ]
   },
   {
@@ -417,6 +488,32 @@
     ]
   },
   {
+    "root": "BAJIL",
+    "variants": [
+      "BAJIL"
+    ],
+    "pos": "noun",
+    "english_glosses": [],
+    "dee_ipa": "/b.ɑː.iː.ɪ.l/",
+    "golden_dawn_ipa": "/b.ɑː.iː.ɪ.l/",
+    "sources": [
+      "Key 49"
+    ]
+  },
+  {
+    "root": "BALONG",
+    "variants": [
+      "BALONG"
+    ],
+    "pos": "noun",
+    "english_glosses": [],
+    "dee_ipa": "/b.æ.l.ɒ.n.ɡ/",
+    "golden_dawn_ipa": "/b.æ.l.ɒ.n.ɡ/",
+    "sources": [
+      "Key 49"
+    ]
+  },
+  {
     "root": "BALT",
     "variants": [
       "BALTIM",
@@ -439,6 +536,19 @@
     ]
   },
   {
+    "root": "BANAA",
+    "variants": [
+      "BANAA"
+    ],
+    "pos": "noun",
+    "english_glosses": [],
+    "dee_ipa": "/b.æ.n.ɑː.ɑː/",
+    "golden_dawn_ipa": "/b.æ.n.ɑː.ɑː/",
+    "sources": [
+      "Key 49"
+    ]
+  },
+  {
     "root": "BASTI",
     "variants": [
       "BASTIS"
@@ -453,6 +563,19 @@
     "golden_dawn_ipa": "/bɑː.sɛ.tiː/",
     "sources": [
       "Key 18"
+    ]
+  },
+  {
+    "root": "BAWA",
+    "variants": [
+      "BAWA"
+    ],
+    "pos": "noun",
+    "english_glosses": [],
+    "dee_ipa": "/b.æ.w.ɑː/",
+    "golden_dawn_ipa": "/b.æ.w.ɑː/",
+    "sources": [
+      "Key 49"
     ]
   },
   {
@@ -473,6 +596,45 @@
     ]
   },
   {
+    "root": "BEWALA",
+    "variants": [
+      "BEWALA"
+    ],
+    "pos": "noun",
+    "english_glosses": [],
+    "dee_ipa": "/b.ɛ.w.æ.l.ɑː/",
+    "golden_dawn_ipa": "/b.ɛ.w.æ.l.ɑː/",
+    "sources": [
+      "Key 49"
+    ]
+  },
+  {
+    "root": "BEWALE",
+    "variants": [
+      "BEWALE"
+    ],
+    "pos": "noun",
+    "english_glosses": [],
+    "dee_ipa": "/b.ɛ.w.æ.l.eɪ/",
+    "golden_dawn_ipa": "/b.ɛ.w.æ.l.eɪ/",
+    "sources": [
+      "Key 49"
+    ]
+  },
+  {
+    "root": "BEWELA",
+    "variants": [
+      "BEWELA"
+    ],
+    "pos": "noun",
+    "english_glosses": [],
+    "dee_ipa": "/b.ɛ.w.ɛ.l.ɑː/",
+    "golden_dawn_ipa": "/b.ɛ.w.ɛ.l.ɑː/",
+    "sources": [
+      "Key 49"
+    ]
+  },
+  {
     "root": "BIEN",
     "variants": [
       "BIEN",
@@ -490,6 +652,21 @@
       "Key 1",
       "Key 2",
       "Key 10"
+    ]
+  },
+  {
+    "root": "BINUF",
+    "variants": [
+      "BINUF"
+    ],
+    "pos": "noun",
+    "english_glosses": [
+      "an emission"
+    ],
+    "dee_ipa": "/b.ɪ.n.ʊ.f/",
+    "golden_dawn_ipa": "/b.ɪ.n.ʊ.f/",
+    "sources": [
+      "Key 50"
     ]
   },
   {
@@ -775,6 +952,19 @@
     ]
   },
   {
+    "root": "CARALOR",
+    "variants": [
+      "CARALOR"
+    ],
+    "pos": "noun",
+    "english_glosses": [],
+    "dee_ipa": "/k.æ.r.æ.l.ɒ.r/",
+    "golden_dawn_ipa": "/k.æ.r.æ.l.ɒ.r/",
+    "sources": [
+      "Key 49"
+    ]
+  },
+  {
     "root": "CARBAF",
     "variants": [
       "CARBAF"
@@ -825,6 +1015,19 @@
       "Key 1",
       "Key 2",
       "Key 3"
+    ]
+  },
+  {
+    "root": "CHARLO",
+    "variants": [
+      "CHARLO"
+    ],
+    "pos": "noun",
+    "english_glosses": [],
+    "dee_ipa": "/k.h.æ.r.l.oʊ/",
+    "golden_dawn_ipa": "/k.h.æ.r.l.oʊ/",
+    "sources": [
+      "Key 49"
     ]
   },
   {
@@ -1012,6 +1215,19 @@
     ]
   },
   {
+    "root": "CORALO",
+    "variants": [
+      "CORALO"
+    ],
+    "pos": "noun",
+    "english_glosses": [],
+    "dee_ipa": "/k.ɒ.r.æ.l.oʊ/",
+    "golden_dawn_ipa": "/k.ɒ.r.æ.l.oʊ/",
+    "sources": [
+      "Key 49"
+    ]
+  },
+  {
     "root": "CORAXO",
     "variants": [
       "CORAXO"
@@ -1114,6 +1330,19 @@
     ]
   },
   {
+    "root": "DALA",
+    "variants": [
+      "DALA"
+    ],
+    "pos": "noun",
+    "english_glosses": [],
+    "dee_ipa": "/d.æ.l.ɑː/",
+    "golden_dawn_ipa": "/d.æ.l.ɑː/",
+    "sources": [
+      "Key 49"
+    ]
+  },
+  {
     "root": "DAMPLOZ",
     "variants": [
       "DAMPLOZ"
@@ -1144,6 +1373,19 @@
     "golden_dawn_ipa": "/dɑːr/",
     "sources": [
       "Key 18"
+    ]
+  },
+  {
+    "root": "DARALA",
+    "variants": [
+      "DARALA"
+    ],
+    "pos": "noun",
+    "english_glosses": [],
+    "dee_ipa": "/d.æ.r.æ.l.ɑː/",
+    "golden_dawn_ipa": "/d.æ.r.æ.l.ɑː/",
+    "sources": [
+      "Key 49"
     ]
   },
   {
@@ -1277,6 +1519,19 @@
     "golden_dawn_ipa": "/doʊ.ɑː.liːm/",
     "sources": [
       "Key 14"
+    ]
+  },
+  {
+    "root": "DODALARE",
+    "variants": [
+      "DODALARE"
+    ],
+    "pos": "noun",
+    "english_glosses": [],
+    "dee_ipa": "/d.ɒ.d.æ.l.æ.r.eɪ/",
+    "golden_dawn_ipa": "/d.ɒ.d.æ.l.æ.r.eɪ/",
+    "sources": [
+      "Key 49"
     ]
   },
   {
@@ -1571,6 +1826,21 @@
     ]
   },
   {
+    "root": "EN",
+    "variants": [
+      "EN"
+    ],
+    "pos": "noun",
+    "english_glosses": [
+      "of princely loves"
+    ],
+    "dee_ipa": "/ɛ.n/",
+    "golden_dawn_ipa": "/ɛ.n/",
+    "sources": [
+      "Key 50"
+    ]
+  },
+  {
     "root": "ENAY",
     "variants": [
       "ENAY"
@@ -1686,6 +1956,34 @@
     ]
   },
   {
+    "root": "FONUSA",
+    "variants": [
+      "FONUSA"
+    ],
+    "pos": "noun",
+    "english_glosses": [
+      "spend upon thee"
+    ],
+    "dee_ipa": "/f.ɒ.n.ʊ.s.ɑː/",
+    "golden_dawn_ipa": "/f.ɒ.n.ʊ.s.ɑː/",
+    "sources": [
+      "Key 50"
+    ]
+  },
+  {
+    "root": "FORLO",
+    "variants": [
+      "FORLO"
+    ],
+    "pos": "noun",
+    "english_glosses": [],
+    "dee_ipa": "/f.ɒ.r.l.oʊ/",
+    "golden_dawn_ipa": "/f.ɒ.r.l.oʊ/",
+    "sources": [
+      "Key 49"
+    ]
+  },
+  {
     "root": "GA",
     "variants": [
       "GA"
@@ -1700,6 +1998,19 @@
     "golden_dawn_ipa": "/ɡɑː/",
     "sources": [
       "Key 1"
+    ]
+  },
+  {
+    "root": "GARAA",
+    "variants": [
+      "GARAA"
+    ],
+    "pos": "noun",
+    "english_glosses": [],
+    "dee_ipa": "/ɡ.æ.r.ɑː.ɑː/",
+    "golden_dawn_ipa": "/ɡ.æ.r.ɑː.ɑː/",
+    "sources": [
+      "Key 49"
     ]
   },
   {
@@ -2183,6 +2494,123 @@
     ]
   },
   {
+    "root": "KALOM",
+    "variants": [
+      "KALOM"
+    ],
+    "pos": "noun",
+    "english_glosses": [],
+    "dee_ipa": "/k.æ.l.ɒ.m/",
+    "golden_dawn_ipa": "/k.æ.l.ɒ.m/",
+    "sources": [
+      "Key 49"
+    ]
+  },
+  {
+    "root": "KE",
+    "variants": [
+      "KE"
+    ],
+    "pos": "noun",
+    "english_glosses": [],
+    "dee_ipa": "/k.eɪ/",
+    "golden_dawn_ipa": "/k.eɪ/",
+    "sources": [
+      "Key 49"
+    ]
+  },
+  {
+    "root": "KOLAT",
+    "variants": [
+      "KOLAT"
+    ],
+    "pos": "noun",
+    "english_glosses": [],
+    "dee_ipa": "/k.ɒ.l.æ.t/",
+    "golden_dawn_ipa": "/k.ɒ.l.æ.t/",
+    "sources": [
+      "Key 49"
+    ]
+  },
+  {
+    "root": "KOR",
+    "variants": [
+      "KOR"
+    ],
+    "pos": "noun",
+    "english_glosses": [],
+    "dee_ipa": "/k.ɒ.r/",
+    "golden_dawn_ipa": "/k.ɒ.r/",
+    "sources": [
+      "Key 49"
+    ]
+  },
+  {
+    "root": "KORABAT",
+    "variants": [
+      "KORABAT"
+    ],
+    "pos": "noun",
+    "english_glosses": [],
+    "dee_ipa": "/k.ɒ.r.æ.b.æ.t/",
+    "golden_dawn_ipa": "/k.ɒ.r.æ.b.æ.t/",
+    "sources": [
+      "Key 49"
+    ]
+  },
+  {
+    "root": "KORE",
+    "variants": [
+      "KORE"
+    ],
+    "pos": "noun",
+    "english_glosses": [],
+    "dee_ipa": "/k.ɒ.r.eɪ/",
+    "golden_dawn_ipa": "/k.ɒ.r.eɪ/",
+    "sources": [
+      "Key 49"
+    ]
+  },
+  {
+    "root": "KRONG",
+    "variants": [
+      "KRONG"
+    ],
+    "pos": "noun",
+    "english_glosses": [],
+    "dee_ipa": "/k.r.ɒ.n.ɡ/",
+    "golden_dawn_ipa": "/k.r.ɒ.n.ɡ/",
+    "sources": [
+      "Key 49"
+    ]
+  },
+  {
+    "root": "KRORY",
+    "variants": [
+      "KRORY"
+    ],
+    "pos": "noun",
+    "english_glosses": [],
+    "dee_ipa": "/k.r.ɒ.r.j/",
+    "golden_dawn_ipa": "/k.r.ɒ.r.j/",
+    "sources": [
+      "Key 49"
+    ]
+  },
+  {
+    "root": "KUNURA",
+    "variants": [
+      "KUNURA"
+    ],
+    "pos": "noun",
+    "english_glosses": [],
+    "dee_ipa": "/k.ʊ.n.ʊ.r.ɑː/",
+    "golden_dawn_ipa": "/k.ʊ.n.ʊ.r.ɑː/",
+    "sources": [
+      "Key 49"
+    ]
+  },
+  {
     "root": "L",
     "variants": [
       "L"
@@ -2197,6 +2625,36 @@
     "golden_dawn_ipa": "/ɛl/",
     "sources": [
       "Key 1"
+    ]
+  },
+  {
+    "root": "LA",
+    "variants": [
+      "LA"
+    ],
+    "pos": "noun",
+    "english_glosses": [
+      "gather ye sun-roses, sun-roses gather ye from the split backside of the virgin (earth)"
+    ],
+    "dee_ipa": "/l.ɑː/",
+    "golden_dawn_ipa": "/l.ɑː/",
+    "sources": [
+      "Key 50"
+    ]
+  },
+  {
+    "root": "LAHARA",
+    "variants": [
+      "LAHARA"
+    ],
+    "pos": "noun",
+    "english_glosses": [
+      "thou many-phallused queen"
+    ],
+    "dee_ipa": "/l.æ.h.æ.r.ɑː/",
+    "golden_dawn_ipa": "/l.æ.h.æ.r.ɑː/",
+    "sources": [
+      "Key 50"
     ]
   },
   {
@@ -2300,6 +2758,21 @@
     ]
   },
   {
+    "root": "LO",
+    "variants": [
+      "LO"
+    ],
+    "pos": "noun",
+    "english_glosses": [
+      "so that the holy ones laugh and shake with laughter"
+    ],
+    "dee_ipa": "/l.oʊ/",
+    "golden_dawn_ipa": "/l.oʊ/",
+    "sources": [
+      "Key 50"
+    ]
+  },
+  {
     "root": "LONSHI",
     "variants": [
       "LONCHO",
@@ -2369,6 +2842,19 @@
     ]
   },
   {
+    "root": "LUDU",
+    "variants": [
+      "LUDU"
+    ],
+    "pos": "noun",
+    "english_glosses": [],
+    "dee_ipa": "/l.ʊ.d.uː/",
+    "golden_dawn_ipa": "/l.ʊ.d.uː/",
+    "sources": [
+      "Key 49"
+    ]
+  },
+  {
     "root": "LUSD",
     "variants": [
       "LUSDAN"
@@ -2404,6 +2890,34 @@
       "Key 1",
       "Key 2",
       "Key 3"
+    ]
+  },
+  {
+    "root": "MAHARNA",
+    "variants": [
+      "MAHARNA"
+    ],
+    "pos": "noun",
+    "english_glosses": [
+      "ho! ho! ho! the two-headed god (janus) ploughs thy back"
+    ],
+    "dee_ipa": "/m.æ.h.æ.r.n.ɑː/",
+    "golden_dawn_ipa": "/m.æ.h.æ.r.n.ɑː/",
+    "sources": [
+      "Key 50"
+    ]
+  },
+  {
+    "root": "MALA",
+    "variants": [
+      "MALA"
+    ],
+    "pos": "noun",
+    "english_glosses": [],
+    "dee_ipa": "/m.æ.l.ɑː/",
+    "golden_dawn_ipa": "/m.æ.l.ɑː/",
+    "sources": [
+      "Key 49"
     ]
   },
   {
@@ -2457,6 +2971,58 @@
     ]
   },
   {
+    "root": "MARADA",
+    "variants": [
+      "MARADA"
+    ],
+    "pos": "noun",
+    "english_glosses": [],
+    "dee_ipa": "/m.æ.r.æ.d.ɑː/",
+    "golden_dawn_ipa": "/m.æ.r.æ.d.ɑː/",
+    "sources": [
+      "Key 49"
+    ]
+  },
+  {
+    "root": "MARANA",
+    "variants": [
+      "MARANA"
+    ],
+    "pos": "noun",
+    "english_glosses": [],
+    "dee_ipa": "/m.æ.r.æ.n.ɑː/",
+    "golden_dawn_ipa": "/m.æ.r.æ.n.ɑː/",
+    "sources": [
+      "Key 49"
+    ]
+  },
+  {
+    "root": "MAWA",
+    "variants": [
+      "MAWA"
+    ],
+    "pos": "noun",
+    "english_glosses": [],
+    "dee_ipa": "/m.æ.w.ɑː/",
+    "golden_dawn_ipa": "/m.æ.w.ɑː/",
+    "sources": [
+      "Key 49"
+    ]
+  },
+  {
+    "root": "MAWALADO",
+    "variants": [
+      "MAWALADO"
+    ],
+    "pos": "noun",
+    "english_glosses": [],
+    "dee_ipa": "/m.æ.w.æ.l.æ.d.oʊ/",
+    "golden_dawn_ipa": "/m.æ.w.æ.l.æ.d.oʊ/",
+    "sources": [
+      "Key 49"
+    ]
+  },
+  {
     "root": "MED",
     "variants": [
       "MED"
@@ -2471,6 +3037,19 @@
     "golden_dawn_ipa": "/mɛd/",
     "sources": [
       "Key 1"
+    ]
+  },
+  {
+    "root": "MEWA",
+    "variants": [
+      "MEWA"
+    ],
+    "pos": "noun",
+    "english_glosses": [],
+    "dee_ipa": "/m.ɛ.w.ɑː/",
+    "golden_dawn_ipa": "/m.ɛ.w.ɑː/",
+    "sources": [
+      "Key 49"
     ]
   },
   {
@@ -2540,6 +3119,19 @@
     ]
   },
   {
+    "root": "MIWELA",
+    "variants": [
+      "MIWELA"
+    ],
+    "pos": "noun",
+    "english_glosses": [],
+    "dee_ipa": "/m.ɪ.w.ɛ.l.ɑː/",
+    "golden_dawn_ipa": "/m.ɪ.w.ɛ.l.ɑː/",
+    "sources": [
+      "Key 49"
+    ]
+  },
+  {
     "root": "MOLAP",
     "variants": [
       "MOLAP"
@@ -2570,6 +3162,19 @@
     "golden_dawn_ipa": "/moʊ.sɛ.pɛ.lɛh/",
     "sources": [
       "Key 14"
+    ]
+  },
+  {
+    "root": "N",
+    "variants": [
+      "N"
+    ],
+    "pos": "noun",
+    "english_glosses": [],
+    "dee_ipa": "/ˈɛn/",
+    "golden_dawn_ipa": "/ˈɛn/",
+    "sources": [
+      "Key 49"
     ]
   },
   {
@@ -2606,6 +3211,19 @@
     ]
   },
   {
+    "root": "NARA",
+    "variants": [
+      "NARA"
+    ],
+    "pos": "noun",
+    "english_glosses": [],
+    "dee_ipa": "/n.æ.r.ɑː/",
+    "golden_dawn_ipa": "/n.æ.r.ɑː/",
+    "sources": [
+      "Key 49"
+    ]
+  },
+  {
     "root": "NAZPS",
     "variants": [
       "NAZPS"
@@ -2619,6 +3237,21 @@
     "golden_dawn_ipa": "/nɑː.zɒd.pɛs/",
     "sources": [
       "Key 8"
+    ]
+  },
+  {
+    "root": "NEDIEZO",
+    "variants": [
+      "NEDIEZO"
+    ],
+    "pos": "noun",
+    "english_glosses": [
+      "which are all sodomies"
+    ],
+    "dee_ipa": "/n.ɛ.d.iː.ɛ.z.oʊ/",
+    "golden_dawn_ipa": "/n.ɛ.d.iː.ɛ.z.oʊ/",
+    "sources": [
+      "Key 50"
     ]
   },
   {
@@ -2653,6 +3286,19 @@
     "golden_dawn_ipa": "/niː.iː.roʊ/",
     "sources": [
       "Key 11"
+    ]
+  },
+  {
+    "root": "NO",
+    "variants": [
+      "NO"
+    ],
+    "pos": "noun",
+    "english_glosses": [],
+    "dee_ipa": "/n.oʊ/",
+    "golden_dawn_ipa": "/n.oʊ/",
+    "sources": [
+      "Key 49"
     ]
   },
   {
@@ -2707,6 +3353,21 @@
     "golden_dawn_ipa": "/noʊ.koʊ/",
     "sources": [
       "Key 13"
+    ]
+  },
+  {
+    "root": "NOM",
+    "variants": [
+      "NOM"
+    ],
+    "pos": "noun",
+    "english_glosses": [
+      "sows habitations upon thy back"
+    ],
+    "dee_ipa": "/n.ɒ.m/",
+    "golden_dawn_ipa": "/n.ɒ.m/",
+    "sources": [
+      "Key 50"
     ]
   },
   {
@@ -2810,6 +3471,21 @@
     "golden_dawn_ipa": "/oʊ.bɛ.nɛks/",
     "sources": [
       "Key 16"
+    ]
+  },
+  {
+    "root": "OBOLO",
+    "variants": [
+      "OBOLO"
+    ],
+    "pos": "noun",
+    "english_glosses": [
+      "whose burden pulls at thy spine"
+    ],
+    "dee_ipa": "/ɒ.b.ɒ.l.oʊ/",
+    "golden_dawn_ipa": "/ɒ.b.ɒ.l.oʊ/",
+    "sources": [
+      "Key 50"
     ]
   },
   {
@@ -3067,6 +3743,19 @@
     ]
   },
   {
+    "root": "PALAA",
+    "variants": [
+      "PALAA"
+    ],
+    "pos": "noun",
+    "english_glosses": [],
+    "dee_ipa": "/p.æ.l.ɑː.ɑː/",
+    "golden_dawn_ipa": "/p.æ.l.ɑː.ɑː/",
+    "sources": [
+      "Key 49"
+    ]
+  },
+  {
     "root": "PANPIR",
     "variants": [
       "PANPIR"
@@ -3147,6 +3836,19 @@
     ]
   },
   {
+    "root": "PERUBA",
+    "variants": [
+      "PERUBA"
+    ],
+    "pos": "noun",
+    "english_glosses": [],
+    "dee_ipa": "/p.ɛ.r.ʊ.b.ɑː/",
+    "golden_dawn_ipa": "/p.ɛ.r.ʊ.b.ɑː/",
+    "sources": [
+      "Key 49"
+    ]
+  },
+  {
     "root": "PETAHEL",
     "variants": [
       "PETAHEL"
@@ -3161,6 +3863,19 @@
     "golden_dawn_ipa": "/pɛ.tɑː.hɛl/",
     "sources": [
       "Key 18"
+    ]
+  },
+  {
+    "root": "PILO",
+    "variants": [
+      "PILO"
+    ],
+    "pos": "noun",
+    "english_glosses": [],
+    "dee_ipa": "/p.ɪ.l.oʊ/",
+    "golden_dawn_ipa": "/p.ɪ.l.oʊ/",
+    "sources": [
+      "Key 49"
     ]
   },
   {
@@ -3303,6 +4018,19 @@
     ]
   },
   {
+    "root": "RA",
+    "variants": [
+      "RA"
+    ],
+    "pos": "noun",
+    "english_glosses": [],
+    "dee_ipa": "/r.ɑː/",
+    "golden_dawn_ipa": "/r.ɑː/",
+    "sources": [
+      "Key 49"
+    ]
+  },
+  {
     "root": "RAAS",
     "variants": [
       "RAASI"
@@ -3317,6 +4045,84 @@
     "sources": [
       "Key 1",
       "Key 2"
+    ]
+  },
+  {
+    "root": "RADA",
+    "variants": [
+      "RADA"
+    ],
+    "pos": "noun",
+    "english_glosses": [],
+    "dee_ipa": "/r.æ.d.ɑː/",
+    "golden_dawn_ipa": "/r.æ.d.ɑː/",
+    "sources": [
+      "Key 49"
+    ]
+  },
+  {
+    "root": "RADARA",
+    "variants": [
+      "RADARA"
+    ],
+    "pos": "noun",
+    "english_glosses": [],
+    "dee_ipa": "/r.æ.d.æ.r.ɑː/",
+    "golden_dawn_ipa": "/r.æ.d.æ.r.ɑː/",
+    "sources": [
+      "Key 49"
+    ]
+  },
+  {
+    "root": "RAFOR",
+    "variants": [
+      "RAFOR"
+    ],
+    "pos": "noun",
+    "english_glosses": [],
+    "dee_ipa": "/r.æ.f.ɒ.r/",
+    "golden_dawn_ipa": "/r.æ.f.ɒ.r/",
+    "sources": [
+      "Key 49"
+    ]
+  },
+  {
+    "root": "RAFUTALA",
+    "variants": [
+      "RAFUTALA"
+    ],
+    "pos": "noun",
+    "english_glosses": [],
+    "dee_ipa": "/r.æ.f.ʊ.t.æ.l.ɑː/",
+    "golden_dawn_ipa": "/r.æ.f.ʊ.t.æ.l.ɑː/",
+    "sources": [
+      "Key 49"
+    ]
+  },
+  {
+    "root": "RE",
+    "variants": [
+      "RE"
+    ],
+    "pos": "noun",
+    "english_glosses": [],
+    "dee_ipa": "/r.eɪ/",
+    "golden_dawn_ipa": "/r.eɪ/",
+    "sources": [
+      "Key 49"
+    ]
+  },
+  {
+    "root": "RELA",
+    "variants": [
+      "RELA"
+    ],
+    "pos": "noun",
+    "english_glosses": [],
+    "dee_ipa": "/r.ɛ.l.ɑː/",
+    "golden_dawn_ipa": "/r.ɛ.l.ɑː/",
+    "sources": [
+      "Key 49"
     ]
   },
   {
@@ -3352,6 +4158,45 @@
     ]
   },
   {
+    "root": "ROM",
+    "variants": [
+      "ROM"
+    ],
+    "pos": "noun",
+    "english_glosses": [],
+    "dee_ipa": "/r.ɒ.m/",
+    "golden_dawn_ipa": "/r.ɒ.m/",
+    "sources": [
+      "Key 49"
+    ]
+  },
+  {
+    "root": "RONO",
+    "variants": [
+      "RONO"
+    ],
+    "pos": "noun",
+    "english_glosses": [],
+    "dee_ipa": "/r.ɒ.n.oʊ/",
+    "golden_dawn_ipa": "/r.ɒ.n.oʊ/",
+    "sources": [
+      "Key 49"
+    ]
+  },
+  {
+    "root": "ROPI",
+    "variants": [
+      "ROPI"
+    ],
+    "pos": "noun",
+    "english_glosses": [],
+    "dee_ipa": "/r.ɒ.p.iː/",
+    "golden_dawn_ipa": "/r.ɒ.p.iː/",
+    "sources": [
+      "Key 49"
+    ]
+  },
+  {
     "root": "ROR",
     "variants": [
       "ROR"
@@ -3365,6 +4210,21 @@
     "golden_dawn_ipa": "/roʊr/",
     "sources": [
       "Key 18"
+    ]
+  },
+  {
+    "root": "SAD",
+    "variants": [
+      "SAD"
+    ],
+    "pos": "noun",
+    "english_glosses": [
+      "while the lords of mischief"
+    ],
+    "dee_ipa": "/s.æ.d/",
+    "golden_dawn_ipa": "/s.æ.d/",
+    "sources": [
+      "Key 50"
     ]
   },
   {
@@ -3435,6 +4295,21 @@
       "Key 1",
       "Key 2",
       "Key 5"
+    ]
+  },
+  {
+    "root": "SOBANA",
+    "variants": [
+      "SOBANA"
+    ],
+    "pos": "noun",
+    "english_glosses": [
+      "down bounces from thy back"
+    ],
+    "dee_ipa": "/s.ɒ.b.æ.n.ɑː/",
+    "golden_dawn_ipa": "/s.ɒ.b.æ.n.ɑː/",
+    "sources": [
+      "Key 50"
     ]
   },
   {
@@ -3571,6 +4446,19 @@
     ]
   },
   {
+    "root": "TO",
+    "variants": [
+      "TO"
+    ],
+    "pos": "noun",
+    "english_glosses": [],
+    "dee_ipa": "/t.oʊ/",
+    "golden_dawn_ipa": "/t.oʊ/",
+    "sources": [
+      "Key 49"
+    ]
+  },
+  {
     "root": "TOATAR",
     "variants": [
       "TOATAR"
@@ -3584,6 +4472,58 @@
     "golden_dawn_ipa": "/toʊ.ɑː.tɑːr/",
     "sources": [
       "Key 11"
+    ]
+  },
+  {
+    "root": "TOFAA",
+    "variants": [
+      "TOFAA"
+    ],
+    "pos": "noun",
+    "english_glosses": [],
+    "dee_ipa": "/t.ɒ.f.ɑː.ɑː/",
+    "golden_dawn_ipa": "/t.ɒ.f.ɑː.ɑː/",
+    "sources": [
+      "Key 49"
+    ]
+  },
+  {
+    "root": "TOFAGILE",
+    "variants": [
+      "TOFAGILE"
+    ],
+    "pos": "noun",
+    "english_glosses": [],
+    "dee_ipa": "/t.ɒ.f.æ.ɡ.ɪ.l.eɪ/",
+    "golden_dawn_ipa": "/t.ɒ.f.æ.ɡ.ɪ.l.eɪ/",
+    "sources": [
+      "Key 49"
+    ]
+  },
+  {
+    "root": "TOFARE",
+    "variants": [
+      "TOFARE"
+    ],
+    "pos": "noun",
+    "english_glosses": [],
+    "dee_ipa": "/t.ɒ.f.æ.r.eɪ/",
+    "golden_dawn_ipa": "/t.ɒ.f.æ.r.eɪ/",
+    "sources": [
+      "Key 49"
+    ]
+  },
+  {
+    "root": "TOFOR",
+    "variants": [
+      "TOFOR"
+    ],
+    "pos": "noun",
+    "english_glosses": [],
+    "dee_ipa": "/t.ɒ.f.ɒ.r/",
+    "golden_dawn_ipa": "/t.ɒ.f.ɒ.r/",
+    "sources": [
+      "Key 49"
     ]
   },
   {
@@ -3606,6 +4546,32 @@
     ]
   },
   {
+    "root": "TOMAA",
+    "variants": [
+      "TOMAA"
+    ],
+    "pos": "noun",
+    "english_glosses": [],
+    "dee_ipa": "/t.ɒ.m.ɑː.ɑː/",
+    "golden_dawn_ipa": "/t.ɒ.m.ɑː.ɑː/",
+    "sources": [
+      "Key 49"
+    ]
+  },
+  {
+    "root": "TOPI",
+    "variants": [
+      "TOPI"
+    ],
+    "pos": "noun",
+    "english_glosses": [],
+    "dee_ipa": "/t.ɒ.p.iː/",
+    "golden_dawn_ipa": "/t.ɒ.p.iː/",
+    "sources": [
+      "Key 49"
+    ]
+  },
+  {
     "root": "TORZU",
     "variants": [
       "TORZUL"
@@ -3620,6 +4586,32 @@
     "sources": [
       "Key 1",
       "Key 2"
+    ]
+  },
+  {
+    "root": "TUMMRI",
+    "variants": [
+      "TUMMRI"
+    ],
+    "pos": "noun",
+    "english_glosses": [],
+    "dee_ipa": "/t.ʊ.m.m.r.iː/",
+    "golden_dawn_ipa": "/t.ʊ.m.m.r.iː/",
+    "sources": [
+      "Key 49"
+    ]
+  },
+  {
+    "root": "TUTULU",
+    "variants": [
+      "TUTULU"
+    ],
+    "pos": "noun",
+    "english_glosses": [],
+    "dee_ipa": "/t.ʊ.t.ʊ.l.uː/",
+    "golden_dawn_ipa": "/t.ʊ.t.ʊ.l.uː/",
+    "sources": [
+      "Key 50"
     ]
   },
   {
@@ -3722,6 +4714,47 @@
     ]
   },
   {
+    "root": "UOHULU",
+    "variants": [
+      "UOHULU"
+    ],
+    "pos": "noun",
+    "english_glosses": [
+      "gather ye sun-roses, sun-roses gather ye from the split backside of the virgin (earth)"
+    ],
+    "dee_ipa": "/uː.ɒ.h.ʊ.l.uː/",
+    "golden_dawn_ipa": "/uː.ɒ.h.ʊ.l.uː/",
+    "sources": [
+      "Key 50"
+    ]
+  },
+  {
+    "root": "UPALA",
+    "variants": [
+      "UPALA"
+    ],
+    "pos": "noun",
+    "english_glosses": [],
+    "dee_ipa": "/ʊ.p.æ.l.ɑː/",
+    "golden_dawn_ipa": "/ʊ.p.æ.l.ɑː/",
+    "sources": [
+      "Key 49"
+    ]
+  },
+  {
+    "root": "UPMARA",
+    "variants": [
+      "UPMARA"
+    ],
+    "pos": "noun",
+    "english_glosses": [],
+    "dee_ipa": "/ʊ.p.m.æ.r.ɑː/",
+    "golden_dawn_ipa": "/ʊ.p.m.æ.r.ɑː/",
+    "sources": [
+      "Key 49"
+    ]
+  },
+  {
     "root": "URBS",
     "variants": [
       "URBS"
@@ -3735,6 +4768,19 @@
     "golden_dawn_ipa": "/uː.rɛ.bɛs/",
     "sources": [
       "Key 18"
+    ]
+  },
+  {
+    "root": "UTTA",
+    "variants": [
+      "UTTA"
+    ],
+    "pos": "noun",
+    "english_glosses": [],
+    "dee_ipa": "/ʊ.t.t.ɑː/",
+    "golden_dawn_ipa": "/ʊ.t.t.ɑː/",
+    "sources": [
+      "Key 49"
     ]
   },
   {
@@ -3871,6 +4917,19 @@
     ]
   },
   {
+    "root": "ZABAA",
+    "variants": [
+      "ZABAA"
+    ],
+    "pos": "noun",
+    "english_glosses": [],
+    "dee_ipa": "/z.æ.b.ɑː.ɑː/",
+    "golden_dawn_ipa": "/z.æ.b.ɑː.ɑː/",
+    "sources": [
+      "Key 49"
+    ]
+  },
+  {
     "root": "ZACAR",
     "variants": [
       "ZACARE"
@@ -3891,6 +4950,19 @@
     ]
   },
   {
+    "root": "ZALA",
+    "variants": [
+      "ZALA"
+    ],
+    "pos": "noun",
+    "english_glosses": [],
+    "dee_ipa": "/z.æ.l.ɑː/",
+    "golden_dawn_ipa": "/z.æ.l.ɑː/",
+    "sources": [
+      "Key 49"
+    ]
+  },
+  {
     "root": "ZAMRAN",
     "variants": [
       "ZAMRAN"
@@ -3906,6 +4978,19 @@
     "sources": [
       "Key 1",
       "Key 2"
+    ]
+  },
+  {
+    "root": "ZAZARE",
+    "variants": [
+      "ZAZARE"
+    ],
+    "pos": "noun",
+    "english_glosses": [],
+    "dee_ipa": "/z.æ.z.æ.r.eɪ/",
+    "golden_dawn_ipa": "/z.æ.z.æ.r.eɪ/",
+    "sources": [
+      "Key 49"
     ]
   },
   {
