@@ -1,4 +1,4 @@
-![Enochian text of the Fifteenth Key](https://upload.wikimedia.org/wikipedia/commons/8/86/Enochian_-_Text_Example_-_The_Fifteenth_Key_by_LaVey.png)
+![Enochian text of the Fifteenth Key](docs/imgs/Enochian_letters_(1583_manuscript).png)
 
 # Enochaeon
 
