@@ -105,6 +105,8 @@ Hebrew is the pointed transliteration. Enochian is the letter names. Phonetic is
 - [`example/pangram.wav`](example/pangram.wav) is that breath spoken.
 - [`example/pangram.decoded.txt`](example/pangram.decoded.txt) is the English recovered from that WAV.
 
+https://github.com/user-attachments/assets/b02d0d59-9c8a-4435-b4ad-e28aa0a2aa8d
+
 [`example/First Call.wav`](example/First%20Call.wav) is the first Call spoken from the Latin letters in [`calls/01.txt`](calls/01.txt).
 
 An output that is already there is left alone unless you pass `--force`. A WAV made here carries a short comment with the gap lengths and no plaintext. A WAV without that comment is still decoded, with a warning.
