@@ -59,7 +59,7 @@ Pass a `.txt` file of Enochian spellings to `enochaeon calls`. The wav is writte
 
 An example of the Enochian generated text:
 
-[Enochaeon HTML](docs/imgs/Enochian-HTML.png)
+![Enochaeon HTML](docs/imgs/Enochian-HTML.png)
 
 ### Stage files
 
