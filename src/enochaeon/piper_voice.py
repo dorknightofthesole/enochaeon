@@ -75,7 +75,7 @@ def render(text: str, voice: CallVoice, gaps: Gaps, readings: dict[str, str] | N
         from piper import PiperVoice, SynthesisConfig
     except ImportError as exc:
         raise EnochaeonError(
-            "Piper is not installed. Install it with: pip install piper-tts"
+            "Speaking with Piper needs piper-tts. It is installed with enochaeon."
         ) from exc
     speaker = PiperVoice.load(model)
     pieces: list[np.ndarray] = []

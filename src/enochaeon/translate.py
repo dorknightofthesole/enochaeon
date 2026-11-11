@@ -92,7 +92,7 @@ class MiniLM:
         except ImportError as exc:
             raise EnochaeonError(
                 "Translating a phrase needs sentence-transformers. "
-                "Install it with: pip install sentence-transformers"
+                "It is installed with enochaeon."
             ) from exc
         try:
             self._model = _public_model(SentenceTransformer)
@@ -286,7 +286,7 @@ def part_tags(words: list[str]) -> list[str]:
         from nltk import pos_tag
     except ImportError as exc:
         raise EnochaeonError(
-            "Translating a phrase needs nltk. Install it with: pip install nltk"
+            "Translating a phrase needs nltk. It is installed with enochaeon."
         ) from exc
     try:
         tagged = pos_tag(words)

@@ -10,15 +10,14 @@ readme = "README.md"
 requires-python = ">=3.12"
 dependencies = [
   "numpy",
+  "nltk",
+  "piper-tts",
+  "sentence-transformers",
   "soundfile",
   "soxr",
   "torch",
   "transformers",
 ]
-
-[project.optional-dependencies]
-piper = ["piper-tts"]
-translate = ["sentence-transformers", "nltk"]
 
 [project.scripts]
 enochaeon = "enochaeon.cli:main"
