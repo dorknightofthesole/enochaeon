@@ -1,0 +1,413 @@
+{
+ "call": 7,
+ "printing": "Meric Casaubon, A True & Faithful Relation (London, 1659)",
+ "pages": "pp. 123 to 125",
+ "direction": "forward",
+ "notes": [],
+ "words": [
+  {
+   "page": 123,
+   "letters": "RAAS",
+   "note": "Ra as.",
+   "english": "",
+   "status": "printed",
+   "row": 502,
+   "column": "frac37; RAAS",
+   "remark": "The keyers put a fraction sign before the word."
+  },
+  {
+   "page": 123,
+   "letters": "ISALMAN",
+   "note": "I Sal man.",
+   "english": "",
+   "status": "printed",
+   "row": 503
+  },
+  {
+   "page": 123,
+   "letters": "PARADIZ",
+   "note": "Pa ra di zod.",
+   "english": "",
+   "status": "from_note",
+   "row": 504,
+   "remark": "The letter column prints 'PARA .. IZ'. The missing letters are read from the note. 'zod' in the note is taken as the letter Z.",
+   "column": "PARA .. IZ"
+  },
+  {
+   "page": 123,
+   "letters": "OECRIMI",
+   "note": "O écri mi.",
+   "english": "",
+   "status": "printed",
+   "row": 505
+  },
+  {
+   "page": 123,
+   "letters": "AAO",
+   "note": "A A ó.",
+   "english": "",
+   "status": "printed",
+   "row": 506
+  },
+  {
+   "page": 123,
+   "letters": "IALPIRGAH",
+   "note": "Yal.; I A L pir gah.",
+   "english": "",
+   "status": "printed",
+   "row": 508
+  },
+  {
+   "page": 123,
+   "letters": "QUIIN",
+   "note": "Qui in.",
+   "english": "",
+   "status": "printed",
+   "row": 509
+  },
+  {
+   "page": 123,
+   "letters": "ENAY",
+   "note": "Enay.",
+   "english": "",
+   "status": "printed",
+   "row": 510
+  },
+  {
+   "page": 123,
+   "letters": "BUTMON",
+   "note": "But mon.",
+   "english": "",
+   "status": "printed",
+   "row": 511
+  },
+  {
+   "page": 123,
+   "letters": "OD",
+   "note": "Od.",
+   "english": "",
+   "status": "printed",
+   "row": 512
+  },
+  {
+   "page": 124,
+   "letters": "INOAS",
+   "note": "In ó as.",
+   "english": "",
+   "status": "printed",
+   "row": 513
+  },
+  {
+   "page": 124,
+   "letters": "NI",
+   "note": "Ni.",
+   "english": "",
+   "status": "printed",
+   "row": 514
+  },
+  {
+   "page": 124,
+   "letters": "PARADIAL",
+   "note": "Pa ra di al.",
+   "english": "",
+   "status": "printed",
+   "row": 515
+  },
+  {
+   "page": 124,
+   "letters": "CASARMG",
+   "note": "Ca sarmg. The g as dg ármg.",
+   "english": "",
+   "status": "printed",
+   "row": 516
+  },
+  {
+   "page": 124,
+   "letters": "VGEAR",
+   "note": "V gé ar.",
+   "english": "",
+   "status": "printed",
+   "row": 517
+  },
+  {
+   "page": 124,
+   "letters": "CHIRLAN",
+   "note": "Kir.; Chir lan.",
+   "english": "",
+   "status": "printed",
+   "row": 519
+  },
+  {
+   "page": 124,
+   "letters": "OD",
+   "note": "Od.",
+   "english": "",
+   "status": "printed",
+   "row": 520
+  },
+  {
+   "page": 124,
+   "letters": "ZONAR",
+   "note": "Zo nar.",
+   "english": "",
+   "status": "from_note",
+   "row": 521,
+   "remark": "The letter column prints 'ZONA ..'. The missing letters are read from the note.",
+   "column": "ZONA .."
+  },
+  {
+   "page": 124,
+   "letters": "LUCIFTIAN",
+   "note": "Lu cif ti an.",
+   "english": "",
+   "status": "printed",
+   "row": 522
+  },
+  {
+   "page": 124,
+   "letters": "CORSTA",
+   "note": "Cors ta.",
+   "english": "",
+   "status": "printed",
+   "row": 523
+  },
+  {
+   "page": 124,
+   "letters": "VAULZIRN",
+   "note": "Vául zirn.",
+   "english": "",
+   "status": "printed",
+   "row": 524
+  },
+  {
+   "page": 124,
+   "letters": "TOLHAMI",
+   "note": "Tol há mi.",
+   "english": "",
+   "status": "printed",
+   "row": 525
+  },
+  {
+   "page": 124,
+   "letters": "SOBA",
+   "note": "Soba.",
+   "english": "",
+   "status": "printed",
+   "row": 526
+  },
+  {
+   "page": 124,
+   "letters": "LONDOH",
+   "note": "Lon dóh.",
+   "english": "",
+   "status": "printed",
+   "row": 527
+  },
+  {
+   "page": 124,
+   "letters": "ODMIAM",
+   "note": "Od mi am, or Od Nuám.",
+   "english": "",
+   "status": "printed",
+   "row": 528
+  },
+  {
+   "page": 124,
+   "letters": "CHISTAD",
+   "note": "Kis; Chis tad.",
+   "english": "",
+   "status": "printed",
+   "row": 530
+  },
+  {
+   "page": 124,
+   "letters": "ODES",
+   "note": "O des.",
+   "english": "",
+   "status": "printed",
+   "row": 531
+  },
+  {
+   "page": 124,
+   "letters": "VMADEA",
+   "note": "V má de a.",
+   "english": "",
+   "status": "from_note",
+   "row": 532,
+   "remark": "The letter column prints 'VM: DEA'. The missing letters are read from the note.",
+   "column": "VM: DEA"
+  },
+  {
+   "page": 124,
+   "letters": "OD",
+   "note": "Od.",
+   "english": "",
+   "status": "printed",
+   "row": 533
+  },
+  {
+   "page": 124,
+   "letters": "PIBLIAR",
+   "note": "Pib li ar.",
+   "english": "",
+   "status": "printed",
+   "row": 534
+  },
+  {
+   "page": 124,
+   "letters": "OTHILRIT",
+   "note": "O thil rit.",
+   "english": "",
+   "status": "printed",
+   "row": 535
+  },
+  {
+   "page": 124,
+   "letters": "ODMIAM",
+   "note": "Od mi am.",
+   "english": "",
+   "status": "printed",
+   "row": 536
+  },
+  {
+   "page": 124,
+   "letters": "CNOQUOL",
+   "note": "Kol.; Cno quol.",
+   "english": "",
+   "status": "printed",
+   "row": 538
+  },
+  {
+   "page": 124,
+   "letters": "RIT",
+   "note": "Rit.",
+   "english": "",
+   "status": "printed",
+   "row": 539
+  },
+  {
+   "page": 124,
+   "letters": "ZACAR",
+   "note": "Za car.",
+   "english": "",
+   "status": "printed",
+   "row": 540
+  },
+  {
+   "page": 124,
+   "letters": "ZAMRAN",
+   "note": "Zam ran.",
+   "english": "",
+   "status": "printed",
+   "row": 541
+  },
+  {
+   "page": 125,
+   "letters": "OECRIMI",
+   "note": "O é crimi.",
+   "english": "",
+   "status": "printed",
+   "row": 542
+  },
+  {
+   "page": 125,
+   "letters": "QADAH",
+   "note": "Q á dah.",
+   "english": "",
+   "status": "from_note",
+   "row": 543,
+   "remark": "The letter column prints 'QADA:'. The missing letters are read from the note.",
+   "column": "QADA:"
+  },
+  {
+   "page": 125,
+   "letters": "OD",
+   "note": "Od.",
+   "english": "",
+   "status": "printed",
+   "row": 544
+  },
+  {
+   "page": 125,
+   "letters": "OMICAOLZ",
+   "note": "O mi ca ol zod.",
+   "english": "",
+   "status": "printed",
+   "row": 545
+  },
+  {
+   "page": 125,
+   "letters": "AAIOM",
+   "note": "A A I om.",
+   "english": "",
+   "status": "printed",
+   "row": 546
+  },
+  {
+   "page": 125,
+   "letters": "BAGLE",
+   "note": "Ba gle.",
+   "english": "",
+   "status": "printed",
+   "row": 547
+  },
+  {
+   "page": 125,
+   "letters": "PAPNOR",
+   "note": "Pap nor.",
+   "english": "",
+   "status": "printed",
+   "row": 548
+  },
+  {
+   "page": 125,
+   "letters": "IDLUGAM",
+   "note": "Id lú gam.",
+   "english": "",
+   "status": "printed",
+   "row": 549
+  },
+  {
+   "page": 125,
+   "letters": "LONSHI",
+   "note": "Lon shi.",
+   "english": "",
+   "status": "printed",
+   "row": 550
+  },
+  {
+   "page": 125,
+   "letters": "OD",
+   "note": "Od.",
+   "english": "",
+   "status": "printed",
+   "row": 551
+  },
+  {
+   "page": 125,
+   "letters": "VMPLIF",
+   "note": "Umplif.",
+   "english": "",
+   "status": "printed",
+   "row": 552
+  },
+  {
+   "page": 125,
+   "letters": "VGEGI",
+   "note": "V Ge gi.",
+   "english": "",
+   "status": "printed",
+   "row": 553
+  },
+  {
+   "page": 125,
+   "letters": "BIGLIAD",
+   "note": "Bigli ad.",
+   "english": "",
+   "status": "from_note",
+   "row": 554,
+   "remark": "The letter column prints 'BIGLIA ..'. The missing letters are read from the note.",
+   "column": "BIGLIA .."
+  }
+ ]
+}

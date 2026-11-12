@@ -1,0 +1,490 @@
+{
+ "call": 4,
+ "printing": "Meric Casaubon, A True & Faithful Relation (London, 1659)",
+ "pages": "pp. 109 to 111",
+ "direction": "backward",
+ "notes": [
+  "The call was given backwards, from word 47 to word 1."
+ ],
+ "words": [
+  {
+   "page": 111,
+   "letters": "OTHIL",
+   "note": "O thil",
+   "english": "I have set",
+   "status": "printed",
+   "column": "LIHTO",
+   "number": "1",
+   "row": 389,
+   "remark": "The keyed transcription has 'O thll' where the page image prints 'O thil'.",
+   "read_from": "page image, Internet Archive scan truefaithfulrela00deej"
+  },
+  {
+   "page": 111,
+   "letters": "LASDI",
+   "note": "Las di",
+   "english": "my feet",
+   "status": "printed",
+   "column": "IDSAL",
+   "number": "2",
+   "row": 388
+  },
+  {
+   "page": 111,
+   "letters": "BABAGE",
+   "note": "Ba bage",
+   "english": "in the south",
+   "status": "printed",
+   "column": "EGABAB",
+   "number": "3",
+   "row": 387
+  },
+  {
+   "page": 111,
+   "letters": "OD",
+   "note": "Od",
+   "english": "and",
+   "status": "printed",
+   "column": "DO",
+   "number": "4",
+   "row": 386
+  },
+  {
+   "page": 110,
+   "letters": "DORPHA",
+   "note": "Dor pha",
+   "english": "have looked about me,",
+   "status": "printed",
+   "column": "AHPROD",
+   "number": "5",
+   "row": 385
+  },
+  {
+   "page": 110,
+   "letters": "GOHOL",
+   "note": "Go hol",
+   "english": "saying,",
+   "status": "printed",
+   "column": "LOHOG",
+   "number": "6",
+   "row": 384
+  },
+  {
+   "page": 110,
+   "letters": "GCHISGE",
+   "note": "G Chis ge",
+   "english": "Are not",
+   "status": "printed",
+   "column": "EGSIHCG",
+   "number": "7",
+   "row": 383
+  },
+  {
+   "page": 110,
+   "letters": "AVAVAGO",
+   "note": "Ava va go",
+   "english": "the thunders of encrease",
+   "status": "printed",
+   "column": "OGAVAVA",
+   "number": "8",
+   "row": 382
+  },
+  {
+   "page": 110,
+   "letters": "CORMP",
+   "note": "Cormp",
+   "english": "numbred?",
+   "status": "printed",
+   "column": "PMROC",
+   "number": "9",
+   "row": 381
+  },
+  {
+   "page": 110,
+   "letters": "PD",
+   "note": "Pe de; PD",
+   "english": "33",
+   "status": "printed",
+   "column": "DP",
+   "number": "10",
+   "row": 380
+  },
+  {
+   "page": 110,
+   "letters": "DSONF",
+   "note": "Dsonf",
+   "english": "which raign",
+   "status": "printed",
+   "column": "FNOSD",
+   "number": "11",
+   "row": 378
+  },
+  {
+   "page": 110,
+   "letters": "VIVDIV",
+   "note": "Vi v di v",
+   "english": "in the second angle?",
+   "status": "printed",
+   "column": "VIDVIV",
+   "number": "12",
+   "row": 377
+  },
+  {
+   "page": 110,
+   "letters": "CASARMI",
+   "note": "Ca sarmi",
+   "english": "under whom",
+   "status": "printed",
+   "column": "IMRASAC",
+   "number": "13",
+   "row": 376
+  },
+  {
+   "page": 110,
+   "letters": "OALI",
+   "note": "O a li",
+   "english": "I have placed",
+   "status": "gap",
+   "column": "[gap:1 word]",
+   "number": "14",
+   "row": 375,
+   "remark": "The keyers could not read the reversed column. In the page image it is LAO with a broken letter before it. The letters are read from the note 'O a li'."
+  },
+  {
+   "page": 110,
+   "letters": "MAPM",
+   "note": "Mapm",
+   "english": "9639;",
+   "status": "printed",
+   "column": "MPAM",
+   "number": "15",
+   "row": 374
+  },
+  {
+   "page": 110,
+   "letters": "SOBAM",
+   "note": "So bam",
+   "english": "whom",
+   "status": "printed",
+   "column": "MABOS",
+   "number": "16",
+   "row": 373
+  },
+  {
+   "page": 110,
+   "letters": "AG",
+   "note": "as agg in nag; Ag",
+   "english": "None",
+   "status": "printed",
+   "column": "GA",
+   "number": "17",
+   "row": 371
+  },
+  {
+   "page": 110,
+   "letters": "CORMPO",
+   "note": "Corm po",
+   "english": "hath yet numbred",
+   "status": "printed",
+   "column": "OPMROC",
+   "number": "18",
+   "row": 370
+  },
+  {
+   "page": 110,
+   "letters": "CRPL",
+   "note": "CRPL",
+   "english": "but one;",
+   "status": "printed",
+   "column": "LPRC",
+   "number": "19",
+   "row": 369
+  },
+  {
+   "page": 110,
+   "letters": "CASARMG",
+   "note": "the gas in seurge; Casarmg",
+   "english": "in whom",
+   "status": "printed",
+   "column": "GMRASAC",
+   "number": "20",
+   "row": 367
+  },
+  {
+   "page": 110,
+   "letters": "CROODZI",
+   "note": "Cro od zi",
+   "english": "The second beginnings of things",
+   "status": "printed",
+   "column": "IZDOORC",
+   "number": "21",
+   "row": 366
+  },
+  {
+   "page": 110,
+   "letters": "CHIS",
+   "note": "Kis; Chis",
+   "english": "are,",
+   "status": "printed",
+   "column": "SIHC",
+   "number": "22",
+   "row": 364
+  },
+  {
+   "page": 110,
+   "letters": "ODVGEG",
+   "note": "as Wedge; Od Vgeg",
+   "english": "and wax strong:",
+   "status": "printed",
+   "column": "GEGVDO",
+   "number": "23",
+   "row": 362
+  },
+  {
+   "page": 110,
+   "letters": "DST",
+   "note": "DST",
+   "english": "which also",
+   "status": "printed",
+   "column": "TSD",
+   "number": "24",
+   "row": 361
+  },
+  {
+   "page": 110,
+   "letters": "CAPIMALI",
+   "note": "Ca pi ma li",
+   "english": "successively,",
+   "status": "printed",
+   "column": "ILAMIPAC",
+   "number": "25",
+   "row": 360
+  },
+  {
+   "page": 110,
+   "letters": "CHIS",
+   "note": "Kis",
+   "english": "are",
+   "status": "printed",
+   "column": "SIHC",
+   "number": "26",
+   "row": 359
+  },
+  {
+   "page": 109,
+   "letters": "CAPIMAON",
+   "note": "Capi ma on",
+   "english": "the number of time",
+   "status": "printed",
+   "column": "NOAMIPAC",
+   "number": "27",
+   "row": 358,
+   "remark": "The keyed transcription has 'NOAMIPAG' where the page image prints 'NOAMIPAC'.",
+   "read_from": "page image, Internet Archive scan truefaithfulrela00deej"
+  },
+  {
+   "page": 109,
+   "letters": "ODLONSHIN",
+   "note": "Od lonshin",
+   "english": "and their powers",
+   "status": "printed",
+   "column": "NIHSNOLDO",
+   "number": "28",
+   "row": 357
+  },
+  {
+   "page": 109,
+   "letters": "CHIS",
+   "note": "Chis",
+   "english": "are",
+   "status": "printed",
+   "column": "SIHC",
+   "number": "29",
+   "row": 356
+  },
+  {
+   "page": 109,
+   "letters": "TALO",
+   "note": "Talo",
+   "english": "as the first",
+   "status": "printed",
+   "column": "OLAT",
+   "number": "30",
+   "row": 355
+  },
+  {
+   "page": 109,
+   "letters": "CLA",
+   "note": "Cla",
+   "english": "456",
+   "status": "printed",
+   "column": "ALC",
+   "number": "31",
+   "row": 354
+  },
+  {
+   "page": 109,
+   "letters": "TORGV",
+   "note": "Torgu",
+   "english": "Arise",
+   "status": "printed",
+   "column": "VGROT",
+   "number": "32",
+   "row": 353
+  },
+  {
+   "page": 109,
+   "letters": "NORQVASAHI",
+   "note": "Nor qua sa hi",
+   "english": "you sons of pleasure",
+   "status": "printed",
+   "column": "IHASAVQRON",
+   "number": "33",
+   "row": 352,
+   "remark": "The keyed transcription has 'IHASARQRON' where the page image prints 'IHASAVQRON'.",
+   "read_from": "page image, Internet Archive scan truefaithfulrela00deej"
+  },
+  {
+   "page": 109,
+   "letters": "DO",
+   "note": "Od.",
+   "english": "and",
+   "status": "printed",
+   "column": "OD",
+   "number": "34",
+   "row": 351
+  },
+  {
+   "page": 109,
+   "letters": "FGAOSGA",
+   "note": "Fgaos ga",
+   "english": "visit the earth",
+   "status": "printed",
+   "column": "AGSOAGF",
+   "number": "35",
+   "row": 350
+  },
+  {
+   "page": 109,
+   "letters": "BAGLE",
+   "note": "Ba gle",
+   "english": "for",
+   "status": "printed",
+   "column": "ELGAB",
+   "number": "36",
+   "row": 349
+  },
+  {
+   "page": 109,
+   "letters": "ZIRENAIAD",
+   "note": "Zire nai ad",
+   "english": "I am the Lord your God",
+   "status": "printed",
+   "column": "DAIANERIZ",
+   "number": "37",
+   "row": 348
+  },
+  {
+   "page": 109,
+   "letters": "DSI",
+   "note": "DSI",
+   "english": "which is",
+   "status": "printed",
+   "column": "ISD",
+   "number": "38",
+   "row": 347
+  },
+  {
+   "page": 109,
+   "letters": "ODAPILA",
+   "note": "Od Api la",
+   "english": "and liveth",
+   "status": "printed",
+   "column": "ALIPADO",
+   "number": "39",
+   "row": 346
+  },
+  {
+   "page": 109,
+   "letters": "DOOAIP",
+   "note": "Do oa ip",
+   "english": "in the name",
+   "status": "printed",
+   "column": "PIAOOD",
+   "number": "40",
+   "row": 345
+  },
+  {
+   "page": 109,
+   "letters": "QAAL",
+   "note": "Qa al",
+   "english": "of the Creatour",
+   "status": "printed",
+   "column": "LAAQ",
+   "number": "41",
+   "row": 344
+  },
+  {
+   "page": 109,
+   "letters": "ZACAR",
+   "note": "Zacar.",
+   "english": "Move",
+   "status": "printed",
+   "column": "RACAZ",
+   "number": "42",
+   "row": 343
+  },
+  {
+   "page": 109,
+   "letters": "ODZAMRAN",
+   "note": "Od Zamran",
+   "english": "And shew your selves",
+   "status": "printed",
+   "column": "NARMAZDO",
+   "number": "43",
+   "row": 342
+  },
+  {
+   "page": 109,
+   "letters": "OBELISONG",
+   "note": "Obelisong",
+   "english": "As pleasant deliverers",
+   "status": "printed",
+   "column": "GNOSILEBO",
+   "number": "44",
+   "row": 341
+  },
+  {
+   "page": 109,
+   "letters": "RESTIL",
+   "note": "Rest el.",
+   "english": "that you may praise him",
+   "status": "printed",
+   "column": "LITSER",
+   "number": "45",
+   "row": 340
+  },
+  {
+   "page": 109,
+   "letters": "AAF",
+   "note": "A af",
+   "english": "amongst",
+   "status": "printed",
+   "column": "FAA",
+   "number": "46",
+   "row": 339
+  },
+  {
+   "page": 109,
+   "letters": "NORMOLAP",
+   "note": "Nor mo lap.",
+   "english": "the sons of men",
+   "status": "printed",
+   "column": "PALOMRON",
+   "number": "47",
+   "row": 338,
+   "remark": "The keyed transcription has 'the sons of [gap:1 word]' where the page image prints 'the sons of men'.",
+   "read_from": "page image, Internet Archive scan truefaithfulrela00deej"
+  }
+ ]
+}

@@ -1,0 +1,641 @@
+{
+ "call": 9,
+ "printing": "Meric Casaubon, A True & Faithful Relation (London, 1659)",
+ "pages": "pp. 127 to 130",
+ "direction": "forward",
+ "notes": [
+  "p. 128: 'You must after E fa fa fe, put a P.'"
+ ],
+ "words": [
+  {
+   "page": 127,
+   "letters": "MICAOLI",
+   "note": "Mi ca o li.",
+   "english": "",
+   "status": "printed",
+   "row": 611,
+   "remark": "The keyed transcription has '[gap:1 word] MICAOLI' where the page image prints 'MICAOLI'. In the page image a small mark stands before the word, and the word itself is whole.",
+   "read_from": "page image, Internet Archive scan truefaithfulrela00deej"
+  },
+  {
+   "page": 127,
+   "letters": "BRANSG",
+   "note": "Bransg.",
+   "english": "",
+   "status": "printed",
+   "row": 612
+  },
+  {
+   "page": 127,
+   "letters": "PURGEL",
+   "note": "Pur gel.",
+   "english": "",
+   "status": "from_note",
+   "row": 613,
+   "remark": "The letter column prints 'P.. GEL'. The missing letters are read from the note.",
+   "column": "P.. GEL"
+  },
+  {
+   "page": 127,
+   "letters": "NAPTA",
+   "note": "Nap ta.",
+   "english": "",
+   "status": "printed",
+   "row": 614
+  },
+  {
+   "page": 127,
+   "letters": "IALPOR",
+   "note": "Yal; I AL por.",
+   "english": "",
+   "status": "printed",
+   "row": 615,
+   "read_from": "page image, Internet Archive scan truefaithfulrela00deej",
+   "remark": "The keyers could not read the first line of the note; the page image has 'Yal'."
+  },
+  {
+   "page": 128,
+   "letters": "DSBRIN",
+   "note": "Ds brin.",
+   "english": "",
+   "status": "printed",
+   "row": 616
+  },
+  {
+   "page": 128,
+   "letters": "EFAFAFE",
+   "note": "E fa fa fe. [margin: EFAFAFI]",
+   "english": "",
+   "status": "from_note",
+   "row": 617,
+   "remark": "The letter column prints '... FAFE'. The missing letters are read from the note.",
+   "column": "... FAFE"
+  },
+  {
+   "page": 128,
+   "letters": "P",
+   "note": "...... You must after E fa fa fe, put a P. [margin: Δ. This word is the 25 word backward.]",
+   "english": "",
+   "status": "corrected",
+   "correction_page": 128,
+   "remark": "The journal adds this after the call is given. p. 191 puts it against 'eight' in the English: 'That is P.'"
+  },
+  {
+   "page": 128,
+   "letters": "VONPHO",
+   "note": "Von pho. [margin: [gap:1 word] thus]",
+   "english": "",
+   "status": "printed",
+   "row": 618
+  },
+  {
+   "page": 128,
+   "letters": "OLANI",
+   "note": "O L a ni.",
+   "english": "",
+   "status": "printed",
+   "row": 619,
+   "remark": "The keyed transcription has 'O L a [gap:1 word].' where the page image prints 'O L a ni.'.",
+   "read_from": "page image, Internet Archive scan truefaithfulrela00deej"
+  },
+  {
+   "page": 128,
+   "letters": "OD",
+   "note": "Od.",
+   "english": "",
+   "status": "printed",
+   "row": 620
+  },
+  {
+   "page": 128,
+   "letters": "OBZA",
+   "note": "Ob za.",
+   "english": "",
+   "status": "printed",
+   "row": 621
+  },
+  {
+   "page": 128,
+   "letters": "SOBCA",
+   "note": "Kae; Sob ca.",
+   "english": "",
+   "status": "printed",
+   "row": 622
+  },
+  {
+   "page": 128,
+   "letters": "VPAAH",
+   "note": "V pa ah.",
+   "english": "",
+   "status": "printed",
+   "row": 624
+  },
+  {
+   "page": 128,
+   "letters": "CHIS",
+   "note": "Chis.",
+   "english": "",
+   "status": "printed",
+   "row": 625
+  },
+  {
+   "page": 128,
+   "letters": "TATAN",
+   "note": "Ta tan.",
+   "english": "",
+   "status": "printed",
+   "row": 626
+  },
+  {
+   "page": 128,
+   "letters": "OD",
+   "note": "Od",
+   "english": "",
+   "status": "printed",
+   "row": 627
+  },
+  {
+   "page": 128,
+   "letters": "TRANAN",
+   "note": "Tra nan.",
+   "english": "",
+   "status": "printed",
+   "row": 628,
+   "remark": "The keyed transcription has 'TANAN' where the page image prints 'TRANAN'.",
+   "read_from": "page image, Internet Archive scan truefaithfulrela00deej"
+  },
+  {
+   "page": 128,
+   "letters": "BALYE",
+   "note": "Ba ly e.",
+   "english": "",
+   "status": "printed",
+   "row": 629
+  },
+  {
+   "page": 128,
+   "letters": "ALAR",
+   "note": "A lar.",
+   "english": "",
+   "status": "printed",
+   "row": 630,
+   "remark": "The keyed transcription has '[gap:1 word] LAR' where the page image prints 'ALAR'.",
+   "read_from": "page image, Internet Archive scan truefaithfulrela00deej"
+  },
+  {
+   "page": 128,
+   "letters": "LUSDA",
+   "note": "Lus da.",
+   "english": "",
+   "status": "printed",
+   "row": 631
+  },
+  {
+   "page": 128,
+   "letters": "SOBOLN",
+   "note": "So boln.",
+   "english": "",
+   "status": "printed",
+   "row": 632
+  },
+  {
+   "page": 128,
+   "letters": "OD",
+   "note": "O d.",
+   "english": "",
+   "status": "printed",
+   "row": 633
+  },
+  {
+   "page": 128,
+   "letters": "CHISHOLQ",
+   "note": "Chis hol q.",
+   "english": "",
+   "status": "printed",
+   "row": 634
+  },
+  {
+   "page": 128,
+   "letters": "CNOQVODI",
+   "note": "Cno quo di.",
+   "english": "",
+   "status": "printed",
+   "row": 635
+  },
+  {
+   "page": 128,
+   "letters": "CIAL",
+   "note": "[margin: 96]; Si i.; Ci al.",
+   "english": "",
+   "status": "printed",
+   "row": 636
+  },
+  {
+   "page": 128,
+   "letters": "VNAL",
+   "note": "V nal.",
+   "english": "",
+   "status": "printed",
+   "row": 638
+  },
+  {
+   "page": 128,
+   "letters": "ALDON",
+   "note": "Al don.",
+   "english": "",
+   "status": "printed",
+   "row": 639
+  },
+  {
+   "page": 128,
+   "letters": "MOM",
+   "note": "Mom.",
+   "english": "",
+   "status": "printed",
+   "row": 640
+  },
+  {
+   "page": 128,
+   "letters": "CAOSGO",
+   "note": "Ca os go.",
+   "english": "",
+   "status": "printed",
+   "row": 641
+  },
+  {
+   "page": 128,
+   "letters": "TA",
+   "note": "Ta.",
+   "english": "",
+   "status": "printed",
+   "row": 642
+  },
+  {
+   "page": 128,
+   "letters": "LASOLLOR",
+   "note": "Las ol lor.",
+   "english": "",
+   "status": "from_note",
+   "row": 643,
+   "remark": "The letter column prints 'LA. LLOR'. The missing letters are read from the note.",
+   "column": "LA. LLOR"
+  },
+  {
+   "page": 128,
+   "letters": "GNAY",
+   "note": "Gnay.",
+   "english": "",
+   "status": "printed",
+   "row": 644
+  },
+  {
+   "page": 129,
+   "letters": "LIMLAL",
+   "note": "Lim lal.",
+   "english": "",
+   "status": "printed",
+   "row": 645
+  },
+  {
+   "page": 129,
+   "letters": "AMMA",
+   "note": "Am ma.",
+   "english": "",
+   "status": "printed",
+   "row": 646
+  },
+  {
+   "page": 129,
+   "letters": "CHIIS",
+   "note": "Chiis.",
+   "english": "",
+   "status": "printed",
+   "row": 647
+  },
+  {
+   "page": 129,
+   "letters": "SOBCA",
+   "note": "Ka.; Sob ca.",
+   "english": "",
+   "status": "printed",
+   "row": 648
+  },
+  {
+   "page": 129,
+   "letters": "MADRID",
+   "note": "Ma drid",
+   "english": "",
+   "status": "from_note",
+   "row": 650,
+   "remark": "The letter column prints '.ADRID'. The missing letters are read from the note. The keyed transcription has 'ADRID' where the page image prints '.ADRID'. In the page image a dot stands where the first letter should be.",
+   "column": ".ADRID",
+   "read_from": "page image, Internet Archive scan truefaithfulrela00deej"
+  },
+  {
+   "page": 129,
+   "letters": "ZCHIS",
+   "note": "Kis.; Zod Chis.",
+   "english": "",
+   "status": "printed",
+   "row": 651
+  },
+  {
+   "page": 129,
+   "letters": "OOANOAN",
+   "note": "O o A no an.",
+   "english": "",
+   "status": "printed",
+   "row": 653
+  },
+  {
+   "page": 129,
+   "letters": "CHIS",
+   "note": "Chis.",
+   "english": "",
+   "status": "from_note",
+   "row": 654,
+   "remark": "The letter column prints 'CHI.'. The dot is read as a missing letter because the note has one more letter there.",
+   "column": "CHI."
+  },
+  {
+   "page": 129,
+   "letters": "AVINY",
+   "note": "A vi ny.",
+   "english": "",
+   "status": "printed",
+   "row": 655
+  },
+  {
+   "page": 129,
+   "letters": "DRILPI",
+   "note": "Dril pi.",
+   "english": "",
+   "status": "printed",
+   "row": 656
+  },
+  {
+   "page": 129,
+   "letters": "CAOSGIN",
+   "note": "Ca os gin.",
+   "english": "",
+   "status": "printed",
+   "row": 657
+  },
+  {
+   "page": 129,
+   "letters": "OD",
+   "note": "Od",
+   "english": "",
+   "status": "printed",
+   "row": 658
+  },
+  {
+   "page": 129,
+   "letters": "BUTMONI",
+   "note": "But mo ni.",
+   "english": "",
+   "status": "printed",
+   "row": 659
+  },
+  {
+   "page": 129,
+   "letters": "PARM",
+   "note": "Parm.",
+   "english": "",
+   "status": "printed",
+   "row": 660
+  },
+  {
+   "page": 129,
+   "letters": "ZUMVI",
+   "note": "Zum vi.",
+   "english": "",
+   "status": "printed",
+   "row": 661
+  },
+  {
+   "page": 129,
+   "letters": "CNILA",
+   "note": "Cni la.",
+   "english": "",
+   "status": "printed",
+   "row": 662
+  },
+  {
+   "page": 129,
+   "letters": "DAZIS",
+   "note": "Daz is.",
+   "english": "",
+   "status": "from_note",
+   "row": 663,
+   "remark": "The letter column prints 'DAZI.'. The dot is read as a missing letter because the note has one more letter there.",
+   "column": "DAZI."
+  },
+  {
+   "page": 129,
+   "letters": "ETHAMZ",
+   "note": "E tham Zod.",
+   "english": "",
+   "status": "printed",
+   "row": 664
+  },
+  {
+   "page": 129,
+   "letters": "ACHILDAO",
+   "note": "Kil.; A chil da o.",
+   "english": "",
+   "status": "printed",
+   "row": 665
+  },
+  {
+   "page": 129,
+   "letters": "OD",
+   "note": "Od.",
+   "english": "",
+   "status": "printed",
+   "row": 667
+  },
+  {
+   "page": 129,
+   "letters": "MIRC",
+   "note": "M irk.; M irc.",
+   "english": "",
+   "status": "from_note",
+   "row": 668,
+   "remark": "The letter column prints 'MIR.'. The dot is read as a missing letter because the note has one more letter there.",
+   "column": "MIR."
+  },
+  {
+   "page": 129,
+   "letters": "OZOL",
+   "note": "O zol.",
+   "english": "",
+   "status": "printed",
+   "row": 670
+  },
+  {
+   "page": 129,
+   "letters": "CHIS",
+   "note": "Chis.",
+   "english": "",
+   "status": "from_note",
+   "row": 671,
+   "remark": "The letter column prints 'CH..'. The missing letters are read from the note.",
+   "column": "CH.."
+  },
+  {
+   "page": 129,
+   "letters": "PIDIAI",
+   "note": "Pi di a i.",
+   "english": "",
+   "status": "printed",
+   "row": 672
+  },
+  {
+   "page": 130,
+   "letters": "COLLAL",
+   "note": "Col lal.",
+   "english": "",
+   "status": "from_note",
+   "row": 673,
+   "remark": "The letter column prints 'COLLA..'. The missing letters are read from the note.",
+   "column": "COLLA.."
+  },
+  {
+   "page": 130,
+   "letters": "VLCININ",
+   "note": "Ul ci nin..",
+   "english": "",
+   "status": "printed",
+   "row": 674
+  },
+  {
+   "page": 130,
+   "letters": "ASOBAMA",
+   "note": "A so bam.",
+   "english": "",
+   "status": "printed",
+   "row": 675
+  },
+  {
+   "page": 130,
+   "letters": "UCIM",
+   "note": "U cim.",
+   "english": "",
+   "status": "printed",
+   "row": 676
+  },
+  {
+   "page": 130,
+   "letters": "BAGLE",
+   "note": "Ba gle.",
+   "english": "",
+   "status": "printed",
+   "row": 677
+  },
+  {
+   "page": 130,
+   "letters": "IADBALTOH",
+   "note": "I ad bal toh.",
+   "english": "",
+   "status": "from_note",
+   "row": 678,
+   "remark": "The letter column prints 'IA. BALTOH'. The missing letters are read from the note.",
+   "column": "IA. BALTOH"
+  },
+  {
+   "page": 130,
+   "letters": "CHIRLAN",
+   "note": "Kir.; Ch ir lan.",
+   "english": "",
+   "status": "printed",
+   "row": 679
+  },
+  {
+   "page": 130,
+   "letters": "PAR",
+   "note": "par.",
+   "english": "",
+   "status": "printed",
+   "row": 681
+  },
+  {
+   "page": 130,
+   "letters": "NIISO",
+   "note": "Ni i so.",
+   "english": "",
+   "status": "from_note",
+   "row": 682,
+   "remark": "The letter column prints 'NII..'. The missing letters are read from the note.",
+   "column": "NII.."
+  },
+  {
+   "page": 130,
+   "letters": "OD",
+   "note": "Od.",
+   "english": "",
+   "status": "printed",
+   "row": 683
+  },
+  {
+   "page": 130,
+   "letters": "IP",
+   "note": "Ip.",
+   "english": "",
+   "status": "printed",
+   "row": 684
+  },
+  {
+   "page": 130,
+   "letters": "OFAFAFE",
+   "note": "O fa fa fe.",
+   "english": "",
+   "status": "from_note",
+   "row": 685,
+   "remark": "The letter column prints 'O ... AFE'. The missing letters are read from the note.",
+   "column": "O ... AFE"
+  },
+  {
+   "page": 130,
+   "letters": "BAGLE",
+   "note": "Ba gle.",
+   "english": "",
+   "status": "printed",
+   "row": 686
+  },
+  {
+   "page": 130,
+   "letters": "ACOCASB",
+   "note": "A co casb.",
+   "english": "",
+   "status": "printed",
+   "row": 687
+  },
+  {
+   "page": 130,
+   "letters": "ICORSCA",
+   "note": "Ka I Cors ca.",
+   "english": "",
+   "status": "printed",
+   "row": 688,
+   "remark": "The keyed transcription has '[gap:1 word] I Cors ca.' where the page image prints 'Ka I Cors ca.'.",
+   "read_from": "page image, Internet Archive scan truefaithfulrela00deej"
+  },
+  {
+   "page": 130,
+   "letters": "VNIG",
+   "note": "V nig.",
+   "english": "",
+   "status": "printed",
+   "row": 689
+  },
+  {
+   "page": 130,
+   "letters": "BLIOR",
+   "note": "Bli or.",
+   "english": "",
+   "status": "printed",
+   "row": 690
+  }
+ ]
+}

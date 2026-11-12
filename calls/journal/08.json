@@ -1,0 +1,464 @@
+{
+ "call": 8,
+ "printing": "Meric Casaubon, A True & Faithful Relation (London, 1659)",
+ "pages": "pp. 125 to 127",
+ "direction": "forward",
+ "notes": [],
+ "words": [
+  {
+   "page": 125,
+   "letters": "BAZMELO",
+   "note": "Baz me lo.",
+   "english": "",
+   "status": "printed",
+   "row": 555,
+   "remark": "The keyed transcription has '[gap:1 word] BAZMELO' where the page image prints 'BAZMELO'. In the page image a small mark stands before the word, and the word itself is whole.",
+   "read_from": "page image, Internet Archive scan truefaithfulrela00deej"
+  },
+  {
+   "page": 125,
+   "letters": "ITA",
+   "note": "I ta",
+   "english": "",
+   "status": "printed",
+   "row": 556
+  },
+  {
+   "page": 125,
+   "letters": "PIRIPSON",
+   "note": "Pi rip son.",
+   "english": "",
+   "status": "printed",
+   "row": 557
+  },
+  {
+   "page": 125,
+   "letters": "OLN",
+   "note": "Oln.",
+   "english": "",
+   "status": "printed",
+   "row": 558
+  },
+  {
+   "page": 125,
+   "letters": "NAZAVABH",
+   "note": "Na za vábh.",
+   "english": "",
+   "status": "printed",
+   "row": 559
+  },
+  {
+   "page": 125,
+   "letters": "OX",
+   "note": "Ox.",
+   "english": "",
+   "status": "printed",
+   "row": 560
+  },
+  {
+   "page": 125,
+   "letters": "CASARMG",
+   "note": "Casarmg.",
+   "english": "",
+   "status": "printed",
+   "row": 561
+  },
+  {
+   "page": 125,
+   "letters": "VRAN",
+   "note": "V rán.",
+   "english": "",
+   "status": "conflict",
+   "row": 562,
+   "column": "G or V RAN",
+   "other": "GRAN",
+   "remark": "The letter column prints 'G or V RAN'. The note has 'V rán'."
+  },
+  {
+   "page": 125,
+   "letters": "CHIS",
+   "note": "Chis.",
+   "english": "",
+   "status": "printed",
+   "row": 563
+  },
+  {
+   "page": 125,
+   "letters": "VGEG",
+   "note": "V gég.",
+   "english": "",
+   "status": "printed",
+   "row": 564
+  },
+  {
+   "page": 125,
+   "letters": "DSABRAMG",
+   "note": "Dsábramg. [g not as dg.]",
+   "english": "",
+   "status": "from_note",
+   "row": 565,
+   "remark": "The letter column prints '.. SABRAMG'. The missing letters are read from the note.",
+   "column": ".. SABRAMG"
+  },
+  {
+   "page": 125,
+   "letters": "BALTOHA",
+   "note": "Bal to ha.",
+   "english": "",
+   "status": "printed",
+   "row": 566,
+   "remark": "The keyed transcription has 'Bal to ba.' where the page image prints 'Bal to ha.'.",
+   "read_from": "page image, Internet Archive scan truefaithfulrela00deej"
+  },
+  {
+   "page": 126,
+   "letters": "GOHOIAD",
+   "note": "Go hó i ad.",
+   "english": "",
+   "status": "printed",
+   "row": 567
+  },
+  {
+   "page": 126,
+   "letters": "SOLAMIAN",
+   "note": "So lá mi an.",
+   "english": "",
+   "status": "printed",
+   "row": 568
+  },
+  {
+   "page": 126,
+   "letters": "TRIAN",
+   "note": "Tri an.",
+   "english": "",
+   "status": "printed",
+   "row": 569
+  },
+  {
+   "page": 126,
+   "letters": "TALOLCIS",
+   "note": "Ta lól cis or sis.",
+   "english": "",
+   "status": "printed",
+   "row": 570
+  },
+  {
+   "page": 126,
+   "letters": "ABAIUONIN",
+   "note": "A ba i uo nin",
+   "english": "",
+   "status": "printed",
+   "row": 571
+  },
+  {
+   "page": 126,
+   "letters": "OD",
+   "note": "OD.",
+   "english": "",
+   "status": "printed",
+   "row": 572
+  },
+  {
+   "page": 126,
+   "letters": "AZIAGIAR",
+   "note": "A zi á gi er. [margin: He putteth his feet on all these letters.]",
+   "english": "",
+   "status": "printed",
+   "row": 573,
+   "remark": "The keyed transcription has 'He [gap:1 word] his feet' where the page image prints 'He putteth his feet'.",
+   "read_from": "page image, Internet Archive scan truefaithfulrela00deej"
+  },
+  {
+   "page": 126,
+   "letters": "RIOR",
+   "note": "Rior.",
+   "english": "",
+   "status": "printed",
+   "row": 574
+  },
+  {
+   "page": 126,
+   "letters": "IRGILCHISDA",
+   "note": "Ir gil chis da.",
+   "english": "",
+   "status": "printed",
+   "row": 575
+  },
+  {
+   "page": 126,
+   "letters": "DSPAAOX",
+   "note": "Dspá a ox.",
+   "english": "",
+   "status": "printed",
+   "row": 576
+  },
+  {
+   "page": 126,
+   "letters": "BUFD",
+   "note": "Bufd.",
+   "english": "",
+   "status": "printed",
+   "row": 577
+  },
+  {
+   "page": 126,
+   "letters": "CAOSGO",
+   "note": "Ca, or Ka os go.",
+   "english": "",
+   "status": "printed",
+   "row": 578
+  },
+  {
+   "page": 126,
+   "letters": "DSCHIS",
+   "note": "Ds chis.",
+   "english": "",
+   "status": "printed",
+   "row": 579
+  },
+  {
+   "page": 126,
+   "letters": "ODIPURAN",
+   "note": "Odi pu ran.",
+   "english": "",
+   "status": "printed",
+   "row": 580
+  },
+  {
+   "page": 126,
+   "letters": "TELOAH",
+   "note": "Té lo ah.",
+   "english": "",
+   "status": "printed",
+   "row": 581
+  },
+  {
+   "page": 126,
+   "letters": "CACRG",
+   "note": "Ca curg.",
+   "english": "",
+   "status": "printed",
+   "row": 582
+  },
+  {
+   "page": 126,
+   "letters": "OISALMAN",
+   "note": "O i sal man.",
+   "english": "",
+   "status": "printed",
+   "row": 583
+  },
+  {
+   "page": 126,
+   "letters": "LONCHO",
+   "note": "Lon cho, or ko.",
+   "english": "",
+   "status": "printed",
+   "row": 584
+  },
+  {
+   "page": 126,
+   "letters": "OD",
+   "note": "Od.",
+   "english": "",
+   "status": "printed",
+   "row": 585
+  },
+  {
+   "page": 126,
+   "letters": "VOUINA",
+   "note": "Vo ui na.",
+   "english": "",
+   "status": "printed",
+   "row": 586
+  },
+  {
+   "page": 126,
+   "letters": "CARBAF",
+   "note": "Car baf.",
+   "english": "",
+   "status": "printed",
+   "row": 587
+  },
+  {
+   "page": 126,
+   "letters": "NIISO",
+   "note": "Ni i so.",
+   "english": "",
+   "status": "printed",
+   "row": 588
+  },
+  {
+   "page": 126,
+   "letters": "BAGLE",
+   "note": "Ba gle.",
+   "english": "",
+   "status": "printed",
+   "row": 589
+  },
+  {
+   "page": 126,
+   "letters": "AUAUAGO",
+   "note": "A uá ua go.",
+   "english": "",
+   "status": "printed",
+   "row": 590
+  },
+  {
+   "page": 126,
+   "letters": "GOHON",
+   "note": "Go hón.",
+   "english": "",
+   "status": "printed",
+   "row": 591
+  },
+  {
+   "page": 126,
+   "letters": "NIISO",
+   "note": "Ni i so.",
+   "english": "",
+   "status": "printed",
+   "row": 592
+  },
+  {
+   "page": 127,
+   "letters": "BAGLE",
+   "note": "Ba gle.",
+   "english": "",
+   "status": "printed",
+   "row": 593
+  },
+  {
+   "page": 127,
+   "letters": "MOMAO",
+   "note": "Mo ma o.",
+   "english": "",
+   "status": "printed",
+   "row": 594
+  },
+  {
+   "page": 127,
+   "letters": "SIAION",
+   "note": "Si a i on.",
+   "english": "",
+   "status": "printed",
+   "row": 595
+  },
+  {
+   "page": 127,
+   "letters": "OD",
+   "note": "Od.",
+   "english": "",
+   "status": "printed",
+   "row": 596
+  },
+  {
+   "page": 127,
+   "letters": "MABZA",
+   "note": "Mab za.",
+   "english": "",
+   "status": "printed",
+   "row": 597
+  },
+  {
+   "page": 127,
+   "letters": "IADOIASMOMAR",
+   "note": "Iad o i as mo mar.",
+   "english": "",
+   "status": "printed",
+   "row": 598
+  },
+  {
+   "page": 127,
+   "letters": "POILP",
+   "note": "Poilp, one syllable.",
+   "english": "",
+   "status": "printed",
+   "row": 599
+  },
+  {
+   "page": 127,
+   "letters": "NIIS",
+   "note": "Ni is, small sound of i.",
+   "english": "",
+   "status": "printed",
+   "row": 600
+  },
+  {
+   "page": 127,
+   "letters": "ZAMRAN",
+   "note": "Zam ran.",
+   "english": "",
+   "status": "printed",
+   "row": 601
+  },
+  {
+   "page": 127,
+   "letters": "CIAOFI",
+   "note": "C I A O fi.",
+   "english": "",
+   "status": "printed",
+   "row": 602
+  },
+  {
+   "page": 127,
+   "letters": "CAOSGO",
+   "note": "Ka.; Ca os go.",
+   "english": "",
+   "status": "printed",
+   "row": 603
+  },
+  {
+   "page": 127,
+   "letters": "OD",
+   "note": "OD.",
+   "english": "",
+   "status": "printed",
+   "row": 605
+  },
+  {
+   "page": 127,
+   "letters": "BLIORS",
+   "note": "Bli ors.",
+   "english": "",
+   "status": "from_note",
+   "row": 606,
+   "remark": "The letter column prints 'BLI....S'. The missing letters are read from the note.",
+   "column": "BLI....S"
+  },
+  {
+   "page": 127,
+   "letters": "OD",
+   "note": "OD.",
+   "english": "",
+   "status": "printed",
+   "row": 607
+  },
+  {
+   "page": 127,
+   "letters": "CORSI",
+   "note": "Cor si.",
+   "english": "",
+   "status": "from_note",
+   "row": 608,
+   "remark": "The letter column prints 'COR ....'. The missing letters are read from the note.",
+   "column": "COR ...."
+  },
+  {
+   "page": 127,
+   "letters": "TA",
+   "note": "Ta",
+   "english": "",
+   "status": "printed",
+   "row": 609
+  },
+  {
+   "page": 127,
+   "letters": "ABRAMIG",
+   "note": "A bra mig.",
+   "english": "",
+   "status": "printed",
+   "row": 610
+  }
+ ]
+}

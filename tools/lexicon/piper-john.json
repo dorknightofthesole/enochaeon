@@ -1,0 +1,14 @@
+{
+  "about": "How the lexicon field for the Piper voice John is filled. Typed by hand. tools/lexicon/voice-readings.py reads it. The speech code does not: it reads the lexicon.",
+  "field": "dee_ipa_piper_john",
+  "from": "dee_ipa",
+  "symbols": {
+    "æ": "a"
+  },
+  "symbols_why": "John's own English writes the vowel of 'bad' as a. Given æ after y, m or b, it did not open the mouth for the vowel (tools/trials/word-onset.py).",
+  "one_vowel": {
+    "stress": "ˈ",
+    "hold": "ː"
+  },
+  "one_vowel_why": "John shrinks a vowel that has no stress mark, and a word with one vowel has nowhere else to put it. Without the hold John clips a short vowel, and a final d is heard as t. Eddie heard iad as right in this form. The hold is for this voice and does not say Dee's vowel was long."
+}

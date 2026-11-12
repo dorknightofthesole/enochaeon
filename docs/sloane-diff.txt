@@ -1,0 +1,155 @@
+Sloane 3191 against the journal data: every word that differs or could not be read.
+The reading is from the page images in scratch/sloane-pages/. It has not been confirmed.
+A star marks a word whose journal status is not printed or corrected.
+
+Totals: 1027 agrees, 74 differs, 2 could not read
+Not checked: none
+
+== Call 1: PDF page 2, second opening, right-hand page (scratch/sloane-pages/ms/s02-f2r.jpg)
+  word  35    journal URBS             (printed, p. 85)  Sloane vrbs                   differs: u/v or i/j/y only
+  word  58    journal UL               (printed, p. 83)  Sloane Lu                     differs: letters
+  word  63  * journal ZOMDV            (conflict, p. 83)  Sloane zomd                   differs: letters
+
+== Call 2: PDF page 2, third opening, left-hand page (scratch/sloane-pages/ms/s02-f3l.jpg)
+  word   3    journal ZONG             (printed, p. 100)  Sloane zongom                 differs: word break
+  word   4    journal OM               (printed, p. 100)  Sloane zongom                 differs: word break
+  word  10    journal IALPURG          (printed, p. 100)  Sloane ial-prg                differs: letters
+  word  20    journal TVRBS            (printed, p. 100)  Sloane turbs                  differs: u/v or i/j/y only
+
+== Call 3: PDF page 2, third opening, right-hand page (scratch/sloane-pages/ms/s02-f3r.jpg)
+  word   8    journal OSLONDOH         (printed, p. 97)  Sloane Os Lón-doh             differs: word break
+  word  15    journal TAPVIN           (printed, p. 97)  Sloane tá_pu-im               differs: letters
+  word  16    journal QMOS             (printed, p. 97)  Sloane Q_mos-pleh             differs: word break
+  word  17    journal PLEH             (printed, p. 97)  Sloane Q_mos-pleh             differs: word break
+  word  19    journal QVIIN            (printed, p. 97)  Sloane Qui-i-n                differs: u/v or i/j/y only
+  word  33    journal HAALA            (printed, p. 96)  Sloane áâla                   differs: letters
+  word  37    journal VOMZARG          (printed, p. 96)  Sloane vomsarg                differs: letters
+  word  57    journal UNALAH           (printed, p. 95)  Sloane vnalah                 differs: u/v or i/j/y only
+  word  59    journal ODVOOAN          (printed, p. 95)  Sloane od vooan               differs: word break
+  word  75    journal UNIGLAG          (printed, p. 94)  Sloane v́niglag               differs: u/v or i/j/y only
+  remark: A faint mark stands before the 'm' (journal word 23) that could not be read as a letter.
+  remark: The margin beside ZACAR reads 'zod a car'.
+
+== Call 4: PDF page 2, fourth opening, left-hand page (scratch/sloane-pages/ms/s02-f4l.jpg)
+  word   8    journal AVAVAGO          (printed, p. 110)  Sloane auáuâgo                differs: u/v or i/j/y only
+  word  32    journal TORGV            (printed, p. 109)  Sloane Torgú                  differs: u/v or i/j/y only
+  word  33    journal NORQVASAHI       (printed, p. 109)  Sloane Nor_quasáhi            differs: u/v or i/j/y only
+  word  34    journal DO               (printed, p. 109)  Sloane od                     differs: letters
+  word  35    journal FGAOSGA          (printed, p. 109)  Sloane F_caosga               differs: letters
+  word  43    journal ODZAMRAN         (printed, p. 109)  Sloane od ZAMRAN              differs: word break
+  word  45    journal RESTIL           (printed, p. 109)  Sloane rest-el                differs: letters
+  remark: A small 'i' is written above the e of 'rest-el'.
+
+== Call 5: PDF page 2, fourth opening, right-hand page (scratch/sloane-pages/ms/s02-f4r.jpg)
+  word   3    journal DUIV             (printed, p. 119)  Sloane du-i-b                 differs: letters
+  word   6    journal TAQANIS          (printed, p. 119)  Sloane ta-qu-a-nis            differs: letters
+  word  12    journal PIRIPSOL         (printed, p. 119)  Sloane péripsol               differs: letters
+  word  28    journal TAUIU            (printed, p. 120)  Sloane ta-vi-u                differs: u/v or i/j/y only
+  word  54  * journal GEJAD            (from_note, p. 121)  Sloane Ge-iad                 differs: u/v or i/j/y only
+
+== Call 6: PDF page 2, fifth opening, left-hand page (scratch/sloane-pages/ms/s02-f5l.jpg)
+  word  16    journal MALPURG          (printed, p. 122)  Sloane malprg                 differs: letters
+  word  22    journal FBLIARD          (corrected, p. 122)  Sloane tbliard                differs: letters
+  remark: 'tbliard' is underlined, has a small o over the a, and 'f-bliard' is written beneath it.
+
+== Call 7: PDF page 2, fifth opening, right-hand page (scratch/sloane-pages/ms/s02-f5r.jpg)
+  word   3  * journal PARADIZ          (from_note, p. 123)  Sloane para-di-zod            differs: letters
+  word  18  * journal ZONAR            (from_note, p. 124)  Sloane zonac                  differs: letters
+  remark: 'nuam' is written above the first 'od miam'.
+  remark: 'zod' is written above the final z of 'o-mi-ca-ol-z'.
+
+== Call 8: PDF page 3, first opening, left-hand page (scratch/sloane-pages/ms/s03-f1l.jpg)
+  word  19    journal AZIAGIAR         (printed, p. 126)  Sloane aziágier               differs: letters
+  remark: 'carg.' is written above 'cacrg'.
+  remark: Two notes in the right margin begin 'forte', one beside the line of 'Solámian trian' and one beside 'bufd'. Their second words were not read with certainty.
+  remark: A small mark stands above the V of 'Vrán'; it was not read.
+
+== Call 9: PDF page 3, first opening, right-hand page (scratch/sloane-pages/ms/s03-f1r.jpg)
+  word   3  * journal PURGEL           (from_note, p. 127)  Sloane prgel                  differs: letters
+  word  25    journal CNOQVODI         (printed, p. 128)  Sloane C_no_quó_di            differs: u/v or i/j/y only
+  word  42    journal AVINY            (printed, p. 129)  Sloane auiny                  differs: u/v or i/j/y only
+  word  60    journal ASOBAMA          (printed, p. 130)  Sloane a_sóbam                differs: letters
+  word  61    journal UCIM             (printed, p. 130)  Sloane Vcim                   differs: u/v or i/j/y only
+  remark: A small y is written above the first letter of 'ialpor'.
+  remark: 'Ka' is written above the 'cá' of the second 'Sob cá' and above the 'ca' of 'i córs ca'; 'zod' above the z of 'z chis' and above the z of 'ethámz'; 'kil' above the 'chíl' of 'a chíldáo'.
+  remark: The third letter of 'zumvi' was read as v: it has the same curl as the v of 'virq' on the next page and not the upright stroke of b.
+
+== Call 10: PDF page 3, second opening, left-hand page (scratch/sloane-pages/ms/s03-f2l.jpg)
+  word  12    journal OP               (corrected, p. 131)  Sloane -                      differs: not in the manuscript at this place
+  after word  13  Sloane op                     only in the manuscript
+  word  31    journal CINXIR           (printed, p. 131)  Sloane cynxir                 differs: u/v or i/j/y only
+  word  33    journal UNALCHIS         (printed, p. 131)  Sloane Vnál_chis              differs: u/v or i/j/y only
+  word  54    journal MATORB           (corrected, p. 132)  Sloane e?_matorb              could not read: a letter is uncertain
+  after word  58  Sloane matb                   only in the manuscript
+  remark: The manuscript writes 'virq op' where the journal data has OP VIRQ: the same two words in the other order. 'Nests' is written above 'virq' and ':22:' above 'op'.
+  remark: 'matb' is written after 'yolci', underlined, with '1000' above it. The journal data has no word at this place.
+  remark: A small faint letter, e or c, stands before 'matorb', and dots are drawn under 'ator'. No English is written above this word.
+  remark: A small y is written above the first letter of 'ialpon'; 'K' above the C of 'Const'; 'dg' above the g of the first 'cocasg'; ':24:' above the second 'ol'.
+
+== Call 11: PDF page 3, second opening, right-hand page (scratch/sloane-pages/ms/s03-f2r.jpg)
+  every word agrees
+  remark: A cross-shaped mark stands after 'Niíso'.
+  remark: A bracketed note in the left margin beside 'telóch Casárman' was not read.
+  remark: A small s is written above the c of 'noncp'.
+
+== Call 12: PDF page 3, third opening, left-hand page (scratch/sloane-pages/ms/s03-f3l.jpg)
+  word  22    journal IVONPH           (printed, p. 135)  Sloane i VONPH                differs: word break
+  after word  24  Sloane od                     only in the manuscript
+
+== Call 13: PDF page 3, third opening, right-hand page (scratch/sloane-pages/ms/s03-f3r.jpg)
+  word  20    journal JUMD             (printed, p. 136)  Sloane ivmd                   differs: u/v or i/j/y only
+  word  23    journal ZACARE           (corrected, p. 193)  Sloane ZACAR                  differs: letters
+  word  24    journal CA               (printed, p. 193)  Sloane -                      differs: not in the manuscript at this place
+
+== Call 14: PDF page 3, fourth opening, left-hand page (scratch/sloane-pages/ms/s03-f4l.jpg)
+  word  26    journal ZACARE           (corrected, p. 193)  Sloane ZACAR                  differs: letters
+  word  27    journal CA               (printed, p. 193)  Sloane -                      differs: not in the manuscript at this place
+  remark: Small letters are written above 'bagíe' and above the 'ol' that follows 'mirc'; they were not read.
+  remark: The fourth letter of 'pasbs' was read as b: it has the closed bowl of the b in 'bagíe' beside it.
+
+== Call 15: PDF page 3, fourth opening, right-hand page (scratch/sloane-pages/ms/s03-f4r.jpg)
+  word   5  * journal VPHAAI           (not_printed, -)  Sloane vpaáhi                 differs: letters
+  word   8  * journal DSOCIDO          (not_printed, -)  Sloane dsoci?do               could not read: a letter is uncertain
+  word  18    journal ZACARE           (corrected, p. 193)  Sloane ZACAR                  differs: letters
+  word  19    journal CA               (printed, p. 193)  Sloane -                      differs: not in the manuscript at this place
+  remark: In 'dsocido' the letters between o and d were read as 'ci' with a mark above; they could also be a single a.
+  remark: 'darg' is underlined and has small letters above it that were not read; a small s stands above the s of 'monasci' and a small y above the first letter of 'iaíádix'.
+
+== Call 16: PDF page 3, fifth opening, left-hand page (scratch/sloane-pages/ms/s03-f5l.jpg)
+  word  22    journal ZACARE           (corrected, p. 194)  Sloane ZACAR                  differs: letters
+  word  23    journal CA               (printed, p. 194)  Sloane -                      differs: not in the manuscript at this place
+  remark: Small letters are written above the g of 'caosg', and 'yls' is written again above 'yls'. A note in the right margin beside 'ds in si' was not read.
+
+== Call 17: PDF page 3, fifth opening, right-hand page (scratch/sloane-pages/ms/s03-f5r.jpg)
+  word   2  * journal DIALPERT         (from_note, p. 136)  Sloane dialprt                differs: letters
+  word  10    journal TAXS             (printed, p. 135)  Sloane Faxs                   differs: letters
+  word  20    journal ZACARE           (corrected, p. 194)  Sloane ZACAR                  differs: letters
+  word  21    journal CA               (printed, p. 194)  Sloane -                      differs: not in the manuscript at this place
+  remark: The first letter of 'Faxs' was read as F: it has a bar across the middle of the stem as well as the bar on top. The word is underlined and '7336' is written above it.
+
+== Call 18: PDF page 3, sixth opening, left-hand page (scratch/sloane-pages/ms/s03-f6l.jpg)
+  word  10    journal OVOARS           (printed, p. 137)  Sloane ouóars                 differs: u/v or i/j/y only
+  word  21    journal QZMOZ            (printed, p. 137)  Sloane MOZ                    differs: letters
+  word  27    journal ZACARE           (corrected, p. 194)  Sloane ZACAR                  differs: letters
+  word  28    journal CA               (printed, p. 194)  Sloane -                      differs: not in the manuscript at this place
+  remark: 'MOZ' is written in capitals with 'IOYE' above it. No letters stand before the M.
+
+== The call of the thirty Aethyrs: PDF page 4, first opening, both pages (scratch/sloane-pages/ms/s04-f1l.jpg and s04-f1r.jpg)
+  word   1    journal MADRIIAX         (printed, p. 201)  Sloane Madriax                differs: letters
+  word   4    journal CHISMICAOLZ      (printed, p. 201)  Sloane chis Micáolz           differs: word break
+  word  19    journal CHI              (printed, p. 201)  Sloane chis                   differs: letters
+  word  21    journal PIRIPSOL         (printed, p. 202)  Sloane perípsol               differs: letters
+  word  59    journal PIRIPSAX         (printed, p. 204)  Sloane pe_ríp_sax             differs: letters
+  word  65    journal OUCHO            (printed, p. 204)  Sloane ov_cho                 differs: u/v or i/j/y only
+  word  80    journal AGLTOLTORN       (printed, p. 205)  Sloane Ag_L_tor_torn          differs: letters
+  word  94    journal AUAVOX           (printed, p. 206)  Sloane auáuox                 differs: u/v or i/j/y only
+  word  99    journal LEVITHMONG       (printed, p. 206)  Sloane Leuith_mong            differs: u/v or i/j/y only
+  word 100    journal UNCHI            (printed, p. 206)  Sloane vnchi                  differs: u/v or i/j/y only
+  word 141    journal TORZU            (printed, p. 208)  Sloane TORZV                  differs: u/v or i/j/y only
+  -- the thirty names: PDF page 4, first opening, left margin of the left-hand page: the numbered list 1 to 30 (scratch/sloane-pages/zoom/ae-names-a.jpg, -b, -c). The circle of names on the page before (ms/s03-f6r.jpg) was not read
+  word  14    journal UTA              (printed, p. 209)  Sloane Vta                    differs: u/v or i/j/y only
+  word  25    journal UTI              (printed, p. 209)  Sloane Vti                    differs: u/v or i/j/y only
+  remark: The first word was read as 'Madriax' with one i. Where the word comes again on the second page it is 'Mádríiax' with two.
+  remark: A small o is written above the first a of 'Sába'.
+  remark: Notes written above words: 's' above the c of 'nonca' and of both 'noncf'; 'do-drumni' or the like above 'dodrmni'; 'K' above the c of 'mirc'; 'dg' above 'fargt' and above 'tonug'; 'ki' above 'vnchi'; 'Ka' above 'orócha'; 'dg' above 'q ting'; 'carg' above 'cacrg'; 'x' above 'Mádríiax'. Several more were not read.
+

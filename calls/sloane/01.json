@@ -1,0 +1,785 @@
+{
+  "call": 1,
+  "manuscript": "British Library MS Sloane 3191, 48 Claves Angelicae, in John Dee's hand",
+  "scan": "docs/998222247-Dee-MS-Sloane-3191.pdf",
+  "where": "PDF page 2, second opening, right-hand page (scratch/sloane-pages/ms/s02-f2r.jpg)",
+  "reading": "tools/sloane/sloane-reading.json: one reading by eye, not confirmed",
+  "remarks": [],
+  "words": [
+    {
+      "letters": "OL",
+      "written": "Ol",
+      "status": "read",
+      "journal": [
+        1
+      ],
+      "differs": ""
+    },
+    {
+      "letters": "SONF",
+      "written": "sonf",
+      "status": "read",
+      "journal": [
+        2
+      ],
+      "differs": ""
+    },
+    {
+      "letters": "VORSG",
+      "written": "vorsg",
+      "status": "read",
+      "journal": [
+        3
+      ],
+      "differs": ""
+    },
+    {
+      "letters": "GOHO",
+      "written": "gohó",
+      "status": "read",
+      "journal": [
+        4
+      ],
+      "differs": ""
+    },
+    {
+      "letters": "IAD",
+      "written": "Iad",
+      "status": "read",
+      "journal": [
+        5
+      ],
+      "differs": ""
+    },
+    {
+      "letters": "BALT",
+      "written": "balt",
+      "status": "read",
+      "journal": [
+        6
+      ],
+      "differs": ""
+    },
+    {
+      "letters": "LANSH",
+      "written": "lansh",
+      "status": "read",
+      "journal": [
+        7
+      ],
+      "differs": ""
+    },
+    {
+      "letters": "CALZ",
+      "written": "calz",
+      "status": "read",
+      "journal": [
+        8
+      ],
+      "differs": ""
+    },
+    {
+      "letters": "VONPHO",
+      "written": "vonpho",
+      "status": "read",
+      "journal": [
+        9
+      ],
+      "differs": ""
+    },
+    {
+      "letters": "SOBRA",
+      "written": "Sobra",
+      "status": "read",
+      "journal": [
+        10
+      ],
+      "differs": ""
+    },
+    {
+      "letters": "ZOL",
+      "written": "z-ol",
+      "status": "read",
+      "journal": [
+        11
+      ],
+      "differs": ""
+    },
+    {
+      "letters": "ROR",
+      "written": "ror",
+      "status": "read",
+      "journal": [
+        12
+      ],
+      "differs": ""
+    },
+    {
+      "letters": "I",
+      "written": "i",
+      "status": "read",
+      "journal": [
+        13
+      ],
+      "differs": ""
+    },
+    {
+      "letters": "TA",
+      "written": "ta",
+      "status": "read",
+      "journal": [
+        14
+      ],
+      "differs": ""
+    },
+    {
+      "letters": "NAZPSAD",
+      "written": "Nazpsad",
+      "status": "read",
+      "journal": [
+        15
+      ],
+      "differs": ""
+    },
+    {
+      "letters": "GRAA",
+      "written": "Graa",
+      "status": "read",
+      "journal": [
+        16
+      ],
+      "differs": ""
+    },
+    {
+      "letters": "TA",
+      "written": "ta",
+      "status": "read",
+      "journal": [
+        17
+      ],
+      "differs": ""
+    },
+    {
+      "letters": "MALPRG",
+      "written": "Malprg",
+      "status": "read",
+      "journal": [
+        18
+      ],
+      "differs": ""
+    },
+    {
+      "letters": "DS",
+      "written": "Ds",
+      "status": "read",
+      "journal": [
+        19
+      ],
+      "differs": ""
+    },
+    {
+      "letters": "HOLQ",
+      "written": "hol-q",
+      "status": "read",
+      "journal": [
+        20
+      ],
+      "differs": ""
+    },
+    {
+      "letters": "QAA",
+      "written": "Qäa",
+      "status": "read",
+      "journal": [
+        21
+      ],
+      "differs": ""
+    },
+    {
+      "letters": "NOTHOA",
+      "written": "nothóa",
+      "status": "read",
+      "journal": [
+        22
+      ],
+      "differs": ""
+    },
+    {
+      "letters": "ZIMZ",
+      "written": "zimz",
+      "status": "read",
+      "journal": [
+        23
+      ],
+      "differs": ""
+    },
+    {
+      "letters": "OD",
+      "written": "Od",
+      "status": "read",
+      "journal": [
+        24
+      ],
+      "differs": ""
+    },
+    {
+      "letters": "COMMAH",
+      "written": "commah",
+      "status": "read",
+      "journal": [
+        25
+      ],
+      "differs": ""
+    },
+    {
+      "letters": "TA",
+      "written": "ta",
+      "status": "read",
+      "journal": [
+        26
+      ],
+      "differs": ""
+    },
+    {
+      "letters": "NOBLOH",
+      "written": "nobloh",
+      "status": "read",
+      "journal": [
+        27
+      ],
+      "differs": ""
+    },
+    {
+      "letters": "ZIEN",
+      "written": "zien",
+      "status": "read",
+      "journal": [
+        28
+      ],
+      "differs": ""
+    },
+    {
+      "letters": "SOBA",
+      "written": "Soba",
+      "status": "read",
+      "journal": [
+        29
+      ],
+      "differs": ""
+    },
+    {
+      "letters": "THIL",
+      "written": "thil",
+      "status": "read",
+      "journal": [
+        30
+      ],
+      "differs": ""
+    },
+    {
+      "letters": "GNONP",
+      "written": "gnonp",
+      "status": "read",
+      "journal": [
+        31
+      ],
+      "differs": ""
+    },
+    {
+      "letters": "PRGE",
+      "written": "prge",
+      "status": "read",
+      "journal": [
+        32
+      ],
+      "differs": ""
+    },
+    {
+      "letters": "ALDI",
+      "written": "aldi",
+      "status": "read",
+      "journal": [
+        33
+      ],
+      "differs": ""
+    },
+    {
+      "letters": "DS",
+      "written": "Ds",
+      "status": "read",
+      "journal": [
+        34
+      ],
+      "differs": ""
+    },
+    {
+      "letters": "VRBS",
+      "written": "vrbs",
+      "status": "read",
+      "journal": [
+        35
+      ],
+      "differs": "u/v or i/j/y only"
+    },
+    {
+      "letters": "OBOLEH",
+      "written": "óbôleh",
+      "status": "read",
+      "journal": [
+        36
+      ],
+      "differs": ""
+    },
+    {
+      "letters": "GRSAM",
+      "written": "grsam",
+      "status": "read",
+      "journal": [
+        37
+      ],
+      "differs": ""
+    },
+    {
+      "letters": "CASARM",
+      "written": "Casárm",
+      "status": "read",
+      "journal": [
+        38
+      ],
+      "differs": ""
+    },
+    {
+      "letters": "OHORELA",
+      "written": "ohoréla",
+      "status": "read",
+      "journal": [
+        39
+      ],
+      "differs": ""
+    },
+    {
+      "letters": "CABA",
+      "written": "cabá",
+      "status": "read",
+      "journal": [
+        40
+      ],
+      "differs": ""
+    },
+    {
+      "letters": "PIR",
+      "written": "pir",
+      "status": "read",
+      "journal": [
+        41
+      ],
+      "differs": ""
+    },
+    {
+      "letters": "DS",
+      "written": "Ds",
+      "status": "read",
+      "journal": [
+        42
+      ],
+      "differs": ""
+    },
+    {
+      "letters": "ZONRENSG",
+      "written": "zonrensg",
+      "status": "read",
+      "journal": [
+        43
+      ],
+      "differs": ""
+    },
+    {
+      "letters": "CAB",
+      "written": "cab",
+      "status": "read",
+      "journal": [
+        44
+      ],
+      "differs": ""
+    },
+    {
+      "letters": "ERM",
+      "written": "erm",
+      "status": "read",
+      "journal": [
+        45
+      ],
+      "differs": ""
+    },
+    {
+      "letters": "IADNAH",
+      "written": "Iadnah",
+      "status": "read",
+      "journal": [
+        46
+      ],
+      "differs": ""
+    },
+    {
+      "letters": "PILAH",
+      "written": "Pilah",
+      "status": "read",
+      "journal": [
+        47
+      ],
+      "differs": ""
+    },
+    {
+      "letters": "FARZM",
+      "written": "farzm",
+      "status": "read",
+      "journal": [
+        48
+      ],
+      "differs": ""
+    },
+    {
+      "letters": "ZNRZA",
+      "written": "znrza",
+      "status": "read",
+      "journal": [
+        49
+      ],
+      "differs": ""
+    },
+    {
+      "letters": "ADNA",
+      "written": "adná",
+      "status": "read",
+      "journal": [
+        50
+      ],
+      "differs": ""
+    },
+    {
+      "letters": "GONO",
+      "written": "gono",
+      "status": "read",
+      "journal": [
+        51
+      ],
+      "differs": ""
+    },
+    {
+      "letters": "IADPIL",
+      "written": "Iádpil",
+      "status": "read",
+      "journal": [
+        52
+      ],
+      "differs": ""
+    },
+    {
+      "letters": "DS",
+      "written": "Ds",
+      "status": "read",
+      "journal": [
+        53
+      ],
+      "differs": ""
+    },
+    {
+      "letters": "HOM",
+      "written": "hom",
+      "status": "read",
+      "journal": [
+        54
+      ],
+      "differs": ""
+    },
+    {
+      "letters": "TOH",
+      "written": "tóh",
+      "status": "read",
+      "journal": [
+        55
+      ],
+      "differs": ""
+    },
+    {
+      "letters": "SOBA",
+      "written": "Soba",
+      "status": "read",
+      "journal": [
+        56
+      ],
+      "differs": ""
+    },
+    {
+      "letters": "IPAM",
+      "written": "Ipam",
+      "status": "read",
+      "journal": [
+        57
+      ],
+      "differs": ""
+    },
+    {
+      "letters": "LU",
+      "written": "Lu",
+      "status": "read",
+      "journal": [
+        58
+      ],
+      "differs": "letters"
+    },
+    {
+      "letters": "IPAMIS",
+      "written": "Ipámis",
+      "status": "read",
+      "journal": [
+        59
+      ],
+      "differs": ""
+    },
+    {
+      "letters": "DS",
+      "written": "Ds",
+      "status": "read",
+      "journal": [
+        60
+      ],
+      "differs": ""
+    },
+    {
+      "letters": "LOHOLO",
+      "written": "lóhólo",
+      "status": "read",
+      "journal": [
+        61
+      ],
+      "differs": ""
+    },
+    {
+      "letters": "VEP",
+      "written": "vep",
+      "status": "read",
+      "journal": [
+        62
+      ],
+      "differs": ""
+    },
+    {
+      "letters": "ZOMD",
+      "written": "zomd",
+      "status": "read",
+      "journal": [
+        63
+      ],
+      "differs": "letters"
+    },
+    {
+      "letters": "POAMAL",
+      "written": "Poamal",
+      "status": "read",
+      "journal": [
+        64
+      ],
+      "differs": ""
+    },
+    {
+      "letters": "OD",
+      "written": "Od",
+      "status": "read",
+      "journal": [
+        65
+      ],
+      "differs": ""
+    },
+    {
+      "letters": "BOGPA",
+      "written": "bogpa",
+      "status": "read",
+      "journal": [
+        66
+      ],
+      "differs": ""
+    },
+    {
+      "letters": "AAI",
+      "written": "aäi",
+      "status": "read",
+      "journal": [
+        67
+      ],
+      "differs": ""
+    },
+    {
+      "letters": "TA",
+      "written": "ta",
+      "status": "read",
+      "journal": [
+        68
+      ],
+      "differs": ""
+    },
+    {
+      "letters": "PIAP",
+      "written": "piap",
+      "status": "read",
+      "journal": [
+        69
+      ],
+      "differs": ""
+    },
+    {
+      "letters": "PIAMOL",
+      "written": "piamo-l",
+      "status": "read",
+      "journal": [
+        70
+      ],
+      "differs": ""
+    },
+    {
+      "letters": "OD",
+      "written": "od",
+      "status": "read",
+      "journal": [
+        71
+      ],
+      "differs": ""
+    },
+    {
+      "letters": "VOOAN",
+      "written": "vooan",
+      "status": "read",
+      "journal": [
+        72
+      ],
+      "differs": ""
+    },
+    {
+      "letters": "ZACARE",
+      "written": "ZACARe",
+      "status": "read",
+      "journal": [
+        73
+      ],
+      "differs": ""
+    },
+    {
+      "letters": "CA",
+      "written": "ca",
+      "status": "read",
+      "journal": [
+        74
+      ],
+      "differs": ""
+    },
+    {
+      "letters": "OD",
+      "written": "od",
+      "status": "read",
+      "journal": [
+        75
+      ],
+      "differs": ""
+    },
+    {
+      "letters": "ZAMRAN",
+      "written": "ZAMRAN",
+      "status": "read",
+      "journal": [
+        76
+      ],
+      "differs": ""
+    },
+    {
+      "letters": "ODO",
+      "written": "odo",
+      "status": "read",
+      "journal": [
+        77
+      ],
+      "differs": ""
+    },
+    {
+      "letters": "CICLE",
+      "written": "cicle",
+      "status": "read",
+      "journal": [
+        78
+      ],
+      "differs": ""
+    },
+    {
+      "letters": "QAA",
+      "written": "Qäa",
+      "status": "read",
+      "journal": [
+        79
+      ],
+      "differs": ""
+    },
+    {
+      "letters": "ZORGE",
+      "written": "Zorge",
+      "status": "read",
+      "journal": [
+        80
+      ],
+      "differs": ""
+    },
+    {
+      "letters": "LAP",
+      "written": "Lap",
+      "status": "read",
+      "journal": [
+        81
+      ],
+      "differs": ""
+    },
+    {
+      "letters": "ZIRDO",
+      "written": "zirdo",
+      "status": "read",
+      "journal": [
+        82
+      ],
+      "differs": ""
+    },
+    {
+      "letters": "NOCO",
+      "written": "Noco",
+      "status": "read",
+      "journal": [
+        83
+      ],
+      "differs": ""
+    },
+    {
+      "letters": "MAD",
+      "written": "MAD",
+      "status": "read",
+      "journal": [
+        84
+      ],
+      "differs": ""
+    },
+    {
+      "letters": "HOATH",
+      "written": "Hoath",
+      "status": "read",
+      "journal": [
+        85
+      ],
+      "differs": ""
+    },
+    {
+      "letters": "IAIDA",
+      "written": "Iaida",
+      "status": "read",
+      "journal": [
+        86
+      ],
+      "differs": ""
+    }
+  ],
+  "journal_only": []
+}

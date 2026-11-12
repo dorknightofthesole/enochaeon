@@ -1,0 +1,363 @@
+{
+  "call": 14,
+  "manuscript": "British Library MS Sloane 3191, 48 Claves Angelicae, in John Dee's hand",
+  "scan": "docs/998222247-Dee-MS-Sloane-3191.pdf",
+  "where": "PDF page 3, fourth opening, left-hand page (scratch/sloane-pages/ms/s03-f4l.jpg)",
+  "reading": "tools/sloane/sloane-reading.json: one reading by eye, not confirmed",
+  "remarks": [
+    "Small letters are written above 'bagíe' and above the 'ol' that follows 'mirc'; they were not read.",
+    "The fourth letter of 'pasbs' was read as b: it has the closed bowl of the b in 'bagíe' beside it."
+  ],
+  "words": [
+    {
+      "letters": "NOROMI",
+      "written": "Norómi",
+      "status": "read",
+      "journal": [
+        1
+      ],
+      "differs": ""
+    },
+    {
+      "letters": "BAGIE",
+      "written": "bagíe",
+      "status": "read",
+      "journal": [
+        2
+      ],
+      "differs": ""
+    },
+    {
+      "letters": "PASBS",
+      "written": "pasbs",
+      "status": "read",
+      "journal": [
+        3
+      ],
+      "differs": ""
+    },
+    {
+      "letters": "OIAD",
+      "written": "oíad",
+      "status": "read",
+      "journal": [
+        4
+      ],
+      "differs": ""
+    },
+    {
+      "letters": "DS",
+      "written": "ds",
+      "status": "read",
+      "journal": [
+        5
+      ],
+      "differs": ""
+    },
+    {
+      "letters": "TRINT",
+      "written": "trint",
+      "status": "read",
+      "journal": [
+        6
+      ],
+      "differs": ""
+    },
+    {
+      "letters": "MIRC",
+      "written": "mirc",
+      "status": "read",
+      "journal": [
+        7
+      ],
+      "differs": ""
+    },
+    {
+      "letters": "OL",
+      "written": "ol",
+      "status": "read",
+      "journal": [
+        8
+      ],
+      "differs": ""
+    },
+    {
+      "letters": "THIL",
+      "written": "thil",
+      "status": "read",
+      "journal": [
+        9
+      ],
+      "differs": ""
+    },
+    {
+      "letters": "DODS",
+      "written": "dods",
+      "status": "read",
+      "journal": [
+        10
+      ],
+      "differs": ""
+    },
+    {
+      "letters": "TOLHAM",
+      "written": "tolham",
+      "status": "read",
+      "journal": [
+        11
+      ],
+      "differs": ""
+    },
+    {
+      "letters": "CAOSGO",
+      "written": "caósgo",
+      "status": "read",
+      "journal": [
+        12
+      ],
+      "differs": ""
+    },
+    {
+      "letters": "HOMIN",
+      "written": "Homin",
+      "status": "read",
+      "journal": [
+        13
+      ],
+      "differs": ""
+    },
+    {
+      "letters": "DS",
+      "written": "ds",
+      "status": "read",
+      "journal": [
+        14
+      ],
+      "differs": ""
+    },
+    {
+      "letters": "BRIN",
+      "written": "brin",
+      "status": "read",
+      "journal": [
+        15
+      ],
+      "differs": ""
+    },
+    {
+      "letters": "OROCH",
+      "written": "oroch",
+      "status": "read",
+      "journal": [
+        16
+      ],
+      "differs": ""
+    },
+    {
+      "letters": "QUAR",
+      "written": "Quar",
+      "status": "read",
+      "journal": [
+        17
+      ],
+      "differs": ""
+    },
+    {
+      "letters": "MICMA",
+      "written": "Micma",
+      "status": "read",
+      "journal": [
+        18
+      ],
+      "differs": ""
+    },
+    {
+      "letters": "BIAL",
+      "written": "bial",
+      "status": "read",
+      "journal": [
+        19
+      ],
+      "differs": ""
+    },
+    {
+      "letters": "OIAD",
+      "written": "oiad",
+      "status": "read",
+      "journal": [
+        20
+      ],
+      "differs": ""
+    },
+    {
+      "letters": "AISRO",
+      "written": "aísro",
+      "status": "read",
+      "journal": [
+        21
+      ],
+      "differs": ""
+    },
+    {
+      "letters": "TOX",
+      "written": "tox",
+      "status": "read",
+      "journal": [
+        22
+      ],
+      "differs": ""
+    },
+    {
+      "letters": "DSIVM",
+      "written": "ds_i_vm",
+      "status": "read",
+      "journal": [
+        23
+      ],
+      "differs": ""
+    },
+    {
+      "letters": "AAI",
+      "written": "aai",
+      "status": "read",
+      "journal": [
+        24
+      ],
+      "differs": ""
+    },
+    {
+      "letters": "BALTIM",
+      "written": "Baltim",
+      "status": "read",
+      "journal": [
+        25
+      ],
+      "differs": ""
+    },
+    {
+      "letters": "ZACAR",
+      "written": "ZACAR",
+      "status": "read",
+      "journal": [
+        26
+      ],
+      "differs": "letters"
+    },
+    {
+      "letters": "OD",
+      "written": "od",
+      "status": "read",
+      "journal": [
+        28
+      ],
+      "differs": ""
+    },
+    {
+      "letters": "ZAMRAN",
+      "written": "ZAMRAN",
+      "status": "read",
+      "journal": [
+        29
+      ],
+      "differs": ""
+    },
+    {
+      "letters": "ODO",
+      "written": "odo",
+      "status": "read",
+      "journal": [
+        30
+      ],
+      "differs": ""
+    },
+    {
+      "letters": "CICLE",
+      "written": "cicle",
+      "status": "read",
+      "journal": [
+        31
+      ],
+      "differs": ""
+    },
+    {
+      "letters": "QAA",
+      "written": "Qaa",
+      "status": "read",
+      "journal": [
+        32
+      ],
+      "differs": ""
+    },
+    {
+      "letters": "ZORGE",
+      "written": "Zorge",
+      "status": "read",
+      "journal": [
+        33
+      ],
+      "differs": ""
+    },
+    {
+      "letters": "LAP",
+      "written": "lap",
+      "status": "read",
+      "journal": [
+        34
+      ],
+      "differs": ""
+    },
+    {
+      "letters": "ZIRDO",
+      "written": "zirdo",
+      "status": "read",
+      "journal": [
+        35
+      ],
+      "differs": ""
+    },
+    {
+      "letters": "NOCO",
+      "written": "NOCO",
+      "status": "read",
+      "journal": [
+        36
+      ],
+      "differs": ""
+    },
+    {
+      "letters": "MAD",
+      "written": "MAD",
+      "status": "read",
+      "journal": [
+        37
+      ],
+      "differs": ""
+    },
+    {
+      "letters": "HOATH",
+      "written": "hoath",
+      "status": "read",
+      "journal": [
+        38
+      ],
+      "differs": ""
+    },
+    {
+      "letters": "IAIDA",
+      "written": "Iaïda",
+      "status": "read",
+      "journal": [
+        39
+      ],
+      "differs": ""
+    }
+  ],
+  "journal_only": [
+    {
+      "journal": 27,
+      "letters": "CA",
+      "status": "printed",
+      "page": 193
+    }
+  ]
+}

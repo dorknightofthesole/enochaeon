@@ -1,0 +1,74 @@
+{
+  "about": [
+    "Where each place stands in the scan of Sloane 3191 at which the reading of the manuscript and the journal data do not agree.",
+    "Typed by hand. tools/sloane/sloane-cut.py cuts one image per place into docs/imgs/sloane-places/ and writes index.md there.",
+    "call: the file in calls/journal/. words: the journal words the image shows, counted from 1 as in docs/sloane-diff.txt. after: the journal word that a word found only in the manuscript follows.",
+    "page: the page image scratch/sloane-pages/ms/NAME.jpg. box: left, top, width, height in pixels of that page. The boxes were found by eye on a numbered grid (sloane-cut.py grid CALL).",
+    "checked: empty until Eddie has looked at the image. Then what he saw: 'as read' if the manuscript has what the reading says, or the letters he reads there."
+  ],
+  "places": [
+    {"call": "01", "words": [58], "page": "s02-f2r", "box": [1000, 1330, 560, 170], "checked": ""},
+    {"call": "01", "words": [63], "page": "s02-f2r", "box": [980, 1440, 500, 140], "checked": ""},
+
+    {"call": "02", "words": [3, 4], "page": "s02-f3l", "box": [860, 300, 420, 160], "checked": ""},
+    {"call": "02", "words": [10], "page": "s02-f3l", "box": [1020, 440, 340, 160], "checked": ""},
+
+    {"call": "03", "words": [8], "page": "s02-f3r", "box": [400, 490, 340, 140], "checked": ""},
+    {"call": "03", "words": [15], "page": "s02-f3r", "box": [960, 600, 310, 150], "checked": ""},
+    {"call": "03", "words": [16, 17], "page": "s02-f3r", "box": [1310, 590, 330, 160], "checked": ""},
+    {"call": "03", "words": [33], "page": "s02-f3r", "box": [1050, 960, 250, 150], "checked": ""},
+    {"call": "03", "words": [37], "page": "s02-f3r", "box": [830, 1060, 280, 150], "checked": ""},
+    {"call": "03", "words": [59], "page": "s02-f3r", "box": [440, 1640, 380, 140], "checked": ""},
+
+    {"call": "04", "words": [34], "page": "s02-f4l", "box": [1220, 960, 520, 140], "checked": ""},
+    {"call": "04", "words": [35], "page": "s02-f4l", "box": [340, 1050, 300, 140], "checked": ""},
+    {"call": "04", "words": [43], "page": "s02-f4l", "box": [1100, 1170, 500, 140], "checked": ""},
+    {"call": "04", "words": [45], "page": "s02-f4l", "box": [730, 1290, 270, 160], "checked": ""},
+
+    {"call": "05", "words": [3], "page": "s02-f4r", "box": [520, 330, 260, 150], "checked": ""},
+    {"call": "05", "words": [6], "page": "s02-f4r", "box": [900, 340, 320, 140], "checked": ""},
+    {"call": "05", "words": [12], "page": "s02-f4r", "box": [720, 470, 280, 150], "checked": ""},
+
+    {"call": "06", "words": [16], "page": "s02-f5l", "box": [660, 640, 290, 150], "checked": ""},
+    {"call": "06", "words": [22], "page": "s02-f5l", "box": [1120, 760, 290, 180], "checked": ""},
+
+    {"call": "07", "words": [3], "page": "s02-f5r", "box": [720, 380, 310, 140], "checked": ""},
+    {"call": "07", "words": [18], "page": "s02-f5r", "box": [280, 770, 280, 140], "checked": ""},
+
+    {"call": "08", "words": [19], "page": "s03-f1l", "box": [1420, 650, 320, 160], "checked": ""},
+
+    {"call": "09", "words": [3], "page": "s03-f1r", "box": [770, 320, 250, 150], "checked": ""},
+    {"call": "09", "words": [60], "page": "s03-f1r", "box": [940, 1580, 320, 150], "checked": ""},
+
+    {"call": "10", "words": [12], "after": [13], "page": "s03-f2l", "box": [840, 520, 400, 160], "checked": ""},
+    {"call": "10", "words": [54], "page": "s03-f2l", "box": [930, 1480, 340, 150], "checked": ""},
+    {"call": "10", "after": [58], "page": "s03-f2l", "box": [1230, 1590, 500, 150], "checked": ""},
+
+    {"call": "12", "words": [22], "page": "s03-f3l", "box": [1260, 660, 420, 150], "checked": ""},
+    {"call": "12", "after": [24], "page": "s03-f3l", "box": [300, 760, 880, 130], "checked": ""},
+
+    {"call": "13", "words": [23, 24], "page": "s03-f3r", "box": [780, 730, 780, 140], "checked": ""},
+
+    {"call": "14", "words": [26, 27], "page": "s03-f4l", "box": [370, 780, 920, 150], "checked": ""},
+
+    {"call": "15", "words": [5], "page": "s03-f4r", "box": [1100, 290, 300, 150], "checked": ""},
+    {"call": "15", "words": [8], "page": "s03-f4r", "box": [390, 400, 260, 150], "checked": ""},
+    {"call": "15", "words": [18, 19], "page": "s03-f4r", "box": [120, 630, 720, 140], "checked": ""},
+
+    {"call": "16", "words": [22, 23], "page": "s03-f5l", "box": [410, 730, 760, 140], "checked": ""},
+
+    {"call": "17", "words": [2], "page": "s03-f5r", "box": [310, 260, 270, 150], "checked": ""},
+    {"call": "17", "words": [10], "page": "s03-f5r", "box": [1000, 380, 260, 150], "checked": ""},
+    {"call": "17", "words": [20, 21], "page": "s03-f5r", "box": [150, 650, 1420, 210], "checked": ""},
+
+    {"call": "18", "words": [21], "page": "s03-f6l", "box": [1130, 570, 620, 130], "checked": ""},
+    {"call": "18", "words": [27, 28], "page": "s03-f6l", "box": [420, 780, 900, 130], "checked": ""},
+
+    {"call": "aethyrs", "words": [1], "page": "s04-f1l", "box": [240, 240, 340, 140], "checked": ""},
+    {"call": "aethyrs", "words": [4], "page": "s04-f1l", "box": [1080, 240, 420, 140], "checked": ""},
+    {"call": "aethyrs", "words": [19], "page": "s04-f1l", "box": [1050, 610, 460, 130], "checked": ""},
+    {"call": "aethyrs", "words": [21], "page": "s04-f1l", "box": [250, 740, 290, 150], "checked": ""},
+    {"call": "aethyrs", "words": [59], "page": "s04-f1l", "box": [280, 1640, 290, 150], "checked": ""},
+    {"call": "aethyrs", "words": [80], "page": "s04-f1l", "box": [290, 2110, 360, 150], "checked": ""}
+  ]
+}

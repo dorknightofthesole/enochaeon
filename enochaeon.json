@@ -5,7 +5,9 @@
     "piper": {
       "length_scale": 1.6,
       "word_ms": 200,
-      "voice": "scratch/piper-voices/en_US-john-medium.onnx"
+      "voice": "scratch/piper-voices/en_US-john-medium.onnx",
+      "ipa": "dee_ipa_piper_john",
+      "word_end": "."
     }
   }
 }

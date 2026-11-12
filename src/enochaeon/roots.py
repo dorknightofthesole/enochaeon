@@ -1,9 +1,17 @@
-"""Call spellings, and the English words listed for them in the lexicon.
+"""Call spellings, and what the lexicon says about each.
 
-The cipher does not read this. Translate reads the English glosses.
-Calls and translations speak dee_ipa or golden_dawn_ipa. A variant shares
-its root's English. Its Dee reading is the letter rule of that spelling.
-Its Golden Dawn reading is the string stored on the root. Hebrew is not spoken.
+The cipher does not read this. Translate reads the English glosses. A variant
+shares its root's English. Hebrew is not spoken.
+
+calls/lexicon.json is the one place that says how a word is said. A reading
+field lists a string for each spelling of an entry, and load_readings returns
+those strings as the file has them. Nothing is worked out here: a spelling
+the field does not list has no reading. dee_ipa is the Dee reading. A field
+named in enochaeon.json is what one voice is given. golden_dawn_ipa is one
+string for the whole entry, and it is empty.
+
+dee_says, dee_note and dee_note_source record a note of Dee's that a stored
+reading was made from. This code does not read them.
 """
 
 from __future__ import annotations
@@ -13,15 +21,17 @@ import re
 from dataclasses import dataclass
 from pathlib import Path
 
-from enochaeon.enochian import _CALL_NAME, letter_ipa, phonetic_text
+from enochaeon.enochian import _CALL_NAME
 from enochaeon.errors import EnochaeonError
+from enochaeon.word_ipa import espeak_phones
 
 _WORD = re.compile(r"[A-Za-z]+")
+DEE_READING = "dee_ipa"
 
 
 @dataclass(frozen=True)
 class Root:
-    """One spelling. English words may be empty."""
+    """One spelling. phones is its stored Dee reading as espeak phonemes. English words may be empty."""
 
     spelling: str
     phones: str
@@ -33,7 +43,8 @@ class Root:
 def load_roots(calls: Path | None = None) -> tuple[Root, ...]:
     """Every spelling in the Calls, with English taken from the dictionary file."""
     folder = calls or _calls_dir()
-    glosses, parts, _readings = _lexicon(folder / "lexicon.json")
+    glosses, parts = _lexicon(folder / "lexicon.json")
+    stored = load_readings(DEE_READING, folder)
     found: dict[str, list[str]] = {}
     for stem, text in _call_texts(folder):
         for spelling in _words(text):
@@ -45,7 +56,7 @@ def load_roots(calls: Path | None = None) -> tuple[Root, ...]:
     roots = [
         Root(
             spelling=spelling,
-            phones=phonetic_text(spelling).strip(),
+            phones=espeak_phones(stored[spelling]) if spelling in stored else "",
             calls=tuple(stems),
             glosses=glosses.get(spelling, ()),
             pos=parts.get(spelling, ""),
@@ -56,12 +67,31 @@ def load_roots(calls: Path | None = None) -> tuple[Root, ...]:
 
 
 def load_readings(field: str, calls: Path | None = None) -> dict[str, str]:
-    """The lexicon IPA for one reading, keyed by spelling."""
-    if field not in {"dee_ipa", "golden_dawn_ipa"}:
-        raise EnochaeonError(f"Call reading must be dee_ipa or golden_dawn_ipa, not {field!r}.")
+    """One reading field of the lexicon, keyed by spelling, as the file has it.
+
+    A field that lists a string for each spelling gives each spelling its own.
+    A field that is one string is the reading of every spelling of the entry.
+    """
     folder = calls or _calls_dir()
-    _glosses, _parts, readings = _lexicon(folder / "lexicon.json")
-    return readings[field]
+    path = folder / "lexicon.json"
+    readings: dict[str, str] = {}
+    for index, entry in enumerate(_entries(path), 1):
+        listed = entry.get(field)
+        if not listed:
+            continue
+        spellings = _spellings(path, index, entry)
+        if isinstance(listed, str):
+            listed = {spelling: listed for spelling in spellings} if listed.strip() else {}
+        if not isinstance(listed, dict):
+            raise EnochaeonError(f"{path.name} entry {index} {field} must list a reading for each spelling.")
+        for name, reading in listed.items():
+            spelling = name.lower()
+            if spelling not in spellings:
+                raise EnochaeonError(f"{path.name} entry {index} {field} has {name!r}, which is not a spelling of it.")
+            if not isinstance(reading, str) or not reading.strip():
+                raise EnochaeonError(f"{path.name} entry {index} {field} {name!r} must be text.")
+            readings[spelling] = reading.strip()
+    return readings
 
 
 def _calls_dir() -> Path:
@@ -85,26 +115,13 @@ def _words(text: str) -> list[str]:
     return [word.lower() for word in _WORD.findall(text)]
 
 
-def _lexicon(
-    path: Path,
-) -> tuple[dict[str, tuple[str, ...]], dict[str, str], dict[str, dict[str, str]]]:
-    if not path.is_file():
-        raise EnochaeonError(f"No lexicon at {path}.")
-    try:
-        entries = json.loads(path.read_text(encoding="utf-8"))
-    except json.JSONDecodeError as exc:
-        raise EnochaeonError(f"{path.name} is not valid JSON.") from exc
-    if not isinstance(entries, list):
-        raise EnochaeonError(f"{path.name} must be a list of words.")
+def _lexicon(path: Path) -> tuple[dict[str, tuple[str, ...]], dict[str, str]]:
+    """The English words and the part of speech of each spelling."""
     found: dict[str, list[str]] = {}
     parts: dict[str, str] = {}
-    readings: dict[str, dict[str, str]] = {"dee_ipa": {}, "golden_dawn_ipa": {}}
-    for index, entry in enumerate(entries, 1):
-        if not isinstance(entry, dict):
-            raise EnochaeonError(f"{path.name} entry {index} must be an object.")
+    for index, entry in enumerate(_entries(path), 1):
         glosses = _glosses(path, index, entry.get("english_glosses"))
         spellings = _spellings(path, index, entry)
-        spoken = {name: _reading(path, index, name, entry.get(name)) for name in readings}
         part = " ".join(str(entry.get("pos") or "").lower().split())
         root = spellings[0]
         for spelling in spellings:
@@ -115,11 +132,22 @@ def _lexicon(
             if spelling == root or spelling not in parts:
                 if part:
                     parts[spelling] = part
-            readings["dee_ipa"][spelling] = letter_ipa(spelling)
-            golden = spoken["golden_dawn_ipa"]
-            if golden:
-                readings["golden_dawn_ipa"][spelling] = golden
-    return {spelling: tuple(glosses) for spelling, glosses in found.items()}, parts, readings
+    return {spelling: tuple(glosses) for spelling, glosses in found.items()}, parts
+
+
+def _entries(path: Path) -> list[dict]:
+    if not path.is_file():
+        raise EnochaeonError(f"No lexicon at {path}.")
+    try:
+        entries = json.loads(path.read_text(encoding="utf-8"))
+    except json.JSONDecodeError as exc:
+        raise EnochaeonError(f"{path.name} is not valid JSON.") from exc
+    if not isinstance(entries, list):
+        raise EnochaeonError(f"{path.name} must be a list of words.")
+    for index, entry in enumerate(entries, 1):
+        if not isinstance(entry, dict):
+            raise EnochaeonError(f"{path.name} entry {index} must be an object.")
+    return entries
 
 
 def _spellings(path: Path, index: int, entry: dict) -> list[str]:
@@ -134,14 +162,6 @@ def _spellings(path: Path, index: int, entry: dict) -> list[str]:
     if not spellings:
         raise EnochaeonError(f"{path.name} entry {index} needs a spelling.")
     return spellings
-
-
-def _reading(path: Path, index: int, name: str, raw: object) -> str:
-    if raw is None:
-        return ""
-    if not isinstance(raw, str):
-        raise EnochaeonError(f"{path.name} entry {index} {name} must be text.")
-    return raw.strip()
 
 
 def _glosses(path: Path, index: int, raw: object) -> list[str]:

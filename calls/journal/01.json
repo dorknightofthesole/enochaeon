@@ -1,0 +1,888 @@
+{
+ "call": 1,
+ "printing": "Meric Casaubon, A True & Faithful Relation (London, 1659)",
+ "pages": "pp. 79 to 86",
+ "direction": "backward",
+ "notes": [
+  "The call was given backwards, from word 86 to word 1. Words 86 to 66 were given one letter at a time; the column field lists the letters in the order the journal names them.",
+  "p. 84: after 57 the journal prints OD, 56 BALTOH and PIAP, then says 'I am deceived from Ipam. OD the next is false, and so are the rest'. Those three are left out.",
+  "p. 84: a DS pointed out between 51 Gono and 50 ADNA 'was corrected on Monday following to be too much'. p. 90: 'You have Zurza ds Gono in the Call: the sd is too much.' It is left out.",
+  "p. 90: Nalvage gives the number of words allowed as 86. The words here count 86 with Poamal and Od as two."
+ ],
+ "words": [
+  {
+   "page": 86,
+   "letters": "OL",
+   "note": "Ol.",
+   "english": "I",
+   "status": "printed",
+   "column": "LO",
+   "number": "1",
+   "row": 147
+  },
+  {
+   "page": 86,
+   "letters": "SONF",
+   "note": "Sonf.",
+   "english": "Raign",
+   "status": "printed",
+   "column": "FNOS",
+   "number": "2",
+   "row": 146
+  },
+  {
+   "page": 86,
+   "letters": "VORSG",
+   "note": "Vorsg. Here a point.",
+   "english": "over you",
+   "status": "printed",
+   "column": "GSROV",
+   "number": "3",
+   "row": 145
+  },
+  {
+   "page": 86,
+   "letters": "GOHO",
+   "note": "GOTTO.",
+   "english": "saith",
+   "status": "conflict",
+   "column": "OHOG",
+   "number": "4",
+   "row": 144,
+   "other": "GOTTO",
+   "remark": "The reversed column prints OHOG, which read backwards is GOHO. The forward column prints GOTTO."
+  },
+  {
+   "page": 86,
+   "letters": "IAD",
+   "note": "Iad, as Yad.",
+   "english": "the God",
+   "status": "printed",
+   "column": "DAI",
+   "number": "5",
+   "row": 143
+  },
+  {
+   "page": 86,
+   "letters": "BALT",
+   "note": "Balt. Here is a point.",
+   "english": "of Justice",
+   "status": "printed",
+   "column": "TLAB",
+   "number": "6",
+   "row": 142
+  },
+  {
+   "page": 86,
+   "letters": "LANSH",
+   "note": "LANSH as Lonsh.",
+   "english": "in power exalted",
+   "status": "printed",
+   "column": "HSNAL",
+   "number": "7",
+   "row": 140
+  },
+  {
+   "page": 86,
+   "letters": "CALZ",
+   "note": "Calz.",
+   "english": "above the firmamets",
+   "status": "printed",
+   "column": "ZLAC",
+   "number": "8",
+   "row": 139
+  },
+  {
+   "page": 86,
+   "letters": "VONPHO",
+   "note": "Vonpho.",
+   "english": "of wrath",
+   "status": "printed",
+   "column": "OHPNOV",
+   "number": "9",
+   "row": 138
+  },
+  {
+   "page": 86,
+   "letters": "SOBRA",
+   "note": "Sobra.",
+   "english": "in whose",
+   "status": "printed",
+   "column": "ARBOS",
+   "number": "10",
+   "row": 137
+  },
+  {
+   "page": 86,
+   "letters": "ZOL",
+   "note": "Zol ... zod Δ. as ol: A point.",
+   "english": "bands",
+   "status": "printed",
+   "column": "LOZ",
+   "number": "11",
+   "row": 136
+  },
+  {
+   "page": 86,
+   "letters": "ROR",
+   "note": "Ror. Here a point.",
+   "english": "The Sun",
+   "status": "printed",
+   "column": "ROR",
+   "number": "12",
+   "row": 135
+  },
+  {
+   "page": 86,
+   "letters": "I",
+   "note": "a word by it self.",
+   "english": "is",
+   "status": "printed",
+   "column": "I",
+   "number": "13",
+   "row": 134
+  },
+  {
+   "page": 86,
+   "letters": "TA",
+   "note": "TA.",
+   "english": "as",
+   "status": "printed",
+   "column": "AT",
+   "number": "14",
+   "row": 133
+  },
+  {
+   "page": 86,
+   "letters": "NAZPSAD",
+   "note": "NAZPS AD.",
+   "english": "a Sword",
+   "status": "printed",
+   "column": "DASPZAN",
+   "number": "15",
+   "row": 132
+  },
+  {
+   "page": 86,
+   "letters": "GRAA",
+   "note": "GRAA. A point.",
+   "english": "and the Moon",
+   "status": "printed",
+   "column": "AARG",
+   "number": "16",
+   "row": 131
+  },
+  {
+   "page": 86,
+   "letters": "TA",
+   "note": "TA.",
+   "english": "as",
+   "status": "printed",
+   "column": "AT",
+   "number": "17",
+   "row": 130
+  },
+  {
+   "page": 86,
+   "letters": "MALPRG",
+   "note": "Malprg, as Malpurg.",
+   "english": "a through thrusting fire",
+   "status": "printed",
+   "column": "GRPLAM",
+   "number": "18",
+   "row": 129
+  },
+  {
+   "page": 86,
+   "letters": "DS",
+   "note": "DS",
+   "english": "which",
+   "status": "printed",
+   "column": "SD",
+   "number": "19",
+   "row": 128
+  },
+  {
+   "page": 86,
+   "letters": "HOLQ",
+   "note": "HOLQ [margin: Δ. as Holquu.]",
+   "english": "measureth",
+   "status": "printed",
+   "column": "QLOH",
+   "number": "20",
+   "row": 127
+  },
+  {
+   "page": 86,
+   "letters": "QAA",
+   "note": "QAA.; Three syllables.",
+   "english": "your garments",
+   "status": "printed",
+   "column": "AAQ",
+   "number": "21",
+   "row": 126
+  },
+  {
+   "page": 86,
+   "letters": "NOTHOA",
+   "note": "Nothoa.; Here is a point before the word. A point.",
+   "english": "in the midst",
+   "status": "printed",
+   "column": "AOHTON",
+   "number": "22",
+   "row": 125
+  },
+  {
+   "page": 86,
+   "letters": "ZIMZ",
+   "note": "Zimz.; A point.",
+   "english": "of my vestures",
+   "status": "printed",
+   "column": "ZMIZ",
+   "number": "23",
+   "row": 124
+  },
+  {
+   "page": 86,
+   "letters": "OD",
+   "note": "As before O D.",
+   "english": "And",
+   "status": "printed",
+   "column": "DO",
+   "number": "24",
+   "row": 123
+  },
+  {
+   "page": 86,
+   "letters": "COMMAH",
+   "note": "COMMAH; A point.",
+   "english": "trussed you together",
+   "status": "printed",
+   "column": "HAMMOC",
+   "number": "25",
+   "row": 122
+  },
+  {
+   "page": 86,
+   "letters": "TA",
+   "note": "TA.",
+   "english": "as",
+   "status": "printed",
+   "column": "AT",
+   "number": "26",
+   "row": 121
+  },
+  {
+   "page": 86,
+   "letters": "NOBLOH",
+   "note": "Nobloh.",
+   "english": "the palms",
+   "status": "printed",
+   "column": "HOLBON",
+   "number": "27",
+   "row": 120
+  },
+  {
+   "page": 85,
+   "letters": "ZIEN",
+   "note": "ZIEN [margin: here a point.]",
+   "english": "of my hands",
+   "status": "printed",
+   "column": "NEIZ",
+   "number": "28",
+   "row": 119
+  },
+  {
+   "page": 85,
+   "letters": "SOBA",
+   "note": "SOBA",
+   "english": "whose",
+   "status": "printed",
+   "column": "ABOS",
+   "number": "29",
+   "row": 118
+  },
+  {
+   "page": 85,
+   "letters": "THIL",
+   "note": "THIL [margin: a point here.]",
+   "english": "seats",
+   "status": "printed",
+   "column": "LIHT",
+   "number": "30",
+   "row": 117,
+   "remark": "The keyed transcription has 'a point [gap:1 word].' where the page image prints 'a point here.'.",
+   "read_from": "page image, Internet Archive scan truefaithfulrela00deej"
+  },
+  {
+   "page": 85,
+   "letters": "GNONP",
+   "note": "GNONP; [margin: Nal. ..... Adjuva me, O mi Deus.]",
+   "english": "I garnished",
+   "status": "printed",
+   "column": "PNONG",
+   "number": "31",
+   "row": 116
+  },
+  {
+   "page": 85,
+   "letters": "PRGE",
+   "note": "PRGE [margin: as purge.]",
+   "english": "with the fire",
+   "status": "printed",
+   "column": "EGRP",
+   "number": "32",
+   "row": 115
+  },
+  {
+   "page": 85,
+   "letters": "ALDI",
+   "note": "ALDI",
+   "english": "of gathering",
+   "status": "printed",
+   "column": "IDLA",
+   "number": "33",
+   "row": 114
+  },
+  {
+   "page": 85,
+   "letters": "DS",
+   "note": "DS",
+   "english": "and Δ which",
+   "status": "printed",
+   "column": "SD",
+   "number": "34",
+   "row": 113
+  },
+  {
+   "page": 85,
+   "letters": "URBS",
+   "note": "URBS",
+   "english": "beautified",
+   "status": "printed",
+   "column": "SBRU",
+   "number": "35",
+   "row": 112
+  },
+  {
+   "page": 85,
+   "letters": "OBOLEH",
+   "note": "OBOLEH",
+   "english": "your Garments",
+   "status": "printed",
+   "column": "HELOBO",
+   "number": "36",
+   "row": 111
+  },
+  {
+   "page": 85,
+   "letters": "GRSAM",
+   "note": "GRSAM [margin: a stop at M. Δ. as Gursam.]",
+   "english": "with admiration",
+   "status": "printed",
+   "column": "MASRG",
+   "number": "37",
+   "row": 110
+  },
+  {
+   "page": 85,
+   "letters": "CASARM",
+   "note": "Casarm I [margin: a stop.]",
+   "english": "to whom",
+   "status": "printed",
+   "column": "MRASAC",
+   "number": "38",
+   "row": 109
+  },
+  {
+   "page": 85,
+   "letters": "OHORELA",
+   "note": "Call it Ohorela, I [margin: Nal. ..... There is a stop, shewing a stroke made straight down thus I]",
+   "english": "I made a Law",
+   "status": "printed",
+   "column": "ALEROHO,",
+   "number": "39",
+   "row": 108
+  },
+  {
+   "page": 85,
+   "letters": "CABA",
+   "note": "Call it Caba.",
+   "english": "govern",
+   "status": "printed",
+   "column": "ABAC",
+   "number": "40",
+   "row": 107
+  },
+  {
+   "page": 85,
+   "letters": "PIR",
+   "note": "Pir, there is a point",
+   "english": "the holy ones",
+   "status": "printed",
+   "column": "RIP",
+   "number": "41",
+   "row": 106
+  },
+  {
+   "page": 85,
+   "letters": "DS",
+   "note": "DS",
+   "english": "and Δ which",
+   "status": "printed",
+   "column": "SD",
+   "number": "42",
+   "row": 105
+  },
+  {
+   "page": 85,
+   "letters": "ZONRENSG",
+   "note": "ZONRENSG",
+   "english": "delivered you",
+   "status": "printed",
+   "column": "GSN, ERNOZ",
+   "number": "43",
+   "row": 104,
+   "remark": "The letters are printed in two rows, GSN and then 43 ERNOZ. Read backwards together they are ZONRENSG, which is also what the forward column prints."
+  },
+  {
+   "page": 85,
+   "letters": "CAB",
+   "note": "CAB",
+   "english": "a Rod",
+   "status": "printed",
+   "column": "BAC",
+   "number": "44",
+   "row": 102
+  },
+  {
+   "page": 85,
+   "letters": "ERM",
+   "note": "ERM",
+   "english": "with",
+   "status": "printed",
+   "column": "MRE",
+   "number": "45",
+   "row": 101
+  },
+  {
+   "page": 85,
+   "letters": "IADNAH",
+   "note": "IADNAH.; [yadnah.",
+   "english": "the Ark of knowledge",
+   "status": "printed",
+   "column": "HANDAI",
+   "number": "46",
+   "row": 100
+  },
+  {
+   "page": 85,
+   "letters": "PILAH",
+   "note": "PILAH.; Three syllables. [margin: P Is distinctly pronounced by it self.]",
+   "english": "moreover",
+   "status": "printed",
+   "column": "HALIP",
+   "number": "47",
+   "row": 99
+  },
+  {
+   "page": 85,
+   "letters": "FARZM",
+   "note": "FARZM.",
+   "english": "",
+   "status": "printed",
+   "column": "MZRAF",
+   "number": "48",
+   "row": 98
+  },
+  {
+   "page": 85,
+   "letters": "ZNRZA",
+   "note": "Call it Zurza. Δ. As... Znurza.",
+   "english": "",
+   "status": "conflict",
+   "column": "AZRNZ",
+   "number": "49",
+   "row": 97,
+   "other": "ZURZA",
+   "remark": "The reversed column prints AZRNZ, which read backwards is ZNRZA. The journal says 'Call it Zurza' and on p. 90 writes Zurza."
+  },
+  {
+   "page": 84,
+   "letters": "ADNA",
+   "note": "Call it ADNA.",
+   "english": "",
+   "status": "printed",
+   "column": "ANDA",
+   "number": "50",
+   "row": 96
+  },
+  {
+   "page": 84,
+   "letters": "GONO",
+   "note": "Call it Gono.",
+   "english": "",
+   "status": "printed",
+   "column": "ONOG",
+   "number": "51",
+   "row": 95
+  },
+  {
+   "page": 84,
+   "letters": "IADPIL",
+   "note": "Call it IADPIL accent ad.",
+   "english": "",
+   "status": "printed",
+   "column": "LIPDAI",
+   "number": "52",
+   "row": 94
+  },
+  {
+   "page": 84,
+   "letters": "DS",
+   "note": "DS.",
+   "english": "",
+   "status": "printed",
+   "column": "SD",
+   "number": "53",
+   "row": 93
+  },
+  {
+   "page": 84,
+   "letters": "HOM",
+   "note": "HOM.",
+   "english": "",
+   "status": "printed",
+   "column": "MOH",
+   "number": "54",
+   "row": 92
+  },
+  {
+   "page": 84,
+   "letters": "TOH",
+   "note": "TOH. [margin: There is a point, shewing a stroke, called Virgula.]",
+   "english": "",
+   "status": "printed",
+   "column": "HOT",
+   "number": "55",
+   "row": 91
+  },
+  {
+   "page": 84,
+   "letters": "SOBA",
+   "note": "SOBA.",
+   "english": "",
+   "status": "conflict",
+   "column": "ABOS",
+   "row": 90,
+   "remark": "Before this row the journal says: 'I am deceived from Ipam. OD the next is false, and so are the rest: And so is that that followeth.' It then prints ABOS, SOBA. The printing does not show whether SOBA is the word that stands or part of what is false."
+  },
+  {
+   "page": 84,
+   "letters": "IPAM",
+   "note": "[margin: Labiis clausis, [Span] [um um] ... He hummed twice, signifying two words more, which were not to be pronounced till they were read in practise.] E. K. It seemeth to be an e.",
+   "english": "",
+   "status": "printed",
+   "column": "MAPI",
+   "number": "57",
+   "row": 86,
+   "read_from": "page image, Internet Archive scan truefaithfulrela00deej",
+   "remark": "The keyed transcription has 'claufis', 'bummed' and 'F. K.' in the note; the page image prints 'clausis', 'hummed' and 'E. K.'"
+  },
+  {
+   "page": 83,
+   "letters": "UL",
+   "note": "Call it UL. Δ, With such sound to U. as we pronounce yew, whereof bows are made.",
+   "english": "",
+   "status": "printed",
+   "column": "LU",
+   "number": "58",
+   "row": 85,
+   "remark": "The keyed transcription has 'as [gap:1 word] yew' where the page image prints 'as we pronounce yew'.",
+   "read_from": "page image, Internet Archive scan truefaithfulrela00deej"
+  },
+  {
+   "page": 83,
+   "letters": "IPAMIS",
+   "note": "Pronownce it IPAMIS. [margin: Make a point at S. the A pronounced short.]",
+   "english": "",
+   "status": "printed",
+   "column": "SIMAPI",
+   "number": "59",
+   "row": 84
+  },
+  {
+   "page": 83,
+   "letters": "DS",
+   "note": "It is the uppermost of [margin: Call it DS.]",
+   "english": "",
+   "status": "printed",
+   "column": "SD",
+   "number": "60",
+   "row": 83
+  },
+  {
+   "page": 83,
+   "letters": "LOHOLO",
+   "note": "[margin: Call it Loholo.] Long, the first syllable accented.",
+   "english": "",
+   "status": "printed",
+   "column": "OLOHOL",
+   "number": "61",
+   "row": 81
+  },
+  {
+   "page": 83,
+   "letters": "VEP",
+   "note": "[margin: It is called Vep.] Make a point there. Δ. A full point? [margin: Nal. .... No, no, a stroke.]",
+   "english": "",
+   "status": "printed",
+   "column": "PEV",
+   "number": "62",
+   "row": 79
+  },
+  {
+   "page": 83,
+   "letters": "ZOMDV",
+   "note": "[margin: Call it Zome.] With great difficulty this Letter was discerned: Nalvage himself said, he knew it not yet; but it seemed to E. K. to be an X. Nalvage denied it to be an X. and said he knew not yet the mystery: say the Lords prayer, for I cannot open it. Although my power be multiplied, yet I know not this Letter. At length he said it was V.",
+   "english": "",
+   "status": "conflict",
+   "column": "XVDMOZ",
+   "number": "63",
+   "row": 78,
+   "other": "ZOMDVX, ZOME",
+   "remark": "The reversed column prints XVDMOZ. The journal says the letter first taken for X was V, so the X is left out here and the letters read backwards are ZOMDV. The margin says 'Call it Zome'."
+  },
+  {
+   "page": 83,
+   "letters": "POAMAL",
+   "note": "[margin: Poamal Od. put out the S.] Make it two words. ..... It may be all one word with S. or T. but it would be hard for your understanding. Make a point between Poamal and Od.",
+   "english": "",
+   "status": "printed",
+   "column": "LAMAOP",
+   "number": "64",
+   "row": 77
+  },
+  {
+   "page": 83,
+   "letters": "OD",
+   "note": "DOS. He pointed beyond him in the upper Circle, it seemeth [margin: Also T] like a Roman C.",
+   "english": "",
+   "status": "corrected",
+   "column": "DOS",
+   "correction_page": 83,
+   "remark": "The letters given are DOS. The journal says to put out the S and to make Poamal and Od two words. On p. 90 Dee asks whether 'Poamalzod' is one word; the printed answer is 'Set down'."
+  },
+  {
+   "page": 83,
+   "letters": "BOGPA",
+   "note": "[margin: Call it Bogpa.]",
+   "english": "",
+   "status": "printed",
+   "column": "APGOB",
+   "number": "65",
+   "row": 76
+  },
+  {
+   "page": 83,
+   "letters": "AAI",
+   "note": "AAI. [margin: The first A may be an A an O or an E.] [margin: Those are two words.]",
+   "english": "",
+   "status": "conflict",
+   "column": "I, A, A",
+   "number": "66",
+   "row": 74,
+   "other": "OAI, EAI",
+   "read_from": "page image, Internet Archive scan truefaithfulrela00deej",
+   "remark": "The page image names three letters, I, A, A, and then writes the word AAI. The keyed transcription has two of the three. The journal says the first A may be an A, an O or an E."
+  },
+  {
+   "page": 83,
+   "letters": "TA",
+   "note": "TA. [margin: The numbers after.]",
+   "english": "",
+   "status": "printed",
+   "column": "A, T",
+   "number": "67",
+   "row": 72
+  },
+  {
+   "page": 83,
+   "letters": "PIAP",
+   "note": "68 PIAP.",
+   "english": "",
+   "status": "printed",
+   "column": "P, A, I, P",
+   "number": "68",
+   "row": 68
+  },
+  {
+   "page": 81,
+   "letters": "PIAMOL",
+   "note": "this O must be sounded as A. T must be instead of M. [margin: Aversed.] Call it Piamo el. It is Piatel Baltale to be sounded.",
+   "english": "",
+   "status": "conflict",
+   "column": "L, O, M, A, I, P",
+   "number": "69",
+   "other": "PIATOL, PIATEL",
+   "remark": "The letters named are L, O, M, A, I, P, which read backwards are PIAMOL, and the journal says 'Call it Piamo el'. It also says 'T must be instead of M' and 'It is Piatel Baltale to be sounded'. On p. 82 Dee reads the word back as 'Piamo el'."
+  },
+  {
+   "page": 80,
+   "letters": "OD",
+   "note": "call it OD. [Δ. drawing the O long.]",
+   "english": "",
+   "status": "printed",
+   "column": "D, O",
+   "number": "70"
+  },
+  {
+   "page": 80,
+   "letters": "VOOAN",
+   "note": "It is Vooan. It may be sounded Vaoan. Vooan is spoken with them that fall, but Vaoan with them that are, and are glorified. The devils have lost the dignity of their sounds.",
+   "english": "",
+   "status": "printed",
+   "column": "N, A, O, O, V",
+   "number": "71",
+   "row": 56
+  },
+  {
+   "page": 80,
+   "letters": "ZACARE",
+   "note": "[margin: E must come after R: but without number, and so, it is Zacare.] [margin: Call it Zacar.]",
+   "english": "",
+   "status": "corrected",
+   "column": "R, A, C, A, Z",
+   "number": "72",
+   "row": 51,
+   "correction_page": 80,
+   "remark": "The letters named spell ZACAR. The margin says E must come after R, 'and so, it is Zacare'."
+  },
+  {
+   "page": 80,
+   "letters": "CA",
+   "note": "[margin: Call it CA, [Δ. two syllables.]]",
+   "english": "",
+   "status": "printed",
+   "column": "A, C",
+   "number": "73",
+   "row": 49
+  },
+  {
+   "page": 80,
+   "letters": "OD",
+   "note": "[margin: This may be T or D.] Call it OD [margin: or OT.]",
+   "english": "",
+   "status": "conflict",
+   "column": "T, O",
+   "number": "74",
+   "row": 46,
+   "other": "OT",
+   "remark": "The first letter named is T, with the margin 'This may be T or D'. The journal says 'Call it OD' with the margin 'or OT'."
+  },
+  {
+   "page": 80,
+   "letters": "ZAMRAN",
+   "note": "[margin: This A may be an A or an O.] [margin: be corrected it M. Zamran.] [margin: Call it Zanran.]",
+   "english": "",
+   "status": "corrected",
+   "column": "N, A, R, N, A, Z",
+   "number": "75",
+   "row": 40,
+   "correction_page": 80,
+   "remark": "The letters named spell ZANRAN. The margin corrects the N to M: Zamran."
+  },
+  {
+   "page": 79,
+   "letters": "ODO",
+   "note": "Call it O D O.",
+   "english": "",
+   "status": "printed",
+   "column": "O, D, O",
+   "number": "76"
+  },
+  {
+   "page": 79,
+   "letters": "CICLE",
+   "note": "[That C. is called C Minor.] [margin: 7877.] Call it Cicle.",
+   "english": "",
+   "status": "printed",
+   "column": "E, L, C, I, C",
+   "remark": "The journal prints no number beside this word; the margin has 7877."
+  },
+  {
+   "page": 79,
+   "letters": "QAA",
+   "note": "Call it QAA. [Three syllables with accent on the last A.]",
+   "english": "",
+   "status": "printed",
+   "column": "A, A, Q",
+   "number": "79"
+  },
+  {
+   "page": 79,
+   "letters": "ZORGE",
+   "note": "Call it Zorge. [Of one syllable.]",
+   "english": "",
+   "status": "printed",
+   "column": "E, G, R, O, Z",
+   "number": "80"
+  },
+  {
+   "page": 79,
+   "letters": "LAP",
+   "note": "Call it Lap.",
+   "english": "",
+   "status": "printed",
+   "column": "P, A, L",
+   "number": "81"
+  },
+  {
+   "page": 79,
+   "letters": "ZIRDO",
+   "note": "Call it Zirdo.",
+   "english": "",
+   "status": "from_note",
+   "column": "O, D, R, I",
+   "number": "82",
+   "remark": "The journal names four letters, O, D, R, I. The line for the fifth has a number and a table but no letter. The Z is read from the note, 'Call it Zirdo'."
+  },
+  {
+   "page": 79,
+   "letters": "NOCO",
+   "note": "Call it Noco.",
+   "english": "",
+   "status": "printed",
+   "column": "O, C, O, N",
+   "number": "83"
+  },
+  {
+   "page": 79,
+   "letters": "MAD",
+   "note": "Call it Mad.",
+   "english": "",
+   "status": "printed",
+   "column": "D, A, M",
+   "number": "84"
+  },
+  {
+   "page": 79,
+   "letters": "HOATH",
+   "note": "call it Hoath.",
+   "english": "",
+   "status": "printed",
+   "column": "H, T, A, O, H",
+   "number": "85"
+  },
+  {
+   "page": 79,
+   "letters": "IAIDA",
+   "note": "A word, Jaida you shall understand, what that word is before the Sun go down. Jaida is the last word of the call.",
+   "english": "of the Highest",
+   "status": "printed",
+   "column": "A, D, I, A, I",
+   "number": "86",
+   "remark": "The English is from p. 81: 'It signifieth, of the Highest.'"
+  }
+ ]
+}

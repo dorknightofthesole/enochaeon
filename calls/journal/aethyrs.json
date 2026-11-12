@@ -1,0 +1,1537 @@
+{
+ "call": "aethyrs",
+ "printing": "Meric Casaubon, A True & Faithful Relation (London, 1659)",
+ "pages": "pp. 201 to 209",
+ "direction": "forward",
+ "notes": [
+  "One call serves all thirty Aethyrs. p. 209: 'Now change the name, and the Call is all one.'",
+  "name_word is the place of the name in words, counted from 0. The call as dictated has LIL there.",
+  "names are the thirty names as p. 209 prints them, in order."
+ ],
+ "name_word": 2,
+ "words": [
+  {
+   "page": 201,
+   "letters": "MADRIIAX",
+   "note": "Δ. I think this word wanteth [margin: Ilemese.] as may appear by Madriax, about 44 words from the end.",
+   "english": "O you heavens",
+   "status": "printed",
+   "row": 1351
+  },
+  {
+   "page": 201,
+   "letters": "DSPRAF",
+   "note": "Ds praf.",
+   "english": "which dwell",
+   "status": "printed",
+   "row": 1352
+  },
+  {
+   "page": 201,
+   "letters": "LIL",
+   "note": "Lil.",
+   "english": "In the first air",
+   "status": "printed",
+   "row": 1353
+  },
+  {
+   "page": 201,
+   "letters": "CHISMICAOLZ",
+   "note": "Kis; Chis Micáolz.",
+   "english": "are mighty",
+   "status": "printed",
+   "row": 1355
+  },
+  {
+   "page": 201,
+   "letters": "SAANIR",
+   "note": "Sa á nir. [margin: Ile.]",
+   "english": "in the parts",
+   "status": "printed",
+   "row": 1356,
+   "remark": "The keyed transcription has '{note: [gap:1 word].}' where the page image prints '{note: Ile.}'.",
+   "read_from": "page image, Internet Archive scan truefaithfulrela00deej"
+  },
+  {
+   "page": 201,
+   "letters": "CAOSGO",
+   "note": "Ca ós go.",
+   "english": "of the earth",
+   "status": "printed",
+   "row": 1357
+  },
+  {
+   "page": 201,
+   "letters": "OD",
+   "note": "",
+   "english": "",
+   "status": "printed",
+   "row": 1358
+  },
+  {
+   "page": 201,
+   "letters": "FISIS",
+   "note": "Od fisis.",
+   "english": "and execute",
+   "status": "printed",
+   "row": 1359
+  },
+  {
+   "page": 201,
+   "letters": "BALZIZRAS",
+   "note": "Bal zi zras.",
+   "english": "the judgement",
+   "status": "printed",
+   "row": 1360
+  },
+  {
+   "page": 201,
+   "letters": "IAIDA",
+   "note": "Ya; Ia - i da.",
+   "english": "of the highest",
+   "status": "printed",
+   "row": 1362
+  },
+  {
+   "page": 201,
+   "letters": "NONCA",
+   "note": "sa; Nonca.",
+   "english": "to you",
+   "status": "printed",
+   "row": 1364
+  },
+  {
+   "page": 201,
+   "letters": "GOHULIM",
+   "note": "Go hú lim.",
+   "english": "It is said",
+   "status": "printed",
+   "row": 1365
+  },
+  {
+   "page": 201,
+   "letters": "MICMA",
+   "note": "Mikma; Micma. [margin: asper.]",
+   "english": "Behold",
+   "status": "printed",
+   "row": 1367
+  },
+  {
+   "page": 201,
+   "letters": "ADOIAN",
+   "note": "A do i an.",
+   "english": "the face",
+   "status": "printed",
+   "row": 1368
+  },
+  {
+   "page": 201,
+   "letters": "MAD",
+   "note": "Mad.",
+   "english": "of your God",
+   "status": "printed",
+   "row": 1369
+  },
+  {
+   "page": 201,
+   "letters": "IAOD",
+   "note": "I á od.",
+   "english": "The beginning",
+   "status": "printed",
+   "row": 1370
+  },
+  {
+   "page": 201,
+   "letters": "BLIORB",
+   "note": "Bliórb.",
+   "english": "of Comfort",
+   "status": "printed",
+   "row": 1371
+  },
+  {
+   "page": 201,
+   "letters": "SABAOOAONA",
+   "note": "Sa ba o o á o na. [margin: O or A.]",
+   "english": "whose eyes",
+   "status": "printed",
+   "row": 1372,
+   "remark": "The keyed transcription has '{note: [gap:1 word].}' where the page image prints '{note: O or A.}'.",
+   "read_from": "page image, Internet Archive scan truefaithfulrela00deej"
+  },
+  {
+   "page": 201,
+   "letters": "CHI",
+   "note": "Kis s; Chis.",
+   "english": "are",
+   "status": "printed",
+   "row": 1374
+  },
+  {
+   "page": 202,
+   "letters": "LUCIFTIAS",
+   "note": "Lu cif ti as.",
+   "english": "the brightnesse",
+   "status": "printed",
+   "row": 1375
+  },
+  {
+   "page": 202,
+   "letters": "PIRIPSOL",
+   "note": "Pe ripsol.",
+   "english": "of the heavens,",
+   "status": "printed",
+   "row": 1376
+  },
+  {
+   "page": 202,
+   "letters": "DS",
+   "note": "Ds.",
+   "english": "which",
+   "status": "from_note",
+   "row": 1377,
+   "remark": "The letter column prints 'Δ S'. The missing letters are read from the note.",
+   "column": "Δ S"
+  },
+  {
+   "page": 202,
+   "letters": "ABRAASSA",
+   "note": "Abraássa",
+   "english": "provided",
+   "status": "printed",
+   "row": 1378
+  },
+  {
+   "page": 202,
+   "letters": "NONCF",
+   "note": "Nonsf; Noncf.",
+   "english": "you",
+   "status": "printed",
+   "row": 1380
+  },
+  {
+   "page": 202,
+   "letters": "NETAAIB",
+   "note": "Ne tá a ib.",
+   "english": "for the government",
+   "status": "printed",
+   "row": 1381
+  },
+  {
+   "page": 202,
+   "letters": "CAOSGI",
+   "note": "Ca os gi.",
+   "english": "of the earth,",
+   "status": "printed",
+   "row": 1382,
+   "remark": "The keyed transcription has 'Ca of gi.' where the page image prints 'Ca os gi.'.",
+   "read_from": "page image, Internet Archive scan truefaithfulrela00deej"
+  },
+  {
+   "page": 202,
+   "letters": "OD",
+   "note": "Od.",
+   "english": "and",
+   "status": "printed",
+   "row": 1383
+  },
+  {
+   "page": 202,
+   "letters": "TILB",
+   "note": "Tilb.",
+   "english": "her",
+   "status": "printed",
+   "row": 1384
+  },
+  {
+   "page": 202,
+   "letters": "ADPHAHT",
+   "note": "Ad phaht.",
+   "english": "unspeakable",
+   "status": "printed",
+   "row": 1385
+  },
+  {
+   "page": 202,
+   "letters": "DAMPLOZ",
+   "note": "Dám ploz.",
+   "english": "variety,",
+   "status": "printed",
+   "row": 1386
+  },
+  {
+   "page": 202,
+   "letters": "TOOAT",
+   "note": "To ó at.",
+   "english": "furnishing",
+   "status": "printed",
+   "row": 1387
+  },
+  {
+   "page": 202,
+   "letters": "NONCF",
+   "note": "Nonsf; Non cf.",
+   "english": "you",
+   "status": "printed",
+   "row": 1389
+  },
+  {
+   "page": 202,
+   "letters": "GMICALZOMA",
+   "note": "Gmi cál zo ma.",
+   "english": "with a power, understanding",
+   "status": "printed",
+   "row": 1390
+  },
+  {
+   "page": 202,
+   "letters": "LRASD",
+   "note": "Lrásd",
+   "english": "to dispose",
+   "status": "printed",
+   "row": 1391
+  },
+  {
+   "page": 202,
+   "letters": "TOFGLO",
+   "note": "Tóf glo.",
+   "english": "all things",
+   "status": "printed",
+   "row": 1392
+  },
+  {
+   "page": 202,
+   "letters": "MARB",
+   "note": "Marb.",
+   "english": "according",
+   "status": "printed",
+   "row": 1393
+  },
+  {
+   "page": 203,
+   "letters": "YARRY",
+   "note": "Yár ry.",
+   "english": "to the providence",
+   "status": "printed",
+   "row": 1394
+  },
+  {
+   "page": 203,
+   "letters": "IDOIGO",
+   "note": "[margin: *O] Δ. Note the wicked power dazeled so the eyes of E. K. that he could not well discern this O, but staying at it a while concluded it to be an V: which afterward, and by and by, he corrected.",
+   "english": "of him that sitteth on the holy Thrana.",
+   "status": "corrected",
+   "row": 1395,
+   "column": "ID*UIGO",
+   "correction_page": 203,
+   "remark": "The letter column prints ID*UIGO with *O beside it. The journal says the letter taken for V was corrected to O, and Dee writes 'It must be then I doigo?'"
+  },
+  {
+   "page": 203,
+   "letters": "OD",
+   "note": "Od.",
+   "english": "and",
+   "status": "printed",
+   "row": 1398
+  },
+  {
+   "page": 203,
+   "letters": "TORZULP",
+   "note": "Torzulp.",
+   "english": "rose up",
+   "status": "printed",
+   "row": 1399
+  },
+  {
+   "page": 203,
+   "letters": "IAODAF",
+   "note": "Y; Ia ó daf.",
+   "english": "in the beginning",
+   "status": "printed",
+   "row": 1401
+  },
+  {
+   "page": 203,
+   "letters": "GOHOL",
+   "note": "Go hol.",
+   "english": "saying,",
+   "status": "printed",
+   "row": 1402
+  },
+  {
+   "page": 203,
+   "letters": "CAOSGA",
+   "note": "Ca os ga.",
+   "english": "The earth,",
+   "status": "printed",
+   "row": 1403
+  },
+  {
+   "page": 203,
+   "letters": "TABAORD",
+   "note": "Ta ba ord.",
+   "english": "let her be governed",
+   "status": "printed",
+   "row": 1404,
+   "remark": "The keyed transcription has 'let her be [gap:1 word]' where the page image prints 'let her be governed'.",
+   "read_from": "page image, Internet Archive scan truefaithfulrela00deej"
+  },
+  {
+   "page": 203,
+   "letters": "SAANIR",
+   "note": "Sa á nir.",
+   "english": "by her parts",
+   "status": "printed",
+   "row": 1405,
+   "remark": "The keyed transcription has 'by her [gap:1 word]' where the page image prints 'by her parts'.",
+   "read_from": "page image, Internet Archive scan truefaithfulrela00deej"
+  },
+  {
+   "page": 203,
+   "letters": "OD",
+   "note": "Od.",
+   "english": "and",
+   "status": "printed",
+   "row": 1406
+  },
+  {
+   "page": 203,
+   "letters": "CHRISTEOS",
+   "note": "Chris té os.",
+   "english": "let there be",
+   "status": "printed",
+   "row": 1407,
+   "remark": "The keyed transcription has 'let [gap:1 word] he' where the page image prints 'let there be'.",
+   "read_from": "page image, Internet Archive scan truefaithfulrela00deej"
+  },
+  {
+   "page": 203,
+   "letters": "YRPOIL",
+   "note": "Yr pó il.",
+   "english": "division",
+   "status": "printed",
+   "row": 1408
+  },
+  {
+   "page": 203,
+   "letters": "TIOBL",
+   "note": "Ti óbl.",
+   "english": "in her,",
+   "status": "printed",
+   "row": 1409
+  },
+  {
+   "page": 203,
+   "letters": "BUSDIRTILB",
+   "note": "Bus dir tilb.",
+   "english": "that the glory of her",
+   "status": "printed",
+   "row": 1410
+  },
+  {
+   "page": 204,
+   "letters": "NOALN",
+   "note": "No aln.",
+   "english": "May be",
+   "status": "printed",
+   "row": 1411
+  },
+  {
+   "page": 204,
+   "letters": "PAID",
+   "note": "pa id.",
+   "english": "alwayes",
+   "status": "printed",
+   "row": 1412
+  },
+  {
+   "page": 204,
+   "letters": "ORSBA",
+   "note": "Ors ba.",
+   "english": "drunken",
+   "status": "printed",
+   "row": 1413
+  },
+  {
+   "page": 204,
+   "letters": "OD",
+   "note": "Od.",
+   "english": "and",
+   "status": "printed",
+   "row": 1414
+  },
+  {
+   "page": 204,
+   "letters": "DODRMNI",
+   "note": "Dodrumni.; Dod rm ni.",
+   "english": "vexed",
+   "status": "printed",
+   "row": 1416
+  },
+  {
+   "page": 204,
+   "letters": "ZYLNA",
+   "note": "Zyl na.",
+   "english": "in it self.",
+   "status": "printed",
+   "row": 1417
+  },
+  {
+   "page": 204,
+   "letters": "ELZAPTILB",
+   "note": "El zap tilb.",
+   "english": "Her course,",
+   "status": "printed",
+   "row": 1418
+  },
+  {
+   "page": 204,
+   "letters": "PARMGI",
+   "note": "Parm gi.",
+   "english": "Let it run",
+   "status": "printed",
+   "row": 1419
+  },
+  {
+   "page": 204,
+   "letters": "PIRIPSAX",
+   "note": "Pe rip sax.",
+   "english": "with the Heavens,",
+   "status": "printed",
+   "row": 1420
+  },
+  {
+   "page": 204,
+   "letters": "OD",
+   "note": "Od.",
+   "english": "and",
+   "status": "printed",
+   "row": 1421
+  },
+  {
+   "page": 204,
+   "letters": "TA",
+   "note": "Ta.",
+   "english": "as",
+   "status": "printed",
+   "row": 1422
+  },
+  {
+   "page": 204,
+   "letters": "QURLST",
+   "note": "Kurlst.; Qurlst.",
+   "english": "an handmaid.",
+   "status": "printed",
+   "row": 1424
+  },
+  {
+   "page": 204,
+   "letters": "BOOAPIS",
+   "note": "Booapis.",
+   "english": "Let her serve them",
+   "status": "printed",
+   "row": 1426
+  },
+  {
+   "page": 204,
+   "letters": "LNIBM",
+   "note": "Lnib m.",
+   "english": "one season:",
+   "status": "printed",
+   "row": 1427
+  },
+  {
+   "page": 204,
+   "letters": "OUCHO",
+   "note": "Chose.; Ov Cho.",
+   "english": "Let it confound",
+   "status": "printed",
+   "row": 1429
+  },
+  {
+   "page": 204,
+   "letters": "SYMP",
+   "note": "Symp.",
+   "english": "another,",
+   "status": "printed",
+   "row": 1430
+  },
+  {
+   "page": 204,
+   "letters": "OD",
+   "note": "Od.",
+   "english": "and",
+   "status": "printed",
+   "row": 1431
+  },
+  {
+   "page": 204,
+   "letters": "CHRISTEOS",
+   "note": "Chris te os.",
+   "english": "let there be",
+   "status": "printed",
+   "row": 1432
+  },
+  {
+   "page": 204,
+   "letters": "AGTOLTORN",
+   "note": "Ag tol torn.",
+   "english": "no Creature",
+   "status": "printed",
+   "row": 1433
+  },
+  {
+   "page": 204,
+   "letters": "MIRC",
+   "note": "Mirk.; Mirc.",
+   "english": "upon,",
+   "status": "printed",
+   "row": 1435
+  },
+  {
+   "page": 204,
+   "letters": "Q",
+   "note": "Q.",
+   "english": "or",
+   "status": "printed",
+   "row": 1436
+  },
+  {
+   "page": 204,
+   "letters": "TIOBL",
+   "note": "Ti ob l.",
+   "english": "within her",
+   "status": "printed",
+   "row": 1437
+  },
+  {
+   "page": 204,
+   "letters": "LEL",
+   "note": "Lel.",
+   "english": "the same ..... one and the same.",
+   "status": "printed",
+   "row": 1438
+  },
+  {
+   "page": 204,
+   "letters": "TON",
+   "note": "Ton.",
+   "english": "All",
+   "status": "printed",
+   "row": 1440
+  },
+  {
+   "page": 204,
+   "letters": "PAOMBD",
+   "note": "Pa Ombd.",
+   "english": "her members",
+   "status": "printed",
+   "row": 1441
+  },
+  {
+   "page": 204,
+   "letters": "DILZMO",
+   "note": "Dil zmo.",
+   "english": "let them differ",
+   "status": "printed",
+   "row": 1442
+  },
+  {
+   "page": 204,
+   "letters": "ASPIAN",
+   "note": "As pi an.",
+   "english": "in their qualities,",
+   "status": "printed",
+   "row": 1443
+  },
+  {
+   "page": 205,
+   "letters": "OD",
+   "note": "Od.",
+   "english": "and",
+   "status": "printed",
+   "row": 1444
+  },
+  {
+   "page": 205,
+   "letters": "CHRISTEOS",
+   "note": "Long, or short.; Chris te os.",
+   "english": "Let there be",
+   "status": "printed",
+   "row": 1446
+  },
+  {
+   "page": 205,
+   "letters": "AGLTOLTORN",
+   "note": "Ag l ter torn.",
+   "english": "no one Creature",
+   "status": "printed",
+   "row": 1447
+  },
+  {
+   "page": 205,
+   "letters": "PARACH",
+   "note": "Ah.; Ach.; Pa rach.",
+   "english": "equal",
+   "status": "printed",
+   "row": 1449
+  },
+  {
+   "page": 205,
+   "letters": "ASYMP",
+   "note": "A symp.",
+   "english": "with another.",
+   "status": "printed",
+   "row": 1451
+  },
+  {
+   "page": 205,
+   "letters": "CORDZIZ",
+   "note": "Cord ziz.",
+   "english": "The reasonable Creatures of the earth, or Man.",
+   "status": "printed",
+   "row": 1452
+  },
+  {
+   "page": 205,
+   "letters": "DODPAL",
+   "note": "Dod pal.",
+   "english": "Let them vex",
+   "status": "printed",
+   "row": 1453
+  },
+  {
+   "page": 205,
+   "letters": "OD",
+   "note": "Od.",
+   "english": "and",
+   "status": "printed",
+   "row": 1454
+  },
+  {
+   "page": 205,
+   "letters": "FIFALZ",
+   "note": "Fi falz.",
+   "english": "weed out",
+   "status": "printed",
+   "row": 1455
+  },
+  {
+   "page": 205,
+   "letters": "LSMNAD",
+   "note": "Ls mnad.",
+   "english": "one another.",
+   "status": "printed",
+   "row": 1456
+  },
+  {
+   "page": 206,
+   "letters": "OD",
+   "note": "Od.",
+   "english": "And",
+   "status": "printed",
+   "row": 1457
+  },
+  {
+   "page": 206,
+   "letters": "FARGT",
+   "note": "Gad.; Farg t.",
+   "english": "the dwelling places,",
+   "status": "printed",
+   "row": 1459
+  },
+  {
+   "page": 206,
+   "letters": "BAMS",
+   "note": "Bams",
+   "english": "Let them forget",
+   "status": "printed",
+   "row": 1460
+  },
+  {
+   "page": 206,
+   "letters": "OMAOAS",
+   "note": "O ma o as.",
+   "english": "their names,",
+   "status": "printed",
+   "row": 1461
+  },
+  {
+   "page": 206,
+   "letters": "CONISBRA",
+   "note": "Co nis bra.",
+   "english": "the work of man",
+   "status": "printed",
+   "row": 1462
+  },
+  {
+   "page": 206,
+   "letters": "OD",
+   "note": "Od.",
+   "english": "and",
+   "status": "printed",
+   "row": 1463
+  },
+  {
+   "page": 206,
+   "letters": "AUAVOX",
+   "note": "A ua vox.",
+   "english": "his pomp:",
+   "status": "printed",
+   "row": 1464
+  },
+  {
+   "page": 206,
+   "letters": "TONUG",
+   "note": "g dg.; To nug.",
+   "english": "Let them be defaced",
+   "status": "printed",
+   "row": 1466
+  },
+  {
+   "page": 206,
+   "letters": "ORSCATBL",
+   "note": "Ors cat bl.",
+   "english": "his buildings,",
+   "status": "printed",
+   "row": 1467
+  },
+  {
+   "page": 206,
+   "letters": "NOASMI",
+   "note": "No as mi.",
+   "english": "let them become",
+   "status": "printed",
+   "row": 1468
+  },
+  {
+   "page": 206,
+   "letters": "TABGES",
+   "note": "Tab ges.",
+   "english": "Caves",
+   "status": "printed",
+   "row": 1469
+  },
+  {
+   "page": 206,
+   "letters": "LEVITHMONG",
+   "note": "Levith mong.",
+   "english": "for the beasts of the field",
+   "status": "printed",
+   "row": 1470,
+   "remark": "The keyed transcription has 'for [gap:2 words] of the field' where the page image prints 'for the beasts of the field'.",
+   "read_from": "page image, Internet Archive scan truefaithfulrela00deej"
+  },
+  {
+   "page": 206,
+   "letters": "UNCHI",
+   "note": "Ki.; Un chi.",
+   "english": "confound",
+   "status": "printed",
+   "row": 1472
+  },
+  {
+   "page": 206,
+   "letters": "OMPTILB",
+   "note": "Omp tilb.",
+   "english": "her understanding",
+   "status": "printed",
+   "row": 1473,
+   "remark": "The keyed transcription has 'OMPTILE' where the page image prints 'OMPTILB'. In the page image the last letter is clogged with ink. It has the two closed bowls of a B, and the note prints 'Omp tilb.'",
+   "read_from": "page image, Internet Archive scan truefaithfulrela00deej"
+  },
+  {
+   "page": 206,
+   "letters": "ORS",
+   "note": "Ors.",
+   "english": "with darknesse,",
+   "status": "printed",
+   "row": 1474
+  },
+  {
+   "page": 206,
+   "letters": "BAGLE",
+   "note": "Bagle.",
+   "english": "for why?",
+   "status": "printed",
+   "row": 1475
+  },
+  {
+   "page": 206,
+   "letters": "MOOOAH",
+   "note": "Mo o Oah.",
+   "english": "it repenteth me",
+   "status": "printed",
+   "row": 1476
+  },
+  {
+   "page": 206,
+   "letters": "OLCORDZIZ",
+   "note": "Ol cord ziz.",
+   "english": "I made man",
+   "status": "printed",
+   "row": 1477
+  },
+  {
+   "page": 207,
+   "letters": "LCAPIMAO",
+   "note": "L ca pi ma o.",
+   "english": "one while",
+   "status": "printed",
+   "row": 1478
+  },
+  {
+   "page": 207,
+   "letters": "IXOMAXIP",
+   "note": "Ix o máx ip.",
+   "english": "let her be known,",
+   "status": "printed",
+   "row": 1479,
+   "remark": "The letter column prints 'IXOMA XIP' with a space.",
+   "column": "IXOMA XIP"
+  },
+  {
+   "page": 207,
+   "letters": "ODCACOCASB",
+   "note": "Od ca có casb.",
+   "english": "and another while",
+   "status": "printed",
+   "row": 1480,
+   "remark": "The keyed transcription has 'Od ca co cash.' where the page image prints 'Od ca có casb.'.",
+   "read_from": "page image, Internet Archive scan truefaithfulrela00deej"
+  },
+  {
+   "page": 207,
+   "letters": "GOSAA",
+   "note": "Go sa a.",
+   "english": "a stranger,",
+   "status": "printed",
+   "row": 1481
+  },
+  {
+   "page": 207,
+   "letters": "BAGLEN",
+   "note": "Baglen.",
+   "english": "because",
+   "status": "printed",
+   "row": 1482
+  },
+  {
+   "page": 207,
+   "letters": "PII",
+   "note": "Pi i.",
+   "english": "she is",
+   "status": "printed",
+   "row": 1483
+  },
+  {
+   "page": 207,
+   "letters": "TIANTA",
+   "note": "Ti án ta.",
+   "english": "the bed",
+   "status": "printed",
+   "row": 1484
+  },
+  {
+   "page": 207,
+   "letters": "ABABALOND",
+   "note": "A bá ba lond.",
+   "english": "of an harlot",
+   "status": "printed",
+   "row": 1485
+  },
+  {
+   "page": 207,
+   "letters": "ODFAORGT",
+   "note": "gt, or dgt.; Od fa orgt.",
+   "english": "and the dwelling place",
+   "status": "printed",
+   "row": 1487
+  },
+  {
+   "page": 207,
+   "letters": "TELOCVOVIM",
+   "note": "lotch, or loch.; Te lóc vo v im.",
+   "english": "of him that is fallen.",
+   "status": "printed",
+   "row": 1489
+  },
+  {
+   "page": 207,
+   "letters": "MADRIIAX",
+   "note": "yax; Má dri iax.",
+   "english": "O you heavens",
+   "status": "printed",
+   "row": 1491
+  },
+  {
+   "page": 207,
+   "letters": "TORZU",
+   "note": "Tor zu.",
+   "english": "arise,",
+   "status": "printed",
+   "row": 1492
+  },
+  {
+   "page": 207,
+   "letters": "OADRIAX",
+   "note": "O ádriax.",
+   "english": "The lower heavens",
+   "status": "printed",
+   "row": 1493
+  },
+  {
+   "page": 207,
+   "letters": "OROCHA",
+   "note": "ka.; O ró cha.",
+   "english": "underneath you",
+   "status": "printed",
+   "row": 1495
+  },
+  {
+   "page": 207,
+   "letters": "ABOAPRI",
+   "note": "A bó a pri.",
+   "english": "let them serve you,",
+   "status": "printed",
+   "row": 1496
+  },
+  {
+   "page": 207,
+   "letters": "TABAORI",
+   "note": "Tabá o ri.",
+   "english": "Govern",
+   "status": "printed",
+   "row": 1497
+  },
+  {
+   "page": 207,
+   "letters": "PRIAZ",
+   "note": "Priáz.",
+   "english": "those",
+   "status": "printed",
+   "row": 1498
+  },
+  {
+   "page": 207,
+   "letters": "ARTABAS",
+   "note": "Ar ta bas.",
+   "english": "that govern,",
+   "status": "printed",
+   "row": 1499
+  },
+  {
+   "page": 207,
+   "letters": "ADRPAN",
+   "note": "dir; A dr pan.",
+   "english": "Cast down",
+   "status": "printed",
+   "row": 1501
+  },
+  {
+   "page": 207,
+   "letters": "CORSTA",
+   "note": "Cor sta.",
+   "english": "such as",
+   "status": "printed",
+   "row": 1502
+  },
+  {
+   "page": 207,
+   "letters": "DOBIX",
+   "note": "Dobix.",
+   "english": "fall,",
+   "status": "printed",
+   "row": 1503
+  },
+  {
+   "page": 207,
+   "letters": "YOLCAM",
+   "note": "Yol cam.",
+   "english": "bring forth",
+   "status": "printed",
+   "row": 1504
+  },
+  {
+   "page": 207,
+   "letters": "PRIAZI",
+   "note": "Pri á zi.",
+   "english": "with those",
+   "status": "printed",
+   "row": 1505
+  },
+  {
+   "page": 207,
+   "letters": "ARCOAZIOR",
+   "note": "Ar co a zior.",
+   "english": "that encrease,",
+   "status": "printed",
+   "row": 1506
+  },
+  {
+   "page": 207,
+   "letters": "ODQUASB",
+   "note": "Od quasb.",
+   "english": "and destroy",
+   "status": "printed",
+   "row": 1507
+  },
+  {
+   "page": 208,
+   "letters": "QTING",
+   "note": "dg; Qting.",
+   "english": "the rotten",
+   "status": "printed",
+   "row": 1509
+  },
+  {
+   "page": 208,
+   "letters": "RIPIR",
+   "note": "Ri pir.",
+   "english": "No place,",
+   "status": "printed",
+   "row": 1510
+  },
+  {
+   "page": 208,
+   "letters": "PAAOXT",
+   "note": "Pa a oxt.",
+   "english": "let it remain",
+   "status": "printed",
+   "row": 1511
+  },
+  {
+   "page": 208,
+   "letters": "SAGACOR",
+   "note": "Kor; Sa gá còr.",
+   "english": "in one number.",
+   "status": "printed",
+   "row": 1513
+  },
+  {
+   "page": 208,
+   "letters": "VML",
+   "note": "Vml.",
+   "english": "Adde",
+   "status": "printed",
+   "row": 1514
+  },
+  {
+   "page": 208,
+   "letters": "OD",
+   "note": "",
+   "english": "and",
+   "status": "printed",
+   "row": 1515
+  },
+  {
+   "page": 208,
+   "letters": "PRDZAR",
+   "note": "Pur; Prd zar.",
+   "english": "Diminish",
+   "status": "printed",
+   "row": 1516
+  },
+  {
+   "page": 208,
+   "letters": "CACRG",
+   "note": "cúrg; Ca crg.",
+   "english": "until",
+   "status": "printed",
+   "row": 1518
+  },
+  {
+   "page": 208,
+   "letters": "AOIVEAE",
+   "note": "A oi vé a e.",
+   "english": "the Stars",
+   "status": "printed",
+   "row": 1519
+  },
+  {
+   "page": 208,
+   "letters": "CORMPT",
+   "note": "Cormpt.",
+   "english": "be numbred;",
+   "status": "printed",
+   "row": 1520
+  },
+  {
+   "page": 208,
+   "letters": "TORZU",
+   "note": "Tor zu.",
+   "english": "arise,",
+   "status": "printed",
+   "row": 1521
+  },
+  {
+   "page": 208,
+   "letters": "ZACAR",
+   "note": "Zacar.",
+   "english": "Move",
+   "status": "printed",
+   "row": 1522
+  },
+  {
+   "page": 208,
+   "letters": "ODZAMRAN",
+   "note": "Od zamran.",
+   "english": "and appear",
+   "status": "printed",
+   "row": 1523
+  },
+  {
+   "page": 208,
+   "letters": "ASPT",
+   "note": "Aspt.",
+   "english": "before",
+   "status": "printed",
+   "row": 1524
+  },
+  {
+   "page": 208,
+   "letters": "SIBSI",
+   "note": "Sib si.",
+   "english": "the Covenant",
+   "status": "printed",
+   "row": 1525
+  },
+  {
+   "page": 208,
+   "letters": "BUTMONA",
+   "note": "But mo na.",
+   "english": "of his mouth,",
+   "status": "printed",
+   "row": 1526
+  },
+  {
+   "page": 208,
+   "letters": "DS",
+   "note": "Ds.",
+   "english": "which",
+   "status": "printed",
+   "row": 1527
+  },
+  {
+   "page": 208,
+   "letters": "SURZAS",
+   "note": "Sur zas.",
+   "english": "he hath sworn",
+   "status": "printed",
+   "row": 1528
+  },
+  {
+   "page": 208,
+   "letters": "TIA",
+   "note": "Tia.",
+   "english": "unto us",
+   "status": "printed",
+   "row": 1529
+  },
+  {
+   "page": 208,
+   "letters": "BALTAN",
+   "note": "Baltan.",
+   "english": "in his Justice.",
+   "status": "printed",
+   "row": 1530
+  },
+  {
+   "page": 208,
+   "letters": "ODO",
+   "note": "Odo.",
+   "english": "Open",
+   "status": "printed",
+   "row": 1531
+  },
+  {
+   "page": 208,
+   "letters": "CICLE",
+   "note": "Cicle.",
+   "english": "the mysteries",
+   "status": "printed",
+   "row": 1532
+  },
+  {
+   "page": 208,
+   "letters": "QAA",
+   "note": "Qáa.",
+   "english": "of your Creation,",
+   "status": "printed",
+   "row": 1533
+  },
+  {
+   "page": 208,
+   "letters": "OD",
+   "note": "Od.",
+   "english": "and",
+   "status": "printed",
+   "row": 1534
+  },
+  {
+   "page": 208,
+   "letters": "OZAZMA",
+   "note": "Ozazma.",
+   "english": "make us",
+   "status": "printed",
+   "row": 1535
+  },
+  {
+   "page": 208,
+   "letters": "PLAPLI",
+   "note": "Pla pli.",
+   "english": "partakers",
+   "status": "printed",
+   "row": 1536
+  },
+  {
+   "page": 208,
+   "letters": "IADNAMAD",
+   "note": "Iad na mad.",
+   "english": "of undefiled knowledge.",
+   "status": "printed",
+   "row": 1537
+  }
+ ],
+ "names": [
+  {
+   "page": 209,
+   "letters": "LIL",
+   "note": "",
+   "english": "",
+   "status": "printed",
+   "number": "1"
+  },
+  {
+   "page": 209,
+   "letters": "ARN",
+   "note": "",
+   "english": "",
+   "status": "printed",
+   "number": "2"
+  },
+  {
+   "page": 209,
+   "letters": "ZOM",
+   "note": "",
+   "english": "",
+   "status": "printed",
+   "number": "3"
+  },
+  {
+   "page": 209,
+   "letters": "PAZ",
+   "note": "",
+   "english": "",
+   "status": "printed",
+   "number": "4"
+  },
+  {
+   "page": 209,
+   "letters": "LIT",
+   "note": "",
+   "english": "",
+   "status": "printed",
+   "number": "5"
+  },
+  {
+   "page": 209,
+   "letters": "MAZ",
+   "note": "",
+   "english": "",
+   "status": "printed",
+   "number": "6"
+  },
+  {
+   "page": 209,
+   "letters": "DEO",
+   "note": "",
+   "english": "",
+   "status": "printed",
+   "number": "7"
+  },
+  {
+   "page": 209,
+   "letters": "ZID",
+   "note": "",
+   "english": "",
+   "status": "printed",
+   "number": "8"
+  },
+  {
+   "page": 209,
+   "letters": "ZIP",
+   "note": "",
+   "english": "",
+   "status": "printed",
+   "number": "9"
+  },
+  {
+   "page": 209,
+   "letters": "ZAX",
+   "note": "",
+   "english": "",
+   "status": "printed",
+   "number": "10"
+  },
+  {
+   "page": 209,
+   "letters": "ICH",
+   "note": "ik.",
+   "english": "",
+   "status": "printed",
+   "number": "11"
+  },
+  {
+   "page": 209,
+   "letters": "LOE",
+   "note": "",
+   "english": "",
+   "status": "printed",
+   "number": "12"
+  },
+  {
+   "page": 209,
+   "letters": "ZIM",
+   "note": "",
+   "english": "",
+   "status": "printed",
+   "number": "13"
+  },
+  {
+   "page": 209,
+   "letters": "UTA",
+   "note": "",
+   "english": "",
+   "status": "printed",
+   "number": "14"
+  },
+  {
+   "page": 209,
+   "letters": "OXO",
+   "note": "",
+   "english": "",
+   "status": "printed",
+   "number": "15"
+  },
+  {
+   "page": 209,
+   "letters": "LEA",
+   "note": "",
+   "english": "",
+   "status": "printed",
+   "number": "16"
+  },
+  {
+   "page": 209,
+   "letters": "TAN",
+   "note": "",
+   "english": "",
+   "status": "printed",
+   "number": "17"
+  },
+  {
+   "page": 209,
+   "letters": "ZEN",
+   "note": "",
+   "english": "",
+   "status": "printed",
+   "number": "18"
+  },
+  {
+   "page": 209,
+   "letters": "POP",
+   "note": "",
+   "english": "",
+   "status": "printed",
+   "number": "19"
+  },
+  {
+   "page": 209,
+   "letters": "CHR",
+   "note": "kar in palato very much. ....",
+   "english": "",
+   "status": "printed",
+   "number": "20"
+  },
+  {
+   "page": 209,
+   "letters": "ASP",
+   "note": "",
+   "english": "",
+   "status": "printed",
+   "number": "21"
+  },
+  {
+   "page": 209,
+   "letters": "LIN",
+   "note": "",
+   "english": "",
+   "status": "printed",
+   "number": "22"
+  },
+  {
+   "page": 209,
+   "letters": "TOR",
+   "note": "",
+   "english": "",
+   "status": "printed",
+   "number": "23"
+  },
+  {
+   "page": 209,
+   "letters": "NIA",
+   "note": "",
+   "english": "",
+   "status": "printed",
+   "number": "24"
+  },
+  {
+   "page": 209,
+   "letters": "UTI",
+   "note": "",
+   "english": "",
+   "status": "printed",
+   "number": "25"
+  },
+  {
+   "page": 209,
+   "letters": "DES",
+   "note": "",
+   "english": "",
+   "status": "printed",
+   "number": "26"
+  },
+  {
+   "page": 209,
+   "letters": "ZAA",
+   "note": "",
+   "english": "",
+   "status": "printed",
+   "number": "27"
+  },
+  {
+   "page": 209,
+   "letters": "BAG",
+   "note": "",
+   "english": "",
+   "status": "printed",
+   "number": "28"
+  },
+  {
+   "page": 209,
+   "letters": "RII",
+   "note": "",
+   "english": "",
+   "status": "printed",
+   "number": "29"
+  },
+  {
+   "page": 209,
+   "letters": "TEX",
+   "note": "",
+   "english": "",
+   "status": "printed",
+   "number": "30"
+  }
+ ]
+}

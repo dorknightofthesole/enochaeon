@@ -1,0 +1,379 @@
+{
+ "call": 14,
+ "printing": "Meric Casaubon, A True & Faithful Relation (London, 1659)",
+ "pages": "not printed; p. 193 for the ending",
+ "direction": "forward",
+ "notes": [
+  "The 1659 printing does not have the words of this call. p. 200 lists its first words as 'No Romi.' and pp. 193 and 194 give its English. The words here are the ones the call file had before and have no source."
+ ],
+ "words": [
+  {
+   "page": null,
+   "letters": "NOROMI",
+   "note": "",
+   "english": "",
+   "status": "not_printed",
+   "remark": "The 1659 printing does not have this call. p. 200 lists its first words as 'No Romi.'."
+  },
+  {
+   "page": null,
+   "letters": "BAGIE",
+   "note": "",
+   "english": "",
+   "status": "not_printed",
+   "remark": "The 1659 printing does not have this call."
+  },
+  {
+   "page": null,
+   "letters": "PASBS",
+   "note": "",
+   "english": "",
+   "status": "not_printed",
+   "remark": "The 1659 printing does not have this call."
+  },
+  {
+   "page": null,
+   "letters": "OIAD",
+   "note": "",
+   "english": "",
+   "status": "not_printed",
+   "remark": "The 1659 printing does not have this call."
+  },
+  {
+   "page": null,
+   "letters": "DS",
+   "note": "",
+   "english": "",
+   "status": "not_printed",
+   "remark": "The 1659 printing does not have this call."
+  },
+  {
+   "page": null,
+   "letters": "TRINT",
+   "note": "",
+   "english": "",
+   "status": "not_printed",
+   "remark": "The 1659 printing does not have this call."
+  },
+  {
+   "page": null,
+   "letters": "MIRC",
+   "note": "",
+   "english": "",
+   "status": "not_printed",
+   "remark": "The 1659 printing does not have this call."
+  },
+  {
+   "page": null,
+   "letters": "OL",
+   "note": "",
+   "english": "",
+   "status": "not_printed",
+   "remark": "The 1659 printing does not have this call."
+  },
+  {
+   "page": null,
+   "letters": "THIL",
+   "note": "",
+   "english": "",
+   "status": "not_printed",
+   "remark": "The 1659 printing does not have this call."
+  },
+  {
+   "page": null,
+   "letters": "DODS",
+   "note": "",
+   "english": "",
+   "status": "not_printed",
+   "remark": "The 1659 printing does not have this call."
+  },
+  {
+   "page": null,
+   "letters": "TOLHAM",
+   "note": "",
+   "english": "",
+   "status": "not_printed",
+   "remark": "The 1659 printing does not have this call."
+  },
+  {
+   "page": null,
+   "letters": "CAOSGO",
+   "note": "",
+   "english": "",
+   "status": "not_printed",
+   "remark": "The 1659 printing does not have this call."
+  },
+  {
+   "page": null,
+   "letters": "HOMIN",
+   "note": "",
+   "english": "",
+   "status": "not_printed",
+   "remark": "The 1659 printing does not have this call."
+  },
+  {
+   "page": null,
+   "letters": "DS",
+   "note": "",
+   "english": "",
+   "status": "not_printed",
+   "remark": "The 1659 printing does not have this call."
+  },
+  {
+   "page": null,
+   "letters": "BRIN",
+   "note": "",
+   "english": "",
+   "status": "not_printed",
+   "remark": "The 1659 printing does not have this call."
+  },
+  {
+   "page": null,
+   "letters": "OROCH",
+   "note": "",
+   "english": "",
+   "status": "not_printed",
+   "remark": "The 1659 printing does not have this call."
+  },
+  {
+   "page": null,
+   "letters": "QUAR",
+   "note": "",
+   "english": "",
+   "status": "not_printed",
+   "remark": "The 1659 printing does not have this call."
+  },
+  {
+   "page": null,
+   "letters": "MICMA",
+   "note": "",
+   "english": "",
+   "status": "not_printed",
+   "remark": "The 1659 printing does not have this call."
+  },
+  {
+   "page": null,
+   "letters": "BIAL",
+   "note": "",
+   "english": "",
+   "status": "not_printed",
+   "remark": "The 1659 printing does not have this call."
+  },
+  {
+   "page": null,
+   "letters": "OIAD",
+   "note": "",
+   "english": "",
+   "status": "not_printed",
+   "remark": "The 1659 printing does not have this call."
+  },
+  {
+   "page": null,
+   "letters": "AISRO",
+   "note": "",
+   "english": "",
+   "status": "not_printed",
+   "remark": "The 1659 printing does not have this call."
+  },
+  {
+   "page": null,
+   "letters": "TOX",
+   "note": "",
+   "english": "",
+   "status": "not_printed",
+   "remark": "The 1659 printing does not have this call."
+  },
+  {
+   "page": null,
+   "letters": "DSIVM",
+   "note": "",
+   "english": "",
+   "status": "not_printed",
+   "remark": "The 1659 printing does not have this call."
+  },
+  {
+   "page": null,
+   "letters": "AAI",
+   "note": "",
+   "english": "",
+   "status": "not_printed",
+   "remark": "The 1659 printing does not have this call."
+  },
+  {
+   "page": null,
+   "letters": "BALTIM",
+   "note": "",
+   "english": "",
+   "status": "not_printed",
+   "remark": "The 1659 printing does not have this call."
+  },
+  {
+   "page": 193,
+   "letters": "ZACARE",
+   "note": "",
+   "english": "",
+   "status": "corrected",
+   "repeat_of": {
+    "call": 1,
+    "word": 73
+   },
+   "remark": "Not spelled here. The journal says 'Move, as before.' (p. 193); the word is taken from the end of Call 1."
+  },
+  {
+   "page": 193,
+   "letters": "CA",
+   "note": "",
+   "english": "",
+   "status": "printed",
+   "repeat_of": {
+    "call": 1,
+    "word": 74
+   },
+   "remark": "Not spelled here. The journal says 'Move, as before.' (p. 193); the word is taken from the end of Call 1."
+  },
+  {
+   "page": 193,
+   "letters": "OD",
+   "note": "",
+   "english": "",
+   "status": "conflict",
+   "repeat_of": {
+    "call": 1,
+    "word": 75
+   },
+   "remark": "Not spelled here. The journal says 'Move, as before.' (p. 193); the word is taken from the end of Call 1."
+  },
+  {
+   "page": 193,
+   "letters": "ZAMRAN",
+   "note": "",
+   "english": "",
+   "status": "corrected",
+   "repeat_of": {
+    "call": 1,
+    "word": 76
+   },
+   "remark": "Not spelled here. The journal says 'Move, as before.' (p. 193); the word is taken from the end of Call 1."
+  },
+  {
+   "page": 193,
+   "letters": "ODO",
+   "note": "",
+   "english": "",
+   "status": "printed",
+   "repeat_of": {
+    "call": 1,
+    "word": 77
+   },
+   "remark": "Not spelled here. The journal says 'Move, as before.' (p. 193); the word is taken from the end of Call 1."
+  },
+  {
+   "page": 193,
+   "letters": "CICLE",
+   "note": "",
+   "english": "",
+   "status": "printed",
+   "repeat_of": {
+    "call": 1,
+    "word": 78
+   },
+   "remark": "Not spelled here. The journal says 'Move, as before.' (p. 193); the word is taken from the end of Call 1."
+  },
+  {
+   "page": 193,
+   "letters": "QAA",
+   "note": "",
+   "english": "",
+   "status": "printed",
+   "repeat_of": {
+    "call": 1,
+    "word": 79
+   },
+   "remark": "Not spelled here. The journal says 'Move, as before.' (p. 193); the word is taken from the end of Call 1."
+  },
+  {
+   "page": 193,
+   "letters": "ZORGE",
+   "note": "",
+   "english": "",
+   "status": "printed",
+   "repeat_of": {
+    "call": 1,
+    "word": 80
+   },
+   "remark": "Not spelled here. The journal says 'Move, as before.' (p. 193); the word is taken from the end of Call 1."
+  },
+  {
+   "page": 193,
+   "letters": "LAP",
+   "note": "",
+   "english": "",
+   "status": "printed",
+   "repeat_of": {
+    "call": 1,
+    "word": 81
+   },
+   "remark": "Not spelled here. The journal says 'Move, as before.' (p. 193); the word is taken from the end of Call 1."
+  },
+  {
+   "page": 193,
+   "letters": "ZIRDO",
+   "note": "",
+   "english": "",
+   "status": "from_note",
+   "repeat_of": {
+    "call": 1,
+    "word": 82
+   },
+   "remark": "Not spelled here. The journal says 'Move, as before.' (p. 193); the word is taken from the end of Call 1."
+  },
+  {
+   "page": 193,
+   "letters": "NOCO",
+   "note": "",
+   "english": "",
+   "status": "printed",
+   "repeat_of": {
+    "call": 1,
+    "word": 83
+   },
+   "remark": "Not spelled here. The journal says 'Move, as before.' (p. 193); the word is taken from the end of Call 1."
+  },
+  {
+   "page": 193,
+   "letters": "MAD",
+   "note": "",
+   "english": "",
+   "status": "printed",
+   "repeat_of": {
+    "call": 1,
+    "word": 84
+   },
+   "remark": "Not spelled here. The journal says 'Move, as before.' (p. 193); the word is taken from the end of Call 1."
+  },
+  {
+   "page": 193,
+   "letters": "HOATH",
+   "note": "",
+   "english": "",
+   "status": "printed",
+   "repeat_of": {
+    "call": 1,
+    "word": 85
+   },
+   "remark": "Not spelled here. The journal says 'Move, as before.' (p. 193); the word is taken from the end of Call 1."
+  },
+  {
+   "page": 193,
+   "letters": "IAIDA",
+   "note": "",
+   "english": "",
+   "status": "printed",
+   "repeat_of": {
+    "call": 1,
+    "word": 86
+   },
+   "remark": "Not spelled here. The journal says 'Move, as before.' (p. 193); the word is taken from the end of Call 1."
+  }
+ ]
+}

@@ -1,0 +1,345 @@
+{
+ "call": 17,
+ "printing": "Meric Casaubon, A True & Faithful Relation (London, 1659)",
+ "pages": "pp. 135 to 137, and p. 194",
+ "direction": "forward",
+ "notes": [
+  "On pp. 134 to 137 the printing runs pieces of several calls together. The pieces are put under their calls here by the first words Dee lists on p. 200, by his margin notes against the English on pp. 193 and 194, and by the order of the English there. The printing itself does not mark where each piece belongs.",
+  "ILS and DIALPERT are printed on p. 136 after 'That is the Twelfth'. SOBA to YLSI are printed on p. 135. SOBAIAD to TOATAR are printed on p. 137 before 'That is the thirteenth'."
+ ],
+ "words": [
+  {
+   "page": 136,
+   "letters": "ILS",
+   "note": "ILS.",
+   "english": "",
+   "status": "from_note",
+   "row": 804,
+   "remark": "The letter column prints '........'. The missing letters are read from the note.",
+   "column": "........"
+  },
+  {
+   "page": 136,
+   "letters": "DIALPERT",
+   "note": "Di alpert.",
+   "english": "",
+   "status": "from_note",
+   "row": 805,
+   "remark": "The letter column prints '................'. The missing letters are read from the note.",
+   "column": "................"
+  },
+  {
+   "page": 135,
+   "letters": "SOBA",
+   "note": "So ba.",
+   "english": "",
+   "status": "printed",
+   "row": 769
+  },
+  {
+   "page": 135,
+   "letters": "VPAAH",
+   "note": "Vpa ah.",
+   "english": "",
+   "status": "printed",
+   "row": 770
+  },
+  {
+   "page": 135,
+   "letters": "CHIS",
+   "note": "Chis.",
+   "english": "",
+   "status": "printed",
+   "row": 771
+  },
+  {
+   "page": 135,
+   "letters": "NANBA",
+   "note": "Nan ba.",
+   "english": "",
+   "status": "printed",
+   "row": 772
+  },
+  {
+   "page": 135,
+   "letters": "ZIXLAY",
+   "note": "Zix lay.",
+   "english": "",
+   "status": "printed",
+   "row": 773
+  },
+  {
+   "page": 135,
+   "letters": "DODSIH",
+   "note": "Dod sih.",
+   "english": "",
+   "status": "printed",
+   "row": 774
+  },
+  {
+   "page": 135,
+   "letters": "ODBRINT",
+   "note": "Od brint.",
+   "english": "",
+   "status": "printed",
+   "row": 775
+  },
+  {
+   "page": 135,
+   "letters": "TAXS",
+   "note": "Taxs.; [margin, p. 194: Faxs — Faxes or Faxis to be sounded. I find in the Call Taxs. I finde also in some words T or F indifferently used.]",
+   "english": "",
+   "status": "printed",
+   "row": 776
+  },
+  {
+   "page": 135,
+   "letters": "HUBARO",
+   "note": "Hu ba ro.",
+   "english": "",
+   "status": "from_note",
+   "row": 777,
+   "column": "H.....",
+   "read_from": "page image, Internet Archive scan truefaithfulrela00deej",
+   "remark": "The letter column prints 'H.....'. The keyers could not read the middle of the note; the page image has 'Hu ba ro.'"
+  },
+  {
+   "page": 135,
+   "letters": "TASTAX",
+   "note": "Tas tax.",
+   "english": "",
+   "status": "from_note",
+   "row": 778,
+   "remark": "The letter column prints 'TAST..'. The missing letters are read from the note.",
+   "column": "TAST.."
+  },
+  {
+   "page": 135,
+   "letters": "YLSI",
+   "note": "Yl si.",
+   "english": "",
+   "status": "from_note",
+   "row": 779,
+   "remark": "The letter column prints 'YL..'. The missing letters are read from the note.",
+   "column": "YL.."
+  },
+  {
+   "page": 137,
+   "letters": "SOBAIAD",
+   "note": "So bai ad.",
+   "english": "",
+   "status": "printed",
+   "row": 820
+  },
+  {
+   "page": 137,
+   "letters": "IVONPOVNPH",
+   "note": "I von po vnph.",
+   "english": "",
+   "status": "printed",
+   "row": 821
+  },
+  {
+   "page": 137,
+   "letters": "ALDON",
+   "note": "Al don.",
+   "english": "",
+   "status": "from_note",
+   "row": 822,
+   "remark": "The letter column prints 'AL. ON'. The missing letters are read from the note.",
+   "column": "AL. ON"
+  },
+  {
+   "page": 137,
+   "letters": "DAXIL",
+   "note": "Dax il.",
+   "english": "",
+   "status": "printed",
+   "row": 823
+  },
+  {
+   "page": 137,
+   "letters": "OD",
+   "note": "Od.",
+   "english": "",
+   "status": "printed",
+   "row": 824
+  },
+  {
+   "page": 137,
+   "letters": "TOATAR",
+   "note": "To a tar.",
+   "english": "",
+   "status": "printed",
+   "row": 825
+  },
+  {
+   "page": 194,
+   "letters": "ZACARE",
+   "note": "",
+   "english": "",
+   "status": "corrected",
+   "repeat_of": {
+    "call": 1,
+    "word": 73
+   },
+   "remark": "Not spelled here. The journal says 'Move, as before, &c.' (p. 194); the word is taken from the end of Call 1."
+  },
+  {
+   "page": 194,
+   "letters": "CA",
+   "note": "",
+   "english": "",
+   "status": "printed",
+   "repeat_of": {
+    "call": 1,
+    "word": 74
+   },
+   "remark": "Not spelled here. The journal says 'Move, as before, &c.' (p. 194); the word is taken from the end of Call 1."
+  },
+  {
+   "page": 194,
+   "letters": "OD",
+   "note": "",
+   "english": "",
+   "status": "conflict",
+   "repeat_of": {
+    "call": 1,
+    "word": 75
+   },
+   "remark": "Not spelled here. The journal says 'Move, as before, &c.' (p. 194); the word is taken from the end of Call 1."
+  },
+  {
+   "page": 194,
+   "letters": "ZAMRAN",
+   "note": "",
+   "english": "",
+   "status": "corrected",
+   "repeat_of": {
+    "call": 1,
+    "word": 76
+   },
+   "remark": "Not spelled here. The journal says 'Move, as before, &c.' (p. 194); the word is taken from the end of Call 1."
+  },
+  {
+   "page": 194,
+   "letters": "ODO",
+   "note": "",
+   "english": "",
+   "status": "printed",
+   "repeat_of": {
+    "call": 1,
+    "word": 77
+   },
+   "remark": "Not spelled here. The journal says 'Move, as before, &c.' (p. 194); the word is taken from the end of Call 1."
+  },
+  {
+   "page": 194,
+   "letters": "CICLE",
+   "note": "",
+   "english": "",
+   "status": "printed",
+   "repeat_of": {
+    "call": 1,
+    "word": 78
+   },
+   "remark": "Not spelled here. The journal says 'Move, as before, &c.' (p. 194); the word is taken from the end of Call 1."
+  },
+  {
+   "page": 194,
+   "letters": "QAA",
+   "note": "",
+   "english": "",
+   "status": "printed",
+   "repeat_of": {
+    "call": 1,
+    "word": 79
+   },
+   "remark": "Not spelled here. The journal says 'Move, as before, &c.' (p. 194); the word is taken from the end of Call 1."
+  },
+  {
+   "page": 194,
+   "letters": "ZORGE",
+   "note": "",
+   "english": "",
+   "status": "printed",
+   "repeat_of": {
+    "call": 1,
+    "word": 80
+   },
+   "remark": "Not spelled here. The journal says 'Move, as before, &c.' (p. 194); the word is taken from the end of Call 1."
+  },
+  {
+   "page": 194,
+   "letters": "LAP",
+   "note": "",
+   "english": "",
+   "status": "printed",
+   "repeat_of": {
+    "call": 1,
+    "word": 81
+   },
+   "remark": "Not spelled here. The journal says 'Move, as before, &c.' (p. 194); the word is taken from the end of Call 1."
+  },
+  {
+   "page": 194,
+   "letters": "ZIRDO",
+   "note": "",
+   "english": "",
+   "status": "from_note",
+   "repeat_of": {
+    "call": 1,
+    "word": 82
+   },
+   "remark": "Not spelled here. The journal says 'Move, as before, &c.' (p. 194); the word is taken from the end of Call 1."
+  },
+  {
+   "page": 194,
+   "letters": "NOCO",
+   "note": "",
+   "english": "",
+   "status": "printed",
+   "repeat_of": {
+    "call": 1,
+    "word": 83
+   },
+   "remark": "Not spelled here. The journal says 'Move, as before, &c.' (p. 194); the word is taken from the end of Call 1."
+  },
+  {
+   "page": 194,
+   "letters": "MAD",
+   "note": "",
+   "english": "",
+   "status": "printed",
+   "repeat_of": {
+    "call": 1,
+    "word": 84
+   },
+   "remark": "Not spelled here. The journal says 'Move, as before, &c.' (p. 194); the word is taken from the end of Call 1."
+  },
+  {
+   "page": 194,
+   "letters": "HOATH",
+   "note": "",
+   "english": "",
+   "status": "printed",
+   "repeat_of": {
+    "call": 1,
+    "word": 85
+   },
+   "remark": "Not spelled here. The journal says 'Move, as before, &c.' (p. 194); the word is taken from the end of Call 1."
+  },
+  {
+   "page": 194,
+   "letters": "IAIDA",
+   "note": "",
+   "english": "",
+   "status": "printed",
+   "repeat_of": {
+    "call": 1,
+    "word": 86
+   },
+   "remark": "Not spelled here. The journal says 'Move, as before, &c.' (p. 194); the word is taken from the end of Call 1."
+  }
+ ]
+}

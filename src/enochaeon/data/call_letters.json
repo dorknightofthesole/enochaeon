@@ -1,0 +1,32 @@
+{
+  "about": "The letter rule of the Calls: the sound each of Dee's Latin letters is given when a first dee_ipa is made for a new spelling. The speech code does not read this. It reads calls/lexicon.json. The sounds are espeak phonemes. phone is the sound in a word, long is a vowel left open, and name is the letter-name used for a spelling with no vowel. A letter with long is a vowel. initial_before_vowel is the letter that stands for another at the start of a word when a vowel follows: Dee wrote 'Iad, as Yad'. This is not the English cipher key, which is alphabet.json.",
+  "initial_before_vowel": {"I": "Y"},
+  "letters": [
+    {"latin": "A", "phone": "a", "name": "A:", "long": "A:"},
+    {"latin": "E", "phone": "E", "name": "eI", "long": "eI"},
+    {"latin": "I", "phone": "I", "name": "i:", "long": "i:"},
+    {"latin": "J", "phone": "I", "name": "i:", "long": "i:"},
+    {"latin": "O", "phone": "Q", "name": "oU", "long": "oU"},
+    {"latin": "U", "phone": "U", "name": "u:", "long": "u:"},
+    {"latin": "B", "phone": "b", "name": "b'i:"},
+    {"latin": "C", "phone": "k", "name": "k'i:"},
+    {"latin": "D", "phone": "d", "name": "d'i:"},
+    {"latin": "F", "phone": "f", "name": "'Ef"},
+    {"latin": "G", "phone": "g", "name": "g'i:"},
+    {"latin": "H", "phone": "h", "name": "h'eI"},
+    {"latin": "K", "phone": "k", "name": "k'eI"},
+    {"latin": "L", "phone": "l", "name": "'El"},
+    {"latin": "M", "phone": "m", "name": "'Em"},
+    {"latin": "N", "phone": "n", "name": "'En"},
+    {"latin": "P", "phone": "p", "name": "p'i:"},
+    {"latin": "Q", "phone": "kw", "name": "kw'A:"},
+    {"latin": "R", "phone": "r", "name": "'Ar"},
+    {"latin": "S", "phone": "s", "name": "'Es"},
+    {"latin": "T", "phone": "t", "name": "t'i:"},
+    {"latin": "V", "phone": "v", "name": "v'i:"},
+    {"latin": "W", "phone": "w", "name": "w'i:"},
+    {"latin": "X", "phone": "ks", "name": "'Eks"},
+    {"latin": "Y", "phone": "j", "name": "j'i:"},
+    {"latin": "Z", "phone": "z", "name": "z'i:"}
+  ]
+}

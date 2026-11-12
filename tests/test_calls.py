@@ -2,8 +2,11 @@
 
 from __future__ import annotations
 
+import json
+import re
 import tempfile
 import unittest
+from dataclasses import replace
 from pathlib import Path
 
 import numpy as np
@@ -13,10 +16,10 @@ from enochaeon.audio import WORD_MS
 from enochaeon.config import CallVoice, load_call_voice
 from enochaeon.enochian import call_files, call_gaps, parse, phonetic_text, render
 from enochaeon.errors import EnochaeonError
-from enochaeon.piper_voice import ipa_of
+from enochaeon.piper_voice import _word_ipa, ipa_of
 from enochaeon.roots import load_readings
 from enochaeon.synthesize import speak
-from enochaeon.word_ipa import espeak_phones, piper_phones
+from enochaeon.word_ipa import as_written, espeak_phones, piper_phones
 
 
 class CallPronunciationTest(unittest.TestCase):
@@ -43,6 +46,28 @@ class CallPronunciationTest(unittest.TestCase):
         self.assertEqual(load_readings("dee_ipa")["balzizras"], "/b.æ.l.z.ɪ.z.r.æ.s/")
         self.assertTrue(np.array_equal(render("Iad", readings={"iad": "/jɑːd/"}), speak("j A: d")))
         self.assertTrue(np.array_equal(render("Iad"), speak("j a d")))
+
+    def test_a_voice_with_its_own_lexicon_field_is_given_it_as_written(self) -> None:
+        word = parse("Iad")[0]
+        own = CallVoice(engine="piper", piper_ipa="some_field", word_end=".")
+        # Nothing is added but the end mark the config gives.
+        self.assertEqual(_word_ipa(word, {"iad": "/jˈaːd/"}, own), "jˈaːd.")
+        self.assertEqual(_word_ipa(word, {"iad": "/jæd/"}, replace(own, word_end="")), "jæd")
+        with self.assertRaises(EnochaeonError):
+            _word_ipa(word, {"iad": "jˈaːd"}, own)
+        # With no field of its own, Piper is given the reading turned into its letters.
+        self.assertEqual(_word_ipa(word, {"iad": "/j.æ.d/"}, CallVoice(engine="piper")), "jæd")
+
+    def test_the_shipped_voice_field_has_every_call_spelling(self) -> None:
+        root = Path(__file__).resolve().parents[1]
+        voice = load_call_voice(root / "enochaeon.json")
+        self.assertTrue(voice.piper_ipa)
+        own = load_readings(voice.piper_ipa, root / "calls")
+        self.assertEqual(set(own), set(load_readings("dee_ipa", root / "calls")))
+        for reading in own.values():
+            as_written(reading)
+        # The one string that was judged by ear.
+        self.assertEqual(own["iad"], "/jˈaːd/")
 
     def test_a_leading_i_before_a_vowel_is_y(self) -> None:
         # Dee read Iad as Yad. The A is closed by D, so it stays short.
@@ -91,6 +116,19 @@ class CallPronunciationTest(unittest.TestCase):
             with self.assertRaises(EnochaeonError):
                 load_call_voice(path)
 
+    def test_the_config_names_the_lexicon_field_and_the_word_end(self) -> None:
+        self.assertEqual(CallVoice().piper_ipa, "")
+        self.assertEqual(CallVoice().word_end, "")
+        with tempfile.TemporaryDirectory() as directory:
+            path = Path(directory) / "enochaeon.json"
+            path.write_text('{"calls": {"piper": {"ipa": "for_a_voice", "word_end": "."}}}\n', encoding="utf-8")
+            voice = load_call_voice(path)
+            self.assertEqual((voice.piper_ipa, voice.word_end), ("for_a_voice", "."))
+            for wrong in ('{"ipa": "dee_ipa"}', '{"ipa": 3}', '{"word_end": 3}'):
+                path.write_text('{"calls": {"piper": %s}}\n' % wrong, encoding="utf-8")
+                with self.assertRaises(EnochaeonError):
+                    load_call_voice(path)
+
     def test_the_call_voice_defaults_to_espeak(self) -> None:
         missing = Path("/no/such/enochaeon.json")
         voice = load_call_voice(missing)
@@ -125,6 +163,39 @@ class CallPronunciationTest(unittest.TestCase):
         self.assertEqual(lil.replace("LIL", "TEX"), tex)
         for path in files:
             parse(path.read_text(encoding="utf-8"))
+
+    def test_every_call_file_has_the_words_of_its_sloane_record(self) -> None:
+        # This checks the files against calls/sloane/, and that each word there
+        # points at journal words that exist in calls/journal/. It does not
+        # check the reading in calls/sloane/ against Dee's manuscript.
+        root = Path(__file__).resolve().parents[1] / "calls"
+
+        def words_of(path: Path) -> list[str]:
+            return [word.lower() for word in re.findall(r"[A-Za-z]+", path.read_text(encoding="utf-8"))]
+
+        def record(folder: str, stem: str) -> dict:
+            return json.loads((root / folder / f"{stem}.json").read_text(encoding="utf-8"))
+
+        def check(entries: list[dict], journal: list[dict]) -> list[str]:
+            for entry in entries:
+                self.assertIn(entry["status"], {"read", "unsure"})
+                for number in entry["journal"]:
+                    self.assertTrue(1 <= number <= len(journal))
+            return [entry["letters"].lower() for entry in entries]
+
+        for number in range(1, 19):
+            stem = f"{number:02d}"
+            words = check(record("sloane", stem)["words"], record("journal", stem)["words"])
+            self.assertEqual(words_of(root / f"{stem}.txt"), words)
+        aethyrs = record("sloane", "aethyrs")
+        journal = record("journal", "aethyrs")
+        words = check(aethyrs["words"], journal["words"])
+        names = check(aethyrs["names"], journal["names"])
+        self.assertEqual(len(names), 30)
+        for index, name in enumerate(names):
+            expected = list(words)
+            expected[aethyrs["name_word"]] = name
+            self.assertEqual(words_of(root / f"{19 + index}-{name}.txt"), expected)
 
     def test_calls_command_writes_one_wav_per_file(self) -> None:
         import shutil

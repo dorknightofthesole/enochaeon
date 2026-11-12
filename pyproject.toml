@@ -29,6 +29,7 @@ where = ["src"]
 [tool.setuptools.package-data]
 enochaeon = [
   "data/alphabet.json",
+  "data/call_letters.json",
   "data/words.txt",
   "data/SCOWL-Copyright.txt",
   "data/enochian.ttf",

@@ -3,13 +3,14 @@
 from __future__ import annotations
 
 import base64
+import json
 import tempfile
 import unittest
 from pathlib import Path
 
 from enochaeon.audio import read_comment
 from enochaeon.config import CallVoice
-from enochaeon.enochian import call_files, letter_ipa, phonetic_text
+from enochaeon.enochian import call_files
 from enochaeon.errors import EnochaeonError
 from enochaeon.roots import Root, load_readings, load_roots
 from enochaeon.word_ipa import espeak_phones
@@ -50,19 +51,20 @@ class DictionaryTest(unittest.TestCase):
     def test_every_call_word_is_inventoried(self) -> None:
         folder = Path(__file__).resolve().parents[1] / "calls"
         roots = {root.spelling: root for root in load_roots(folder)}
+        entries = json.loads((folder / "lexicon.json").read_text(encoding="utf-8"))
+        dee = load_readings("dee_ipa", folder)
+        self.assertEqual(load_readings("golden_dawn_ipa", folder), {})
+        # Every spelling has a Dee reading stored under its own name, and a call word has an entry.
+        stored = {name.lower(): reading for entry in entries for name, reading in entry["dee_ipa"].items()}
+        self.assertEqual(dee, stored)
+        self.assertEqual(set(dee), set(roots))
         for path in call_files(folder):
             for word in path.read_text(encoding="utf-8").split():
                 spelling = "".join(character for character in word.lower() if character.isalpha())
-                if not spelling:
-                    continue
-                self.assertIn(spelling, roots)
-                self.assertEqual(roots[spelling].phones, phonetic_text(spelling).strip())
-        dee = load_readings("dee_ipa", folder)
-        self.assertEqual(load_readings("golden_dawn_ipa", folder), {})
+                if spelling:
+                    self.assertIn(spelling, dee)
         for spelling, root in roots.items():
-            self.assertEqual(dee[spelling], letter_ipa(spelling))
-            spoken = espeak_phones(dee[spelling]).replace(" ", "")
-            self.assertEqual(spoken, root.phones.replace(" ", ""))
+            self.assertEqual(root.phones, espeak_phones(dee[spelling]))
         self.assertEqual(roots["balt"].glosses, ("justice", "righteousness", "judgment"))
         self.assertEqual(roots["iad"].glosses, ("god", "the divine"))
         self.assertEqual(roots["iad"].pos, "noun")
@@ -86,6 +88,29 @@ class DictionaryTest(unittest.TestCase):
             glosses = {item.spelling: item.glosses for item in load_roots(root)}
             self.assertEqual(glosses["balt"], ("justice", "fairness"))
             self.assertEqual(glosses["baltoh"], ("justice", "fairness"))
+
+    def test_a_reading_is_what_the_lexicon_has_and_nothing_is_worked_out(self) -> None:
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            (root / "01.txt").write_text("Ich ichs ol.\n", encoding="utf-8")
+            ich = {"root": "ICH", "variants": ["ICH", "ICHS"], "english_glosses": [], "dee_says": "ik"}
+            other = {"root": "OL", "variants": ["OL"], "english_glosses": []}
+            listed = [{**ich, "dee_ipa": {"ICH": "/z.z/"}, "whole_entry": "/one/"}, other]
+            (root / "lexicon.json").write_text(json.dumps(listed), encoding="utf-8")
+            # The string is not checked against the letter rule or against dee_says.
+            # A spelling with no string has no reading: none is made from its letters.
+            self.assertEqual(load_readings("dee_ipa", root), {"ich": "/z.z/"})
+            phones = {item.spelling: item.phones for item in load_roots(root)}
+            self.assertEqual(phones["ich"], "z z")
+            self.assertEqual(phones["ichs"], "")
+            self.assertEqual(phones["ol"], "")
+            # A field that is one string is the reading of every spelling of the entry.
+            self.assertEqual(load_readings("whole_entry", root), {"ich": "/one/", "ichs": "/one/"})
+            self.assertEqual(load_readings("no_such_field", root), {})
+            for wrong in (["/anything/"], {"SONF": "/anything/"}, {"ICH": ""}, {"ICH": 3}):
+                (root / "lexicon.json").write_text(json.dumps([{**ich, "dee_ipa": wrong}]), encoding="utf-8")
+                with self.assertRaises(EnochaeonError):
+                    load_readings("dee_ipa", root)
 
     def test_a_missing_dictionary_is_an_error(self) -> None:
         with tempfile.TemporaryDirectory() as directory:

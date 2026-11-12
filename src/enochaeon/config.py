@@ -22,6 +22,10 @@ class CallVoice:
     length_scale: float = 1.6
     piper_voice: str = ""
     word_ms: int | None = None
+    # The lexicon field written for this Piper voice. Empty: Piper is given ipa, turned into its letters.
+    piper_ipa: str = ""
+    # What ends each word given to Piper. Empty: nothing.
+    word_end: str = ""
 
     def chosen(self, engine: str | None) -> CallVoice:
         """The voice for one run. A command-line engine replaces the file."""
@@ -46,6 +50,8 @@ def load_call_voice(path: Path | None = None) -> CallVoice:
         scale = float(piper.get("length_scale", 1.6))
         voice = str(piper.get("voice", ""))
         word_ms = _word_ms(piper.get("word_ms"))
+        piper_ipa = _text(piper.get("ipa"), "calls.piper.ipa")
+        word_end = _text(piper.get("word_end"), "calls.piper.word_end")
     except (OSError, json.JSONDecodeError, TypeError, ValueError, AttributeError) as exc:
         raise EnochaeonError(f"{source} is not a Calls config. {exc}") from exc
     if engine not in ENGINES:
@@ -56,7 +62,26 @@ def load_call_voice(path: Path | None = None) -> CallVoice:
         raise EnochaeonError(f"{source} calls.piper.length_scale must be positive, not {scale}.")
     if word_ms is not None and word_ms <= 0:
         raise EnochaeonError(f"{source} calls.piper.word_ms must be positive, not {word_ms}.")
-    return CallVoice(engine=engine, ipa=ipa, length_scale=scale, piper_voice=voice, word_ms=word_ms)
+    if piper_ipa in READINGS:
+        raise EnochaeonError(f"{source} calls.piper.ipa names a field written for the voice, not {piper_ipa}.")
+    return CallVoice(
+        engine=engine,
+        ipa=ipa,
+        length_scale=scale,
+        piper_voice=voice,
+        word_ms=word_ms,
+        piper_ipa=piper_ipa,
+        word_end=word_end,
+    )
+
+
+def _text(value: object, name: str) -> str:
+    """A setting that is text, or empty when the config leaves it unset."""
+    if value is None:
+        return ""
+    if not isinstance(value, str):
+        raise ValueError(f"{name} must be text, not {value!r}")
+    return value.strip()
 
 
 def _word_ms(value: object) -> int | None:

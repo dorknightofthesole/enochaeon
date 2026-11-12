@@ -1,0 +1,332 @@
+{
+ "call": 12,
+ "printing": "Meric Casaubon, A True & Faithful Relation (London, 1659)",
+ "pages": "pp. 134 to 136, and p. 193",
+ "direction": "forward",
+ "notes": [
+  "On pp. 134 to 137 the printing runs pieces of several calls together. The pieces are put under their calls here by the first words Dee lists on p. 200, by his margin notes against the English on pp. 193 and 194, and by the order of the English there. The printing itself does not mark where each piece belongs.",
+  "The six words ZACAR to QAA are printed on p. 136 after 'That is the Twelfth' and are followed by 'That is a call'.",
+  "p. 193: 'Here must words in the end of the first Call, follow at Move, &c.' and 'But this Call, it differeth a little expresly.' The printing spells the ending as far as QAA; the seven words after QAA are those of Call 1."
+ ],
+ "words": [
+  {
+   "page": 134,
+   "letters": "NONCI",
+   "note": "Non ci, si.",
+   "english": "",
+   "status": "printed",
+   "row": 747
+  },
+  {
+   "page": 134,
+   "letters": "DSONF",
+   "note": "Dsonf.",
+   "english": "",
+   "status": "printed",
+   "row": 748
+  },
+  {
+   "page": 134,
+   "letters": "BABAGE",
+   "note": "Ba ba ge.",
+   "english": "",
+   "status": "printed",
+   "row": 749
+  },
+  {
+   "page": 134,
+   "letters": "OD",
+   "note": "Od.",
+   "english": "",
+   "status": "printed",
+   "row": 750
+  },
+  {
+   "page": 134,
+   "letters": "CHIS",
+   "note": "Chis.",
+   "english": "",
+   "status": "printed",
+   "row": 751
+  },
+  {
+   "page": 134,
+   "letters": "OB",
+   "note": "Ob.",
+   "english": "",
+   "status": "printed",
+   "row": 752
+  },
+  {
+   "page": 134,
+   "letters": "HUBAIO",
+   "note": "Hu bá i o.",
+   "english": "",
+   "status": "printed",
+   "row": 753
+  },
+  {
+   "page": 134,
+   "letters": "TIBIBP",
+   "note": "Tibibp.",
+   "english": "",
+   "status": "printed",
+   "row": 754
+  },
+  {
+   "page": 134,
+   "letters": "ALLAR",
+   "note": "Al lar.",
+   "english": "",
+   "status": "printed",
+   "row": 755
+  },
+  {
+   "page": 134,
+   "letters": "ATRAAH",
+   "note": "A tra ah.",
+   "english": "",
+   "status": "printed",
+   "row": 756
+  },
+  {
+   "page": 134,
+   "letters": "OD",
+   "note": "Od.",
+   "english": "",
+   "status": "printed",
+   "row": 757
+  },
+  {
+   "page": 134,
+   "letters": "EF",
+   "note": "Ef.",
+   "english": "",
+   "status": "printed",
+   "row": 758
+  },
+  {
+   "page": 135,
+   "letters": "DRIX",
+   "note": "Drix.",
+   "english": "",
+   "status": "printed",
+   "row": 759
+  },
+  {
+   "page": 135,
+   "letters": "FAFEN",
+   "note": "Fa fen.",
+   "english": "",
+   "status": "printed",
+   "row": 760
+  },
+  {
+   "page": 135,
+   "letters": "MIAN",
+   "note": "Mi an.",
+   "english": "",
+   "status": "printed",
+   "row": 761
+  },
+  {
+   "page": 135,
+   "letters": "AR",
+   "note": "Ar.",
+   "english": "",
+   "status": "printed",
+   "row": 762
+  },
+  {
+   "page": 135,
+   "letters": "ENAY",
+   "note": "E nay.",
+   "english": "",
+   "status": "printed",
+   "row": 763
+  },
+  {
+   "page": 135,
+   "letters": "OVOF",
+   "note": "O vof.",
+   "english": "",
+   "status": "printed",
+   "row": 764
+  },
+  {
+   "page": 135,
+   "letters": "SOBA",
+   "note": "So ba.",
+   "english": "",
+   "status": "printed",
+   "row": 765
+  },
+  {
+   "page": 135,
+   "letters": "DOOAIN",
+   "note": "Do ó a in.",
+   "english": "",
+   "status": "printed",
+   "row": 766
+  },
+  {
+   "page": 135,
+   "letters": "AAI",
+   "note": "A a i.",
+   "english": "",
+   "status": "printed",
+   "row": 767
+  },
+  {
+   "page": 135,
+   "letters": "IVONPH",
+   "note": "I vonph.",
+   "english": "",
+   "status": "printed",
+   "row": 768
+  },
+  {
+   "page": 136,
+   "letters": "ZACAR",
+   "note": "Za car.",
+   "english": "",
+   "status": "from_note",
+   "row": 806,
+   "remark": "The letter column prints '...............'. The missing letters are read from the note.",
+   "column": "..............."
+  },
+  {
+   "page": 136,
+   "letters": "GOHUS",
+   "note": "Go hus.",
+   "english": "",
+   "status": "from_note",
+   "row": 807,
+   "column": "...............",
+   "read_from": "page image, Internet Archive scan truefaithfulrela00deej",
+   "remark": "The letter column has only dots. The keyed transcription has 'Go bus.' for the note; the page image has 'Go hus.'"
+  },
+  {
+   "page": 136,
+   "letters": "ZAMRAN",
+   "note": "Zamran.",
+   "english": "",
+   "status": "from_note",
+   "row": 808,
+   "remark": "The letter column prints '..................'. The missing letters are read from the note.",
+   "column": ".................."
+  },
+  {
+   "page": 136,
+   "letters": "ODO",
+   "note": "O do.",
+   "english": "",
+   "status": "from_note",
+   "row": 809,
+   "remark": "The letter column prints '.........'. The missing letters are read from the note.",
+   "column": "........."
+  },
+  {
+   "page": 136,
+   "letters": "CICLE",
+   "note": "CICLE.",
+   "english": "",
+   "status": "from_note",
+   "row": 810,
+   "remark": "The letter column prints '...ICLE'. The missing letters are read from the note.",
+   "column": "...ICLE"
+  },
+  {
+   "page": 136,
+   "letters": "QAA",
+   "note": "Qáa.",
+   "english": "",
+   "status": "printed",
+   "row": 811
+  },
+  {
+   "page": 193,
+   "letters": "ZORGE",
+   "note": "",
+   "english": "",
+   "status": "printed",
+   "repeat_of": {
+    "call": 1,
+    "word": 80
+   },
+   "remark": "Not spelled here. The journal says 'Here must words in the end of the first Call, follow at Move, &c.' (p. 193); the word is taken from the end of Call 1."
+  },
+  {
+   "page": 193,
+   "letters": "LAP",
+   "note": "",
+   "english": "",
+   "status": "printed",
+   "repeat_of": {
+    "call": 1,
+    "word": 81
+   },
+   "remark": "Not spelled here. The journal says 'Here must words in the end of the first Call, follow at Move, &c.' (p. 193); the word is taken from the end of Call 1."
+  },
+  {
+   "page": 193,
+   "letters": "ZIRDO",
+   "note": "",
+   "english": "",
+   "status": "from_note",
+   "repeat_of": {
+    "call": 1,
+    "word": 82
+   },
+   "remark": "Not spelled here. The journal says 'Here must words in the end of the first Call, follow at Move, &c.' (p. 193); the word is taken from the end of Call 1."
+  },
+  {
+   "page": 193,
+   "letters": "NOCO",
+   "note": "",
+   "english": "",
+   "status": "printed",
+   "repeat_of": {
+    "call": 1,
+    "word": 83
+   },
+   "remark": "Not spelled here. The journal says 'Here must words in the end of the first Call, follow at Move, &c.' (p. 193); the word is taken from the end of Call 1."
+  },
+  {
+   "page": 193,
+   "letters": "MAD",
+   "note": "",
+   "english": "",
+   "status": "printed",
+   "repeat_of": {
+    "call": 1,
+    "word": 84
+   },
+   "remark": "Not spelled here. The journal says 'Here must words in the end of the first Call, follow at Move, &c.' (p. 193); the word is taken from the end of Call 1."
+  },
+  {
+   "page": 193,
+   "letters": "HOATH",
+   "note": "",
+   "english": "",
+   "status": "printed",
+   "repeat_of": {
+    "call": 1,
+    "word": 85
+   },
+   "remark": "Not spelled here. The journal says 'Here must words in the end of the first Call, follow at Move, &c.' (p. 193); the word is taken from the end of Call 1."
+  },
+  {
+   "page": 193,
+   "letters": "IAIDA",
+   "note": "",
+   "english": "",
+   "status": "printed",
+   "repeat_of": {
+    "call": 1,
+    "word": 86
+   },
+   "remark": "Not spelled here. The journal says 'Here must words in the end of the first Call, follow at Move, &c.' (p. 193); the word is taken from the end of Call 1."
+  }
+ ]
+}

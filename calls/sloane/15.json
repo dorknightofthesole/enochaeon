@@ -1,0 +1,291 @@
+{
+  "call": 15,
+  "manuscript": "British Library MS Sloane 3191, 48 Claves Angelicae, in John Dee's hand",
+  "scan": "docs/998222247-Dee-MS-Sloane-3191.pdf",
+  "where": "PDF page 3, fourth opening, right-hand page (scratch/sloane-pages/ms/s03-f4r.jpg)",
+  "reading": "tools/sloane/sloane-reading.json: one reading by eye, not confirmed",
+  "remarks": [
+    "In 'dsocido' the letters between o and d were read as 'ci' with a mark above; they could also be a single a.",
+    "'darg' is underlined and has small letters above it that were not read; a small s stands above the s of 'monasci' and a small y above the first letter of 'iaíádix'."
+  ],
+  "words": [
+    {
+      "letters": "ILS",
+      "written": "Ils",
+      "status": "read",
+      "journal": [
+        1
+      ],
+      "differs": ""
+    },
+    {
+      "letters": "TABAAN",
+      "written": "tabáan",
+      "status": "read",
+      "journal": [
+        2
+      ],
+      "differs": ""
+    },
+    {
+      "letters": "LIALPRT",
+      "written": "L_ialprt",
+      "status": "read",
+      "journal": [
+        3
+      ],
+      "differs": ""
+    },
+    {
+      "letters": "CASARMAN",
+      "written": "casárman",
+      "status": "read",
+      "journal": [
+        4
+      ],
+      "differs": ""
+    },
+    {
+      "letters": "VPAAHI",
+      "written": "vpaáhi",
+      "status": "read",
+      "journal": [
+        5
+      ],
+      "differs": "letters"
+    },
+    {
+      "letters": "CHIS",
+      "written": "chis",
+      "status": "read",
+      "journal": [
+        6
+      ],
+      "differs": ""
+    },
+    {
+      "letters": "DARG",
+      "written": "darg",
+      "status": "read",
+      "journal": [
+        7
+      ],
+      "differs": ""
+    },
+    {
+      "letters": "DSOCIDO",
+      "written": "dsoci?do",
+      "status": "unsure",
+      "journal": [
+        8
+      ],
+      "differs": ""
+    },
+    {
+      "letters": "CAOSGI",
+      "written": "caósgi",
+      "status": "read",
+      "journal": [
+        9
+      ],
+      "differs": ""
+    },
+    {
+      "letters": "ORSCOR",
+      "written": "orscor",
+      "status": "read",
+      "journal": [
+        10
+      ],
+      "differs": ""
+    },
+    {
+      "letters": "DS",
+      "written": "ds",
+      "status": "read",
+      "journal": [
+        11
+      ],
+      "differs": ""
+    },
+    {
+      "letters": "OMAX",
+      "written": "ómax",
+      "status": "read",
+      "journal": [
+        12
+      ],
+      "differs": ""
+    },
+    {
+      "letters": "MONASCI",
+      "written": "monasci",
+      "status": "read",
+      "journal": [
+        13
+      ],
+      "differs": ""
+    },
+    {
+      "letters": "BAEOUIB",
+      "written": "Baéöuib",
+      "status": "read",
+      "journal": [
+        14
+      ],
+      "differs": ""
+    },
+    {
+      "letters": "OD",
+      "written": "od",
+      "status": "read",
+      "journal": [
+        15
+      ],
+      "differs": ""
+    },
+    {
+      "letters": "EMETGIS",
+      "written": "emétgis",
+      "status": "read",
+      "journal": [
+        16
+      ],
+      "differs": ""
+    },
+    {
+      "letters": "IAIADIX",
+      "written": "iaíádix",
+      "status": "read",
+      "journal": [
+        17
+      ],
+      "differs": ""
+    },
+    {
+      "letters": "ZACAR",
+      "written": "ZACAR",
+      "status": "read",
+      "journal": [
+        18
+      ],
+      "differs": "letters"
+    },
+    {
+      "letters": "OD",
+      "written": "od",
+      "status": "read",
+      "journal": [
+        20
+      ],
+      "differs": ""
+    },
+    {
+      "letters": "ZAMRAN",
+      "written": "ZAMRAN",
+      "status": "read",
+      "journal": [
+        21
+      ],
+      "differs": ""
+    },
+    {
+      "letters": "ODO",
+      "written": "odo",
+      "status": "read",
+      "journal": [
+        22
+      ],
+      "differs": ""
+    },
+    {
+      "letters": "CICLE",
+      "written": "cicle",
+      "status": "read",
+      "journal": [
+        23
+      ],
+      "differs": ""
+    },
+    {
+      "letters": "QAA",
+      "written": "Qäa",
+      "status": "read",
+      "journal": [
+        24
+      ],
+      "differs": ""
+    },
+    {
+      "letters": "ZORGE",
+      "written": "Zorge",
+      "status": "read",
+      "journal": [
+        25
+      ],
+      "differs": ""
+    },
+    {
+      "letters": "LAP",
+      "written": "lap",
+      "status": "read",
+      "journal": [
+        26
+      ],
+      "differs": ""
+    },
+    {
+      "letters": "ZIRDO",
+      "written": "zirdo",
+      "status": "read",
+      "journal": [
+        27
+      ],
+      "differs": ""
+    },
+    {
+      "letters": "NOCO",
+      "written": "NOCO",
+      "status": "read",
+      "journal": [
+        28
+      ],
+      "differs": ""
+    },
+    {
+      "letters": "MAD",
+      "written": "MAD",
+      "status": "read",
+      "journal": [
+        29
+      ],
+      "differs": ""
+    },
+    {
+      "letters": "HOATH",
+      "written": "hoath",
+      "status": "read",
+      "journal": [
+        30
+      ],
+      "differs": ""
+    },
+    {
+      "letters": "IAIDA",
+      "written": "Iaïda",
+      "status": "read",
+      "journal": [
+        31
+      ],
+      "differs": ""
+    }
+  ],
+  "journal_only": [
+    {
+      "journal": 19,
+      "letters": "CA",
+      "status": "printed",
+      "page": 193
+    }
+  ]
+}

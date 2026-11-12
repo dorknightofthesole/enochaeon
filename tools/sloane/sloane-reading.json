@@ -1,0 +1,152 @@
+{
+  "about": [
+    "A reading of British Library MS Sloane 3191, '48 Claves Angelicae', from the scan docs/998222247-Dee-MS-Sloane-3191.pdf.",
+    "Typed by hand from the page images in scratch/sloane-pages/ (ms/ for the manuscript pages, strips/ and zoom/ for the enlargements that were read).",
+    "It is one reading by eye and has not been confirmed by anyone. It changes no call file and nothing in calls/journal/.",
+    "A space is a clear gap between words. A hyphen is a stroke Dee draws under the line to tie two parts together. An underscore is a small gap with no tie: it may or may not be a word break, and it was judged by eye.",
+    "A '?' after a letter means that letter was not read with certainty. Accents are typed where they were seen and are not compared.",
+    "Only the places where the letters differ from the journal data were looked at again at full size. Words that agree were read once from the strips, so a reading that agrees may have been helped by knowing what to expect."
+  ],
+  "calls": {
+    "01": {
+      "where": "PDF page 2, second opening, right-hand page (scratch/sloane-pages/ms/s02-f2r.jpg)",
+      "words": "Ol sonf vorsg gohó Iad balt lansh calz vonpho Sobra z-ol ror i ta Nazpsad Graa ta Malprg Ds hol-q Qäa nothóa zimz Od commah ta nobloh zien Soba thil gnonp prge aldi Ds vrbs óbôleh grsam Casárm ohoréla cabá pir Ds zonrensg cab erm Iadnah Pilah farzm znrza adná gono Iádpil Ds hom tóh Soba Ipam Lu Ipámis Ds lóhólo vep zomd Poamal Od bogpa aäi ta piap piamo-l od vooan ZACARe ca od ZAMRAN odo cicle Qäa Zorge Lap zirdo Noco MAD Hoath Iaida",
+      "remarks": []
+    },
+    "02": {
+      "where": "PDF page 2, third opening, left-hand page (scratch/sloane-pages/ms/s02-f3l.jpg)",
+      "words": "Adgt v-pa-ah zongom fa-á-ip sald vi-i-v L Sobam ial-prg i-zâ-zaz pi-adph Casarma abramg ta talho paracléda Q-ta lors-l-q turbs ooge Baltoh Giui chis lusd orri Od micalp chis bia ózóngon Lap noán trof cors tage o-q manin Ia-i-don Torzú góheL ZACAR ca C-no-qod ZAMRAN micalzo od ozazm vrelp Lap zir Ioiad",
+      "remarks": []
+    },
+    "03": {
+      "where": "PDF page 2, third opening, right-hand page (scratch/sloane-pages/ms/s02-f3r.jpg)",
+      "words": "Micma gohó Piad zir Com-selh a_zien biab Os Lón-doh Norz chis óthil Gigîpah vnd-L chis tá_pu-im Q_mos-pleh teloch Qui-i-n toltorg chis i_chis_ge m ozien dst brgda od torzul i_li E_ol balzarg od áâla Thiln_os ne-tâ-ab dluga vomsarg lonsa cap-mi-áli vors CLA homil cocasb fafen izizop od mi-i-nôag de gne_táab vaun na_na-e-el panpir Malpirgi caosg Pild noan vnalah balt od vooan do-o-i-ap MAD Gohólor gohús amiran Micma Iehúsoz ca-cá-com od_do-o-â-in noar mi-cá-olz a-ai-om Casármg gohía ZACAR v́niglag od Im-uâ-mar pugo plapli ananäel Q-a-an",
+      "remarks": [
+        "A faint mark stands before the 'm' (journal word 23) that could not be read as a letter.",
+        "The margin beside ZACAR reads 'zod a car'."
+      ]
+    },
+    "04": {
+      "where": "PDF page 2, fourth opening, left-hand page (scratch/sloane-pages/ms/s02-f4l.jpg)",
+      "words": "Othil lasdi babâge od dorpha Gohol G_chis_ge auáuâgo Cormp pd dsonf vi-v́-di-v Casármi óâli Map-m Sobam ag cormpó c-rp-l Casarmg cro-od-zi chis od_vgeg dst ca_pi_máli chis Ca_pi_mâ_on od_lonshin chis ta_lo Cla Torgú Nor_quasáhi od F_caosga Bagle zi-re-nái-ad Dsi od_Apila Do-o-â-ip Q-á-al ZACAR od ZAMRAN Obelisong rest-el aaf Nor-mo-lap",
+      "remarks": [
+        "A small 'i' is written above the e of 'rest-el'."
+      ]
+    },
+    "05": {
+      "where": "PDF page 2, fourth opening, right-hand page (scratch/sloane-pages/ms/s02-f4r.jpg)",
+      "words": "Sa-páh zimii du-i-b od noas ta-qu-a-nis adroch dorphal Ca-ósg od faonts péripsol tablior Casarm amipzi na-zarth af od dlugar zizop z-lida caósgi tol-tórgi od z-chis e-siasch L ta-vi-u od iáod thild ds hubar Pe-ó-al Soba cormfa chis_ta la vls od Q-có-casb Ca niis od Darbs Q-á-as Feth-ár-zi od blióra ia-ial éd-nas cicles Bágle Ge-iad i-L",
+      "remarks": []
+    },
+    "06": {
+      "where": "PDF page 2, fifth opening, left-hand page (scratch/sloane-pages/ms/s02-f5l.jpg)",
+      "words": "Gah s_diu chis em micalzo pilzin sobam El harg mir babálon od obloc samvelg dlugar malprg arcaosgi od Acám Canal so-bol-zar tbliard caosgi od_chif ané_tab od miam ta_viv od_d Darsar Sol-peth bi-en B-ri-ta od zácam g-micálzo sob-há-ath trian Lu-iá-he od-ecrin MAD Q-a-a-on",
+      "remarks": [
+        "'tbliard' is underlined, has a small o over the a, and 'f-bliard' is written beneath it."
+      ]
+    },
+    "07": {
+      "where": "PDF page 2, fifth opening, right-hand page (scratch/sloane-pages/ms/s02-f5r.jpg)",
+      "words": "Ra-as isálman para-di-zod oe-crí-mi a-a-o ial-pír-gah qui-in enáy butmon od in-óas ni paradíal Casármg vgéar chirlan od zonac Lu-cif-tian cors_ta vaul_zirn tol-há-mi Soba Londóh od_miam chis_tad o-dés v-má-dea od pibliar Othil_rit od_miam C-no-quol Rit ZACAR ZAMRAN oëcrimi Q-á-dah od o-mi-ca-ol-z aaíom Bagle papnor id-lú-gam lonshi od vmplif vgëgi Bigliad",
+      "remarks": [
+        "'nuam' is written above the first 'od miam'.",
+        "'zod' is written above the final z of 'o-mi-ca-ol-z'."
+      ]
+    },
+    "08": {
+      "where": "PDF page 3, first opening, left-hand page (scratch/sloane-pages/ms/s03-f1l.jpg)",
+      "words": "Bazmélo i_ta pi_ripson oln Na_závabh ox casarmg Vrán chis vgeg dsa_bramg baltóha gohó_iad Solámian trian ta_lól_cis Abai_uónin od aziágier rior Irgil_chís_da ds_pá_a_ox bufd Caósgo ds_chis odi_púran telóah cacrg O_isálman loncho od Vouína carbaf Niíso Bagle auáuágo gohón Niíso bagle momáo siáion od mábza Iad_o_i_ás_mo_mar poilp Niis ZAMRAN ciáofi caósgo od bliors od corsi ta a_brá_mig",
+      "remarks": [
+        "'carg.' is written above 'cacrg'.",
+        "Two notes in the right margin begin 'forte', one beside the line of 'Solámian trian' and one beside 'bufd'. Their second words were not read with certainty.",
+        "A small mark stands above the V of 'Vrán'; it was not read."
+      ]
+    },
+    "09": {
+      "where": "PDF page 3, first opening, right-hand page (scratch/sloane-pages/ms/s03-f1r.jpg)",
+      "words": "Micáoli bransg prgel napta ialpor ds_brin efáfáfe P vonpho oláni od obza sob_ca vpáah chis tatan od tranan balýe alár lusda sobóln od chís_hól_q C_no_quó_di cial v_nál aldon mom caósgo ta Las_óllor gnay limlal Amma chiis Sob_cá madrid z_chis oöánöan chis auiny dril_pi caósgin od butmóni parm zumvi Cníla Dazis ethámz a_chíldáo od mirc ózól chis pidiái Collal Vlcínin a_sóbam Vcim Bagle Iad_báltoh chirlan par Niíso od ip ofáfáfe Bagle a_cócasb i_córs_ca Vnig blior",
+      "remarks": [
+        "A small y is written above the first letter of 'ialpor'.",
+        "'Ka' is written above the 'cá' of the second 'Sob cá' and above the 'ca' of 'i córs ca'; 'zod' above the z of 'z chis' and above the z of 'ethámz'; 'kil' above the 'chíl' of 'a chíldáo'.",
+        "The third letter of 'zumvi' was read as v: it has the same curl as the v of 'virq' on the next page and not the upright stroke of b."
+      ]
+    },
+    "10": {
+      "where": "PDF page 3, second opening, left-hand page (scratch/sloane-pages/ms/s03-f2l.jpg)",
+      "words": "Coráxo chis cormp od blans Lucal azíázor paeb Soba lilónon chis virq op eóphan od raclir maási bagle caosgi ds ialpon dosig od basgim od oxex dazís siátris od salbrox cynxir fabóan Vnál_chis Const ds dáox cocasg ol oánio yor vóhim ol gizyax od eórs cocasg plósi molui ds pagéip larag om droln e?_matorb cocasb émna L_pátralx yolci matb nomig monons olóra gnay angélard Ohio Ohío ohío ohío ohío ohío noib Ohío Caósgon Bagle madrid i zirop chiso drilpa Niíso Crip ip nidáli",
+      "remarks": [
+        "The manuscript writes 'virq op' where the journal data has OP VIRQ: the same two words in the other order. 'Nests' is written above 'virq' and ':22:' above 'op'.",
+        "'matb' is written after 'yolci', underlined, with '1000' above it. The journal data has no word at this place.",
+        "A small faint letter, e or c, stands before 'matorb', and dots are drawn under 'ator'. No English is written above this word.",
+        "A small y is written above the first letter of 'ialpon'; 'K' above the C of 'Const'; 'dg' above the g of the first 'cocasg'; ':24:' above the second 'ol'."
+      ]
+    },
+    "11": {
+      "where": "PDF page 3, second opening, right-hand page (scratch/sloane-pages/ms/s03-f2r.jpg)",
+      "words": "Oxiáyal holdo od zirom O coráxo ds zildar raásy od vabzir camliax od bahál Niíso salman telóch Casárman hol_q od ti ta z_chis soba cormf i_ga Niísa Bagle abramg noncp ZACARe ca od ZAMRAN Odo cicle Qaá Zorge lap zirdo Noco Mad Hoath Iaida",
+      "remarks": [
+        "A cross-shaped mark stands after 'Niíso'.",
+        "A bracketed note in the left margin beside 'telóch Casárman' was not read.",
+        "A small s is written above the c of 'noncp'."
+      ]
+    },
+    "12": {
+      "where": "PDF page 3, third opening, left-hand page (scratch/sloane-pages/ms/s03-f3l.jpg)",
+      "words": "Nonci dsonf Babage od chis ob hubáio tibibp allar atráah od ef drix fafen Mian ar Enay ovof Soba doóain aai i VONPH ZACAR gohus od ZAMRAN odo cicle Qaá Zorge Lap zirdo NOCO MAD Hoath Iaida",
+      "remarks": []
+    },
+    "13": {
+      "where": "PDF page 3, third opening, right-hand page (scratch/sloane-pages/ms/s03-f3r.jpg)",
+      "words": "Napéai Babágen ds_brin vx ooáöna lring vonph doálim eólis ollog orsba ds_chis affa Micma isro MAD od Lonshi_tox ds ivmd aai GROSB ZACAR od ZAMRAN odo cicle Qäa Zorge Lap zirdo NOCO MAD Hoath Iaïda",
+      "remarks": []
+    },
+    "14": {
+      "where": "PDF page 3, fourth opening, left-hand page (scratch/sloane-pages/ms/s03-f4l.jpg)",
+      "words": "Norómi bagíe pasbs oíad ds trint mirc ol thil dods tolham caósgo Homin ds_brin oroch Quar Micma bial oiad aísro tox ds_i_vm aai Baltim ZACAR od ZAMRAN odo cicle Qaa Zorge lap zirdo NOCO MAD hoath Iaïda",
+      "remarks": [
+        "Small letters are written above 'bagíe' and above the 'ol' that follows 'mirc'; they were not read.",
+        "The fourth letter of 'pasbs' was read as b: it has the closed bowl of the b in 'bagíe' beside it."
+      ]
+    },
+    "15": {
+      "where": "PDF page 3, fourth opening, right-hand page (scratch/sloane-pages/ms/s03-f4r.jpg)",
+      "words": "Ils tabáan L_ialprt casárman vpaáhi chis darg dsoci?do caósgi orscor ds ómax monasci Baéöuib od emétgis iaíádix ZACAR od ZAMRAN odo cicle Qäa Zorge lap zirdo NOCO MAD hoath Iaïda",
+      "remarks": [
+        "In 'dsocido' the letters between o and d were read as 'ci' with a mark above; they could also be a single a.",
+        "'darg' is underlined and has small letters above it that were not read; a small s stands above the s of 'monasci' and a small y above the first letter of 'iaíádix'."
+      ]
+    },
+    "16": {
+      "where": "PDF page 3, fifth opening, left-hand page (scratch/sloane-pages/ms/s03-f5l.jpg)",
+      "words": "Ils viuíalprt salman balt ds acroódzi busd od bliórax balit ds_in_si caosg lusdan Emod ds_om od tliob drilpa geh yls Mad_zilodarp ZACAR od ZAMRAN Odo cicle Qaa Zorge Lap zirdo Noco Mad hoath Iaida",
+      "remarks": [
+        "Small letters are written above the g of 'caosg', and 'yls' is written again above 'yls'. A note in the right margin beside 'ds in si' was not read."
+      ]
+    },
+    "17": {
+      "where": "PDF page 3, fifth opening, right-hand page (scratch/sloane-pages/ms/s03-f5r.jpg)",
+      "words": "Ils dialprt soba vpáah chis nanba zixlay dodsih od_brint Faxs hubáro tastax ylsi so_bai_ad I_vón_pó_vnph Aldon dax_il od toátar ZACAR od ZAMRAN odo cicle Qáá Zorge lap zirdo Noco Mad hoath Iaída",
+      "remarks": [
+        "The first letter of 'Faxs' was read as F: it has a bar across the middle of the stem as well as the bar on top. The word is underlined and '7336' is written above it."
+      ]
+    },
+    "18": {
+      "where": "PDF page 3, sixth opening, left-hand page (scratch/sloane-pages/ms/s03-f6l.jpg)",
+      "words": "Ils Micaól-z Olpirt ialprg Bliors ds odo Busdir oíad ouóars caósgo Casarmg Laiad eran brints cafáfam ds ivmd a_q_lo a_dóhi MOZ od ma_of_fas Bolp Comobliort pambt ZACAR od ZAMRAN odo cicle Qaa Zorge lap zirdo Noco MAD Hoath Iaïda",
+      "remarks": [
+        "'MOZ' is written in capitals with 'IOYE' above it. No letters stand before the M."
+      ]
+    },
+    "aethyrs": {
+      "where": "PDF page 4, first opening, both pages (scratch/sloane-pages/ms/s04-f1l.jpg and s04-f1r.jpg)",
+      "words": "Madriax ds_praf LIL chis Micáolz saánir Caósgo od fisis bal_zizras Iaída nonca gohúlim Micma adoían MAD Iáod bliorb Sába_ooáöna chis Luciftías perípsol ds abraássa noncf netáäib Caósgi od tilb adphaht dámploz toóat noncf g_mi_cálzóma L_rásd tófglo marb yárry IDOIGO od tor_zulp iaódaf gohól Caósga tabaord saánir od Christéos yr_póil tiobl Bus_dir_tilb noaln paid orsba od dodrmni zylna El_záp_tilb parm_gi pe_ríp_sax od ta qurlst booapiS L_nibm ov_cho symp od Christéos Ag_tol_torn mirc Q tióbl LeL Ton paombd dilzmo aspían Od Christéos Ag_L_tor_torn parach a_symp Cord_ziz dod_pal od fifalz Ls_mnad od fargt bams omaóas Conisbra od auáuox tonug Ors_cát_bl noásmi tabgés Leuith_mong vnchi omp_tilb ors Bagle Moóöah ol_córd_ziz L_ca_pímáo ix_o_máx_ip od_ca_cócasb gosáa Baglen pii tiánta a_bábálond od_faórgt teloc_vo_v_im Mádríiax torzu oádriax orócha aboápri Tabáóri priáz ar_tabas A_dr_pan cor_sta dobix Yol_cam priázi ar_coazior Od_quasb q_ting Ripír paaoxt sa_gá_cor vm_L od prd_zar cacrg Aoivéáe cormpt TORZV ZACAR od_ZAMRAN aspt sibsi but_móna ds surzas tia baltan Odo cicle Qáa od Ozazma plapli Iad_ná_mad",
+      "remarks": [
+        "The first word was read as 'Madriax' with one i. Where the word comes again on the second page it is 'Mádríiax' with two.",
+        "A small o is written above the first a of 'Sába'.",
+        "Notes written above words: 's' above the c of 'nonca' and of both 'noncf'; 'do-drumni' or the like above 'dodrmni'; 'K' above the c of 'mirc'; 'dg' above 'fargt' and above 'tonug'; 'ki' above 'vnchi'; 'Ka' above 'orócha'; 'dg' above 'q ting'; 'carg' above 'cacrg'; 'x' above 'Mádríiax'. Several more were not read."
+      ],
+      "names_where": "PDF page 4, first opening, left margin of the left-hand page: the numbered list 1 to 30 (scratch/sloane-pages/zoom/ae-names-a.jpg, -b, -c). The circle of names on the page before (ms/s03-f6r.jpg) was not read",
+      "names": "Lil Arn Zom Paz Lit Maz Deo Zid Zip Zax Ich Loe Zim Vta Oxo Lea Tan Zen Pop Chr Asp Lin Tor Nia Vti Des Zaa Bag Rii Tex"
+    }
+  }
+}

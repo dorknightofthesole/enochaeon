@@ -1,0 +1,533 @@
+{
+ "call": 2,
+ "printing": "Meric Casaubon, A True & Faithful Relation (London, 1659)",
+ "pages": "pp. 99 and 100",
+ "direction": "backward",
+ "notes": [
+  "The call was given backwards, from word 52 to word 1."
+ ],
+ "words": [
+  {
+   "page": 100,
+   "letters": "ADGT",
+   "note": "Adgt.",
+   "english": "Can",
+   "status": "printed",
+   "column": "TGDA",
+   "number": "1",
+   "row": 337
+  },
+  {
+   "page": 100,
+   "letters": "VPAAH",
+   "note": "V pa ah.",
+   "english": "the wings",
+   "status": "printed",
+   "column": "HAAPV",
+   "number": "2",
+   "row": 336
+  },
+  {
+   "page": 100,
+   "letters": "ZONG",
+   "note": "Zong.",
+   "english": "of the windes",
+   "status": "printed",
+   "column": "GNOZ",
+   "number": "3",
+   "row": 335
+  },
+  {
+   "page": 100,
+   "letters": "OM",
+   "note": "Om.",
+   "english": "",
+   "status": "printed",
+   "column": "MO",
+   "number": "4",
+   "row": 334
+  },
+  {
+   "page": 100,
+   "letters": "FAAIP",
+   "note": "Fa a ip.",
+   "english": "understand",
+   "status": "printed",
+   "column": "PIAAF",
+   "number": "5",
+   "row": 333
+  },
+  {
+   "page": 100,
+   "letters": "SALD",
+   "note": "Sald.",
+   "english": "your voices of wonder",
+   "status": "printed",
+   "column": "DLAS",
+   "number": "6",
+   "row": 332
+  },
+  {
+   "page": 100,
+   "letters": "VIIV",
+   "note": "Viiv.",
+   "english": "O you the second",
+   "status": "printed",
+   "column": "VIIV",
+   "number": "7",
+   "row": 331
+  },
+  {
+   "page": 100,
+   "letters": "L",
+   "note": "A word.",
+   "english": "of the first",
+   "status": "printed",
+   "column": "L",
+   "number": "8",
+   "row": 330
+  },
+  {
+   "page": 100,
+   "letters": "SOBAM",
+   "note": "S o bam.",
+   "english": "whom",
+   "status": "printed",
+   "column": "MABOS",
+   "number": "9",
+   "row": 329
+  },
+  {
+   "page": 100,
+   "letters": "IALPURG",
+   "note": "I al purg.",
+   "english": "the burning flames",
+   "status": "printed",
+   "column": "GRUPLAI",
+   "number": "10",
+   "row": 328
+  },
+  {
+   "page": 100,
+   "letters": "IZAZAZ",
+   "note": "Izazaz.",
+   "english": "have framed",
+   "status": "printed",
+   "column": "ZAZAZI",
+   "number": "11",
+   "row": 327
+  },
+  {
+   "page": 100,
+   "letters": "PIADPH",
+   "note": "Piadph.",
+   "english": "within the depth of my Jaws",
+   "status": "printed",
+   "column": "HPDAIP",
+   "number": "12",
+   "row": 326
+  },
+  {
+   "page": 100,
+   "letters": "CASARMA",
+   "note": "Casarma.",
+   "english": "whom",
+   "status": "printed",
+   "column": "AMRASAC",
+   "number": "13",
+   "row": 325
+  },
+  {
+   "page": 100,
+   "letters": "ABRAMG",
+   "note": "Abramg.",
+   "english": "I have prepared",
+   "status": "printed",
+   "column": "GMARBA",
+   "number": "14",
+   "row": 324
+  },
+  {
+   "page": 100,
+   "letters": "TA",
+   "note": "Ta.",
+   "english": "as",
+   "status": "printed",
+   "column": "AT",
+   "number": "15",
+   "row": 323
+  },
+  {
+   "page": 100,
+   "letters": "TALHO",
+   "note": "Talho.",
+   "english": "Cups",
+   "status": "printed",
+   "column": "OHLAT",
+   "number": "16",
+   "row": 322
+  },
+  {
+   "page": 100,
+   "letters": "PARACLEDA",
+   "note": "Paracleda.",
+   "english": "for a wedding",
+   "status": "printed",
+   "column": "ADELCARAP",
+   "number": "17",
+   "row": 321
+  },
+  {
+   "page": 100,
+   "letters": "QTA",
+   "note": "Quu Ta.",
+   "english": "or as",
+   "status": "printed",
+   "column": "ATQ",
+   "number": "18",
+   "row": 320
+  },
+  {
+   "page": 100,
+   "letters": "LORSLQ",
+   "note": "Lors l qua.",
+   "english": "the flowres",
+   "status": "printed",
+   "column": "QLSROL",
+   "number": "19",
+   "row": 319,
+   "remark": "The keyed transcription has 'Lors I qua.' where the page image prints 'Lors l qua.'.",
+   "read_from": "page image, Internet Archive scan truefaithfulrela00deej"
+  },
+  {
+   "page": 100,
+   "letters": "TVRBS",
+   "note": "Turbs.",
+   "english": "in their beauty",
+   "status": "printed",
+   "column": "SBRVT",
+   "number": "20",
+   "row": 318
+  },
+  {
+   "page": 100,
+   "letters": "OOGE",
+   "note": "Ooge.",
+   "english": "for the Chamber",
+   "status": "printed",
+   "column": "EGOO",
+   "number": "21",
+   "row": 317
+  },
+  {
+   "page": 100,
+   "letters": "BALTOH",
+   "note": "Baltoh.",
+   "english": "of righteousnesse",
+   "status": "printed",
+   "column": "HOTLAB",
+   "number": "22",
+   "row": 316
+  },
+  {
+   "page": 100,
+   "letters": "GIUI",
+   "note": "as Giui.",
+   "english": "stronger",
+   "status": "printed",
+   "column": "IUIG",
+   "number": "23",
+   "row": 315
+  },
+  {
+   "page": 100,
+   "letters": "CHIS",
+   "note": "Chis [as Xis.",
+   "english": "are",
+   "status": "printed",
+   "column": "SIHC",
+   "number": "24",
+   "row": 314
+  },
+  {
+   "page": 100,
+   "letters": "LUSD",
+   "note": "Lusd.",
+   "english": "your feet",
+   "status": "printed",
+   "column": "DSUL",
+   "number": "25",
+   "row": 313
+  },
+  {
+   "page": 100,
+   "letters": "ORRI",
+   "note": "Orri.",
+   "english": "than the barren stone",
+   "status": "printed",
+   "column": "IRRO",
+   "number": "26",
+   "row": 312
+  },
+  {
+   "page": 100,
+   "letters": "OD",
+   "note": "Od",
+   "english": "and",
+   "status": "printed",
+   "column": "DO",
+   "number": "27",
+   "row": 311
+  },
+  {
+   "page": 100,
+   "letters": "MICALP",
+   "note": "Mi calp.",
+   "english": "mightier",
+   "status": "printed",
+   "column": "PLACIM",
+   "number": "28",
+   "row": 310
+  },
+  {
+   "page": 100,
+   "letters": "CHIS",
+   "note": "Chis [the I long.",
+   "english": "are",
+   "status": "printed",
+   "column": "SIHC",
+   "number": "29",
+   "row": 309
+  },
+  {
+   "page": 100,
+   "letters": "BIA",
+   "note": "Bia.",
+   "english": "your voices",
+   "status": "printed",
+   "column": "AIB",
+   "number": "30",
+   "row": 308
+  },
+  {
+   "page": 99,
+   "letters": "OZONGON",
+   "note": "Ozongon.",
+   "english": "then the many fold windes:",
+   "status": "printed",
+   "column": "NOGNOZO",
+   "number": "31",
+   "row": 307
+  },
+  {
+   "page": 99,
+   "letters": "LAP",
+   "note": "Lap.",
+   "english": "for",
+   "status": "printed",
+   "column": "PAL",
+   "number": "32",
+   "row": 306
+  },
+  {
+   "page": 99,
+   "letters": "NOAN",
+   "note": "No an.",
+   "english": "you are become",
+   "status": "printed",
+   "column": "NAON",
+   "number": "33",
+   "row": 305
+  },
+  {
+   "page": 99,
+   "letters": "TROF",
+   "note": "Trof.",
+   "english": "a building,",
+   "status": "printed",
+   "column": "FORT",
+   "number": "34",
+   "row": 304
+  },
+  {
+   "page": 99,
+   "letters": "CORS",
+   "note": "Cors.",
+   "english": "Such",
+   "status": "printed",
+   "column": "SROC",
+   "number": "35",
+   "row": 303
+  },
+  {
+   "page": 99,
+   "letters": "TAGE",
+   "note": "Tagé.",
+   "english": "as is not",
+   "status": "printed",
+   "column": "EGAT",
+   "number": "36",
+   "row": 302
+  },
+  {
+   "page": 99,
+   "letters": "OQ",
+   "note": "O qua.",
+   "english": "but",
+   "status": "printed",
+   "column": "QO",
+   "number": "37",
+   "row": 301
+  },
+  {
+   "page": 99,
+   "letters": "MANIN",
+   "note": "Manin.",
+   "english": "in the minde",
+   "status": "printed",
+   "column": "NINAM",
+   "number": "38",
+   "row": 300
+  },
+  {
+   "page": 99,
+   "letters": "IAIDON",
+   "note": "Ia i don.",
+   "english": "of the all-powerful.",
+   "status": "printed",
+   "column": "NODIAI",
+   "number": "39",
+   "row": 299
+  },
+  {
+   "page": 99,
+   "letters": "TORZU",
+   "note": "Torzú",
+   "english": "Arise,",
+   "status": "printed",
+   "column": "UZROT",
+   "number": "40",
+   "row": 298
+  },
+  {
+   "page": 99,
+   "letters": "GOHEL",
+   "note": "Go hel.",
+   "english": "saith the first,",
+   "status": "printed",
+   "column": "LEHOG",
+   "number": "41",
+   "row": 297
+  },
+  {
+   "page": 99,
+   "letters": "ZACAR",
+   "note": "Zacar. [margin: [Nal. ..... Make a stop there.]]",
+   "english": "Move",
+   "status": "printed",
+   "column": "RACAZ",
+   "number": "42",
+   "row": 296
+  },
+  {
+   "page": 99,
+   "letters": "CA",
+   "note": "Ca.",
+   "english": "therefore",
+   "status": "printed",
+   "column": "AC",
+   "number": "43",
+   "row": 295
+  },
+  {
+   "page": 99,
+   "letters": "CNOQOD",
+   "note": "[as C No quod.",
+   "english": "unto his servants,",
+   "status": "printed",
+   "column": "DOQONC",
+   "number": "44",
+   "row": 294
+  },
+  {
+   "page": 99,
+   "letters": "ZAMRAN",
+   "note": "Zamran.",
+   "english": "shew your selves",
+   "status": "printed",
+   "column": "NARMAZ",
+   "number": "45",
+   "row": 293
+  },
+  {
+   "page": 99,
+   "letters": "MICALZO",
+   "note": "Micalzo.",
+   "english": "in power,",
+   "status": "printed",
+   "column": "OZLACIM",
+   "number": "46",
+   "row": 292
+  },
+  {
+   "page": 99,
+   "letters": "OD",
+   "note": "Od.",
+   "english": "and",
+   "status": "printed",
+   "column": "DO",
+   "number": "47",
+   "row": 291
+  },
+  {
+   "page": 99,
+   "letters": "OZAZM",
+   "note": "Ozazm.",
+   "english": "make me",
+   "status": "printed",
+   "column": "MZAZO",
+   "number": "48",
+   "row": 290
+  },
+  {
+   "page": 99,
+   "letters": "VRELP",
+   "note": "Vrelp.",
+   "english": "a strong seething;",
+   "status": "printed",
+   "column": "PLERV",
+   "number": "49",
+   "row": 289
+  },
+  {
+   "page": 99,
+   "letters": "LAP",
+   "note": "Lap.",
+   "english": "for,",
+   "status": "printed",
+   "column": "PAL",
+   "number": "50",
+   "row": 288
+  },
+  {
+   "page": 99,
+   "letters": "ZIR",
+   "note": "Zir.",
+   "english": "I am",
+   "status": "printed",
+   "column": "RIZ",
+   "number": "51",
+   "row": 287
+  },
+  {
+   "page": 99,
+   "letters": "IOIAD",
+   "note": "Ioiad.",
+   "english": "of him that liveth for ever.",
+   "status": "printed",
+   "column": "DAIOI",
+   "number": "52",
+   "row": 286
+  }
+ ]
+}

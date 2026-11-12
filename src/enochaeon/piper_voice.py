@@ -2,6 +2,10 @@
 
 Piper reads IPA one character at a time. espeak's own IPA dump is not used:
 ``[[Q]]`` comes out as ɣ, and Q is the vowel in "lot".
+
+When enochaeon.json names a lexicon field for the voice, each word is sent as
+that field has it, and this code adds no sound of its own. The end of a word
+is the mark the config gives.
 """
 
 from __future__ import annotations
@@ -85,18 +89,25 @@ def render(text: str, voice: CallVoice, gaps: Gaps, readings: dict[str, str] | N
             pieces.append(silence(gaps.nl_ms if segment == "\n" else gaps.word_ms))
             continue
         pieces.append(
-            _speak(speaker, SynthesisConfig, _word_ipa(segment, readings or {}), voice.length_scale)
+            _speak(speaker, SynthesisConfig, _word_ipa(segment, readings or {}, voice), voice.length_scale)
         )
     if not pieces:
         return silence(gaps.word_ms)
     return np.concatenate(pieces)
 
 
-def _word_ipa(word: list, readings: dict[str, str]) -> str:
-    from enochaeon.enochian import _listed
-    from enochaeon.word_ipa import piper_phones
+def _word_ipa(word: list, readings: dict[str, str], voice: CallVoice) -> str:
+    """What Piper is given for one word.
 
-    return piper_phones(_listed(word, readings))
+    A reading from the voice's own lexicon field is sent as written. A reading
+    from dee_ipa or golden_dawn_ipa is turned into Piper's letters.
+    """
+    from enochaeon.enochian import _listed
+    from enochaeon.word_ipa import as_written, piper_phones
+
+    reading = _listed(word, readings)
+    spoken = as_written(reading) if voice.piper_ipa else piper_phones(reading)
+    return spoken + voice.word_end
 
 
 def _speak(speaker: object, config_type: type, ipa: str, length_scale: float) -> np.ndarray:

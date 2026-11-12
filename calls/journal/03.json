@@ -1,0 +1,834 @@
+{
+ "call": 3,
+ "printing": "Meric Casaubon, A True & Faithful Relation (London, 1659)",
+ "pages": "pp. 94 to 98",
+ "direction": "backward",
+ "notes": [
+  "The call was given backwards, from word 80 to word 1."
+ ],
+ "words": [
+  {
+   "page": 98,
+   "letters": "MICMA",
+   "note": "Mic ma.",
+   "english": "behold",
+   "status": "printed",
+   "column": "AMCIM",
+   "number": "1",
+   "row": 285
+  },
+  {
+   "page": 98,
+   "letters": "GOHO",
+   "note": "Goho",
+   "english": "saith",
+   "status": "printed",
+   "column": "OHOG",
+   "number": "2",
+   "row": 284
+  },
+  {
+   "page": 97,
+   "letters": "PIAD",
+   "note": "Pi ad",
+   "english": "your God",
+   "status": "printed",
+   "column": "DAIP",
+   "number": "3",
+   "row": 283
+  },
+  {
+   "page": 97,
+   "letters": "ZIR",
+   "note": "Zir",
+   "english": "I am;",
+   "status": "printed",
+   "column": "RIZ",
+   "number": "4",
+   "row": 282
+  },
+  {
+   "page": 97,
+   "letters": "COMSELH",
+   "note": "Com Selh",
+   "english": "a Circle,",
+   "status": "printed",
+   "column": "HLESMOC",
+   "number": "5",
+   "row": 281,
+   "remark": "The keyed transcription has 'Com [gap:1 word]' where the page image prints 'Com Selh'.",
+   "read_from": "page image, Internet Archive scan truefaithfulrela00deej"
+  },
+  {
+   "page": 97,
+   "letters": "AZIEN",
+   "note": "Azien",
+   "english": "on whose hands",
+   "status": "printed",
+   "column": "NEIZA",
+   "number": "6",
+   "row": 280
+  },
+  {
+   "page": 97,
+   "letters": "BIAB",
+   "note": "Biah Biab",
+   "english": "are",
+   "status": "printed",
+   "column": "BAIB",
+   "number": "7",
+   "row": 279
+  },
+  {
+   "page": 97,
+   "letters": "OSLONDOH",
+   "note": "Os Lon doh; [Os signifieth twelve] Londoh",
+   "english": "12 Kingdoms:",
+   "status": "printed",
+   "column": "HODNOLSO",
+   "number": "8",
+   "row": 277
+  },
+  {
+   "page": 97,
+   "letters": "NORZ",
+   "note": "Norz",
+   "english": "six",
+   "status": "printed",
+   "column": "ZRON",
+   "number": "9",
+   "row": 276
+  },
+  {
+   "page": 97,
+   "letters": "CHIS",
+   "note": "as Kisse Chis",
+   "english": "are",
+   "status": "printed",
+   "column": "SIHC",
+   "number": "10",
+   "row": 275
+  },
+  {
+   "page": 97,
+   "letters": "OTHIL",
+   "note": "Othil",
+   "english": "the seats",
+   "status": "printed",
+   "column": "LIHTO",
+   "number": "11",
+   "row": 274
+  },
+  {
+   "page": 97,
+   "letters": "GIGIPAH",
+   "note": "Gi gi pah",
+   "english": "of living breath;",
+   "status": "printed",
+   "column": "HAPIGIG",
+   "number": "12",
+   "row": 273
+  },
+  {
+   "page": 97,
+   "letters": "VNDL",
+   "note": "Vnd L; [margin: it may be Vd L or Vnd L]",
+   "english": "the rest",
+   "status": "printed",
+   "column": "LDNV",
+   "number": "13",
+   "row": 272
+  },
+  {
+   "page": 97,
+   "letters": "CHIS",
+   "note": "as Kis",
+   "english": "are",
+   "status": "printed",
+   "column": "SIHC",
+   "number": "14",
+   "row": 271
+  },
+  {
+   "page": 97,
+   "letters": "TAPVIN",
+   "note": "Ta pu in You may call it Tapui also",
+   "english": "as sharp sickles,",
+   "status": "printed",
+   "column": "NIVPAT",
+   "number": "15",
+   "row": 270
+  },
+  {
+   "page": 97,
+   "letters": "QMOS",
+   "note": "Q Mos Pleh as two words",
+   "english": "or the horns",
+   "status": "printed",
+   "column": "HELP SOMQ",
+   "number": "16",
+   "row": 269,
+   "remark": "The row prints 'HELP SOMQ' with the note 'as two words'."
+  },
+  {
+   "page": 97,
+   "letters": "PLEH",
+   "note": "Q Mos Pleh as two words",
+   "english": "",
+   "status": "printed",
+   "column": "HELP SOMQ",
+   "number": "16",
+   "row": 269,
+   "remark": "The row prints 'HELP SOMQ' with the note 'as two words'."
+  },
+  {
+   "page": 97,
+   "letters": "TELOCH",
+   "note": "as och in hotch pot Teloch",
+   "english": "of death;",
+   "status": "printed",
+   "column": "HCOLET",
+   "number": "17",
+   "row": 268
+  },
+  {
+   "page": 97,
+   "letters": "QVIIN",
+   "note": "Qui in",
+   "english": "wherein",
+   "status": "printed",
+   "column": "NIIVQ",
+   "number": "18",
+   "row": 267
+  },
+  {
+   "page": 97,
+   "letters": "TOLTORG",
+   "note": "org as in george Toltorg",
+   "english": "the Creatures of the earth",
+   "status": "printed",
+   "column": "GROTLOT",
+   "number": "19",
+   "row": 266
+  },
+  {
+   "page": 97,
+   "letters": "CHIS",
+   "note": "Kis Chis",
+   "english": "are,",
+   "status": "printed",
+   "column": "SIHC",
+   "number": "20",
+   "row": 265
+  },
+  {
+   "page": 97,
+   "letters": "ICHISGE",
+   "note": "Kis I Chisge",
+   "english": "to are not",
+   "status": "printed",
+   "column": "EGSIHCI",
+   "number": "21",
+   "row": 264
+  },
+  {
+   "page": 97,
+   "letters": "M",
+   "note": "E M it is a word",
+   "english": "except",
+   "status": "printed",
+   "column": "M",
+   "number": "22",
+   "row": 263
+  },
+  {
+   "page": 97,
+   "letters": "OZIEN",
+   "note": "OZIEN",
+   "english": "mine own",
+   "status": "printed",
+   "column": "NEIZO",
+   "number": "23",
+   "row": 262
+  },
+  {
+   "page": 96,
+   "letters": "DST",
+   "note": "DST",
+   "english": "which",
+   "status": "printed",
+   "column": "TSD",
+   "number": "24",
+   "row": 261
+  },
+  {
+   "page": 96,
+   "letters": "BRGDA",
+   "note": "as burgen to bud as Burgda",
+   "english": "sleep",
+   "status": "printed",
+   "column": "ADGRB",
+   "number": "25",
+   "row": 260
+  },
+  {
+   "page": 96,
+   "letters": "OD",
+   "note": "",
+   "english": "and",
+   "status": "printed",
+   "column": "DO",
+   "number": "26",
+   "row": 259
+  },
+  {
+   "page": 96,
+   "letters": "TORZUL",
+   "note": "TORZUL",
+   "english": "shall rise",
+   "status": "printed",
+   "column": "LUZROT",
+   "number": "27",
+   "row": 258
+  },
+  {
+   "page": 96,
+   "letters": "ILI",
+   "note": "ILI",
+   "english": "in the first",
+   "status": "printed",
+   "column": "ILI",
+   "number": "28",
+   "row": 257
+  },
+  {
+   "page": 96,
+   "letters": "EOL",
+   "note": "EOL",
+   "english": "I made you",
+   "status": "printed",
+   "column": "LOE",
+   "number": "29",
+   "row": 256
+  },
+  {
+   "page": 96,
+   "letters": "BALZARG",
+   "note": "BALZARG arg as in barge",
+   "english": "Stewards",
+   "status": "printed",
+   "column": "GRAZLAB",
+   "number": "30",
+   "row": 255
+  },
+  {
+   "page": 96,
+   "letters": "OD",
+   "note": "OD",
+   "english": "and",
+   "status": "printed",
+   "column": "DO",
+   "number": "31",
+   "row": 254
+  },
+  {
+   "page": 96,
+   "letters": "HAALA",
+   "note": "AAla",
+   "english": "placed you",
+   "status": "printed",
+   "column": "ALAAH",
+   "number": "32",
+   "row": 253
+  },
+  {
+   "page": 96,
+   "letters": "THILNOS",
+   "note": "Thilnos",
+   "english": "in seats 12.",
+   "status": "printed",
+   "column": "SONLIHT",
+   "number": "33",
+   "row": 252
+  },
+  {
+   "page": 96,
+   "letters": "NETAAB",
+   "note": "Netaab",
+   "english": "of government",
+   "status": "printed",
+   "column": "BAATEN",
+   "number": "34",
+   "row": 251
+  },
+  {
+   "page": 96,
+   "letters": "DLUGA",
+   "note": "Dluga",
+   "english": "giving",
+   "status": "printed",
+   "column": "AGULD",
+   "number": "35",
+   "row": 250
+  },
+  {
+   "page": 96,
+   "letters": "VOMZARG",
+   "note": "arg as in barge Vomsarg",
+   "english": "unto every one of you",
+   "status": "printed",
+   "column": "GRAZMOV",
+   "number": "36",
+   "row": 249
+  },
+  {
+   "page": 96,
+   "letters": "LONSA",
+   "note": "Lonsa",
+   "english": "power",
+   "status": "printed",
+   "column": "ASNOL",
+   "number": "37",
+   "row": 248
+  },
+  {
+   "page": 96,
+   "letters": "CAPMIALI",
+   "note": "Capmiali",
+   "english": "successively",
+   "status": "printed",
+   "column": "ILAIMPAC",
+   "number": "38",
+   "row": 247
+  },
+  {
+   "page": 96,
+   "letters": "VORS",
+   "note": "Vors",
+   "english": "out",
+   "status": "printed",
+   "column": "SROV",
+   "number": "39",
+   "row": 246
+  },
+  {
+   "page": 96,
+   "letters": "CLA",
+   "note": "Cla",
+   "english": "456",
+   "status": "printed",
+   "column": "ALC",
+   "number": "40",
+   "row": 245
+  },
+  {
+   "page": 96,
+   "letters": "HOMIL",
+   "note": "Homil",
+   "english": "the true ages",
+   "status": "printed",
+   "column": "LIMOH",
+   "number": "41",
+   "row": 244
+  },
+  {
+   "page": 96,
+   "letters": "COCASB",
+   "note": "Cocasb",
+   "english": "of time",
+   "status": "printed",
+   "column": "BSACOC",
+   "number": "42",
+   "row": 243
+  },
+  {
+   "page": 96,
+   "letters": "FAFEN",
+   "note": "Fafen",
+   "english": "to the intent that",
+   "status": "printed",
+   "column": "NEFAF",
+   "number": "43",
+   "row": 242
+  },
+  {
+   "page": 96,
+   "letters": "IZIZOP",
+   "note": "Izizop; [margin: Gab. ...... Move not.]",
+   "english": "from the highest vessels",
+   "status": "printed",
+   "column": "POZIZI",
+   "number": "44",
+   "row": 241
+  },
+  {
+   "page": 96,
+   "letters": "OD",
+   "note": "Od",
+   "english": "and",
+   "status": "printed",
+   "column": "DO",
+   "number": "45",
+   "row": 240
+  },
+  {
+   "page": 96,
+   "letters": "MIINOAG",
+   "note": "Mi i no ag; Nal. ..... It may be called Mi moag or Diuph; Diuf",
+   "english": "the corners",
+   "status": "printed",
+   "column": "GAONIIM",
+   "number": "46",
+   "row": 239
+  },
+  {
+   "page": 96,
+   "letters": "DE",
+   "note": "De, is my name",
+   "english": "of",
+   "status": "printed",
+   "column": "ED",
+   "number": "47",
+   "row": 238
+  },
+  {
+   "page": 96,
+   "letters": "GNETAAB",
+   "note": "Gnetaab",
+   "english": "your governments",
+   "status": "printed",
+   "column": "BAATENG",
+   "number": "48",
+   "row": 237
+  },
+  {
+   "page": 95,
+   "letters": "VAUN",
+   "note": "Vaün.",
+   "english": "you might work",
+   "status": "printed",
+   "column": "NUAV",
+   "number": "46",
+   "row": 236,
+   "remark": "The journal numbers this row 46. It stands between 50 and 48."
+  },
+  {
+   "page": 95,
+   "letters": "NANAEEL",
+   "note": "Na na e el.",
+   "english": "my power",
+   "status": "printed",
+   "column": "LEEANAN",
+   "number": "50",
+   "row": 235
+  },
+  {
+   "page": 95,
+   "letters": "PANPIR",
+   "note": "Panpir",
+   "english": "powring down",
+   "status": "printed",
+   "column": "RIPNAP",
+   "number": "51",
+   "row": 234
+  },
+  {
+   "page": 95,
+   "letters": "MALPIRGI",
+   "note": "Malpirgi.",
+   "english": "the fiers of life and increase",
+   "status": "printed",
+   "column": "IGRIPLAM",
+   "number": "52",
+   "row": 233
+  },
+  {
+   "page": 95,
+   "letters": "CAOSG",
+   "note": "Caosg.",
+   "english": "continually",
+   "status": "printed",
+   "column": "GSOAC",
+   "number": "53",
+   "row": 232
+  },
+  {
+   "page": 95,
+   "letters": "PILD",
+   "note": "Pild.",
+   "english": "on the earth",
+   "status": "printed",
+   "column": "DLIP",
+   "number": "54",
+   "row": 231
+  },
+  {
+   "page": 95,
+   "letters": "NOAN",
+   "note": "Noan.",
+   "english": "thus you are become",
+   "status": "printed",
+   "column": "NAON",
+   "number": "55",
+   "row": 230
+  },
+  {
+   "page": 95,
+   "letters": "UNALAH",
+   "note": "Unalah.",
+   "english": "The Skyrts",
+   "status": "printed",
+   "column": "HALANU",
+   "number": "56",
+   "row": 229
+  },
+  {
+   "page": 95,
+   "letters": "BALT",
+   "note": "Balt.",
+   "english": "of Justice",
+   "status": "printed",
+   "column": "TLAB",
+   "number": "57",
+   "row": 228
+  },
+  {
+   "page": 95,
+   "letters": "ODVOOAN",
+   "note": "Od vooan.",
+   "english": "and truth",
+   "status": "printed",
+   "column": "NAOOVDO",
+   "number": "38",
+   "row": 227,
+   "remark": "The journal numbers this row 38. It stands between 59 and 57. The keyed transcription has 'Od vooaen.' where the page image prints 'Od vooan.'.",
+   "read_from": "page image, Internet Archive scan truefaithfulrela00deej"
+  },
+  {
+   "page": 95,
+   "letters": "DOOIAP",
+   "note": "Do oi ap.",
+   "english": "In the name",
+   "status": "printed",
+   "column": "PAIOOD",
+   "number": "59",
+   "row": 226
+  },
+  {
+   "page": 95,
+   "letters": "MAD",
+   "note": "Mad.",
+   "english": "of the same your God",
+   "status": "printed",
+   "column": "DAM",
+   "number": "60",
+   "row": 225
+  },
+  {
+   "page": 95,
+   "letters": "GOHOLOR",
+   "note": "Goholor.",
+   "english": "lift up.",
+   "status": "printed",
+   "column": "ROLOHOG",
+   "number": "61",
+   "row": 224
+  },
+  {
+   "page": 95,
+   "letters": "GOHUS",
+   "note": "Gohus.",
+   "english": "I say",
+   "status": "printed",
+   "column": "SUHOG",
+   "number": "62",
+   "row": 223,
+   "remark": "The keyed transcription has 'Gobus.' where the page image prints 'Gohus.'.",
+   "read_from": "page image, Internet Archive scan truefaithfulrela00deej"
+  },
+  {
+   "page": 95,
+   "letters": "AMIRAN",
+   "note": "Amiran.",
+   "english": "Your selves",
+   "status": "printed",
+   "column": "NARIMA",
+   "number": "63",
+   "row": 222
+  },
+  {
+   "page": 95,
+   "letters": "MICMA",
+   "note": "Micma.",
+   "english": "Behold",
+   "status": "printed",
+   "column": "AMCIM",
+   "number": "64",
+   "row": 221
+  },
+  {
+   "page": 95,
+   "letters": "IEHUSOZ",
+   "note": "Jehusoz.",
+   "english": "his mercies",
+   "status": "printed",
+   "column": "ZOSUHEI",
+   "number": "65",
+   "row": 220
+  },
+  {
+   "page": 95,
+   "letters": "CACACOM",
+   "note": "Ca ca com.",
+   "english": "Flourish",
+   "status": "printed",
+   "column": "MOCACAC",
+   "number": "66",
+   "row": 219
+  },
+  {
+   "page": 94,
+   "letters": "ODDOOAIN",
+   "note": "Od do o a in.; Od is and [margin: it must be sounded with one breath.]",
+   "english": "and name",
+   "status": "printed",
+   "column": "NIAOODDO",
+   "number": "67",
+   "row": 218
+  },
+  {
+   "page": 94,
+   "letters": "NOAR",
+   "note": "Noar.",
+   "english": "is become",
+   "status": "printed",
+   "column": "RAON",
+   "number": "68",
+   "row": 217
+  },
+  {
+   "page": 94,
+   "letters": "MICAOLZ",
+   "note": "Mi ca olz.",
+   "english": "mighty",
+   "status": "printed",
+   "column": "ZLOACIM",
+   "number": "69",
+   "row": 216
+  },
+  {
+   "page": 94,
+   "letters": "AAIOM",
+   "note": "A ai om.",
+   "english": "Amongst us",
+   "status": "printed",
+   "column": "MOIAA",
+   "number": "70",
+   "row": 215
+  },
+  {
+   "page": 94,
+   "letters": "CASARMG",
+   "note": "Casarmg.",
+   "english": "in whome",
+   "status": "printed",
+   "column": "GMRASAC",
+   "number": "71",
+   "row": 214,
+   "remark": "The keyed transcription has '[gap:1 word].' where the page image prints 'Casarmg.'.",
+   "read_from": "page image, Internet Archive scan truefaithfulrela00deej"
+  },
+  {
+   "page": 94,
+   "letters": "GOHIA",
+   "note": "Gohia.",
+   "english": "we say",
+   "status": "printed",
+   "column": "AIHOG",
+   "number": "72",
+   "row": 213,
+   "remark": "The keyed transcription has 'Gobia.' where the page image prints 'Gohia.'.",
+   "read_from": "page image, Internet Archive scan truefaithfulrela00deej"
+  },
+  {
+   "page": 94,
+   "letters": "ZACAR",
+   "note": "Zod a car.",
+   "english": "Move",
+   "status": "printed",
+   "column": "RACAZ",
+   "number": "73",
+   "row": 212
+  },
+  {
+   "page": 94,
+   "letters": "UNIGLAG",
+   "note": "Uniglag.",
+   "english": "Descend",
+   "status": "printed",
+   "column": "GALGINU",
+   "number": "74",
+   "row": 211
+  },
+  {
+   "page": 94,
+   "letters": "OD",
+   "note": "Od.",
+   "english": "And",
+   "status": "printed",
+   "column": "DO",
+   "number": "75",
+   "row": 210
+  },
+  {
+   "page": 94,
+   "letters": "IMUAMAR",
+   "note": "It is Im ua mar.",
+   "english": "apply your selves unto us",
+   "status": "printed",
+   "column": "RAMAUMI",
+   "number": "76",
+   "row": 209
+  },
+  {
+   "page": 94,
+   "letters": "PUGO",
+   "note": "It is Pugo.",
+   "english": "as unto the partakers",
+   "status": "printed",
+   "column": "OGUP",
+   "number": "77",
+   "row": 208
+  },
+  {
+   "page": 94,
+   "letters": "PLAPLI",
+   "note": "It is Plapli.",
+   "english": "partakers",
+   "status": "printed",
+   "column": "ILPALP",
+   "number": "78",
+   "row": 207
+  },
+  {
+   "page": 94,
+   "letters": "ANANAEL",
+   "note": "Ananael.",
+   "english": "of the secret wisdom",
+   "status": "printed",
+   "column": "LEANANA",
+   "number": "79",
+   "row": 206
+  },
+  {
+   "page": 94,
+   "letters": "QAAN",
+   "note": "It is q á an",
+   "english": "in your creation",
+   "status": "printed",
+   "column": "Naaq",
+   "number": "80",
+   "row": 205
+  }
+ ]
+}

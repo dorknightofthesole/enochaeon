@@ -1,0 +1,354 @@
+{
+ "call": 6,
+ "printing": "Meric Casaubon, A True & Faithful Relation (London, 1659)",
+ "pages": "pp. 121 to 123",
+ "direction": "forward",
+ "notes": [
+  "p. 122: 'Put out the last Pilgin.' PIZIN after MIR is left out."
+ ],
+ "words": [
+  {
+   "page": 121,
+   "letters": "GAH",
+   "note": "Gah.",
+   "english": "",
+   "status": "printed",
+   "row": 453
+  },
+  {
+   "page": 121,
+   "letters": "SDIU",
+   "note": "es di u; S di u.",
+   "english": "",
+   "status": "printed",
+   "row": 454
+  },
+  {
+   "page": 121,
+   "letters": "CHIS",
+   "note": "Chis.",
+   "english": "",
+   "status": "from_note",
+   "row": 456,
+   "remark": "The letter column prints '— HIS'. The missing letters are read from the note.",
+   "column": "— HIS"
+  },
+  {
+   "page": 121,
+   "letters": "EM",
+   "note": "Em.",
+   "english": "",
+   "status": "printed",
+   "row": 457
+  },
+  {
+   "page": 121,
+   "letters": "MICALZO",
+   "note": "Micálzo",
+   "english": "",
+   "status": "printed",
+   "row": 458
+  },
+  {
+   "page": 121,
+   "letters": "PILZIN",
+   "note": "pilzen.; Pilzin.",
+   "english": "",
+   "status": "printed",
+   "row": 459
+  },
+  {
+   "page": 122,
+   "letters": "SOBAM",
+   "note": "Sobam.",
+   "english": "",
+   "status": "printed",
+   "row": 461
+  },
+  {
+   "page": 122,
+   "letters": "EL",
+   "note": "el",
+   "english": "",
+   "status": "printed",
+   "row": 462
+  },
+  {
+   "page": 122,
+   "letters": "HARG",
+   "note": "argenton.; Harg.",
+   "english": "",
+   "status": "printed",
+   "row": 464
+  },
+  {
+   "page": 122,
+   "letters": "MIR",
+   "note": "Mir.",
+   "english": "",
+   "status": "printed",
+   "row": 465
+  },
+  {
+   "page": 122,
+   "letters": "BABALON",
+   "note": "Babálon.",
+   "english": "",
+   "status": "printed",
+   "row": 467
+  },
+  {
+   "page": 122,
+   "letters": "OD",
+   "note": "od.",
+   "english": "",
+   "status": "printed",
+   "row": 468
+  },
+  {
+   "page": 122,
+   "letters": "OBLOC",
+   "note": "ob loc.",
+   "english": "",
+   "status": "printed",
+   "row": 469
+  },
+  {
+   "page": 122,
+   "letters": "SAMVELG",
+   "note": "Sam velg.",
+   "english": "",
+   "status": "printed",
+   "row": 470
+  },
+  {
+   "page": 122,
+   "letters": "DLUGAR",
+   "note": "Dlugar.",
+   "english": "",
+   "status": "printed",
+   "row": 471
+  },
+  {
+   "page": 122,
+   "letters": "MALPURG",
+   "note": "Mal purg.",
+   "english": "",
+   "status": "printed",
+   "row": 472
+  },
+  {
+   "page": 122,
+   "letters": "ARCAOSGI",
+   "note": "Ar ca ós gi.",
+   "english": "",
+   "status": "printed",
+   "row": 473
+  },
+  {
+   "page": 122,
+   "letters": "OD",
+   "note": "od",
+   "english": "",
+   "status": "printed",
+   "row": 474
+  },
+  {
+   "page": 122,
+   "letters": "ACAM",
+   "note": "A cám",
+   "english": "",
+   "status": "printed",
+   "row": 475
+  },
+  {
+   "page": 122,
+   "letters": "CANAL",
+   "note": "Sanal.; Canal.",
+   "english": "",
+   "status": "printed",
+   "row": 476
+  },
+  {
+   "page": 122,
+   "letters": "SOBOLZAR",
+   "note": "So bol zar",
+   "english": "",
+   "status": "printed",
+   "row": 478
+  },
+  {
+   "page": 122,
+   "letters": "FBLIARD",
+   "note": "Tbli ard. [margin: A or o.]; It is better if the T be made an F, and pronounced F bli ard.",
+   "english": "",
+   "status": "corrected",
+   "row": 479,
+   "column": "TBLIARD",
+   "correction_page": 122,
+   "remark": "The letter column prints TBLIARD. The journal says it is better if the T be made an F."
+  },
+  {
+   "page": 122,
+   "letters": "CAOSGI",
+   "note": "kaosgi.; Ca os gi.",
+   "english": "",
+   "status": "printed",
+   "row": 480
+  },
+  {
+   "page": 122,
+   "letters": "ODCHIF",
+   "note": "kif.; Od chif.",
+   "english": "",
+   "status": "printed",
+   "row": 482
+  },
+  {
+   "page": 122,
+   "letters": "ANETAB",
+   "note": "A né tab.",
+   "english": "",
+   "status": "printed",
+   "row": 484
+  },
+  {
+   "page": 122,
+   "letters": "OD",
+   "note": "od.",
+   "english": "",
+   "status": "printed",
+   "row": 485
+  },
+  {
+   "page": 122,
+   "letters": "MIAM",
+   "note": "Miam.",
+   "english": "",
+   "status": "printed",
+   "row": 486
+  },
+  {
+   "page": 122,
+   "letters": "TAVIV",
+   "note": "Ta viv.",
+   "english": "",
+   "status": "printed",
+   "row": 487
+  },
+  {
+   "page": 122,
+   "letters": "ODD",
+   "note": "Odd.",
+   "english": "",
+   "status": "printed",
+   "row": 488
+  },
+  {
+   "page": 122,
+   "letters": "DARSAR",
+   "note": "Darsar",
+   "english": "",
+   "status": "printed",
+   "row": 489
+  },
+  {
+   "page": 122,
+   "letters": "SOLPETH",
+   "note": "Sol peth.",
+   "english": "",
+   "status": "printed",
+   "row": 490
+  },
+  {
+   "page": 122,
+   "letters": "BIEN",
+   "note": "Bi en.",
+   "english": "",
+   "status": "printed",
+   "row": 491
+  },
+  {
+   "page": 122,
+   "letters": "BRITA",
+   "note": "B ri ta.",
+   "english": "",
+   "status": "printed",
+   "row": 492
+  },
+  {
+   "page": 123,
+   "letters": "OD",
+   "note": "Od.",
+   "english": "",
+   "status": "printed",
+   "row": 493
+  },
+  {
+   "page": 123,
+   "letters": "ZACAM",
+   "note": "Za cam.",
+   "english": "",
+   "status": "from_note",
+   "row": 494,
+   "remark": "The letter column prints 'ZAC .. AM'. The note has no letter where the dots are.",
+   "column": "ZAC .. AM"
+  },
+  {
+   "page": 123,
+   "letters": "GMICALZO",
+   "note": "G-ni cálzo.",
+   "english": "",
+   "status": "printed",
+   "row": 495
+  },
+  {
+   "page": 123,
+   "letters": "SOBHAATH",
+   "note": "Sob há ath.",
+   "english": "",
+   "status": "printed",
+   "row": 496
+  },
+  {
+   "page": 123,
+   "letters": "TRIAN",
+   "note": "Trian.",
+   "english": "",
+   "status": "printed",
+   "row": 497
+  },
+  {
+   "page": 123,
+   "letters": "LUIAHE",
+   "note": "Lu i a he.",
+   "english": "",
+   "status": "printed",
+   "row": 498
+  },
+  {
+   "page": 123,
+   "letters": "ODECRIN",
+   "note": "O de crin.",
+   "english": "",
+   "status": "printed",
+   "row": 499
+  },
+  {
+   "page": 123,
+   "letters": "MAD",
+   "note": "Mad.",
+   "english": "",
+   "status": "printed",
+   "row": 500
+  },
+  {
+   "page": 123,
+   "letters": "QAAON",
+   "note": "Q a a on.",
+   "english": "",
+   "status": "printed",
+   "row": 501
+  }
+ ]
+}

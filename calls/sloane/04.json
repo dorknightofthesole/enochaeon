@@ -1,0 +1,445 @@
+{
+  "call": 4,
+  "manuscript": "British Library MS Sloane 3191, 48 Claves Angelicae, in John Dee's hand",
+  "scan": "docs/998222247-Dee-MS-Sloane-3191.pdf",
+  "where": "PDF page 2, fourth opening, left-hand page (scratch/sloane-pages/ms/s02-f4l.jpg)",
+  "reading": "tools/sloane/sloane-reading.json: one reading by eye, not confirmed",
+  "remarks": [
+    "A small 'i' is written above the e of 'rest-el'."
+  ],
+  "words": [
+    {
+      "letters": "OTHIL",
+      "written": "Othil",
+      "status": "read",
+      "journal": [
+        1
+      ],
+      "differs": ""
+    },
+    {
+      "letters": "LASDI",
+      "written": "lasdi",
+      "status": "read",
+      "journal": [
+        2
+      ],
+      "differs": ""
+    },
+    {
+      "letters": "BABAGE",
+      "written": "babâge",
+      "status": "read",
+      "journal": [
+        3
+      ],
+      "differs": ""
+    },
+    {
+      "letters": "OD",
+      "written": "od",
+      "status": "read",
+      "journal": [
+        4
+      ],
+      "differs": ""
+    },
+    {
+      "letters": "DORPHA",
+      "written": "dorpha",
+      "status": "read",
+      "journal": [
+        5
+      ],
+      "differs": ""
+    },
+    {
+      "letters": "GOHOL",
+      "written": "Gohol",
+      "status": "read",
+      "journal": [
+        6
+      ],
+      "differs": ""
+    },
+    {
+      "letters": "GCHISGE",
+      "written": "G_chis_ge",
+      "status": "read",
+      "journal": [
+        7
+      ],
+      "differs": ""
+    },
+    {
+      "letters": "AUAUAGO",
+      "written": "auáuâgo",
+      "status": "read",
+      "journal": [
+        8
+      ],
+      "differs": "u/v or i/j/y only"
+    },
+    {
+      "letters": "CORMP",
+      "written": "Cormp",
+      "status": "read",
+      "journal": [
+        9
+      ],
+      "differs": ""
+    },
+    {
+      "letters": "PD",
+      "written": "pd",
+      "status": "read",
+      "journal": [
+        10
+      ],
+      "differs": ""
+    },
+    {
+      "letters": "DSONF",
+      "written": "dsonf",
+      "status": "read",
+      "journal": [
+        11
+      ],
+      "differs": ""
+    },
+    {
+      "letters": "VIVDIV",
+      "written": "vi-v́-di-v",
+      "status": "read",
+      "journal": [
+        12
+      ],
+      "differs": ""
+    },
+    {
+      "letters": "CASARMI",
+      "written": "Casármi",
+      "status": "read",
+      "journal": [
+        13
+      ],
+      "differs": ""
+    },
+    {
+      "letters": "OALI",
+      "written": "óâli",
+      "status": "read",
+      "journal": [
+        14
+      ],
+      "differs": ""
+    },
+    {
+      "letters": "MAPM",
+      "written": "Map-m",
+      "status": "read",
+      "journal": [
+        15
+      ],
+      "differs": ""
+    },
+    {
+      "letters": "SOBAM",
+      "written": "Sobam",
+      "status": "read",
+      "journal": [
+        16
+      ],
+      "differs": ""
+    },
+    {
+      "letters": "AG",
+      "written": "ag",
+      "status": "read",
+      "journal": [
+        17
+      ],
+      "differs": ""
+    },
+    {
+      "letters": "CORMPO",
+      "written": "cormpó",
+      "status": "read",
+      "journal": [
+        18
+      ],
+      "differs": ""
+    },
+    {
+      "letters": "CRPL",
+      "written": "c-rp-l",
+      "status": "read",
+      "journal": [
+        19
+      ],
+      "differs": ""
+    },
+    {
+      "letters": "CASARMG",
+      "written": "Casarmg",
+      "status": "read",
+      "journal": [
+        20
+      ],
+      "differs": ""
+    },
+    {
+      "letters": "CROODZI",
+      "written": "cro-od-zi",
+      "status": "read",
+      "journal": [
+        21
+      ],
+      "differs": ""
+    },
+    {
+      "letters": "CHIS",
+      "written": "chis",
+      "status": "read",
+      "journal": [
+        22
+      ],
+      "differs": ""
+    },
+    {
+      "letters": "ODVGEG",
+      "written": "od_vgeg",
+      "status": "read",
+      "journal": [
+        23
+      ],
+      "differs": ""
+    },
+    {
+      "letters": "DST",
+      "written": "dst",
+      "status": "read",
+      "journal": [
+        24
+      ],
+      "differs": ""
+    },
+    {
+      "letters": "CAPIMALI",
+      "written": "ca_pi_máli",
+      "status": "read",
+      "journal": [
+        25
+      ],
+      "differs": ""
+    },
+    {
+      "letters": "CHIS",
+      "written": "chis",
+      "status": "read",
+      "journal": [
+        26
+      ],
+      "differs": ""
+    },
+    {
+      "letters": "CAPIMAON",
+      "written": "Ca_pi_mâ_on",
+      "status": "read",
+      "journal": [
+        27
+      ],
+      "differs": ""
+    },
+    {
+      "letters": "ODLONSHIN",
+      "written": "od_lonshin",
+      "status": "read",
+      "journal": [
+        28
+      ],
+      "differs": ""
+    },
+    {
+      "letters": "CHIS",
+      "written": "chis",
+      "status": "read",
+      "journal": [
+        29
+      ],
+      "differs": ""
+    },
+    {
+      "letters": "TALO",
+      "written": "ta_lo",
+      "status": "read",
+      "journal": [
+        30
+      ],
+      "differs": ""
+    },
+    {
+      "letters": "CLA",
+      "written": "Cla",
+      "status": "read",
+      "journal": [
+        31
+      ],
+      "differs": ""
+    },
+    {
+      "letters": "TORGU",
+      "written": "Torgú",
+      "status": "read",
+      "journal": [
+        32
+      ],
+      "differs": "u/v or i/j/y only"
+    },
+    {
+      "letters": "NORQUASAHI",
+      "written": "Nor_quasáhi",
+      "status": "read",
+      "journal": [
+        33
+      ],
+      "differs": "u/v or i/j/y only"
+    },
+    {
+      "letters": "OD",
+      "written": "od",
+      "status": "read",
+      "journal": [
+        34
+      ],
+      "differs": "letters"
+    },
+    {
+      "letters": "FCAOSGA",
+      "written": "F_caosga",
+      "status": "read",
+      "journal": [
+        35
+      ],
+      "differs": "letters"
+    },
+    {
+      "letters": "BAGLE",
+      "written": "Bagle",
+      "status": "read",
+      "journal": [
+        36
+      ],
+      "differs": ""
+    },
+    {
+      "letters": "ZIRENAIAD",
+      "written": "zi-re-nái-ad",
+      "status": "read",
+      "journal": [
+        37
+      ],
+      "differs": ""
+    },
+    {
+      "letters": "DSI",
+      "written": "Dsi",
+      "status": "read",
+      "journal": [
+        38
+      ],
+      "differs": ""
+    },
+    {
+      "letters": "ODAPILA",
+      "written": "od_Apila",
+      "status": "read",
+      "journal": [
+        39
+      ],
+      "differs": ""
+    },
+    {
+      "letters": "DOOAIP",
+      "written": "Do-o-â-ip",
+      "status": "read",
+      "journal": [
+        40
+      ],
+      "differs": ""
+    },
+    {
+      "letters": "QAAL",
+      "written": "Q-á-al",
+      "status": "read",
+      "journal": [
+        41
+      ],
+      "differs": ""
+    },
+    {
+      "letters": "ZACAR",
+      "written": "ZACAR",
+      "status": "read",
+      "journal": [
+        42
+      ],
+      "differs": ""
+    },
+    {
+      "letters": "OD",
+      "written": "od",
+      "status": "read",
+      "journal": [
+        43
+      ],
+      "differs": "word break"
+    },
+    {
+      "letters": "ZAMRAN",
+      "written": "ZAMRAN",
+      "status": "read",
+      "journal": [
+        43
+      ],
+      "differs": "word break"
+    },
+    {
+      "letters": "OBELISONG",
+      "written": "Obelisong",
+      "status": "read",
+      "journal": [
+        44
+      ],
+      "differs": ""
+    },
+    {
+      "letters": "RESTEL",
+      "written": "rest-el",
+      "status": "read",
+      "journal": [
+        45
+      ],
+      "differs": "letters"
+    },
+    {
+      "letters": "AAF",
+      "written": "aaf",
+      "status": "read",
+      "journal": [
+        46
+      ],
+      "differs": ""
+    },
+    {
+      "letters": "NORMOLAP",
+      "written": "Nor-mo-lap",
+      "status": "read",
+      "journal": [
+        47
+      ],
+      "differs": ""
+    }
+  ],
+  "journal_only": []
+}

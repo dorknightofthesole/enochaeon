@@ -57,13 +57,18 @@ Calls and translation both read [`calls/lexicon.json`](../calls/lexicon.json). T
   "pos": "noun",
   "english_glosses": ["justice", "righteousness", "judgment"],
   "hebrew_skeleton": "ב-א-ל-ת",
-  "dee_ipa": "/b.æ.l.t/",
+  "dee_ipa": {
+    "BALT": "/b.æ.l.t/",
+    "BALTIM": "/b.æ.l.t.ɪ.m/",
+    "BALTOH": "/b.æ.l.t.ɒ.h/",
+    "BALZIZRAS": "/b.æ.l.z.ɪ.z.r.æ.s/"
+  },
   "golden_dawn_ipa": "",
   "sources": ["Key 1", "Key 5", "Key 11"]
 }
 ```
 
-`root` and `variants` are the spellings. They share the glosses and the part of speech. `english_glosses` are what translation matches. `pos` is the part of speech used when more than one gloss is close. `dee_ipa` on the root is the letter rule for that root. A variant is spoken with the letter rule of its own spelling. `golden_dawn_ipa` is empty. `calls.ipa` chooses which field is spoken. `hebrew_skeleton` and `sources` stay in the file and are not read. How the Dee reading is made is [dee-ipa.md](dee-ipa.md).
+`root` and `variants` are the spellings. They share the glosses and the part of speech. `english_glosses` are what translation matches. `pos` is the part of speech used when more than one gloss is close. `dee_ipa` lists the Dee reading of each spelling, and the stored string is what is spoken. Each was first made by the letter rule from the letters of that spelling. An entry also has a field for the Piper voice, named in `calls.piper.ipa`, which lists what that voice is given for each spelling. `golden_dawn_ipa` is empty. `calls.ipa` chooses which reading is spoken. `hebrew_skeleton` and `sources` stay in the file and are not read. How the Dee reading is made is [dee-ipa.md](dee-ipa.md).
 
 A Call looks up the spelling that is written. `Iad` is this entry, and it is spoken `/j.æ.d/`:
 
@@ -73,14 +78,15 @@ A Call looks up the spelling that is written. `Iad` is this entry, and it is spo
   "variants": ["IAD", "IADO"],
   "pos": "noun",
   "english_glosses": ["God", "the Divine"],
-  "dee_ipa": "/j.æ.d/",
+  "dee_ipa": {"IAD": "/j.æ.d/", "IADO": "/j.æ.d.oʊ/"},
+  "dee_ipa_piper_john": {"IAD": "/jˈaːd/", "IADO": "/jadoʊ/"},
   "golden_dawn_ipa": ""
 }
 ```
 
-`iado` is spoken `/j.æ.d.oʊ/`, the letter rule of that spelling. `Mad` is a different entry, `/m.æ.d/`, even though it also lists `God`. A Call that says `Iad` does not become `Mad`.
+`iado` is spoken `/j.æ.d.oʊ/`, the string stored for that spelling. The Piper voice John is given the strings in `dee_ipa_piper_john`. `Mad` is a different entry, `/m.æ.d/`, even though it also lists `God`. A Call that says `Iad` does not become `Mad`.
 
-Translation starts from the English. `justice` is an exact gloss of the `balt` family, so the trace writes `balzizras`, the spelling that appears in the most Call files. The wav speaks `/b.æ.l.z.ɪ.z.r.æ.s/`, the letter rule of `balzizras`. `fire` is an exact gloss of `prge`, whose `dee_ipa` is `/p.r.ɡ.eɪ/`.
+Translation starts from the English. `justice` is an exact gloss of the `balt` family, so the trace writes `balzizras`, the spelling that appears in the most Call files. The wav speaks `/b.æ.l.z.ɪ.z.r.æ.s/`, the string stored for `balzizras`. `fire` is an exact gloss of `prge`, whose `dee_ipa` is `/p.r.ɡ.eɪ/`.
 
 `Speak foobar into the fire.` is written `camliax [foobar] a manin prge.`
 
@@ -92,11 +98,11 @@ Translation starts from the English. `justice` is an exact gloss of the `balt` f
 
 ## Calls
 
-A file in [`calls/`](../calls) is already Enochian, written in Dee's Latin letters. `01.txt` through `18.txt` are the first eighteen Keys. `19-lil.txt` through `48-tex.txt` are the Call of the Aethyrs, the same words with that aethyr's name. Nothing in a Call is transliterated into Hebrew or into the English cipher.
+A file in [`calls/`](../calls) is already Enochian, written in Dee's Latin letters. `01.txt` through `18.txt` are the first eighteen Keys. `19-lil.txt` through `48-tex.txt` are the Call of the Aethyrs, the same words with that aethyr's name. The words of these forty-eight files are the words in [`calls/journal/`](../calls/journal), and [call-texts.md](call-texts.md) says where they come from. Nothing in a Call is transliterated into Hebrew or into the English cipher.
 
 `enochaeon calls` speaks every `.txt` in `./calls`. `enochaeon calls calls/01.txt` speaks one file. Each file gets a sibling `.wav`. A spelling is looked up in the lexicon, and the field named by `calls.ipa` is what is spoken. A spelling with no reading is left out of the recording and printed. A file with no readable word writes no wav.
 
-`dee_ipa` is the letter rule for the spelling that is written. [dee-ipa.md](dee-ipa.md) is how that string is made, and where it can still disagree with the syllables Dee wrote in the margins. `golden_dawn_ipa` is empty. Calls 49 and 50 are not part of Dee's forty-eight Keys. Only the 50th call has English for its new spellings, from Crowley's footnote.
+`dee_ipa` is the string the lexicon has for the spelling that is written. [dee-ipa.md](dee-ipa.md) is how that string was made, and where it can still disagree with the syllables Dee wrote in the margins. `golden_dawn_ipa` is empty. Calls 49 and 50 are not part of Dee's forty-eight Keys. Only the 50th call has English for its new spellings, from Crowley's footnote.
 
 Piper speaks the IPA. espeak speaks phonemes derived from that same string. `calls.engine` in [`enochaeon.json`](../enochaeon.json) chooses which one. `--engine espeak` or `--engine piper` overrides that for one Call run. `calls.piper.voice` is John's model, downloaded into `scratch/piper-voices/`. `calls.piper.length_scale` is how long Piper holds each phoneme. `1.0` is conversational, and higher is slower. `calls.piper.word_ms` is the silence between Piper breaths. espeak keeps 600 milliseconds between words. A Call wav carries the same gap comment as a cipher wav.
 
@@ -105,7 +111,7 @@ A comma stays on the line, and a period starts a new line.
 | File | Role |
 | --- | --- |
 | `calls/*.txt` | Dee's Latin spellings |
-| `calls/lexicon.json` | Gloss, part of speech, `dee_ipa`, and `golden_dawn_ipa` for each root and variant |
+| `calls/lexicon.json` | Gloss, part of speech, `dee_ipa`, the Piper voice's field, and `golden_dawn_ipa` for each root and variant |
 | `enochaeon.json` | Engine, IPA field, Piper voice, length, and the Piper gap |
 | `scratch/piper-voices/` | John's voice. The download creates this directory. It is not in git |
 | `src/enochaeon/enochian.py` | Reads a Call file and leaves out a spelling with no reading |
@@ -120,7 +126,7 @@ A comma stays on the line, and a period starts a new line.
 
 An exact gloss wins, and it does not ask the model. A gloss may cover up to four English words. Otherwise the phrase is compared with the English glosses in the lexicon by `all-MiniLM-L6-v2`. A score under 0.50 is left unmatched. Among the glosses at or above that line, the one with the same part of speech is spoken. If no gloss of that part clears the line, the highest score is spoken. The part of speech comes from `nltk`.
 
-Several spellings can share one gloss. The spelling that appears in the most Call files is the one written, then the shortest, then alphabetical order. The Dee reading of that spelling is its own letter rule. The lexicon section shows this for `justice` and for `Speak foobar into the fire.`
+Several spellings can share one gloss. The spelling that appears in the most Call files is the one written, then the shortest, then alphabetical order. The Dee reading of that spelling is the string stored for it. The lexicon section shows this for `justice` and for `Speak foobar into the fire.`
 
 An English word with nothing close stays in the Enochian file in brackets and is left out of the wav. It is also printed as left out. A file with no Call word writes no wav and no trace. The translation wav carries no gap comment.
 
@@ -136,7 +142,9 @@ An English word with nothing close stays in the Enochian file in brackets and is
 
 The syllable rule comes from Aaron Leitch's reading of John Dee's phonetic notes: a vowel followed by a consonant in its syllable is short, a vowel left open is long, and a letter standing alone takes its letter-name. He states that rule in the pronunciation essay ["Angelical Pronunciation"](http://kheph777.tripod.com/art_angelical_pronunciation.pdf) and again in the introduction to *The Angelical Language, Volume II: An Encyclopedic Lexicon of the Tongue of Angels* (Llewellyn, 2010). This program applies it to a whole English word on the cipher path. It does not use Dee's syllable divisions. *Volume I: The Complete History and Mythos of the Tongue of Angels* (Llewellyn, 2010) is the account of the alphabet this key follows: Dee's letter names, the Hebrew letter each one answers to, the correspondence used by the Golden Dawn, and the Latin letters Leitch reads. None of Leitch's prose is copied here. The cipher does not include the lexicon, the glosses, or Leitch's own phonetic spellings from that book.
 
-The texts in `calls/` are Dee's forty-eight Keys. Calls 49 and 50 are not part of those Keys; their new spellings are pronounced by the letter rule, and only the 50th call has English, from Crowley's footnote. The texts are not taken from Leitch's lexicon. The glosses and the two pronunciations used by Calls and translate are [`calls/lexicon.json`](../calls/lexicon.json).
+The texts in `calls/` are Dee's forty-eight Keys. Their words are the words of Dee's own manuscript of the Keys, British Library MS Sloane 3191, as it was read from a scan. Each word is in [`calls/sloane/`](../calls/sloane). The reading is one reading by eye and has not been confirmed. The second source is Dee's journal as Meric Casaubon printed it in *A True & Faithful Relation of What Passed for Many Yeers Between Dr. John Dee ... and Some Spirits* (London, 1659). The printing was read in the keyed transcription made by the Text Creation Partnership (EEBO-TCP Phase 1, text A37412), which the Partnership releases under Creative Commons 0 1.0 Universal. It is kept unchanged as [`casaubon-1659-true-and-faithful-relation.xml`](casaubon-1659-true-and-faithful-relation.xml). Each word of the printing, with its page, Dee's note and a status, is in [`calls/journal/`](../calls/journal). The journal does not decide the spelling of a call. It is kept for Dee's notes and to show where the two sources differ. [call-texts.md](call-texts.md) describes both records and lists every uncertain word.
+
+Calls 49 and 50 are not part of those Keys; their new spellings have a `dee_ipa` made by the letter rule, and only the 50th call has English, from Crowley's footnote. The texts are not taken from Leitch's lexicon. The glosses and the two pronunciations used by Calls and translate are [`calls/lexicon.json`](../calls/lexicon.json).
 
 The word list is American SCOWL, size 50: the English and American `words` lists through that size, lowercased to ASCII letters. Proper names, abbreviations, contractions, and the uppercase lists are not included. SCOWL is Copyright 2000-2018 by Kevin Atkinson.
 

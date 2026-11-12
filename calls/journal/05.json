@@ -1,0 +1,461 @@
+{
+ "call": 5,
+ "printing": "Meric Casaubon, A True & Faithful Relation (London, 1659)",
+ "pages": "pp. 119 to 121",
+ "direction": "forward",
+ "notes": [
+  "p. 120: ZIZOP before ZCHIS is left out; the journal says Zod-chis is better to be used."
+ ],
+ "words": [
+  {
+   "page": 119,
+   "letters": "SAPAH",
+   "note": "Sá pah.; Sa pah.",
+   "english": "",
+   "status": "printed",
+   "row": 390
+  },
+  {
+   "page": 119,
+   "letters": "ZIMII",
+   "note": "Zi mii. [margin: L. Lasky.]",
+   "english": "",
+   "status": "printed",
+   "row": 392,
+   "remark": "The keyed transcription has 'L. [gap:1 word].' where the page image prints 'L. Lasky.'.",
+   "read_from": "page image, Internet Archive scan truefaithfulrela00deej"
+  },
+  {
+   "page": 119,
+   "letters": "DUIV",
+   "note": "Du iv.",
+   "english": "",
+   "status": "printed",
+   "row": 393
+  },
+  {
+   "page": 119,
+   "letters": "OD",
+   "note": "Od. [margin: O D. ...no ...reth ...& ...ione [gap:1 word].]",
+   "english": "",
+   "status": "printed",
+   "row": 394
+  },
+  {
+   "page": 119,
+   "letters": "NOAS",
+   "note": "Noas.",
+   "english": "",
+   "status": "printed",
+   "row": 395
+  },
+  {
+   "page": 119,
+   "letters": "TAQANIS",
+   "note": "Ta qu a nis.",
+   "english": "",
+   "status": "printed",
+   "row": 396
+  },
+  {
+   "page": 119,
+   "letters": "ADROCH",
+   "note": "as otch; Ad roch.",
+   "english": "",
+   "status": "printed",
+   "row": 397
+  },
+  {
+   "page": 119,
+   "letters": "DORPHAL",
+   "note": "Dorphal.",
+   "english": "",
+   "status": "printed",
+   "row": 398
+  },
+  {
+   "page": 119,
+   "letters": "CAOSG",
+   "note": "Ca ósg",
+   "english": "",
+   "status": "printed",
+   "row": 399
+  },
+  {
+   "page": 119,
+   "letters": "OD",
+   "note": "Od.",
+   "english": "",
+   "status": "printed",
+   "row": 400
+  },
+  {
+   "page": 119,
+   "letters": "FAONTS",
+   "note": "Fa onts.",
+   "english": "",
+   "status": "printed",
+   "row": 401
+  },
+  {
+   "page": 119,
+   "letters": "PIRIPSOL",
+   "note": "Pir ip sol.",
+   "english": "",
+   "status": "printed",
+   "row": 402
+  },
+  {
+   "page": 119,
+   "letters": "TABLIOR",
+   "note": "Tá blior.",
+   "english": "",
+   "status": "printed",
+   "row": 403
+  },
+  {
+   "page": 119,
+   "letters": "CASARM",
+   "note": "Casarm.",
+   "english": "",
+   "status": "printed",
+   "row": 404
+  },
+  {
+   "page": 119,
+   "letters": "AMIPZI",
+   "note": "A mip zi",
+   "english": "",
+   "status": "printed",
+   "row": 405
+  },
+  {
+   "page": 119,
+   "letters": "NAZARTH",
+   "note": "Na zarth.",
+   "english": "",
+   "status": "printed",
+   "row": 406
+  },
+  {
+   "page": 119,
+   "letters": "AF",
+   "note": "Af.",
+   "english": "",
+   "status": "printed",
+   "row": 407
+  },
+  {
+   "page": 119,
+   "letters": "OD",
+   "note": "Od.",
+   "english": "",
+   "status": "printed",
+   "row": 408
+  },
+  {
+   "page": 119,
+   "letters": "DLUGAR",
+   "note": "Dlu gar",
+   "english": "",
+   "status": "printed",
+   "row": 409
+  },
+  {
+   "page": 120,
+   "letters": "ZIZOP",
+   "note": "Zizop.",
+   "english": "",
+   "status": "printed",
+   "row": 410
+  },
+  {
+   "page": 120,
+   "letters": "ZLIDA",
+   "note": "Zod lida.; It is a Word and a Letter.; Z. d-lida.; Z lida.",
+   "english": "",
+   "status": "printed",
+   "row": 412
+  },
+  {
+   "page": 120,
+   "letters": "CAOSGI",
+   "note": "Ca ós gi.",
+   "english": "",
+   "status": "printed",
+   "row": 414
+  },
+  {
+   "page": 120,
+   "letters": "TOLTORGI",
+   "note": "Toltórgi.",
+   "english": "",
+   "status": "printed",
+   "row": 415
+  },
+  {
+   "page": 120,
+   "letters": "OD",
+   "note": "Od",
+   "english": "",
+   "status": "printed",
+   "row": 416
+  },
+  {
+   "page": 120,
+   "letters": "ZCHIS",
+   "note": "Zod chis; Nal. It is better than the other, I mean that Zod-chis being of one signification, with Zizop that Zod-chis is better to be used.",
+   "english": "",
+   "status": "corrected",
+   "row": 418,
+   "correction_page": 120,
+   "remark": "The journal gives ZIZOP and then ZCHIS, and says Zod-chis 'is better to be used'. ZIZOP is left out."
+  },
+  {
+   "page": 120,
+   "letters": "ESIASCH",
+   "note": "E siach.",
+   "english": "",
+   "status": "printed",
+   "row": 420
+  },
+  {
+   "page": 120,
+   "letters": "L",
+   "note": "L.",
+   "english": "",
+   "status": "printed",
+   "row": 421
+  },
+  {
+   "page": 120,
+   "letters": "TAUIU",
+   "note": "Ta ui u.",
+   "english": "",
+   "status": "printed",
+   "row": 422
+  },
+  {
+   "page": 120,
+   "letters": "OD",
+   "note": "Od.",
+   "english": "",
+   "status": "printed",
+   "row": 423
+  },
+  {
+   "page": 120,
+   "letters": "IAOD",
+   "note": "I á od.",
+   "english": "",
+   "status": "printed",
+   "row": 424
+  },
+  {
+   "page": 120,
+   "letters": "THILD",
+   "note": "Thild, one Syllable.",
+   "english": "",
+   "status": "printed",
+   "row": 425
+  },
+  {
+   "page": 120,
+   "letters": "DS",
+   "note": "ds.",
+   "english": "",
+   "status": "printed",
+   "row": 426
+  },
+  {
+   "page": 120,
+   "letters": "HUBAR",
+   "note": "Hubar.",
+   "english": "",
+   "status": "printed",
+   "row": 427
+  },
+  {
+   "page": 120,
+   "letters": "PEOAL",
+   "note": "Pe ó al.",
+   "english": "",
+   "status": "printed",
+   "row": 428
+  },
+  {
+   "page": 120,
+   "letters": "SOBA",
+   "note": "So ba. [margin: Camps 1. 69. 5. Julii so expounded.]",
+   "english": "",
+   "status": "printed",
+   "row": 429
+  },
+  {
+   "page": 120,
+   "letters": "CORMFA",
+   "note": "Cormfa",
+   "english": "",
+   "status": "printed",
+   "row": 430
+  },
+  {
+   "page": 120,
+   "letters": "CHISTA",
+   "note": "Kista.; Chis ta.",
+   "english": "",
+   "status": "printed",
+   "row": 431
+  },
+  {
+   "page": 120,
+   "letters": "LA",
+   "note": "La.",
+   "english": "",
+   "status": "printed",
+   "row": 433
+  },
+  {
+   "page": 120,
+   "letters": "VLS",
+   "note": "Vls.",
+   "english": "",
+   "status": "printed",
+   "row": 434
+  },
+  {
+   "page": 120,
+   "letters": "OD",
+   "note": "Od.",
+   "english": "",
+   "status": "printed",
+   "row": 435
+  },
+  {
+   "page": 121,
+   "letters": "QCOCASB",
+   "note": "Q có casb.",
+   "english": "",
+   "status": "printed",
+   "row": 436
+  },
+  {
+   "page": 121,
+   "letters": "CA",
+   "note": "Ca.; Sa.",
+   "english": "",
+   "status": "printed",
+   "row": 437
+  },
+  {
+   "page": 121,
+   "letters": "NIIS",
+   "note": "Ni is.",
+   "english": "",
+   "status": "printed",
+   "row": 439
+  },
+  {
+   "page": 121,
+   "letters": "OD",
+   "note": "Od.",
+   "english": "",
+   "status": "printed",
+   "row": 440
+  },
+  {
+   "page": 121,
+   "letters": "DARBS",
+   "note": "Darbs-one Syllable.",
+   "english": "Obey",
+   "status": "printed",
+   "row": 441
+  },
+  {
+   "page": 121,
+   "letters": "QAAS",
+   "note": "Qá as.",
+   "english": "",
+   "status": "printed",
+   "row": 442
+  },
+  {
+   "page": 121,
+   "letters": "FETHARZI",
+   "note": "Feth ár zi.",
+   "english": "",
+   "status": "conflict",
+   "row": 443,
+   "column": "S. FETHARZI",
+   "other": "SFETHARZI",
+   "remark": "The letter column prints 'S. FETHARZI'. The note has 'Feth ár zi' with no S."
+  },
+  {
+   "page": 121,
+   "letters": "OD",
+   "note": "Od.",
+   "english": "",
+   "status": "printed",
+   "row": 444
+  },
+  {
+   "page": 121,
+   "letters": "BLIORA",
+   "note": "Bli ó ra [margin: Cor. 1.]",
+   "english": "",
+   "status": "printed",
+   "row": 445
+  },
+  {
+   "page": 121,
+   "letters": "IAIAL",
+   "note": "Ia ial.",
+   "english": "",
+   "status": "printed",
+   "row": 446
+  },
+  {
+   "page": 121,
+   "letters": "EDNAS",
+   "note": "Ed nas.",
+   "english": "",
+   "status": "printed",
+   "row": 447
+  },
+  {
+   "page": 121,
+   "letters": "CICLES",
+   "note": "Ci cles.",
+   "english": "",
+   "status": "printed",
+   "row": 448
+  },
+  {
+   "page": 121,
+   "letters": "BAGLE",
+   "note": "Bá gle.",
+   "english": "",
+   "status": "printed",
+   "row": 449
+  },
+  {
+   "page": 121,
+   "letters": "GEJAD",
+   "note": "ie in as ien tle iad-as iade.; Ge jad.",
+   "english": "",
+   "status": "from_note",
+   "row": 451,
+   "remark": "Two rows have only dots in the letter column. The first has the note 'ie in as ien tle iad-as iade', which is taken as a note on the sound and not as a word. The letters are read from the second note, 'Ge jad'.",
+   "column": "............"
+  },
+  {
+   "page": 121,
+   "letters": "IL",
+   "note": "i l.",
+   "english": "",
+   "status": "from_note",
+   "row": 452,
+   "remark": "The letter column is empty. The note prints 'i l.'; the printing does not show whether that is one word or two."
+  }
+ ]
+}

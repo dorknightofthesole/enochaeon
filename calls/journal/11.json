@@ -1,0 +1,432 @@
+{
+ "call": 11,
+ "printing": "Meric Casaubon, A True & Faithful Relation (London, 1659)",
+ "pages": "pp. 133 and 134, and p. 193",
+ "direction": "forward",
+ "notes": [
+  "p. 133 is missing from the keyed transcription. Its words were read from the page image.",
+  "p. 193: 'Then begin at the first Call, Move, as before.' The last 14 words are those of Call 1 from ZACARE."
+ ],
+ "words": [
+  {
+   "page": 133,
+   "letters": "OXIAYAL",
+   "note": "Ox i Ay al.",
+   "english": "",
+   "status": "printed",
+   "read_from": "page image, Internet Archive scan truefaithfulrela00deej"
+  },
+  {
+   "page": 133,
+   "letters": "HOLDO",
+   "note": "Hol do.",
+   "english": "",
+   "status": "printed",
+   "read_from": "page image, Internet Archive scan truefaithfulrela00deej"
+  },
+  {
+   "page": 133,
+   "letters": "OD",
+   "note": "Od.",
+   "english": "",
+   "status": "printed",
+   "read_from": "page image, Internet Archive scan truefaithfulrela00deej"
+  },
+  {
+   "page": 133,
+   "letters": "ZIROM",
+   "note": "Zir om.",
+   "english": "",
+   "status": "from_note",
+   "remark": "The letter column prints '.IROM'. The missing letters are read from the note.",
+   "column": ".IROM",
+   "read_from": "page image, Internet Archive scan truefaithfulrela00deej"
+  },
+  {
+   "page": 133,
+   "letters": "O",
+   "note": "O.",
+   "english": "",
+   "status": "printed",
+   "read_from": "page image, Internet Archive scan truefaithfulrela00deej"
+  },
+  {
+   "page": 133,
+   "letters": "CORAXO",
+   "note": "Co ráx o.",
+   "english": "",
+   "status": "printed",
+   "read_from": "page image, Internet Archive scan truefaithfulrela00deej"
+  },
+  {
+   "page": 133,
+   "letters": "DS",
+   "note": "Ds.",
+   "english": "",
+   "status": "printed",
+   "read_from": "page image, Internet Archive scan truefaithfulrela00deej"
+  },
+  {
+   "page": 133,
+   "letters": "ZILDAR",
+   "note": "Zil dar.",
+   "english": "",
+   "status": "printed",
+   "read_from": "page image, Internet Archive scan truefaithfulrela00deej"
+  },
+  {
+   "page": 133,
+   "letters": "RAASY",
+   "note": "Ra a sy.",
+   "english": "",
+   "status": "printed",
+   "read_from": "page image, Internet Archive scan truefaithfulrela00deej"
+  },
+  {
+   "page": 133,
+   "letters": "OD",
+   "note": "Od.",
+   "english": "",
+   "status": "printed",
+   "read_from": "page image, Internet Archive scan truefaithfulrela00deej"
+  },
+  {
+   "page": 133,
+   "letters": "VABZIR",
+   "note": "Vab zir.",
+   "english": "",
+   "status": "printed",
+   "read_from": "page image, Internet Archive scan truefaithfulrela00deej"
+  },
+  {
+   "page": 133,
+   "letters": "CAMLIAX",
+   "note": "Cam li ax.",
+   "english": "",
+   "status": "printed",
+   "read_from": "page image, Internet Archive scan truefaithfulrela00deej"
+  },
+  {
+   "page": 133,
+   "letters": "OD",
+   "note": "Od.",
+   "english": "",
+   "status": "printed",
+   "read_from": "page image, Internet Archive scan truefaithfulrela00deej"
+  },
+  {
+   "page": 133,
+   "letters": "BAHAL",
+   "note": "Ba hal.",
+   "english": "",
+   "status": "printed",
+   "read_from": "page image, Internet Archive scan truefaithfulrela00deej"
+  },
+  {
+   "page": 133,
+   "letters": "NIISO",
+   "note": "Ni i so.",
+   "english": "",
+   "status": "printed",
+   "read_from": "page image, Internet Archive scan truefaithfulrela00deej"
+  },
+  {
+   "page": 134,
+   "letters": "SALMAN",
+   "note": "Sal man.",
+   "english": "",
+   "status": "printed",
+   "row": 732,
+   "remark": "The keyed transcription has 'Salman. [gap:1 word].' where the page image prints 'Sal man.'.",
+   "read_from": "page image, Internet Archive scan truefaithfulrela00deej"
+  },
+  {
+   "page": 134,
+   "letters": "TELOCH",
+   "note": "hotch.; Te loch.",
+   "english": "",
+   "status": "from_note",
+   "row": 733,
+   "remark": "The letter column prints 'TELOC..'. The missing letters are read from the note.; The keyers could not read 'hotch.', which the page image prints above 'Te loch.'",
+   "column": "TELOC..",
+   "read_from": "page image, Internet Archive scan truefaithfulrela00deej"
+  },
+  {
+   "page": 134,
+   "letters": "CASARMAN",
+   "note": "Casar man.",
+   "english": "",
+   "status": "printed",
+   "row": 734
+  },
+  {
+   "page": 134,
+   "letters": "HOLQ",
+   "note": "Hol q.",
+   "english": "",
+   "status": "printed",
+   "row": 735
+  },
+  {
+   "page": 134,
+   "letters": "OD",
+   "note": "Od.",
+   "english": "",
+   "status": "printed",
+   "row": 736
+  },
+  {
+   "page": 134,
+   "letters": "TI",
+   "note": "Ti.",
+   "english": "",
+   "status": "printed",
+   "row": 737
+  },
+  {
+   "page": 134,
+   "letters": "TA",
+   "note": "Ta.",
+   "english": "",
+   "status": "printed",
+   "row": 738
+  },
+  {
+   "page": 134,
+   "letters": "ZCHIS",
+   "note": "Zod chis.",
+   "english": "",
+   "status": "printed",
+   "row": 739
+  },
+  {
+   "page": 134,
+   "letters": "SOBA",
+   "note": "So ba.",
+   "english": "",
+   "status": "printed",
+   "row": 740
+  },
+  {
+   "page": 134,
+   "letters": "CORMF",
+   "note": "Cormf.",
+   "english": "",
+   "status": "printed",
+   "row": 741
+  },
+  {
+   "page": 134,
+   "letters": "IGA",
+   "note": "I ga.",
+   "english": "",
+   "status": "printed",
+   "row": 742
+  },
+  {
+   "page": 134,
+   "letters": "NIISA",
+   "note": "Ni i sa.",
+   "english": "",
+   "status": "printed",
+   "row": 743
+  },
+  {
+   "page": 134,
+   "letters": "BAGLE",
+   "note": "Bagle.",
+   "english": "",
+   "status": "printed",
+   "row": 744
+  },
+  {
+   "page": 134,
+   "letters": "ABRAMG",
+   "note": "Ab ramg. g, not as dg.",
+   "english": "",
+   "status": "printed",
+   "row": 745,
+   "remark": "The keyed transcription has 'Ab ramg. g, not us dg. Nonsp.' where the page image prints 'Ab ramg. g, not as dg.'.",
+   "read_from": "page image, Internet Archive scan truefaithfulrela00deej"
+  },
+  {
+   "page": 134,
+   "letters": "NONCP",
+   "note": "Nonsp.; Noncp.",
+   "english": "",
+   "status": "from_note",
+   "row": 746,
+   "remark": "The letter column prints 'N. NCP'. The missing letters are read from the note.; The keyed transcription puts 'Nonsp.' with the row above. The page image prints it above 'Noncp.', in the place where other rows have a note on the sound.",
+   "column": "N. NCP",
+   "read_from": "page image, Internet Archive scan truefaithfulrela00deej"
+  },
+  {
+   "page": 193,
+   "letters": "ZACARE",
+   "note": "",
+   "english": "",
+   "status": "corrected",
+   "repeat_of": {
+    "call": 1,
+    "word": 73
+   },
+   "remark": "Not spelled here. The journal says 'Then begin at the first Call, Move, as before.' (p. 193); the word is taken from the end of Call 1."
+  },
+  {
+   "page": 193,
+   "letters": "CA",
+   "note": "",
+   "english": "",
+   "status": "printed",
+   "repeat_of": {
+    "call": 1,
+    "word": 74
+   },
+   "remark": "Not spelled here. The journal says 'Then begin at the first Call, Move, as before.' (p. 193); the word is taken from the end of Call 1."
+  },
+  {
+   "page": 193,
+   "letters": "OD",
+   "note": "",
+   "english": "",
+   "status": "conflict",
+   "repeat_of": {
+    "call": 1,
+    "word": 75
+   },
+   "remark": "Not spelled here. The journal says 'Then begin at the first Call, Move, as before.' (p. 193); the word is taken from the end of Call 1."
+  },
+  {
+   "page": 193,
+   "letters": "ZAMRAN",
+   "note": "",
+   "english": "",
+   "status": "corrected",
+   "repeat_of": {
+    "call": 1,
+    "word": 76
+   },
+   "remark": "Not spelled here. The journal says 'Then begin at the first Call, Move, as before.' (p. 193); the word is taken from the end of Call 1."
+  },
+  {
+   "page": 193,
+   "letters": "ODO",
+   "note": "",
+   "english": "",
+   "status": "printed",
+   "repeat_of": {
+    "call": 1,
+    "word": 77
+   },
+   "remark": "Not spelled here. The journal says 'Then begin at the first Call, Move, as before.' (p. 193); the word is taken from the end of Call 1."
+  },
+  {
+   "page": 193,
+   "letters": "CICLE",
+   "note": "",
+   "english": "",
+   "status": "printed",
+   "repeat_of": {
+    "call": 1,
+    "word": 78
+   },
+   "remark": "Not spelled here. The journal says 'Then begin at the first Call, Move, as before.' (p. 193); the word is taken from the end of Call 1."
+  },
+  {
+   "page": 193,
+   "letters": "QAA",
+   "note": "",
+   "english": "",
+   "status": "printed",
+   "repeat_of": {
+    "call": 1,
+    "word": 79
+   },
+   "remark": "Not spelled here. The journal says 'Then begin at the first Call, Move, as before.' (p. 193); the word is taken from the end of Call 1."
+  },
+  {
+   "page": 193,
+   "letters": "ZORGE",
+   "note": "",
+   "english": "",
+   "status": "printed",
+   "repeat_of": {
+    "call": 1,
+    "word": 80
+   },
+   "remark": "Not spelled here. The journal says 'Then begin at the first Call, Move, as before.' (p. 193); the word is taken from the end of Call 1."
+  },
+  {
+   "page": 193,
+   "letters": "LAP",
+   "note": "",
+   "english": "",
+   "status": "printed",
+   "repeat_of": {
+    "call": 1,
+    "word": 81
+   },
+   "remark": "Not spelled here. The journal says 'Then begin at the first Call, Move, as before.' (p. 193); the word is taken from the end of Call 1."
+  },
+  {
+   "page": 193,
+   "letters": "ZIRDO",
+   "note": "",
+   "english": "",
+   "status": "from_note",
+   "repeat_of": {
+    "call": 1,
+    "word": 82
+   },
+   "remark": "Not spelled here. The journal says 'Then begin at the first Call, Move, as before.' (p. 193); the word is taken from the end of Call 1."
+  },
+  {
+   "page": 193,
+   "letters": "NOCO",
+   "note": "",
+   "english": "",
+   "status": "printed",
+   "repeat_of": {
+    "call": 1,
+    "word": 83
+   },
+   "remark": "Not spelled here. The journal says 'Then begin at the first Call, Move, as before.' (p. 193); the word is taken from the end of Call 1."
+  },
+  {
+   "page": 193,
+   "letters": "MAD",
+   "note": "",
+   "english": "",
+   "status": "printed",
+   "repeat_of": {
+    "call": 1,
+    "word": 84
+   },
+   "remark": "Not spelled here. The journal says 'Then begin at the first Call, Move, as before.' (p. 193); the word is taken from the end of Call 1."
+  },
+  {
+   "page": 193,
+   "letters": "HOATH",
+   "note": "",
+   "english": "",
+   "status": "printed",
+   "repeat_of": {
+    "call": 1,
+    "word": 85
+   },
+   "remark": "Not spelled here. The journal says 'Then begin at the first Call, Move, as before.' (p. 193); the word is taken from the end of Call 1."
+  },
+  {
+   "page": 193,
+   "letters": "IAIDA",
+   "note": "",
+   "english": "",
+   "status": "printed",
+   "repeat_of": {
+    "call": 1,
+    "word": 86
+   },
+   "remark": "Not spelled here. The journal says 'Then begin at the first Call, Move, as before.' (p. 193); the word is taken from the end of Call 1."
+  }
+ ]
+}

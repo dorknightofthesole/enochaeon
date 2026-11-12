@@ -1,0 +1,349 @@
+{
+ "call": 16,
+ "printing": "Meric Casaubon, A True & Faithful Relation (London, 1659)",
+ "pages": "p. 136, and p. 194",
+ "direction": "forward",
+ "notes": [
+  "On pp. 134 to 137 the printing runs pieces of several calls together. The pieces are put under their calls here by the first words Dee lists on p. 200, by his margin notes against the English on pp. 193 and 194, and by the order of the English there. The printing itself does not mark where each piece belongs.",
+  "Only the last nine words, LUSDAN to MADZILODARP, are printed (p. 136, before 'That is the Twelfth'). They are put here because the margin on p. 194 sets 'Emod' against 8763 in the English of the second flame.",
+  "The words before LUSDAN are the ones the call file had before and have no source."
+ ],
+ "words": [
+  {
+   "page": null,
+   "letters": "ILS",
+   "note": "",
+   "english": "",
+   "status": "not_printed",
+   "remark": "The 1659 printing does not have this word. p. 200 lists the first words of the call as 'Ils [gap:1 word] a purt.'"
+  },
+  {
+   "page": null,
+   "letters": "VIUIALPRT",
+   "note": "",
+   "english": "",
+   "status": "not_printed",
+   "remark": "The 1659 printing does not have this word."
+  },
+  {
+   "page": null,
+   "letters": "SALMAN",
+   "note": "",
+   "english": "",
+   "status": "not_printed",
+   "remark": "The 1659 printing does not have this word."
+  },
+  {
+   "page": null,
+   "letters": "BALT",
+   "note": "",
+   "english": "",
+   "status": "not_printed",
+   "remark": "The 1659 printing does not have this word."
+  },
+  {
+   "page": null,
+   "letters": "DS",
+   "note": "",
+   "english": "",
+   "status": "not_printed",
+   "remark": "The 1659 printing does not have this word."
+  },
+  {
+   "page": null,
+   "letters": "ACROODZI",
+   "note": "",
+   "english": "",
+   "status": "not_printed",
+   "remark": "The 1659 printing does not have this word."
+  },
+  {
+   "page": null,
+   "letters": "BUSD",
+   "note": "",
+   "english": "",
+   "status": "not_printed",
+   "remark": "The 1659 printing does not have this word."
+  },
+  {
+   "page": null,
+   "letters": "OD",
+   "note": "",
+   "english": "",
+   "status": "not_printed",
+   "remark": "The 1659 printing does not have this word."
+  },
+  {
+   "page": null,
+   "letters": "BLIORAX",
+   "note": "",
+   "english": "",
+   "status": "not_printed",
+   "remark": "The 1659 printing does not have this word."
+  },
+  {
+   "page": null,
+   "letters": "BALIT",
+   "note": "",
+   "english": "",
+   "status": "not_printed",
+   "remark": "The 1659 printing does not have this word."
+  },
+  {
+   "page": null,
+   "letters": "DSINSI",
+   "note": "",
+   "english": "",
+   "status": "not_printed",
+   "remark": "The 1659 printing does not have this word."
+  },
+  {
+   "page": null,
+   "letters": "CAOSG",
+   "note": "",
+   "english": "",
+   "status": "not_printed",
+   "remark": "The 1659 printing does not have this word."
+  },
+  {
+   "page": 136,
+   "letters": "LUSDAN",
+   "note": "Lus dan.",
+   "english": "",
+   "status": "printed",
+   "row": 793
+  },
+  {
+   "page": 136,
+   "letters": "EMOD",
+   "note": "E mod.",
+   "english": "",
+   "status": "printed",
+   "row": 794
+  },
+  {
+   "page": 136,
+   "letters": "DSOM",
+   "note": "dsom.",
+   "english": "",
+   "status": "printed",
+   "row": 795
+  },
+  {
+   "page": 136,
+   "letters": "OD",
+   "note": "Od.",
+   "english": "",
+   "status": "printed",
+   "row": 796
+  },
+  {
+   "page": 136,
+   "letters": "TLIOB",
+   "note": "Tli ob.",
+   "english": "",
+   "status": "printed",
+   "row": 797
+  },
+  {
+   "page": 136,
+   "letters": "DRILPA",
+   "note": "Dril pa.",
+   "english": "",
+   "status": "printed",
+   "row": 798
+  },
+  {
+   "page": 136,
+   "letters": "GEH",
+   "note": "jeh.; Geh.",
+   "english": "",
+   "status": "printed",
+   "row": 799
+  },
+  {
+   "page": 136,
+   "letters": "YLS",
+   "note": "as Yils.; yls.",
+   "english": "",
+   "status": "printed",
+   "row": 801
+  },
+  {
+   "page": 136,
+   "letters": "MADZILODARP",
+   "note": "Mad zi lo darp,",
+   "english": "",
+   "status": "printed",
+   "row": 803
+  },
+  {
+   "page": 194,
+   "letters": "ZACARE",
+   "note": "",
+   "english": "",
+   "status": "corrected",
+   "repeat_of": {
+    "call": 1,
+    "word": 73
+   },
+   "remark": "Not spelled here. The journal says 'Move, &c.' (p. 194); the word is taken from the end of Call 1."
+  },
+  {
+   "page": 194,
+   "letters": "CA",
+   "note": "",
+   "english": "",
+   "status": "printed",
+   "repeat_of": {
+    "call": 1,
+    "word": 74
+   },
+   "remark": "Not spelled here. The journal says 'Move, &c.' (p. 194); the word is taken from the end of Call 1."
+  },
+  {
+   "page": 194,
+   "letters": "OD",
+   "note": "",
+   "english": "",
+   "status": "conflict",
+   "repeat_of": {
+    "call": 1,
+    "word": 75
+   },
+   "remark": "Not spelled here. The journal says 'Move, &c.' (p. 194); the word is taken from the end of Call 1."
+  },
+  {
+   "page": 194,
+   "letters": "ZAMRAN",
+   "note": "",
+   "english": "",
+   "status": "corrected",
+   "repeat_of": {
+    "call": 1,
+    "word": 76
+   },
+   "remark": "Not spelled here. The journal says 'Move, &c.' (p. 194); the word is taken from the end of Call 1."
+  },
+  {
+   "page": 194,
+   "letters": "ODO",
+   "note": "",
+   "english": "",
+   "status": "printed",
+   "repeat_of": {
+    "call": 1,
+    "word": 77
+   },
+   "remark": "Not spelled here. The journal says 'Move, &c.' (p. 194); the word is taken from the end of Call 1."
+  },
+  {
+   "page": 194,
+   "letters": "CICLE",
+   "note": "",
+   "english": "",
+   "status": "printed",
+   "repeat_of": {
+    "call": 1,
+    "word": 78
+   },
+   "remark": "Not spelled here. The journal says 'Move, &c.' (p. 194); the word is taken from the end of Call 1."
+  },
+  {
+   "page": 194,
+   "letters": "QAA",
+   "note": "",
+   "english": "",
+   "status": "printed",
+   "repeat_of": {
+    "call": 1,
+    "word": 79
+   },
+   "remark": "Not spelled here. The journal says 'Move, &c.' (p. 194); the word is taken from the end of Call 1."
+  },
+  {
+   "page": 194,
+   "letters": "ZORGE",
+   "note": "",
+   "english": "",
+   "status": "printed",
+   "repeat_of": {
+    "call": 1,
+    "word": 80
+   },
+   "remark": "Not spelled here. The journal says 'Move, &c.' (p. 194); the word is taken from the end of Call 1."
+  },
+  {
+   "page": 194,
+   "letters": "LAP",
+   "note": "",
+   "english": "",
+   "status": "printed",
+   "repeat_of": {
+    "call": 1,
+    "word": 81
+   },
+   "remark": "Not spelled here. The journal says 'Move, &c.' (p. 194); the word is taken from the end of Call 1."
+  },
+  {
+   "page": 194,
+   "letters": "ZIRDO",
+   "note": "",
+   "english": "",
+   "status": "from_note",
+   "repeat_of": {
+    "call": 1,
+    "word": 82
+   },
+   "remark": "Not spelled here. The journal says 'Move, &c.' (p. 194); the word is taken from the end of Call 1."
+  },
+  {
+   "page": 194,
+   "letters": "NOCO",
+   "note": "",
+   "english": "",
+   "status": "printed",
+   "repeat_of": {
+    "call": 1,
+    "word": 83
+   },
+   "remark": "Not spelled here. The journal says 'Move, &c.' (p. 194); the word is taken from the end of Call 1."
+  },
+  {
+   "page": 194,
+   "letters": "MAD",
+   "note": "",
+   "english": "",
+   "status": "printed",
+   "repeat_of": {
+    "call": 1,
+    "word": 84
+   },
+   "remark": "Not spelled here. The journal says 'Move, &c.' (p. 194); the word is taken from the end of Call 1."
+  },
+  {
+   "page": 194,
+   "letters": "HOATH",
+   "note": "",
+   "english": "",
+   "status": "printed",
+   "repeat_of": {
+    "call": 1,
+    "word": 85
+   },
+   "remark": "Not spelled here. The journal says 'Move, &c.' (p. 194); the word is taken from the end of Call 1."
+  },
+  {
+   "page": 194,
+   "letters": "IAIDA",
+   "note": "",
+   "english": "",
+   "status": "printed",
+   "repeat_of": {
+    "call": 1,
+    "word": 86
+   },
+   "remark": "Not spelled here. The journal says 'Move, &c.' (p. 194); the word is taken from the end of Call 1."
+  }
+ ]
+}

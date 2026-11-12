@@ -35,15 +35,19 @@ Calls and translations are spoken with [`enochaeon.json`](enochaeon.json). The c
     "piper": {
       "length_scale": 1.6,
       "word_ms": 200,
-      "voice": "scratch/piper-voices/en_US-john-medium.onnx"
+      "voice": "scratch/piper-voices/en_US-john-medium.onnx",
+      "ipa": "dee_ipa_piper_john",
+      "word_end": "."
     }
   }
 }
 ```
 
 - `calls.engine` is `piper` or `espeak`. `--engine` overrides one Call run.
-- `calls.ipa` is `dee_ipa` or `golden_dawn_ipa`. `dee_ipa` is the letter rule of the spelling. `golden_dawn_ipa` is empty.
+- `calls.ipa` is `dee_ipa` or `golden_dawn_ipa`. Both are fields of `calls/lexicon.json`, which is the one place that says how a word is said. `golden_dawn_ipa` is empty.
 - `calls.piper.voice` is the model downloaded in Setup.
+- `calls.piper.ipa` is the lexicon field that lists what this Piper voice is given for each spelling. It is sent as written. Leave it out and Piper is given `calls.ipa`.
+- `calls.piper.word_end` is the mark that ends each word given to Piper.
 - `calls.piper.length_scale` is how long Piper holds each phoneme. `1.0` is conversational, and higher is slower.
 - `calls.piper.word_ms` is the silence between Piper breaths, in milliseconds. Leave it out and Piper keeps the 600 milliseconds espeak uses.
 

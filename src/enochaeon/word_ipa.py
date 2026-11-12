@@ -4,6 +4,9 @@ The cipher does not come here. A Golden Dawn reading is the string stored
 on the root. The Dee reading is the letter rule of the spelling itself.
 Stress sits on the vowel, and a syllable dot is not a sound. Piper's r is the
 English ɹ.
+
+A lexicon field written for one voice does not pass through that translation.
+as_written sends it as the lexicon has it.
 """
 
 from __future__ import annotations
@@ -140,6 +143,14 @@ def piper_phones(ipa: str) -> str:
             spoken = spoken[:vowel_at] + mark + spoken[vowel_at:]
         pieces.append(spoken)
     return "".join(pieces)
+
+
+def as_written(reading: str) -> str:
+    """A reading the lexicon wrote for one voice: what stands between its slashes, unchanged."""
+    body = reading.strip()
+    if len(body) < 3 or not (body.startswith("/") and body.endswith("/")):
+        raise EnochaeonError(f"A voice reading is written between slashes, not {reading!r}.")
+    return body[1:-1]
 
 
 def _tokens(ipa: str) -> list[str]:

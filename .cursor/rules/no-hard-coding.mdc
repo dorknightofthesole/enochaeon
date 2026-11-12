@@ -1,0 +1,26 @@
+---
+description: Nothing is hard coded unless it is a pure constant; pronunciation lives in the lexicon
+alwaysApply: true
+---
+
+# Nothing hard coded
+
+Nothing is ever hard coded that is not a pure constant.
+
+A value that belongs to one word, one voice, one source, or one setting a person may change is data. Put it in the file that owns it, and have the code read it:
+
+- **How an Enochian word is said:** `calls/lexicon.json`. It is the one source of truth for pronunciation. The speech code sends what the lexicon has and adds no sound, stress, or length of its own.
+- **How a voice is run:** `enochaeon.json`.
+- **Anything else a script needs:** a data file beside that script.
+
+```python
+# Bad: what one voice needs is written into the speech code
+spoken = spoken.replace("æ", "a")
+if one_vowel:
+    spoken = "ˈ" + spoken + "ː"
+
+# Good: the lexicon has the string for that voice, and the config names the field
+spoken = readings[spelling]
+```
+
+A script may write a rule's result into the lexicon. After that the lexicon is what is read, and a string corrected there by hand stays corrected.
