@@ -6,16 +6,30 @@ import base64
 import json
 import tempfile
 import unittest
+from dataclasses import replace
 from pathlib import Path
 
 from enochaeon.audio import read_comment
-from enochaeon.config import CallVoice
+from enochaeon.config import CallVoice, load_call_voice
 from enochaeon.enochian import call_files
 from enochaeon.errors import EnochaeonError
 from enochaeon.roots import Root, load_readings, load_roots
-from enochaeon.word_ipa import espeak_phones
 from enochaeon.page import render_page
 from enochaeon.translate import match_phrase, speak_file, speak_phrase
+
+
+ROOT = Path(__file__).resolve().parents[1]
+NO_MODEL = "the Piper model the calls section of enochaeon.json names is not there"
+
+
+def _shipped_voice() -> CallVoice:
+    """The Call voice of the repository's enochaeon.json, with the model as a whole path."""
+    voice = load_call_voice(ROOT / "enochaeon.json")
+    return replace(voice, piper_voice=str(ROOT / voice.piper_voice))
+
+
+def _model_present() -> bool:
+    return Path(_shipped_voice().piper_voice).is_file()
 
 
 class _Near:
@@ -39,11 +53,11 @@ class _ExactOnly:
 
 def _roots() -> tuple[Root, ...]:
     return (
-        Root("balt", "b a l t", ("01", "03", "16"), ("justice",)),
-        Root("zacar", "z a k a r", ("07", "13"), ("move", "speak")),
-        Root("ialprg", "i: a l p r g", ("02", "18"), ("burning", "fire")),
-        Root("ca", "k a", ("01",), ("in",)),
-        Root("holy", "h oU l i:", ("02",), ("holy one",)),
+        Root("balt", ("01", "03", "16"), ("justice",)),
+        Root("zacar", ("07", "13"), ("move", "speak")),
+        Root("ialprg", ("02", "18"), ("burning", "fire")),
+        Root("ca", ("01",), ("in",)),
+        Root("holy", ("02",), ("holy one",)),
     )
 
 
@@ -63,8 +77,6 @@ class DictionaryTest(unittest.TestCase):
                 spelling = "".join(character for character in word.lower() if character.isalpha())
                 if spelling:
                     self.assertIn(spelling, dee)
-        for spelling, root in roots.items():
-            self.assertEqual(root.phones, espeak_phones(dee[spelling]))
         self.assertEqual(roots["balt"].glosses, ("justice", "righteousness", "judgment"))
         self.assertEqual(roots["iad"].glosses, ("god", "the divine"))
         self.assertEqual(roots["iad"].pos, "noun")
@@ -100,10 +112,6 @@ class DictionaryTest(unittest.TestCase):
             # The string is not checked against the letter rule or against dee_says.
             # A spelling with no string has no reading: none is made from its letters.
             self.assertEqual(load_readings("dee_ipa", root), {"ich": "/z.z/"})
-            phones = {item.spelling: item.phones for item in load_roots(root)}
-            self.assertEqual(phones["ich"], "z z")
-            self.assertEqual(phones["ichs"], "")
-            self.assertEqual(phones["ol"], "")
             # A field that is one string is the reading of every spelling of the entry.
             self.assertEqual(load_readings("whole_entry", root), {"ich": "/one/", "ichs": "/one/"})
             self.assertEqual(load_readings("no_such_field", root), {})
@@ -149,8 +157,8 @@ class PhraseTest(unittest.TestCase):
 
     def test_the_same_part_of_speech_wins_over_a_higher_score(self) -> None:
         roots = (
-            Root("boalua", "b", ("01",), ("worshipped",), "verb"),
-            Root("iad", "i", ("01",), ("god", "the divine"), "noun"),
+            Root("boalua", ("01",), ("worshipped",), "verb"),
+            Root("iad", ("01",), ("god", "the divine"), "noun"),
         )
 
         class _Scores:
@@ -162,8 +170,8 @@ class PhraseTest(unittest.TestCase):
 
     def test_a_different_part_wins_when_no_same_part_is_close(self) -> None:
         roots = (
-            Root("boalua", "b", ("01",), ("worshipped",), "verb"),
-            Root("iad", "i", ("01",), ("god",), "noun"),
+            Root("boalua", ("01",), ("worshipped",), "verb"),
+            Root("iad", ("01",), ("god",), "noun"),
         )
 
         class _Scores:
@@ -175,8 +183,8 @@ class PhraseTest(unittest.TestCase):
 
     def test_an_unlisted_word_can_choose_the_nearest_entry(self) -> None:
         roots = (
-            Root("iad", "i a d", ("01",), ("god",)),
-            Root("balt", "b a l t", ("01",), ("justice",)),
+            Root("iad", ("01",), ("god",)),
+            Root("balt", ("01",), ("justice",)),
         )
 
         class _Goddess:
@@ -190,8 +198,8 @@ class PhraseTest(unittest.TestCase):
 
     def test_a_near_span_stops_before_an_exact_gloss(self) -> None:
         roots = (
-            Root("balt", "b a l t", ("01",), ("justice",)),
-            Root("gohus", "g o h u s", ("03",), ("say",)),
+            Root("balt", ("01",), ("justice",)),
+            Root("gohus", ("03",), ("say",)),
         )
 
         class _CloserAsAPair:
@@ -206,7 +214,7 @@ class PhraseTest(unittest.TestCase):
         self.assertEqual(result.matched, (("speak", "gohus"), ("justice", "balt")))
 
     def test_a_longer_near_span_can_still_win(self) -> None:
-        roots = (Root("ialprg", "i a l", ("02",), ("burning",)),)
+        roots = (Root("ialprg", ("02",), ("burning",)),)
 
         class _Longer:
             def similarity(self, span: str, gloss: str) -> float:
@@ -244,15 +252,12 @@ class PhraseTest(unittest.TestCase):
         self.assertIn(">uu<", page)
         self.assertIn("background: white", page)
 
+    @unittest.skipUnless(_model_present(), NO_MODEL)
     def test_a_text_file_names_the_wav_and_writes_the_spoken_words(self) -> None:
-        import shutil
-
-        if not shutil.which("espeak-ng") and not Path("/opt/homebrew/bin/espeak-ng").is_file():
-            self.skipTest("espeak-ng is not installed")
         with tempfile.TemporaryDirectory() as directory:
             source = Path(directory) / "ritual.txt"
             source.write_text("justice.\n", encoding="utf-8")
-            result, trace, dest = speak_file(source, _roots(), _ExactOnly(), CallVoice())
+            result, trace, dest = speak_file(source, _roots(), _ExactOnly(), _shipped_voice())
             self.assertEqual(result.call_text, "balt.")
             self.assertEqual(dest, source.with_suffix(".wav"))
             self.assertEqual(trace, source.parent / ".enochaeon" / "ritual-enochian.txt")
@@ -289,14 +294,11 @@ class PhraseTest(unittest.TestCase):
             self.assertFalse(source.with_suffix(".html").is_file())
             self.assertFalse((source.parent / ".enochaeon").exists())
 
+    @unittest.skipUnless(_model_present(), NO_MODEL)
     def test_the_wav_has_no_cipher_comment(self) -> None:
-        import shutil
-
-        if not shutil.which("espeak-ng") and not Path("/opt/homebrew/bin/espeak-ng").is_file():
-            self.skipTest("espeak-ng is not installed")
         with tempfile.TemporaryDirectory() as directory:
             dest = Path(directory) / "ritual.wav"
-            speak_phrase("justice", dest, _roots(), _ExactOnly(), CallVoice())
+            speak_phrase("justice", dest, _roots(), _ExactOnly(), _shipped_voice())
             self.assertIsNone(read_comment(dest))
             self.assertGreater(dest.stat().st_size, 44)
 
@@ -308,7 +310,6 @@ class CommandTest(unittest.TestCase):
         self.assertEqual(main(["translate"]), 1)
         self.assertEqual(main(["translate", "missing-phrase.txt"]), 1)
         self.assertEqual(main(["notes.txt", "extra"]), 1)
-        self.assertEqual(main(["translate", "justice", "--engine", "espeak"]), 1)
 
 
 if __name__ == "__main__":

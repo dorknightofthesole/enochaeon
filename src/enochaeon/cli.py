@@ -37,22 +37,14 @@ def main(argv: list[str] | None = None) -> int:
         action="store_true",
         help="Replace an output file that is already there",
     )
-    parser.add_argument(
-        "--engine",
-        choices=["espeak", "piper"],
-        help="Call voice for this run. Overrides calls.engine in enochaeon.json. The cipher does not use it.",
-    )
     args = parser.parse_args(argv)
     try:
-        if args.engine is not None and args.target != "calls":
-            raise EnochaeonError("--engine is only used with 'calls'.")
         if args.target == "translate":
             return _translate(args.calls_path, args.force)
         if args.target == "calibrate":
             return calibrate()
         if args.target == "calls":
-            voice = load_call_voice().chosen(args.engine)
-            return generate_calls(Path(args.calls_path or "calls"), args.force, voice)
+            return generate_calls(Path(args.calls_path or "calls"), args.force, load_call_voice())
         if args.calls_path is not None:
             raise EnochaeonError("A second path is only used with 'calls'.")
         path = Path(args.target)

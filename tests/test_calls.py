@@ -14,12 +14,24 @@ import numpy as np
 from enochaeon.alphabet import Alphabet
 from enochaeon.audio import WORD_MS
 from enochaeon.config import CallVoice, load_call_voice
-from enochaeon.enochian import call_files, call_gaps, parse, phonetic_text, render
+from enochaeon.enochian import audible, call_files, call_gaps, parse, phonetic_text, render, spoken_text
 from enochaeon.errors import EnochaeonError
-from enochaeon.piper_voice import _word_ipa, ipa_of
+from enochaeon.piper_voice import _word_ipa
 from enochaeon.roots import load_readings
-from enochaeon.synthesize import speak
-from enochaeon.word_ipa import as_written, espeak_phones, piper_phones
+from enochaeon.word_ipa import as_written, piper_phones
+
+ROOT = Path(__file__).resolve().parents[1]
+NO_MODEL = "the Piper model the calls section of enochaeon.json names is not there"
+
+
+def _shipped_voice() -> CallVoice:
+    """The Call voice of the repository's enochaeon.json, with the model as a whole path."""
+    voice = load_call_voice(ROOT / "enochaeon.json")
+    return replace(voice, piper_voice=str(ROOT / voice.piper_voice))
+
+
+def _model_present() -> bool:
+    return Path(_shipped_voice().piper_voice).is_file()
 
 
 class CallPronunciationTest(unittest.TestCase):
@@ -29,14 +41,23 @@ class CallPronunciationTest(unittest.TestCase):
 
     def test_an_unlisted_word_is_left_out(self) -> None:
         readings = {"iad": "/jɑːd/", "balt": "/bɑːlt/"}
-        kept = render("Iad balt", readings=readings)
-        self.assertTrue(np.array_equal(render("Iad Ol balt", readings=readings), kept))
-        quiet = render("Ol", readings={})
+        kept, dropped = audible("Iad Ol balt", readings)
+        self.assertEqual(dropped, ("ol",))
+        self.assertEqual(kept, audible("Iad balt", readings)[0])
+        self.assertEqual(spoken_text(kept), "iad balt")
+        self.assertEqual(audible("Ol", {}), ([], ("ol",)))
+
+    @unittest.skipUnless(_model_present(), NO_MODEL)
+    def test_a_text_with_no_listed_word_is_silence(self) -> None:
+        quiet = render("Ol", voice=_shipped_voice(), readings={})
         self.assertLess(float(np.max(np.abs(quiet))), 0.01)
 
+    def test_a_call_is_not_spoken_without_a_piper_model(self) -> None:
+        with self.assertRaises(EnochaeonError) as caught:
+            render("Iad", voice=CallVoice(), readings={"iad": "/jæd/"})
+        self.assertIn("calls.piper.voice", str(caught.exception))
+
     def test_a_listed_word_is_spoken_from_the_lexicon(self) -> None:
-        self.assertEqual(espeak_phones("/jɑːd/"), "j A: d")
-        self.assertEqual(espeak_phones("/ˈɡoʊ.hoʊ/"), "g 'oU h oU")
         self.assertEqual(piper_phones("/jɑːd/"), "jɑːd")
         self.assertEqual(piper_phones("/ˈɡoʊ.hoʊ/"), "ɡˈoʊhoʊ")
         self.assertEqual(piper_phones("/bɑːl.tə/"), "bɑːltə")
@@ -44,19 +65,19 @@ class CallPronunciationTest(unittest.TestCase):
         self.assertEqual(load_readings("dee_ipa")["iad"], "/j.æ.d/")
         self.assertNotIn("iad", load_readings("golden_dawn_ipa"))
         self.assertEqual(load_readings("dee_ipa")["balzizras"], "/b.æ.l.z.ɪ.z.r.æ.s/")
-        self.assertTrue(np.array_equal(render("Iad", readings={"iad": "/jɑːd/"}), speak("j A: d")))
-        self.assertTrue(np.array_equal(render("Iad"), speak("j a d")))
+        # What Piper is given for the word is the reading the caller handed over.
+        self.assertEqual(_word_ipa(parse("Iad")[0], {"iad": "/jɑːd/"}, CallVoice()), "jɑːd")
 
     def test_a_voice_with_its_own_lexicon_field_is_given_it_as_written(self) -> None:
         word = parse("Iad")[0]
-        own = CallVoice(engine="piper", piper_ipa="some_field", word_end=".")
+        own = CallVoice(piper_ipa="some_field", word_end=".")
         # Nothing is added but the end mark the config gives.
         self.assertEqual(_word_ipa(word, {"iad": "/jˈaːd/"}, own), "jˈaːd.")
         self.assertEqual(_word_ipa(word, {"iad": "/jæd/"}, replace(own, word_end="")), "jæd")
         with self.assertRaises(EnochaeonError):
             _word_ipa(word, {"iad": "jˈaːd"}, own)
         # With no field of its own, Piper is given the reading turned into its letters.
-        self.assertEqual(_word_ipa(word, {"iad": "/j.æ.d/"}, CallVoice(engine="piper")), "jæd")
+        self.assertEqual(_word_ipa(word, {"iad": "/j.æ.d/"}, CallVoice()), "jæd")
 
     def test_the_shipped_voice_field_has_every_call_spelling(self) -> None:
         root = Path(__file__).resolve().parents[1]
@@ -82,30 +103,22 @@ class CallPronunciationTest(unittest.TestCase):
     def test_punctuation_breaks_the_line(self) -> None:
         self.assertEqual(phonetic_text("Ol sonf, goho. Iad"), "Q l s Q n f g Q h oU\nj a d")
 
-    def test_piper_hears_the_vowel_in_lot(self) -> None:
-        self.assertEqual(ipa_of("Q l"), "ɒl")
-        self.assertEqual(ipa_of("g Q h oU"), "ɡɒhoʊ")
-        self.assertEqual(ipa_of("d'i: 'Es"), "dˈiːˈɛs")
-
-    def test_the_shipped_config_uses_piper(self) -> None:
-        root = Path(__file__).resolve().parents[1] / "enochaeon.json"
-        voice = load_call_voice(root)
-        self.assertEqual(voice.engine, "piper")
+    def test_the_shipped_config_names_the_call_voice(self) -> None:
+        voice = load_call_voice(ROOT / "enochaeon.json")
         self.assertEqual(voice.ipa, "dee_ipa")
         self.assertGreater(voice.length_scale, 1)
         self.assertEqual(voice.word_ms, 200)
         self.assertIn("john", voice.piper_voice)
 
     def test_a_piper_breath_can_be_shorter(self) -> None:
-        shorter = CallVoice(engine="piper", word_ms=400)
+        shorter = CallVoice(word_ms=400)
         self.assertEqual(call_gaps(shorter).word_ms, 400)
         self.assertEqual(call_gaps(shorter).nl_ms, 1000)
-        self.assertEqual(call_gaps(CallVoice(word_ms=400)).word_ms, WORD_MS)
-        self.assertEqual(call_gaps(CallVoice(engine="piper")).word_ms, WORD_MS)
+        self.assertEqual(call_gaps(CallVoice()).word_ms, WORD_MS)
         with tempfile.TemporaryDirectory() as directory:
             path = Path(directory) / "enochaeon.json"
             path.write_text(
-                '{"calls": {"engine": "piper", "piper": {"word_ms": 400}}}\n',
+                '{"calls": {"piper": {"word_ms": 400}}}\n',
                 encoding="utf-8",
             )
             self.assertEqual(load_call_voice(path).word_ms, 400)
@@ -129,14 +142,10 @@ class CallPronunciationTest(unittest.TestCase):
                 with self.assertRaises(EnochaeonError):
                     load_call_voice(path)
 
-    def test_the_call_voice_defaults_to_espeak(self) -> None:
-        missing = Path("/no/such/enochaeon.json")
-        voice = load_call_voice(missing)
+    def test_no_config_file_names_no_piper_model(self) -> None:
+        voice = load_call_voice(Path("/no/such/enochaeon.json"))
         self.assertEqual(voice, CallVoice())
-        self.assertEqual(voice.chosen("piper").engine, "piper")
-        self.assertEqual(voice.chosen(None).engine, "espeak")
-        with self.assertRaises(EnochaeonError):
-            voice.chosen("mbrola")
+        self.assertEqual(voice.piper_voice, "")
 
     def test_a_call_is_not_the_english_cipher(self) -> None:
         english = Alphabet.load().phonetic_text("ol")
@@ -198,12 +207,11 @@ class CallPronunciationTest(unittest.TestCase):
             self.assertEqual(words_of(root / f"{19 + index}-{name}.txt"), expected)
 
     def test_calls_command_writes_one_wav_per_file(self) -> None:
-        import shutil
-
         from enochaeon.cli import main
 
-        if not shutil.which("espeak-ng") and not Path("/opt/homebrew/bin/espeak-ng").is_file():
-            self.skipTest("espeak-ng is not installed")
+        # The command reads enochaeon.json in the directory it is run from.
+        if not Path(load_call_voice().piper_voice).is_file():
+            self.skipTest(NO_MODEL)
         with tempfile.TemporaryDirectory() as directory:
             root = Path(directory)
             first = root / "01-ol.txt"
@@ -216,7 +224,6 @@ class CallPronunciationTest(unittest.TestCase):
             self.assertFalse((root / ".enochaeon").exists())
             self.assertEqual(main(["calls", str(root)]), 1)
             self.assertEqual(main(["calls", str(first), "--force"]), 0)
-            self.assertEqual(main(["notes.txt", "--engine", "piper"]), 1)
 
 
 if __name__ == "__main__":

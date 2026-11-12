@@ -57,7 +57,7 @@ The cipher reads the `cipher` section of `enochaeon.json`. It does not read the 
 | `src/enochaeon/recognize.py` | The phone recognizer |
 | `src/enochaeon/config.py` | Reads `enochaeon.json` |
 
-The cipher was first spoken by espeak, one breath for each word, and read back by matching the phones the model wrote and then correcting each word against an English word list. `src/enochaeon/match.py`, `src/enochaeon/lexicon.py` and `src/enochaeon/data/words.txt` are from that way of reading. They are still in the repository and the cipher no longer uses them. `src/enochaeon/synthesize.py` is espeak-ng, and a Call still uses it when `calls.engine` is `espeak`.
+The cipher was first spoken by espeak, one breath for each word, and read back by matching the phones the model wrote and then correcting each word against an English word list. `src/enochaeon/match.py`, `src/enochaeon/lexicon.py` and `src/enochaeon/data/words.txt` are from that way of reading. They are still in the repository and the cipher no longer uses them. The espeak voice itself has been taken out, for Calls as well.
 
 ## The lexicon
 
@@ -117,7 +117,7 @@ A file in [`calls/`](../calls) is already Enochian, written in Dee's Latin lette
 
 `dee_ipa` is the string the lexicon has for the spelling that is written. [dee-ipa.md](dee-ipa.md) is how that string was made, and where it can still disagree with the syllables Dee wrote in the margins. `golden_dawn_ipa` is empty. Calls 49 and 50 are not part of Dee's forty-eight Keys. Only the 50th call has English for its new spellings, from Crowley's footnote.
 
-Piper speaks the IPA. espeak speaks phonemes derived from that same string. `calls.engine` in [`enochaeon.json`](../enochaeon.json) chooses which one. `--engine espeak` or `--engine piper` overrides that for one Call run. `calls.piper.voice` is John's model, downloaded into `scratch/piper-voices/`. `calls.piper.length_scale` is how long Piper holds each phoneme. `1.0` is conversational, and higher is slower. `calls.piper.word_ms` is the silence between Piper breaths. espeak keeps 600 milliseconds between words. A Call wav carries the same gap comment as a cipher wav.
+Piper speaks the IPA. The `calls` section of [`enochaeon.json`](../enochaeon.json) says how. `calls.piper.voice` is John's model, downloaded into `scratch/piper-voices/`. `calls.piper.length_scale` is how long Piper holds each phoneme. `1.0` is conversational, and higher is slower. `calls.piper.word_ms` is the silence between Piper breaths. Left out, it is 600 milliseconds. A Call wav carries a comment with its silences. It is not a cipher comment, and the cipher refuses to decode a Call wav.
 
 A comma stays on the line, and a period starts a new line.
 
@@ -125,11 +125,11 @@ A comma stays on the line, and a period starts a new line.
 | --- | --- |
 | `calls/*.txt` | Dee's Latin spellings |
 | `calls/lexicon.json` | Gloss, part of speech, `dee_ipa`, the Piper voice's field, and `golden_dawn_ipa` for each root and variant |
-| `enochaeon.json` | Engine, IPA field, Piper voice, length, and the Piper gap |
+| `enochaeon.json` | IPA field, Piper voice, length, and the Piper gap |
 | `scratch/piper-voices/` | John's voice. The download creates this directory. It is not in git |
 | `src/enochaeon/enochian.py` | Reads a Call file and leaves out a spelling with no reading |
 | `src/enochaeon/roots.py` | Loads the lexicon |
-| `src/enochaeon/word_ipa.py` | Turns the stored IPA into Piper or espeak phonemes |
+| `src/enochaeon/word_ipa.py` | Turns the stored IPA into Piper's letters for a voice with no field of its own |
 | `src/enochaeon/piper_voice.py` | Piper |
 | `src/enochaeon/config.py` | Reads `enochaeon.json` |
 
