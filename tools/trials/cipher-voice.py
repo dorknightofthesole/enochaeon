@@ -2,6 +2,7 @@
 
 This trial was run against the cipher as espeak spoke it, one breath for each word. The cipher is now
 spoken by John one letter at a time, and this script does not run against it.
+The espeak voice it compares against has been taken out of the project.
 Its results are what the switch was decided on: scratch/cipher-voice/results.txt, letters.txt and hearing.txt.
 tools/trials/cipher-roundtrip.py is the same count for the cipher as it is now.
 

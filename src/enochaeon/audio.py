@@ -84,7 +84,7 @@ def trim_silence(
     threshold: float = 0.015,
     pad_ms: int = 50,
 ) -> np.ndarray:
-    """Drop the quiet edges espeak leaves, and keep a little pad so releases survive."""
+    """Drop the quiet edges a voice leaves, and keep a little pad so releases survive."""
     magnitude = np.abs(audio)
     voiced = np.flatnonzero(magnitude > threshold)
     if voiced.size == 0:

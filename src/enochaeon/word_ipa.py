@@ -93,11 +93,6 @@ _FROM_ESPEAK = tuple(
 )
 
 
-def espeak_phones(ipa: str) -> str:
-    """One lexicon reading as the espeak phonemes inside [[]]."""
-    return " ".join(_tokens(ipa))
-
-
 def ipa_of_espeak(phones: str) -> str:
     """Slash IPA for one letter-rule string. Stress stays on the vowel."""
     body = phones.strip()

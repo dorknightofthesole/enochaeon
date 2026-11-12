@@ -23,18 +23,15 @@ from pathlib import Path
 
 from enochaeon.enochian import _CALL_NAME
 from enochaeon.errors import EnochaeonError
-from enochaeon.word_ipa import espeak_phones
 
 _WORD = re.compile(r"[A-Za-z]+")
-DEE_READING = "dee_ipa"
 
 
 @dataclass(frozen=True)
 class Root:
-    """One spelling. phones is its stored Dee reading as espeak phonemes. English words may be empty."""
+    """One spelling, the calls it stands in, and its English words. English words may be empty."""
 
     spelling: str
-    phones: str
     calls: tuple[str, ...]
     glosses: tuple[str, ...]
     pos: str = ""
@@ -44,7 +41,6 @@ def load_roots(calls: Path | None = None) -> tuple[Root, ...]:
     """Every spelling in the Calls, with English taken from the dictionary file."""
     folder = calls or _calls_dir()
     glosses, parts = _lexicon(folder / "lexicon.json")
-    stored = load_readings(DEE_READING, folder)
     found: dict[str, list[str]] = {}
     for stem, text in _call_texts(folder):
         for spelling in _words(text):
@@ -56,7 +52,6 @@ def load_roots(calls: Path | None = None) -> tuple[Root, ...]:
     roots = [
         Root(
             spelling=spelling,
-            phones=espeak_phones(stored[spelling]) if spelling in stored else "",
             calls=tuple(stems),
             glosses=glosses.get(spelling, ()),
             pos=parts.get(spelling, ""),

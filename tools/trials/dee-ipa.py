@@ -1,5 +1,7 @@
 """Speak Call words from lexicon dee_ipa, translated into espeak phonemes.
 
+This trial spoke with espeak-ng. The project no longer has that voice, and this script does not run.
+
 This is a trial. It does not change the letter-by-letter speech path.
 The voice is en-us: the lexicon writes American oʊ and ɑː, and the usual
 en voice is British, which turns oʊ into əʊ and inserts an r after ɑː
