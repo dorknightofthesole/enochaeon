@@ -79,7 +79,7 @@ def word_phones(
     if UNKNOWN in word:
         return None
     try:
-        stream = alphabet.atom_ids(word)
+        stream = alphabet.atom_ids(word, strict=True)
     except TransliterationError:
         return None
     if len(stream) != 1 or isinstance(stream[0], str):

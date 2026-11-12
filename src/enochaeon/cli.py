@@ -103,6 +103,9 @@ def _encode(path: Path, alphabet: Alphabet, force: bool) -> int:
         raise EnochaeonError(f"{dest} already exists. Pass --force to replace it.")
     require_calibration(alphabet)
     text = path.read_text(encoding="utf-8")
+    left_out = alphabet.left_out(text)
+    if left_out:
+        print(left_out, file=sys.stderr)
     for trace in write_traces(path, text, alphabet):
         print(trace)
     write_document(text, dest, alphabet)

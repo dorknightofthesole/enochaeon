@@ -36,6 +36,7 @@
     {"en": "ts", "hebrew": "סז", "enochian": ["Pal", "Ceph"], "atoms": ["pal", "ceph"], "decode": true},
     {"en": "tz", "hebrew": "סז", "enochian": ["Pal", "Ceph"], "atoms": ["pal", "ceph"], "decode": false},
     {"en": "x", "hebrew": "קס", "enochian": ["Ger", "Pal"], "atoms": ["ger", "pal"], "decode": true},
+    {"en": "æ", "hebrew": "אה", "enochian": ["Un", "Graph"], "atoms": ["un", "graph"], "decode": false},
     {"en": "a", "hebrew": "א", "enochian": ["Un"], "atoms": ["un"], "decode": true},
     {"en": "b", "hebrew": "בּ", "enochian": ["Pa"], "atoms": ["pa"], "decode": true},
     {"en": "c", "hebrew": "כ", "enochian": ["Veh"], "atoms": ["veh"], "decode": true},

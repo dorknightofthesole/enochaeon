@@ -10,6 +10,7 @@ vowel is letter-names.
 from __future__ import annotations
 
 import json
+import unicodedata
 from dataclasses import dataclass
 from pathlib import Path
 
@@ -22,8 +23,9 @@ UNKNOWN = "�"
 # V is English o. Its Enochian letter is Vau, and the call alphabet keeps V as
 # a consonant of its own.
 VOWELS = frozenset({"A", "E", "I", "O", "U", "V"})
-# A comma stays in the line. A stop ends it. Marks with no sound are skipped.
-PUNCT_BREAKS = {",": " ", ";": " ", ":": " ", "-": " ", ".": "\n", "!": "\n", "?": "\n"}
+# A comma stays in the line, and so does a dash of any length. A stop ends it.
+# Marks with no sound are skipped.
+PUNCT_BREAKS = {",": " ", ";": " ", ":": " ", "-": " ", "–": " ", "—": " ", ".": "\n", "!": "\n", "?": "\n"}
 PUNCT_SKIP = set("()[]{}<>'’\"“”")
 
 
@@ -59,13 +61,36 @@ def pronounce_syllables(syllables: tuple[Atom, ...] | list[Atom], *, names: bool
     )
 
 
-class TransliterationError(EnochaeonError):
-    """A character in the document has no row in the key."""
+def unaccented(character: str) -> str:
+    """The letter without the accent written on it: è is e. A mark with no letter is nothing."""
+    return "".join(part for part in unicodedata.normalize("NFD", character) if not unicodedata.combining(part))
 
-    def __init__(self, character: str, position: int) -> None:
-        self.character = character
-        self.position = position
-        super().__init__(f"Cannot transliterate {character!r} at position {position}")
+
+def named(text: str, positions: list[int]) -> list[str]:
+    """One row for each character that stands at those positions: how often, and on which lines."""
+    lines: dict[str, list[int]] = {}
+    for position in positions:
+        lines.setdefault(text[position], []).append(text.count("\n", 0, position) + 1)
+    return [
+        f"  {character!r}  {len(found)} {'time' if len(found) == 1 else 'times'}, "
+        f"on {'line' if len(set(found)) == 1 else 'lines'} {', '.join(str(line) for line in dict.fromkeys(found))}"
+        for character, found in lines.items()
+    ]
+
+
+class TransliterationError(EnochaeonError):
+    """Characters in the document have no letter: no row in the key, or none in the call alphabet.
+
+    ``positions`` is where each one stands in ``text``. The message names
+    every such character once, with the lines it is on.
+    """
+
+    def __init__(self, text: str, positions: list[int]) -> None:
+        self.text = text
+        self.positions = positions
+        rows = named(text, positions)
+        count = f"{len(rows)} {'character that has' if len(rows) == 1 else 'characters that have'}"
+        super().__init__("\n".join([f"This text has {count} no letter to be spelled with:"] + rows))
 
 
 @dataclass(frozen=True)
@@ -190,19 +215,39 @@ class Alphabet:
                     )
                 seen_spoken[spoken] = atom.id
 
-    def parse(self, text: str) -> list[Segment]:
+    def parse(self, text: str, strict: bool = False) -> list[Segment]:
         """Turn a document into words and the gaps between them.
 
         Runs of spaces become one space. A run of whitespace that contains a
-        newline becomes one newline. A comma, semicolon, colon, or hyphen is a
-        space. A period, question mark, or exclamation mark is a newline.
-        Quotes and brackets are skipped. Letters are matched longest-first, so
-        ``th`` is one row and ``x`` is the row for the two letters kuf and samekh.
+        newline becomes one newline. A comma, semicolon, colon, hyphen, or
+        dash is a space. A period, question mark, or exclamation mark is a
+        newline. Quotes and brackets are skipped. An accent is not read, so
+        ``è`` is ``e``. Letters are matched longest-first, so ``th`` is one
+        row and ``x`` is the row for the two letters kuf and samekh.
+
+        A character the key has no row for is left out, and the letters on
+        each side of it stay as they are. ``left_out`` names every such
+        character. With ``strict``, one error names them all instead.
         """
+        segments, cleaned, unspelled = self._read(text)
+        if strict and unspelled:
+            raise TransliterationError(cleaned, unspelled)
+        return segments
+
+    def left_out(self, text: str) -> str:
+        """What ``parse`` leaves out of a document, one row for each character. Empty when nothing is."""
+        _, cleaned, unspelled = self._read(text)
+        if not unspelled:
+            return ""
+        return "\n".join(["Left out, because the key has no letter for them:"] + named(cleaned, unspelled))
+
+    def _read(self, text: str) -> tuple[list[Segment], str, list[int]]:
+        """The segments, the text they were read from, and where each character with no row stands in it."""
         cleaned = text.replace("\r\n", "\n").replace("\r", "\n")
         if cleaned.startswith("\ufeff"):
             cleaned = cleaned[1:]
         segments: list[Segment] = []
+        unspelled: list[int] = []
         index = 0
         length = len(cleaned)
         while index < length:
@@ -219,27 +264,39 @@ class Alphabet:
                     mark = cleaned[index]
                     newline = newline or mark == "\n" or PUNCT_BREAKS.get(mark) == "\n"
                     index += 1
+                # A word that was left out whole leaves its two gaps side by side. They are one gap.
+                if segments and isinstance(segments[-1], Gap):
+                    newline = segments.pop().text == "\n" or newline
                 segments.append(Gap("\n" if newline else " "))
                 continue
-            word, index = self._match_word(cleaned, index)
-            segments.append(word)
-        return segments
+            word, index, missing = self._match_word(cleaned, index)
+            if word.entries:
+                segments.append(word)
+            unspelled += missing
+        return segments, cleaned, unspelled
 
-    def _match_word(self, text: str, start: int) -> tuple[Word, int]:
+    def _match_word(self, text: str, start: int) -> tuple[Word, int, list[int]]:
+        """The word that starts here, where it ends, and where each character with no row stands."""
+        end = start
+        while end < len(text) and not text[end].isspace() and text[end] not in PUNCT_BREAKS and text[end] not in PUNCT_SKIP:
+            end += 1
+        # Each letter as the key spells it, with the place in the text it came from.
+        letters = [(letter, place) for place in range(start, end) for letter in unaccented(text[place]).lower()]
+        folded = "".join(letter for letter, _ in letters)
         entries: list[Entry] = []
-        index = start
-        while index < len(text) and not text[index].isspace() and text[index] not in PUNCT_BREAKS and text[index] not in PUNCT_SKIP:
-            matched = None
-            folded = text[index:].lower()
-            for entry in self._encode:
-                if folded.startswith(entry.en):
-                    matched = entry
-                    break
+        # A mark at the start of a word has no letter to stand on.
+        unspelled = [] if unaccented(text[start]) else [start]
+        index = 0
+        while index < len(folded):
+            matched = next((entry for entry in self._encode if folded.startswith(entry.en, index)), None)
             if matched is None:
-                raise TransliterationError(text[index], index)
+                if letters[index][1] not in unspelled:
+                    unspelled.append(letters[index][1])
+                index += 1
+                continue
             entries.append(matched)
             index += len(matched.en)
-        return Word(tuple(entries)), index
+        return Word(tuple(entries)), end, unspelled
 
     def hebrew(self, text: str) -> str:
         parts: list[str] = []
@@ -299,10 +356,10 @@ class Alphabet:
                     parts.append(self.atoms[atom_id].latin)
         return "".join(parts)
 
-    def atom_ids(self, text: str) -> list[tuple[str, ...] | str]:
+    def atom_ids(self, text: str, strict: bool = False) -> list[tuple[str, ...] | str]:
         """Words as atom-id tuples, with ``' '`` or ``'\\n'`` between them."""
         stream: list[tuple[str, ...] | str] = []
-        for segment in self.parse(text):
+        for segment in self.parse(text, strict):
             if isinstance(segment, Gap):
                 stream.append(segment.text)
             else:
@@ -386,7 +443,7 @@ class Alphabet:
                 converted.append(atom_ids)
                 continue
             try:
-                replacement = self.atom_ids(chosen)
+                replacement = self.atom_ids(chosen, strict=True)
             except TransliterationError:
                 converted.append(atom_ids)
                 continue

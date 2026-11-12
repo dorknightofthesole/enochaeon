@@ -20,9 +20,11 @@ Every word is spelled the same way. The reference is the pangram in [`example/pa
 
 In Latin letters that spelling is `PVQS`. O counts as a vowel, so fox is one breath of syllables, not letter-names. A vowel left open is long, a vowel closed by a consonant is short, and a doubled consonant is spoken twice. `Hello` is `HELLV`. Capitals are folded to lowercase.
 
-The key is [`src/enochaeon/data/alphabet.json`](../src/enochaeon/data/alphabet.json). Matching is longest-first, so `ch`, `sh`, `th`, `ts`, and `x` are one row each. `tz` is the same Hebrew and the same Enochian letters as `ts`, and it comes back as `ts`. A written `k` followed by `s` is the same letters as `x`, so `foks` comes back as `fox`.
+The key is [`src/enochaeon/data/alphabet.json`](../src/enochaeon/data/alphabet.json). Matching is longest-first, so `ch`, `sh`, `th`, `ts`, and `x` are one row each. `tz` is the same Hebrew and the same Enochian letters as `ts`, and it comes back as `ts`. A written `k` followed by `s` is the same letters as `x`, so `foks` comes back as `fox`. The joined letter `æ` is the row for `a` and `e`, and it comes back as `ae`. An accent is not read, so `è` is `e` and comes back as `e`.
 
-An English word is always those in-word syllables, including a word with no vowel. The espeak phones in the key are this project's, chosen so a recognizer can tell the letters apart. They are not a historical pronunciation. A comma stays on the line, and a period starts a new line.
+An English word is always those in-word syllables, including a word with no vowel. The espeak phones in the key are this project's, chosen so a recognizer can tell the letters apart. They are not a historical pronunciation. A comma stays on the line, and a period starts a new line. A hyphen or a dash is a space between two words. Quotes and brackets are skipped.
+
+Any other character has no row in the key: `&`, a digit, a Greek or a Hebrew letter. The cipher leaves such a character out and goes on. It prints every one that was left out, with the lines it is on. The recording does not have them, so the text comes back without them: `my heart & my tongue` comes back as `my heart my tongue`.
 
 `enochaeon notes.txt` writes three stage files in `.enochaeon/` beside the source, then `notes.wav`. Hebrew is the pointed transliteration. Enochian is the letter names. Phonetic is one espeak string per English word, the breath espeak speaks. The wav carries a short comment with the gap lengths and no plaintext. Encoding and decoding both refuse to run until calibration exists.
 

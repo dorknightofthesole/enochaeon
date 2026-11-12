@@ -96,12 +96,12 @@ def parse(text: str) -> list[list[Letter] | str]:
             segments.append("\n" if newline else " ")
             continue
         if not character.isalpha():
-            raise TransliterationError(character, index)
+            raise TransliterationError(cleaned, [index])
         word: list[Letter] = []
         while index < len(cleaned) and cleaned[index].isalpha():
             letter = LETTERS.get(cleaned[index].upper())
             if letter is None:
-                raise TransliterationError(cleaned[index], index)
+                raise TransliterationError(cleaned, [index])
             word.append(letter)
             index += 1
         segments.append(word)

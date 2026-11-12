@@ -146,7 +146,7 @@ class CallPronunciationTest(unittest.TestCase):
         with self.assertRaises(EnochaeonError) as caught:
             phonetic_text("Ol@")
         self.assertIn("'@'", str(caught.exception))
-        self.assertIn("position 2", str(caught.exception))
+        self.assertIn("line 1", str(caught.exception))
 
     def test_the_call_files_are_present(self) -> None:
         root = Path(__file__).resolve().parents[1] / "calls"

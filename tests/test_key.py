@@ -140,11 +140,41 @@ class KeyTest(unittest.TestCase):
         self.assertEqual(self.alphabet.phonetic_text("fox. Fox"), f"{fox}\n{fox}")
         self.assertEqual(self.alphabet.hebrew("nation, conceived"), self.alphabet.hebrew("nation conceived"))
 
-    def test_unknown_character(self) -> None:
+    def test_unknown_character_is_left_out(self) -> None:
+        self.assertEqual(self.alphabet.parse("fox@"), self.alphabet.parse("fox"))
+        self.assertEqual(self.alphabet.parse("f@ox"), self.alphabet.parse("fox"))
+        self.assertEqual(self.alphabet.left_out("fox"), "")
+
+    def test_word_left_out_whole_leaves_one_gap(self) -> None:
+        self.assertEqual(self.alphabet.parse("fox & fox"), self.alphabet.parse("fox fox"))
+        self.assertEqual(self.alphabet.parse("fox 11. Fox"), self.alphabet.parse("fox. Fox"))
+        self.assertEqual(self.alphabet.parse("fox.\n7 fox"), self.alphabet.parse("fox.\nfox"))
+
+    def test_every_character_left_out_is_named_with_its_lines(self) -> None:
+        message = self.alphabet.left_out("fox & fox\nfox 7\nfox & fox")
+        self.assertIn("'&'  2 times, on lines 1, 3", message)
+        self.assertIn("'7'  1 time, on line 2", message)
+
+    def test_strict_stops_at_unknown_characters(self) -> None:
         with self.assertRaises(EnochaeonError) as caught:
-            self.alphabet.parse("fox@")
+            self.alphabet.atom_ids("fox@", strict=True)
         self.assertIn("'@'", str(caught.exception))
-        self.assertIn("position 3", str(caught.exception))
+        self.assertIn("line 1", str(caught.exception))
+
+    def test_dash_is_a_pause(self) -> None:
+        self.assertEqual(self.alphabet.phonetic_text("fox—fox"), self.alphabet.phonetic_text("fox fox"))
+        self.assertEqual(self.alphabet.phonetic_text("fox–fox"), self.alphabet.phonetic_text("fox fox"))
+
+    def test_accent_is_not_read(self) -> None:
+        self.assertEqual(self.alphabet.atom_ids("gemmèd"), self.alphabet.atom_ids("gemmed"))
+        self.assertEqual(self.alphabet.atom_ids("gemme\u0300d"), self.alphabet.atom_ids("gemmed"))
+        self.assertEqual(self.alphabet.atom_ids("È"), self.alphabet.atom_ids("e"))
+
+    def test_joined_ae_decodes_as_two_letters(self) -> None:
+        self.assertEqual(self.alphabet.atom_ids("færy"), self.alphabet.atom_ids("faery"))
+        text, unknown = self.alphabet.decode_atoms(self.alphabet.atom_ids("Æon"))
+        self.assertEqual(text, "aeon")
+        self.assertFalse(unknown)
 
     def test_failed_syllable_is_marked(self) -> None:
         text, unknown = self.alphabet.decode_atoms([("no-such-atom",)])
