@@ -4,7 +4,7 @@
 
 Enochaeon is a spoken cipher. It is also a tool for speaking Dee's forty-eight Keys, and for translating English into spoken Enochian.
 
-The cipher takes a text file letter by letter from English into Hebrew and then into [Enochian](https://en.wikipedia.org/wiki/Enochian), the angelic language John Dee, Elizabeth I's astrologer, recorded in 1583. Each letter is spoken alone, as the sound assigned to that Enochian letter. A short silence follows a letter, a longer one stands between two words, and a longer one again between two lines. A phone recognizer hears each letter, and the same key turns the letters back into English. [`example/pangram.decoded.txt`](example/pangram.decoded.txt) was read back from [`example/pangram.wav`](example/pangram.wav).
+The cipher takes a text file letter by letter from English into Hebrew and then into [Enochian](https://en.wikipedia.org/wiki/Enochian), the angelic language John Dee, Elizabeth I's astrologer, recorded in 1583. Each letter is spoken alone, as the sound assigned to that Enochian letter. A short silence follows a letter, a longer one stands between two words, and a longer one again between two lines. A phone recognizer hears each letter, and the same key turns the letters back into English. [`example/pangram.decoded.txt`](example/pangram.decoded.txt) was read back from [`example/cipher/pangram.mp4`](https://github.com/user-attachments/assets/0c8098d5-b723-42d4-ba3f-686fc75707e7).
 
 The **Calls** are Dee's Keys already written in Enochian. A file in `calls/` is spoken from the pronunciation stored for each spelling.
 
