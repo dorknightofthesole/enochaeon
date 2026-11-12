@@ -8,8 +8,8 @@ from pathlib import Path
 
 from enochaeon.alphabet import Alphabet
 from enochaeon.calibrate import calibrate
-from enochaeon.config import load_call_voice
-from enochaeon.decode import decode_file, require_calibration
+from enochaeon.config import load_call_voice, load_cipher_voice
+from enochaeon.decode import RUN_CALIBRATE, decode_file, require_calibration
 from enochaeon.encode import write_document, write_traces
 from enochaeon.enochian import generate_calls
 from enochaeon.errors import EnochaeonError
@@ -40,7 +40,7 @@ def main(argv: list[str] | None = None) -> int:
     parser.add_argument(
         "--engine",
         choices=["espeak", "piper"],
-        help="Call voice for this run. Overrides enochaeon.json. The cipher stays on espeak.",
+        help="Call voice for this run. Overrides calls.engine in enochaeon.json. The cipher does not use it.",
     )
     args = parser.parse_args(argv)
     try:
@@ -101,14 +101,21 @@ def _encode(path: Path, alphabet: Alphabet, force: bool) -> int:
     dest = path.with_suffix(".wav")
     if dest.exists() and not force:
         raise EnochaeonError(f"{dest} already exists. Pass --force to replace it.")
-    require_calibration(alphabet)
+    from enochaeon.cipher_voice import Speaker
+
+    voice = load_cipher_voice()
+    speaker = Speaker(voice, alphabet)
+    if not require_calibration(alphabet).made_for(speaker.name, voice.bridge_ms, voice.hear_ms):
+        raise EnochaeonError(
+            f"The calibration was not made with the cipher section of enochaeon.json as it is now. {RUN_CALIBRATE}"
+        )
     text = path.read_text(encoding="utf-8")
     left_out = alphabet.left_out(text)
     if left_out:
         print(left_out, file=sys.stderr)
     for trace in write_traces(path, text, alphabet):
         print(trace)
-    write_document(text, dest, alphabet)
+    write_document(text, dest, alphabet, voice, speaker)
     print(dest)
     return 0
 
@@ -117,14 +124,13 @@ def _decode(path: Path, alphabet: Alphabet, force: bool) -> int:
     dest = path.with_name(f"{path.stem}.decoded.txt")
     if dest.exists() and not force:
         raise EnochaeonError(f"{dest} already exists. Pass --force to replace it.")
-    labels = require_calibration(alphabet)
-    text, unknown = decode_file(path, alphabet, labels)
+    text, unknown = decode_file(path, alphabet, require_calibration(alphabet))
     dest.write_text(text, encoding="utf-8")
     if text and not text.endswith("\n"):
         print(text)
     else:
         sys.stdout.write(text)
     if unknown:
-        print("Some syllables matched no letter and were written as �.", file=sys.stderr)
+        print("Some sounds gave no letter the key can spell and were written as �.", file=sys.stderr)
         return 2
     return 0

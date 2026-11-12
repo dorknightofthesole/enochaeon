@@ -1,4 +1,7 @@
-"""Speak the cipher with John and decipher it. The shipped path stays on espeak.
+"""Speak the cipher with John and decipher it. The shipped path stayed on espeak.
+
+This trial was run against the cipher as espeak spoke it, one breath for each word. The cipher is now
+spoken by John one letter at a time, and this script does not run against it.
 
 The decoder still uses the espeak calibration. Word gaps stay at the cipher
 length, so a word break is a word break. John only replaces the voice.

@@ -1,10 +1,13 @@
 """The English–Hebrew–Enochian key.
 
 Transliteration stops at letters. A row is an English spelling, a Hebrew
-grapheme, and one or more Enochian letters. An English word is one breath of
-in-word syllables, and ``o`` counts as a vowel. A vowel left open is long. A
-vowel closed by a consonant is short. A call is separate: a call word with no
-vowel is letter-names.
+grapheme, and one or more Enochian letters. An English word is the in-word
+sound of each of its letters, and ``o`` counts as a vowel. A vowel left open is
+long. A vowel closed by a consonant is short. A call is separate: a call word
+with no vowel is letter-names.
+
+A letter sound is written the espeak way. A voice that wants it written some
+other way has a field of its own on the letter's row, and is given that.
 """
 
 from __future__ import annotations
@@ -140,9 +143,16 @@ Segment = Word | Gap
 
 
 class Alphabet:
-    def __init__(self, atoms: dict[str, Atom], entries: tuple[Entry, ...]) -> None:
+    def __init__(
+        self,
+        atoms: dict[str, Atom],
+        entries: tuple[Entry, ...],
+        voices: dict[str, dict[str, dict[str, str]]] | None = None,
+    ) -> None:
         self.atoms = atoms
         self.entries = entries
+        # What each voice is given: field of the key file, then letter, then form.
+        self.voices = voices or {}
         self._encode = tuple(sorted(entries, key=lambda item: (-len(item.en), item.en)))
         decoding = [item for item in entries if item.decode]
         self._decode = tuple(sorted(decoding, key=lambda item: (-len(item.atoms), item.en)))
@@ -171,7 +181,12 @@ class Alphabet:
             )
             for item in raw["entries"]
         )
-        return cls(atoms, entries)
+        voices: dict[str, dict[str, dict[str, str]]] = {}
+        for item in raw["atoms"]:
+            for field, value in item.items():
+                if isinstance(value, dict):
+                    voices.setdefault(field, {})[item["id"]] = {str(form): str(spoken) for form, spoken in value.items()}
+        return cls(atoms, entries, voices)
 
     def _validate(self) -> None:
         seen_en: set[str] = set()
@@ -214,6 +229,22 @@ class Alphabet:
                         f"Atoms {previous} and {atom.id} share the pronunciation {spoken}"
                     )
                 seen_spoken[spoken] = atom.id
+        for field, letters in self.voices.items():
+            given: dict[str, str] = {}
+            for atom_id, forms in letters.items():
+                for spoken in set(forms.values()):
+                    previous = given.setdefault(spoken, atom_id)
+                    if previous != atom_id:
+                        raise EnochaeonError(f"Atoms {previous} and {atom_id} share the {field} string {spoken}")
+
+    def voice_sound(self, field: str, atom_id: str, form: str) -> str:
+        """What one voice is given for one letter sound, as the key file has it."""
+        spoken = self.voices.get(field, {}).get(atom_id, {}).get(form, "")
+        if not spoken:
+            raise EnochaeonError(
+                f"The key has no {field} string for {atom_id}.{form}. tools/cipher/voice-sounds.py writes them."
+            )
+        return spoken
 
     def parse(self, text: str, strict: bool = False) -> list[Segment]:
         """Turn a document into words and the gaps between them.

@@ -1,0 +1,66 @@
+{
+  "about": [
+    "Settings for tools/trials/cipher-voice.py, typed by hand. The trial changes nothing the cipher, the Calls or translate use.",
+    "voice: the Piper model that speaks. extra_symbols: the espeak symbols the cipher's letter sounds use that the Call table in piper_voice.py does not have, and the IPA John is given for each.",
+    "noise: Piper's two noise settings under a name. noise_scale is the noise in the sound. noise_w_scale is the noise in how long each phoneme is held. 'own' is what John's model file has.",
+    "speeds: Piper's length_scale. 1.0 is conversational, higher is slower. ends: what is written after each letter sound given to John. takes: how many times each letter sound is spoken in the letters test.",
+    "silences: the silence written after a letter, between two words and between two lines, in milliseconds, under a name.",
+    "bridge_ms: a silence shorter than this is inside one letter. trim_pad_ms: how much quiet is kept on each side of a spoken sound. hear_pad_ms: how much is kept on each side of a letter given to the recognizer. frame_ms: the silence put round a letter that is heard alone.",
+    "texts: the files that are encoded and decoded. runs: one row for each way of speaking them. scheme is 'espeak' (the cipher as shipped), 'breath' (John, one breath for each word) or 'letters' (John, each letter alone). match 'frames' tells a letter by what the recognizer gives frame by frame; without it a letter is told by the phones written for it."
+  ],
+  "voice": "scratch/piper-voices/en_US-john-medium.onnx",
+  "extra_symbols": {"dZ": "dʒ", "tS": "tʃ", "S": "ʃ"},
+  "noise": {
+    "zero": {"noise_scale": 0.0, "noise_w_scale": 0.0},
+    "low": {"noise_scale": 0.2, "noise_w_scale": 0.2},
+    "own": {"noise_scale": 0.667, "noise_w_scale": 0.8}
+  },
+  "speeds": [1.0, 1.6],
+  "ends": ["", "."],
+  "takes": 3,
+  "silences": {
+    "short": {"letter_ms": 150, "word_ms": 500, "line_ms": 1000},
+    "middle": {"letter_ms": 250, "word_ms": 750, "line_ms": 1500},
+    "long": {"letter_ms": 400, "word_ms": 1200, "line_ms": 2400}
+  },
+  "bridge_ms": 100,
+  "trim_pad_ms": 50,
+  "hear_pad_ms": 80,
+  "frame_ms": 300,
+  "hearing": {
+    "about": [
+      "For the 'hearing' command. voices: the John settings that are tried; espeak is always tried beside them.",
+      "wide_ms: the silence put on each side of a letter for the way called 'wide'.",
+      "row_silences: the silences used when a letter is heard between two others. row_shifts: how far along the list of letter sounds the two neighbours are taken from, once for each row.",
+      "against: for the frame-by-frame comparison, the noise level whose takes are matched to templates made at the first noise level."
+    ],
+    "voices": [
+      {"noise": "zero", "speed": 1.0, "end": "."},
+      {"noise": "zero", "speed": 1.6, "end": "."},
+      {"noise": "low", "speed": 1.0, "end": "."},
+      {"noise": "own", "speed": 1.0, "end": "."}
+    ],
+    "wide_ms": 600,
+    "row_silences": "middle",
+    "row_shifts": [1, 7],
+    "against": [["zero", "low"], ["zero", "own"], ["low", "low"], ["own", "own"]]
+  },
+  "texts": [
+    "example/pangram.txt",
+    "example/the-owl-and-the-cat.txt",
+    "resources/cipher1.txt"
+  ],
+  "runs": [
+    {"name": "espeak-breath", "scheme": "espeak"},
+    {"name": "john-breath-zero", "scheme": "breath", "noise": "zero", "speed": 1.0, "end": "."},
+    {"name": "john-breath-own", "scheme": "breath", "noise": "own", "speed": 1.0, "end": "."},
+    {"name": "john-letters-zero-short", "scheme": "letters", "noise": "zero", "speed": 1.0, "end": ".", "silences": "short"},
+    {"name": "john-letters-zero-middle", "scheme": "letters", "noise": "zero", "speed": 1.0, "end": ".", "silences": "middle"},
+    {"name": "john-letters-zero-long", "scheme": "letters", "noise": "zero", "speed": 1.0, "end": ".", "silences": "long"},
+    {"name": "john-letters-zero-middle-frames", "scheme": "letters", "match": "frames", "noise": "zero", "speed": 1.0, "end": ".", "silences": "middle"},
+    {"name": "john-letters-low-middle", "scheme": "letters", "noise": "low", "speed": 1.0, "end": ".", "silences": "middle"},
+    {"name": "john-letters-low-middle-frames", "scheme": "letters", "match": "frames", "noise": "low", "speed": 1.0, "end": ".", "silences": "middle"},
+    {"name": "john-letters-own-middle", "scheme": "letters", "noise": "own", "speed": 1.0, "end": ".", "silences": "middle"},
+    {"name": "john-letters-own-middle-frames", "scheme": "letters", "match": "frames", "noise": "own", "speed": 1.0, "end": ".", "silences": "middle"}
+  ]
+}

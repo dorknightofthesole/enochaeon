@@ -1,0 +1,30 @@
+{
+  "about": "How the key's field for the Piper voice John is filled. Typed by hand. tools/cipher/voice-sounds.py reads it. The cipher does not: it reads src/enochaeon/data/alphabet.json.",
+  "field": "piper_john",
+  "symbols": {
+    "'": "ˈ",
+    "dZ": "dʒ",
+    "tS": "tʃ",
+    "S": "ʃ",
+    "A:": "ɑː",
+    "i:": "iː",
+    "u:": "uː",
+    "a": "æ",
+    "b": "b",
+    "d": "d",
+    "f": "f",
+    "g": "ɡ",
+    "h": "h",
+    "k": "k",
+    "l": "l",
+    "m": "m",
+    "n": "n",
+    "p": "p",
+    "r": "ɹ",
+    "s": "s",
+    "t": "t",
+    "v": "v",
+    "z": "z"
+  },
+  "symbols_why": "Each espeak symbol the key's letter sounds are written with, and the IPA letters John is given for it. These are the strings tools/trials/cipher-voice.py spoke and read back. The Calls give John a for the vowel written a here. The cipher keeps æ because that is what was tried. a was not tried for the cipher."
+}

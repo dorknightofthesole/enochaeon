@@ -1,94 +1,45 @@
 {
-  "version": 3,
-  "atoms": {
-    "un": {
-      "phone": "b i",
-      "long": "d uː"
-    },
-    "pa": {
-      "phone": "b a"
-    },
-    "pa_rafe": {
-      "phone": "v a"
-    },
-    "ged": {
-      "phone": "ɡ ʉ n"
-    },
-    "ged_j": {
-      "phone": "dʒ a"
-    },
-    "gal": {
-      "phone": "m iː d"
-    },
-    "graph": {
-      "phone": "p i",
-      "long": "p uː"
-    },
-    "vau": {
-      "phone": "s i",
-      "long": "z uː"
-    },
-    "vau_u": {
-      "phone": "m i",
-      "long": "s uː"
-    },
-    "vau_w": {
-      "phone": "h iː"
-    },
-    "ceph": {
-      "phone": "z a"
-    },
-    "nahath": {
-      "phone": "h ɑ"
-    },
-    "gisg": {
-      "phone": "t a"
-    },
-    "gon": {
-      "phone": "f i",
-      "long": "v ʉ"
-    },
-    "gon_y": {
-      "phone": "h uː"
-    },
-    "veh": {
-      "phone": "k i"
-    },
-    "ur": {
-      "phone": "l a"
-    },
-    "tal": {
-      "phone": "m a"
-    },
-    "drux": {
-      "phone": "n iː"
-    },
-    "pal": {
-      "phone": "s a"
-    },
-    "mals": {
-      "phone": "f a"
-    },
-    "mals_dagesh": {
-      "phone": "p a"
-    },
-    "ger": {
-      "phone": "ɹ i"
-    },
-    "ger_q": {
-      "phone": "k uː"
-    },
-    "don": {
-      "phone": "ɹ a"
-    },
-    "fam": {
-      "phone": "ʃ a"
-    },
-    "orth": {
-      "phone": "t iː"
-    },
-    "ch": {
-      "phone": "tʃ a"
-    }
+  "version": 4,
+  "voice": "25801b23ac60",
+  "spoken_with": {
+    "voice": "scratch/piper-voices/en_US-john-medium.onnx",
+    "sounds": "piper_john",
+    "length_scale": 1.0,
+    "noise_scale": 0.0,
+    "noise_w_scale": 0.0,
+    "letter_end": ".",
+    "edge_ms": 50
+  },
+  "bridge_ms": 100,
+  "hear_ms": 80,
+  "sounds": {
+    "un": {"phone": [0, 21], "long": [21, 49]},
+    "pa": {"phone": [49, 70]},
+    "pa_rafe": {"phone": [70, 90]},
+    "ged": {"phone": [90, 118]},
+    "ged_j": {"phone": [118, 143]},
+    "gal": {"phone": [143, 168]},
+    "graph": {"phone": [168, 192], "long": [192, 219]},
+    "vau": {"phone": [219, 247], "long": [247, 281]},
+    "vau_u": {"phone": [281, 305], "long": [305, 335]},
+    "vau_w": {"phone": [335, 356]},
+    "ceph": {"phone": [356, 379]},
+    "nahath": {"phone": [379, 404]},
+    "gisg": {"phone": [404, 426]},
+    "gon": {"phone": [426, 457], "long": [457, 489]},
+    "gon_y": {"phone": [489, 510]},
+    "veh": {"phone": [510, 535]},
+    "ur": {"phone": [535, 555]},
+    "tal": {"phone": [555, 576]},
+    "drux": {"phone": [576, 598]},
+    "pal": {"phone": [598, 622]},
+    "mals": {"phone": [622, 647]},
+    "mals_dagesh": {"phone": [647, 668]},
+    "ger": {"phone": [668, 691]},
+    "ger_q": {"phone": [691, 717]},
+    "don": {"phone": [717, 736]},
+    "fam": {"phone": [736, 758]},
+    "orth": {"phone": [758, 785]},
+    "ch": {"phone": [785, 809]}
   }
 }

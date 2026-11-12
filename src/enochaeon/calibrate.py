@@ -1,94 +1,107 @@
-"""Speak every letter form in a short carrier and store what the model hears."""
+"""Speak every letter sound alone with the cipher's voice and store what the recognizer gives for it.
+
+The calibration is two files: a list of the letter sounds with the name of
+the voice that spoke them, and the frames of every sound. They are made the
+way a recording is read: each sound is cut out with the cutter the decoder
+uses, and heard alone.
+
+Before anything is written, every letter sound is spoken in one row with the
+letter silence between them, and that row is read back. A letter that comes
+back as another letter is named, and nothing is written.
+"""
 
 from __future__ import annotations
 
 import json
 import sys
+from pathlib import Path
+
+import numpy as np
 
 from enochaeon.alphabet import CALIBRATION_PATH, Alphabet
-from enochaeon.match import fold_phones, phone_distance
-from enochaeon.recognize import transcribe
-from enochaeon.synthesize import speak
-
-# A syllable that is not one of the letters. It trails each form so the letter
-# is heard the way it is heard at the start of a word, and then it is cut off.
-# kwah keeps its w in front of f, and loses it in front of k.
-TRAILER = "k'A:m"
-KWAH_TRAILER = "f'A:m"
+from enochaeon.audio import silence
+from enochaeon.cipher_voice import Speaker
+from enochaeon.config import CipherVoice, load_cipher_voice
+from enochaeon.decode import CALIBRATION_VERSION, Calibration, frames_path, letters, tell
+from enochaeon.recognize import frames
 
 
-def calibrate(alphabet: Alphabet | None = None) -> int:
+def calibrate(alphabet: Alphabet | None = None, voice: CipherVoice | None = None, path: Path | None = None) -> int:
     alphabet = alphabet or Alphabet.load()
-    trailers = {
-        TRAILER: _tokens(transcribe(speak(TRAILER))),
-        KWAH_TRAILER: _tokens(transcribe(speak(KWAH_TRAILER))),
-    }
-    if not all(trailers.values()):
-        print("A calibration trailer produced no phones", file=sys.stderr)
-        return 1
-    heard: dict[str, dict[str, str]] = {}
-    owners: dict[str, str] = {}
-    collisions: list[tuple[str, str, str]] = []
-    silent: list[str] = []
-    jobs = [
-        (atom.id, form, phonemes)
-        for atom in alphabet.atoms.values()
-        for form, phonemes in atom.forms().items()
-    ]
+    voice = voice or load_cipher_voice()
+    dest = path or CALIBRATION_PATH
+    speaker = Speaker(voice, alphabet)
+    jobs = [(atom, form) for atom in alphabet.atoms.values() for form in atom.forms()]
     total = len(jobs)
-    for number, (atom_id, form, phonemes) in enumerate(jobs, start=1):
-        print(f"[{number}/{total}] {atom_id}.{form}", file=sys.stderr)
-        trailer_name = KWAH_TRAILER if phonemes.replace(" ", "").startswith("kw") else TRAILER
-        framed = _tokens(transcribe(speak(f"{phonemes} {trailer_name}")))
-        phones = " ".join(_strip_trailer(framed, trailers[trailer_name]))
-        label = f"{atom_id}.{form}"
-        if not phones:
-            silent.append(label)
+    heard: list[tuple[str, str, np.ndarray]] = []
+    faults: list[str] = []
+    for number, (atom, form) in enumerate(jobs, start=1):
+        label = f"{atom.id}.{form}"
+        print(f"[{number}/{total}] {label}", file=sys.stderr)
+        found = letters(speaker.sound(atom, form), voice.bridge_ms, voice.hear_ms)
+        if len(found) != 1:
+            faults.append(f"{label} came out in {len(found)} pieces, and a letter must be one")
             continue
-        # The matcher treats aː and ɑ as a, so two hearings that differ only
-        # there are the same syllable.
-        identity = " ".join(fold_phones(phones))
-        previous = owners.get(identity)
-        if previous is not None:
-            collisions.append((previous, label, identity))
-        else:
-            owners[identity] = label
-        heard.setdefault(atom_id, {})[form] = phones
-    if silent or collisions:
-        for label in silent:
-            print(f"{label} produced no phones", file=sys.stderr)
-        for first, second, phones in collisions:
-            print(f"{first} and {second} were both heard as {phones!r}", file=sys.stderr)
+        given = frames(found[0][1])
+        if not given.shape[0]:
+            faults.append(f"{label} was too short to be heard")
+            continue
+        heard.append((atom.id, form, given))
+    if not faults:
+        calibration = Calibration(speaker.name, voice.bridge_ms, voice.hear_ms, tuple(heard))
+        faults = _mistaken(jobs, speaker, voice, calibration)
+    if faults:
+        for fault in faults:
+            print(fault, file=sys.stderr)
         return 1
-    CALIBRATION_PATH.write_text(
-        json.dumps({"version": 3, "atoms": heard}, indent=2, ensure_ascii=False) + "\n",
-        encoding="utf-8",
-    )
-    print(f"Calibrated {total} letter sounds into {CALIBRATION_PATH}", file=sys.stderr)
+    index: dict[str, dict[str, list[int]]] = {}
+    start = 0
+    for atom_id, form, given in heard:
+        index.setdefault(atom_id, {})[form] = [start, start + given.shape[0]]
+        start += given.shape[0]
+    np.save(frames_path(dest), np.concatenate([given for _, _, given in heard]))
+    written = {
+        "version": CALIBRATION_VERSION,
+        "voice": speaker.name,
+        "spoken_with": {
+            "voice": voice.model,
+            "sounds": voice.sounds,
+            "length_scale": voice.length_scale,
+            "noise_scale": voice.noise_scale,
+            "noise_w_scale": voice.noise_w_scale,
+            "letter_end": voice.letter_end,
+            "edge_ms": voice.edge_ms,
+        },
+        "bridge_ms": voice.bridge_ms,
+        "hear_ms": voice.hear_ms,
+        "sounds": index,
+    }
+    dest.write_text(_laid_out(written), encoding="utf-8")
+    print(f"Calibrated {total} letter sounds into {dest} and {frames_path(dest).name}", file=sys.stderr)
     return 0
 
 
-def _tokens(phones: str) -> tuple[str, ...]:
-    return tuple(phones.split())
+def _laid_out(written: dict) -> str:
+    """The calibration file, with one letter to a line where the sounds are listed."""
+    sounds = written["sounds"]
+    rows = ",\n".join(f"    {json.dumps(atom_id)}: {json.dumps(forms)}" for atom_id, forms in sounds.items())
+    head = json.dumps({key: value for key, value in written.items() if key != "sounds"}, indent=2, ensure_ascii=False)
+    return head[: head.rindex("}")].rstrip() + ',\n  "sounds": {\n' + rows + "\n  }\n}\n"
 
 
-def _strip_trailer(framed: tuple[str, ...], trailer: tuple[str, ...]) -> tuple[str, ...]:
-    """Drop the trailing carrier when it still sounds like the trailer."""
-    if not framed or not trailer:
-        return framed
-    target = max(0, len(framed) - len(trailer))
-    best_cut: int | None = None
-    best_key: tuple[int, int] | None = None
-    latest = max(0, len(framed) - len(trailer) - 2)
-    limit = max(3, len(trailer) // 2)
-    for cut in range(latest, len(framed)):
-        distance = phone_distance(framed[cut:], trailer)
-        if distance > limit:
-            continue
-        key = (distance, abs(cut - target))
-        if best_key is None or key < best_key:
-            best_key = key
-            best_cut = cut
-    if best_cut is None or best_cut == 0:
-        return framed
-    return framed[:best_cut]
+def _mistaken(jobs: list, speaker: Speaker, voice: CipherVoice, calibration: Calibration) -> list[str]:
+    """Every letter sound in one row, read back. Names each one that comes back as another letter."""
+    row: list[np.ndarray] = []
+    for atom, form in jobs:
+        if row:
+            row.append(silence(voice.letter_ms))
+        row.append(speaker.sound(atom, form))
+    found = letters(np.concatenate(row), voice.bridge_ms, voice.hear_ms)
+    if len(found) != len(jobs):
+        return [f"{len(jobs)} letter sounds spoken in a row were cut into {len(found)}"]
+    faults: list[str] = []
+    for (atom, form), (_, letter) in zip(jobs, found):
+        told = tell(frames(letter), calibration)
+        if told != atom.id:
+            faults.append(f"{atom.id}.{form} spoken in a row was taken for {told}")
+    return faults
