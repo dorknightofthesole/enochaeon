@@ -12,7 +12,7 @@ How the three paths work, and the files they read, is in [`docs/enochaeon-in-the
 
 The name Enochaeon joins Enoch, the prophet who spoke with the angels, and the Greek *aeon*, an epoch or age.
 
-**This is still a WIP, and I am currently building out and verifying the lexicon.**
+**This is still a WIP, and I am currently building out and verifying the lexicon.** Update 11-11-2026, I believe the Lexicon is in solid enough shape to be used, but I plan to do more analysis with it.
 
 ## Setup
 
