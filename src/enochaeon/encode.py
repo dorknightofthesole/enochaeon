@@ -1,4 +1,4 @@
-"""Turn a document into a WAV of Enochian words."""
+"""Turn a document into a WAV of Enochian letter sounds."""
 
 from __future__ import annotations
 
@@ -6,22 +6,32 @@ from pathlib import Path
 
 import numpy as np
 
-from enochaeon.alphabet import Alphabet
-from enochaeon.audio import Gaps, silence, write_wav
-from enochaeon.synthesize import speak
+from enochaeon.alphabet import Alphabet, syllable_forms
+from enochaeon.audio import silence, write_wav
+from enochaeon.cipher_voice import Speaker, mark_of
+from enochaeon.config import CipherVoice
 
 
-def render(text: str, alphabet: Alphabet, gaps: Gaps | None = None) -> np.ndarray:
-    gaps = gaps or Gaps()
+def render(text: str, alphabet: Alphabet, voice: CipherVoice, speaker: Speaker) -> np.ndarray:
+    """Each letter sound alone, with the silence that says what follows it.
+
+    The silence after a letter is the shortest. The one between two words is
+    longer, and the one between two lines is longer again. Those three lengths
+    are all that tells a letter, a word and a line apart on the way back.
+    """
     pieces: list[np.ndarray] = []
+    gap = voice.word_ms
     for item in alphabet.atom_ids(text):
         if isinstance(item, str):
-            pieces.append(silence(gaps.nl_ms if item == "\n" else gaps.word_ms))
+            gap = voice.line_ms if item == "\n" else voice.word_ms
             continue
-        phonemes = alphabet.pronounce_atoms(tuple(alphabet.atoms[atom_id] for atom_id in item))
-        pieces.append(speak(phonemes))
+        atoms = tuple(alphabet.atoms[atom_id] for atom_id in item)
+        for index, (atom, form) in enumerate(syllable_forms(atoms)):
+            if pieces:
+                pieces.append(silence(voice.letter_ms if index else gap))
+            pieces.append(speaker.sound(atom, form))
     if not pieces:
-        return silence(gaps.word_ms)
+        return silence(voice.word_ms)
     return np.concatenate(pieces)
 
 
@@ -48,7 +58,6 @@ def write_traces(source: Path, text: str, alphabet: Alphabet) -> list[Path]:
     return written
 
 
-def write_document(text: str, dest: Path, alphabet: Alphabet, gaps: Gaps | None = None) -> None:
-    gaps = gaps or Gaps()
-    audio = render(text, alphabet, gaps)
-    write_wav(dest, audio, comment=gaps.comment())
+def write_document(text: str, dest: Path, alphabet: Alphabet, voice: CipherVoice, speaker: Speaker) -> None:
+    audio = render(text, alphabet, voice, speaker)
+    write_wav(dest, audio, comment=mark_of(voice, speaker.name).comment())

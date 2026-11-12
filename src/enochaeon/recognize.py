@@ -1,8 +1,13 @@
 """Acoustic phone recognition with no English language model.
 
 The checkpoint is wav2vec 2.0 fine-tuned to emit espeak phones. It is used as
-a closed-set syllable classifier: each chunk is one Enochian letter, and the
-phone string is matched to the calibration for that letter.
+a closed-set classifier: each chunk is one Enochian letter, and what the model
+gives for it, step by step, is matched to the calibration for each letter.
+
+The model does not write a lone letter sound the same way twice: a sound
+moved by a few milliseconds can come out as other phones. What it gives step
+by step, before one phone is picked for each step, changes much less. So the
+cipher is told by ``frames`` and not by the phones ``transcribe`` writes.
 """
 
 from __future__ import annotations
@@ -82,3 +87,27 @@ def transcribe(audio: np.ndarray, sample_rate: int = SAMPLE_RATE) -> str:
         return ""
     predicted = torch.argmax(logits, dim=-1)[0].tolist()
     return _ctc(predicted, table, pad_id)
+
+
+def frames(audio: np.ndarray, sample_rate: int = SAMPLE_RATE) -> np.ndarray:
+    """What the model gives for each step of one sound, before a phone is picked.
+
+    One row for each step, and in it a share for every phone the model knows.
+    The shares of a row add up to one. A sound too short to be heard has no rows.
+    """
+    import torch
+
+    extractor, model, _table, _pad_id, device = _load()
+    if sample_rate != SAMPLE_RATE:
+        audio = resample(audio, sample_rate)
+    audio = np.asarray(audio, dtype=np.float32)
+    width = int(model.config.vocab_size)
+    if audio.size < int(SAMPLE_RATE * 0.05):
+        return np.zeros((0, width), dtype=np.float32)
+    inputs = extractor(audio, sampling_rate=SAMPLE_RATE, return_tensors="pt")
+    try:
+        with torch.inference_mode():
+            logits = model(inputs.input_values.to(device)).logits[0]
+    except RuntimeError:
+        return np.zeros((0, width), dtype=np.float32)
+    return torch.softmax(logits, dim=-1).cpu().numpy().astype(np.float32)

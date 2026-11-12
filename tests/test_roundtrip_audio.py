@@ -1,13 +1,14 @@
-"""Speak text and read it back. Requires espeak-ng and the phone model."""
+"""Speak text with the cipher's voice and read it back. Requires the Piper model enochaeon.json names and the phone model."""
 
 from __future__ import annotations
 
-import shutil
 import tempfile
 import unittest
 from pathlib import Path
 
 from enochaeon.cli import main
+from enochaeon.config import load_cipher_voice
+from enochaeon.errors import EnochaeonError
 
 # Example sentences. The implementation must not know these strings.
 FIXTURE = (
@@ -16,67 +17,28 @@ FIXTURE = (
     "The black cat kept the key",
     "She sells fish and chips",
 )
-# Word positions this build already recovers. Losing one fails the test.
-# Add a position only after a change recovers that word.
-RECOVERED = frozenset({
-    (0, 0),
-    (0, 1),
-    (0, 3),
-    (0, 4),
-    (0, 6),
-    (0, 8),
-    (1, 0),
-    (1, 1),
-    (2, 0),
-    (2, 3),
-    (2, 4),
-    (3, 0),
-    (3, 1),
-    (3, 3),
-})
-# Phone distance from what was heard to the source word. A later change fails
-# when any of these rises, including a word that was already wrong.
-DISTANCE = {
-    (0, 0): 1,
-    (0, 1): 4,
-    (0, 2): 6,
-    (0, 3): 0,
-    (0, 4): 0,
-    (0, 5): 6,
-    (0, 6): 1,
-    (0, 7): 7,
-    (0, 8): 2,
-    (1, 0): 4,
-    (1, 1): 1,
-    (2, 0): 1,
-    (2, 1): 3,
-    (2, 2): 6,
-    (2, 3): 3,
-    (2, 4): 0,
-    (2, 5): 7,
-    (3, 0): 1,
-    (3, 1): 0,
-    (3, 2): 4,
-    (3, 3): 1,
-    (3, 4): 3,
-}
+# A text whose lines end in three ways: a line break, a full stop, and an empty line.
+LINES = "The owl and the cat\nwent to sea. In a boat,\n\nthey took some honey\n"
 
 
-def _espeak_present() -> bool:
-    if shutil.which("espeak-ng"):
-        return True
-    return Path("/opt/homebrew/bin/espeak-ng").is_file()
+def _voice_present() -> bool:
+    try:
+        return Path(load_cipher_voice().model).is_file()
+    except EnochaeonError:
+        return False
 
 
-@unittest.skipUnless(_espeak_present(), "espeak-ng is not installed")
+@unittest.skipUnless(_voice_present(), "the Piper model the cipher section of enochaeon.json names is not there")
 class AudioRoundtripTest(unittest.TestCase):
     @classmethod
     def setUpClass(cls) -> None:
         status = main(["calibrate"])
         if status != 0:
-            raise AssertionError("calibration reported two syllables as the same sound")
+            raise AssertionError("calibration could not tell every letter sound apart")
 
     def test_fox_survives_speech(self) -> None:
+        from enochaeon.audio import read_comment
+
         with tempfile.TemporaryDirectory() as directory:
             root = Path(directory)
             source = root / "fox.txt"
@@ -97,8 +59,9 @@ class AudioRoundtripTest(unittest.TestCase):
                 (hidden / "fox-phonetic.txt").read_text(encoding="utf-8").strip(),
                 "f'a s'i: r'i: s'a",
             )
-            comment = wav.read_bytes()
-            self.assertIn(b"enochaeon;v=1", comment)
+            comment = read_comment(wav)
+            self.assertTrue(comment.startswith("enochaeon;v=2"))
+            self.assertNotIn("fox", comment)
             self.assertEqual(main([str(wav)]), 0)
             restored = (root / "fox.decoded.txt").read_text(encoding="utf-8")
             self.assertEqual(restored.strip(), "fox")
@@ -119,52 +82,75 @@ class AudioRoundtripTest(unittest.TestCase):
             restored = (root / "hello-world.decoded.txt").read_text(encoding="utf-8")
             self.assertEqual(restored.strip(), "hello world")
 
-    def test_recovered_words_stay_recovered(self) -> None:
+    def test_every_word_comes_back(self) -> None:
         from enochaeon.alphabet import Alphabet
-        from enochaeon.audio import Gaps
+        from enochaeon.audio import SAMPLE_RATE
+        from enochaeon.cipher_voice import Speaker, mark_of
         from enochaeon.decode import decode_audio, require_calibration
         from enochaeon.encode import render
 
         alphabet = Alphabet.load()
-        labels = require_calibration(alphabet)
-        lost: list[str] = []
-        for line_index, line in enumerate(FIXTURE):
-            decoded, _unknown = decode_audio(render(line, alphabet), 16000, alphabet, labels, Gaps())
-            got = decoded.lower().split()
-            for word_index, word in enumerate(line.lower().split()):
-                if (line_index, word_index) not in RECOVERED:
-                    continue
-                heard = got[word_index] if word_index < len(got) else ""
-                if heard != word:
-                    lost.append(f"{word!r} came back as {heard!r}")
-        self.assertEqual(lost, [])
+        voice = load_cipher_voice()
+        speaker = Speaker(voice, alphabet)
+        calibration = require_calibration(alphabet)
+        mark = mark_of(voice, speaker.name)
+        for line in FIXTURE:
+            # What the key gives back with no audio. Speech and hearing must lose none of it.
+            expected, _ = alphabet.decode_atoms(alphabet.atom_ids(line))
+            decoded, unknown = decode_audio(
+                render(line, alphabet, voice, speaker), SAMPLE_RATE, alphabet, calibration, mark
+            )
+            self.assertEqual(decoded, expected)
+            self.assertFalse(unknown)
 
-    def test_word_distance_does_not_get_worse(self) -> None:
+    def test_line_breaks_come_back(self) -> None:
         from enochaeon.alphabet import Alphabet
-        from enochaeon.audio import Gaps, segment_words
-        from enochaeon.decode import require_calibration
-        from enochaeon.encode import render
-        from enochaeon.lexicon import word_phones
-        from enochaeon.match import phone_distance
-        from enochaeon.recognize import transcribe
 
         alphabet = Alphabet.load()
-        labels = require_calibration(alphabet)
-        worse: list[str] = []
-        for line_index, line in enumerate(FIXTURE):
-            heard_words = [
-                transcribe(piece)
-                for piece in segment_words(render(line, alphabet), 16000, Gaps())
-                if not isinstance(piece, str)
-            ]
-            for word_index, word in enumerate(line.lower().split()):
-                ceiling = DISTANCE[(line_index, word_index)]
-                heard = heard_words[word_index] if word_index < len(heard_words) else ""
-                phones = word_phones(alphabet, labels, word)
-                distance = phone_distance(tuple(heard.split()), phones) if phones else 10**6
-                if distance > ceiling:
-                    worse.append(f"{word} distance {distance} exceeded {ceiling}")
-        self.assertEqual(worse, [])
+        # What the key gives back with no audio: the same words on the same lines.
+        expected, _ = alphabet.decode_atoms(alphabet.atom_ids(LINES))
+        self.assertEqual(expected.strip().count("\n"), 3)
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            source = root / "lines.txt"
+            source.write_text(LINES, encoding="utf-8")
+            self.assertEqual(main([str(source)]), 0)
+            self.assertEqual(main([str(root / "lines.wav")]), 0)
+            restored = (root / "lines.decoded.txt").read_text(encoding="utf-8")
+            self.assertEqual(restored.strip(), expected.strip())
+
+    def test_a_wav_with_no_mark_is_still_read(self) -> None:
+        from enochaeon.audio import read_wav, write_wav
+
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            source = root / "fox.txt"
+            source.write_text("fox", encoding="utf-8")
+            self.assertEqual(main([str(source)]), 0)
+            audio, sample_rate = read_wav(root / "fox.wav")
+            bare = root / "bare.wav"
+            write_wav(bare, audio, sample_rate)
+            self.assertEqual(main([str(bare)]), 0)
+            self.assertEqual((root / "bare.decoded.txt").read_text(encoding="utf-8").strip(), "fox")
+
+    def test_a_wav_of_the_earlier_cipher_or_of_a_call_is_refused(self) -> None:
+        from enochaeon.audio import Gaps, silence, write_wav
+
+        with tempfile.TemporaryDirectory() as directory:
+            wav = Path(directory) / "earlier.wav"
+            write_wav(wav, silence(200), comment=Gaps().comment())
+            self.assertEqual(main([str(wav)]), 1)
+            self.assertFalse((Path(directory) / "earlier.decoded.txt").exists())
+
+    def test_a_wav_of_another_voice_is_refused(self) -> None:
+        from enochaeon.audio import silence, write_wav
+        from enochaeon.cipher_voice import mark_of
+
+        with tempfile.TemporaryDirectory() as directory:
+            wav = Path(directory) / "other.wav"
+            write_wav(wav, silence(200), comment=mark_of(load_cipher_voice(), "another-voice").comment())
+            self.assertEqual(main([str(wav)]), 1)
+            self.assertFalse((Path(directory) / "other.decoded.txt").exists())
 
 
 if __name__ == "__main__":

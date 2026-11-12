@@ -1,4 +1,8 @@
-"""Speak each syllable alone with a short gap. Compare to one breath."""
+"""Speak each syllable alone with a short gap. Compare to one breath.
+
+This trial was run against the cipher as espeak spoke it, one breath for each word. The cipher is now
+spoken by John one letter at a time, and this script does not run against it.
+"""
 
 from __future__ import annotations
 

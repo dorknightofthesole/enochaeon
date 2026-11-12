@@ -1,4 +1,18 @@
 {
+  "cipher": {
+    "voice": "scratch/piper-voices/en_US-john-medium.onnx",
+    "sounds": "piper_john",
+    "length_scale": 1.0,
+    "noise_scale": 0.0,
+    "noise_w_scale": 0.0,
+    "letter_end": ".",
+    "letter_ms": 150,
+    "word_ms": 500,
+    "line_ms": 1000,
+    "edge_ms": 50,
+    "bridge_ms": 100,
+    "hear_ms": 80
+  },
   "calls": {
     "engine": "piper",
     "ipa": "dee_ipa",

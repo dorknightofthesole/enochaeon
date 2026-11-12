@@ -1,0 +1,7 @@
+{
+  "about": "Settings for tools/trials/calls-sent.py, typed by hand. translate: the English texts that are translated and whose strings for the voice are written down. Every call file in calls/ is always included.",
+  "translate": [
+    "resources/ritual.txt",
+    "example/pangram.txt"
+  ]
+}

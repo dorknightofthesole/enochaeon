@@ -18,35 +18,46 @@ Every word is spelled the same way. The reference is the pangram in [`example/pa
 - `o` is vav with a cholam, וֹ. Its Enochian letter is Vau.
 - `x` is kuf plus samekh, קס. Those letters are Ger and Pal.
 
-In Latin letters that spelling is `PVQS`. O counts as a vowel, so fox is one breath of syllables, not letter-names. A vowel left open is long, a vowel closed by a consonant is short, and a doubled consonant is spoken twice. `Hello` is `HELLV`. Capitals are folded to lowercase.
+In Latin letters that spelling is `PVQS`. O counts as a vowel, so fox is spoken as in-word letter sounds, not letter-names. A vowel left open is long, a vowel closed by a consonant is short, and a doubled consonant is spoken twice. `Hello` is `HELLV`. Capitals are folded to lowercase.
 
 The key is [`src/enochaeon/data/alphabet.json`](../src/enochaeon/data/alphabet.json). Matching is longest-first, so `ch`, `sh`, `th`, `ts`, and `x` are one row each. `tz` is the same Hebrew and the same Enochian letters as `ts`, and it comes back as `ts`. A written `k` followed by `s` is the same letters as `x`, so `foks` comes back as `fox`. The joined letter `æ` is the row for `a` and `e`, and it comes back as `ae`. An accent is not read, so `è` is `e` and comes back as `e`.
 
-An English word is always those in-word syllables, including a word with no vowel. The espeak phones in the key are this project's, chosen so a recognizer can tell the letters apart. They are not a historical pronunciation. A comma stays on the line, and a period starts a new line. A hyphen or a dash is a space between two words. Quotes and brackets are skipped.
+An English word is always those in-word sounds, including a word with no vowel. The sounds in the key are this project's, chosen so a recognizer can tell the letters apart. They are not a historical pronunciation. Each is written the espeak way in `phone` and `long`. What a voice is given for a sound is a field of its own on the same row: `piper_john` is what the Piper voice John is given, and `cipher.sounds` in `enochaeon.json` names that field. A comma stays on the line, and a period starts a new line. A hyphen or a dash is a space between two words. Quotes and brackets are skipped.
 
 Any other character has no row in the key: `&`, a digit, a Greek or a Hebrew letter. The cipher leaves such a character out and goes on. It prints every one that was left out, with the lines it is on. The recording does not have them, so the text comes back without them: `my heart & my tongue` comes back as `my heart my tongue`.
 
-`enochaeon notes.txt` writes three stage files in `.enochaeon/` beside the source, then `notes.wav`. Hebrew is the pointed transliteration. Enochian is the letter names. Phonetic is one espeak string per English word, the breath espeak speaks. The wav carries a short comment with the gap lengths and no plaintext. Encoding and decoding both refuse to run until calibration exists.
+`enochaeon notes.txt` writes three stage files in `.enochaeon/` beside the source, then `notes.wav`. Hebrew is the pointed transliteration. Enochian is the letter names. Phonetic is the letter sounds of each English word, written the espeak way. The wav carries a short comment with its three silences and a name for the voice that spoke it, and no plaintext. Encoding refuses to run until there is a calibration made with that voice, and decoding refuses a wav whose voice the calibration was not made with.
 
-Hearing uses [espeak-ng](https://github.com/espeak-ng/espeak-ng) and `facebook/wav2vec2-lv-60-espeak-cv-ft`. `enochaeon calibrate` speaks every letter sound once, in a short carrier, and stores what the model actually hears in [`src/enochaeon/data/calibration.json`](../src/enochaeon/data/calibration.json). Two hearings are the same when they match after length, the a/ɑ difference, and a few recognizer spellings of the same phone are ignored. If two letters collide, change the `phone` or `long` string for one of them and calibrate again.
+The cipher is spoken by Piper, with the voice and settings in the `cipher` section of [`enochaeon.json`](../enochaeon.json). Each letter sound is spoken alone. A silence of `letter_ms` follows a letter, one of `word_ms` stands between two words, and one of `line_ms` between two lines. The length of a silence is all that says where a word or a line ends, and that is how line breaks come back. `noise_scale` and `noise_w_scale` are Piper's two kinds of chance, in the sound and in how long each phoneme is held. At zero the voice says a string the same way every time.
 
-`enochaeon notes.wav` aligns the heard phones to those calibrated syllables and inverts the key. The raw reading is then checked against an English word list. A reading that is already in the list is kept. A reading that is not is replaced only when a listed word is within a few phone edits. A vowel edit is cheaper than a consonant edit. The list will keep a real word even when it is the wrong one. The recovered text is written as `notes.decoded.txt`. A wav without the gap comment is still decoded, with a warning.
+Hearing uses `facebook/wav2vec2-lv-60-espeak-cv-ft`, a model that writes the phones it hears. It does not write a lone letter sound reliably. The same sound moved by a few milliseconds can come out as other phones, and several letters come out as the same phones. So a letter is not told by the phones the model writes. It is told by what the model gives at each step of the sound before it picks a phone: a share for every phone it knows. Two sounds are close when their steps give their shares to the same phones, and one sound may be held longer than the other.
 
-The cipher does not read `enochaeon.json`, the lexicon, or a Call file. It stays on espeak.
+`enochaeon calibrate` speaks every letter sound alone with the cipher's voice, cuts it out the way a letter is cut out of a recording, and stores what the model gives for it. [`src/enochaeon/data/calibration.json`](../src/enochaeon/data/calibration.json) lists the sounds and names the voice, and `calibration.npy` beside it has the steps. Before anything is written, every letter sound is spoken in one row and read back. If a letter comes back as another letter, calibration names the two and writes nothing: change the string for one of them in the key and calibrate again. Calibrate again after any change to the `cipher` section.
+
+`enochaeon notes.wav` cuts the recording at its silences into lines, words and letters. Each letter is cut again from its first loud sample to its last, so the same sound reaches the model the same way wherever it stands. It is heard alone and taken for the letter whose calibrated sound is nearest. The key then turns the letters back into English, and the text is written as `notes.decoded.txt`. No word list corrects it. What comes back is what the letters spell, so a name or a word that is not English comes back as it was written.
+
+A wav with no comment is still decoded, with a warning, using the silences in `enochaeon.json`. A wav that carries the comment of a spoken Call or of the earlier espeak cipher is refused.
+
+What has been tried is a wav the tool wrote, read back from disk. The pangram, [`example/the-owl-and-the-cat.txt`](../example/the-owl-and-the-cat.txt) and a third text of 145 words each came back with every word and every line break. A recording played aloud and recorded again has not been tried. Noise in the voice costs words. In a trial with both noise settings at 0.2, 202 of the 226 words of the second text came back, and with John's own settings 101 did.
+
+The cipher reads the `cipher` section of `enochaeon.json`. It does not read the `calls` section, the lexicon, or a Call file, and Calls and translate do not read the `cipher` section.
 
 | File | Role |
 | --- | --- |
-| `src/enochaeon/data/alphabet.json` | Hebrew and Enochian for each English spelling, and the espeak phones |
-| `src/enochaeon/data/calibration.json` | What the recognizer heard for each letter. Written by `enochaeon calibrate` |
-| `src/enochaeon/data/words.txt` | The English word list used on the way back |
+| `enochaeon.json` | The `cipher` section: the voice, how it is run, the three silences, and how a letter is cut out |
+| `src/enochaeon/data/alphabet.json` | Hebrew and Enochian for each English spelling, the letter sounds, and what the voice is given for each sound |
+| `src/enochaeon/data/calibration.json` | The letter sounds that were calibrated, and the name of the voice that spoke them. Written by `enochaeon calibrate` |
+| `src/enochaeon/data/calibration.npy` | What the recognizer gives for each of those sounds, step by step. Written by `enochaeon calibrate` |
+| `tools/cipher/voice-sounds.py` | Writes a voice's field into the key from the method file beside it. A string that is already there is kept |
 | `src/enochaeon/alphabet.py` | Loads the key and applies the length rule |
+| `src/enochaeon/cipher_voice.py` | Piper, one letter sound at a time, and the comment written into the wav |
 | `src/enochaeon/encode.py` | Stage files and the cipher wav |
-| `src/enochaeon/decode.py` | The wav read back into English |
-| `src/enochaeon/calibrate.py` | Builds `calibration.json` |
+| `src/enochaeon/decode.py` | Cuts the wav into letters, tells each one, and reads it back into English |
+| `src/enochaeon/calibrate.py` | Builds the two calibration files |
 | `src/enochaeon/recognize.py` | The phone recognizer |
-| `src/enochaeon/match.py` | Aligns a hearing to the calibrated syllables |
-| `src/enochaeon/lexicon.py` | Chooses an English word within a few phone edits |
-| `src/enochaeon/synthesize.py` | espeak-ng |
+| `src/enochaeon/config.py` | Reads `enochaeon.json` |
+
+The cipher was first spoken by espeak, one breath for each word, and read back by matching the phones the model wrote and then correcting each word against an English word list. `src/enochaeon/match.py`, `src/enochaeon/lexicon.py` and `src/enochaeon/data/words.txt` are from that way of reading. They are still in the repository and the cipher no longer uses them. `src/enochaeon/synthesize.py` is espeak-ng, and a Call still uses it when `calls.engine` is `espeak`.
 
 ## The lexicon
 
@@ -148,7 +159,7 @@ The texts in `calls/` are Dee's forty-eight Keys. Their words are the words of D
 
 Calls 49 and 50 are not part of those Keys; their new spellings have a `dee_ipa` made by the letter rule, and only the 50th call has English, from Crowley's footnote. The texts are not taken from Leitch's lexicon. The glosses and the two pronunciations used by Calls and translate are [`calls/lexicon.json`](../calls/lexicon.json).
 
-The word list is American SCOWL, size 50: the English and American `words` lists through that size, lowercased to ASCII letters. Proper names, abbreviations, contractions, and the uppercase lists are not included. SCOWL is Copyright 2000-2018 by Kevin Atkinson.
+The word list in `src/enochaeon/data/words.txt`, which the cipher no longer uses, is American SCOWL, size 50: the English and American `words` lists through that size, lowercased to ASCII letters. Proper names, abbreviations, contractions, and the uppercase lists are not included. SCOWL is Copyright 2000-2018 by Kevin Atkinson.
 
 > Permission to use, copy, modify, distribute and sell these word lists, the associated scripts, the output created from the scripts, and its documentation for any purpose is hereby granted without fee, provided that the above copyright notice appears in all copies and that both that copyright notice and this permission notice appear in supporting documentation. Kevin Atkinson makes no representations about the suitability of this array for any purpose. It is provided "as is" without express or implied warranty.
 
