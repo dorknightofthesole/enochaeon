@@ -91,7 +91,7 @@ Hebrew is the pointed transliteration. Enochian is the letter names. Phonetic is
 - [`example/pangram.wav`](example/pangram.wav) is that breath spoken.
 - [`example/pangram.decoded.txt`](example/pangram.decoded.txt) is the English recovered from that WAV.
 
-https://github.com/user-attachments/assets/b02d0d59-9c8a-4435-b4ad-e28aa0a2aa8d
+https://github.com/user-attachments/assets/a6e506eb-6648-491f-80e6-3c3d229bb94f
 
 [`example/First Call.wav`](example/First%20Call.wav) is a spoken reading of [`calls/01.txt`](calls/01.txt).
 
