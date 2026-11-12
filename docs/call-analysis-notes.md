@@ -87,7 +87,7 @@ This is every doubt known on this date. None of it is settled by the code or by 
 - **One reader, once:** the reading in `tools/sloane/sloane-reading.json` is one reading by eye of handwriting on a microfilm scan. Nobody has confirmed it.
 - **Words that agree:** 1,027 words agree with the journal data. They were read once, from strips of the page, by a reader who knew what the journal had. Knowing what to expect may have helped a doubtful letter agree. Only the words that differ were looked at again at full size.
 - **Two words not settled:** in Call 10 a small faint letter, e or c, stands before `matorb`. In Call 15 the word is `dsocido` or `dsoado`.
-- **Word division leans on the journal:** the reading has 166 small gaps with no tie-stroke, where the eye cannot say if a new word begins. The comparison takes such a gap as a word break only where the journal breaks at that very letter. That happened once. The other 165 were left inside the word, which is the journal's division and not an independent reading of the manuscript. With Sloane first, the word division at those 165 gaps still rests on the journal.
+- **Word division leans on the journal:** the reading has 166 small gaps with no tie-stroke, where the eye cannot say if a new word begins. All 166 were then measured on the scan, as described under "The small gaps, measured" below. The width showed a word break at one. The journal breaks at one other. The other 164 were left inside the word, which is the journal's division and not an independent reading of the manuscript. With Sloane first, the word division at those 164 gaps still rests on the journal, and the measure could not change that.
 - **Tie-strokes:** 141 strokes were read as Dee tying two parts into one word. A stroke missed or wrongly seen changes a word break.
 - **Accents:** accents were typed where they were seen. They were not checked a second time and are not compared with anything.
 - **u/v and i/j/y:** 24 words differ only in these. No rule has been chosen for how the call files spell them.
@@ -124,7 +124,7 @@ This is every doubt known on this date. None of it is settled by the code or by 
 - **The two words not settled:** they have the journal's letters, `matorb` and `dsocido`, and the status `unsure`.
 - **u and v:** the call files have the manuscript's letters as read. Dee writes V for a capital U, so the same word is `torzu` in Call 2 and `torzv` in the Aethyr call.
 - **Two spellings at one place:** the call file has the one on the line, `tbliard` in Call 6 and `restel` in Call 4.
-- **Word division:** 122 words have a small gap inside them in the manuscript and are one word in the call files because the journal has them as one word. Among them are `odmiam`, `chista`, `gohoiad` and `fcaosga`. This is the weakest part of the text. Settling it needs each gap looked at again in the scan, with the English that Dee wrote above the words.
+- **Word division:** 121 words have a small gap inside them in the manuscript and are one word in the call files because the journal has them as one word. Among them are `odmiam`, `chista`, `gohoiad` and `fcaosga`. This is the weakest part of the text. The gaps were measured afterwards, and the widths settled one of them. What is left needs the English that Dee wrote above the words.
 - **Punctuation:** carried over from the files as they were before either source, as on the first pass.
 - **Lexicon:** 10 entries added, with no English and a letter-rule `dee_ipa`, which says nothing about how those words are pronounced. They are listed in `scratch/lexicon-new-spellings-sloane.txt`.
 - **Test:** the test now checks every call file against `calls/sloane/`. It is a check of the files against the record of the reading. It is not a check of the reading against the manuscript.
@@ -135,6 +135,19 @@ This is every doubt known on this date. None of it is settled by the code or by 
 `tools/sloane/sloane-cut.py` makes the images for Eddie's check. They are kept in `docs/imgs/`, and the script makes them again from the scan.
 
 - **One image per call:** [`imgs/sloane-calls/`](imgs/sloane-calls), `01.jpg` to `18.jpg` and `aethyrs.jpg`, each with its margins. The Aethyr call is on two pages, put one above the other.
-- **One image per place that differs:** `imgs/sloane-places/`, with [`index.md`](imgs/sloane-places/index.md) showing each image beside the journal's spelling and the reading. There are 46 images for 55 entries in [sloane-diff.txt](sloane-diff.txt): 50 words that differ in letters, in word division or by being absent, 3 words only the manuscript has, and 2 not settled. Words that stand together share an image.
+- **One image per place that differs:** `imgs/sloane-places/`, with [`index.md`](imgs/sloane-places/index.md) showing each image beside the journal's spelling and the reading. There are 47 images for 56 entries in [sloane-diff.txt](sloane-diff.txt): 51 words that differ in letters, in word division or by being absent, 3 words only the manuscript has, and 2 not settled. Words that stand together share an image.
 - **Not given an image:** the 24 words that differ only in u/v or i/j/y.
 - **Where the result goes:** `checked` in `tools/sloane/sloane-places.json`, one per place.
+
+### The small gaps, measured
+
+Later the same day the 166 small gaps were measured on the scan. The question was whether the page shows where a word ends, so that the word division need not rest on the journal. The method and the numbers are in [call-texts.md](call-texts.md#the-small-gaps), and every gap is listed in [sloane-gaps.txt](sloane-gaps.txt).
+
+- **The answer:** for 165 of the 166 gaps the width does not show a word break. The word division at 164 of them still rests on the journal.
+- **Why the width cannot settle it:** the narrowest gaps between two words are 29 to 41 pixels wide. The widest gaps inside a word are 33 to 41 pixels wide. A small gap in that range could be either, and 140 of the small gaps are 41 pixels or less.
+- **The one change:** in Call 9 `achildao` is now `a childao`. The gap is 60 pixels, wider than every gap measured inside a word and wider than a word gap on the same line. The journal's note beside the word is `A chil da o`. The place has an image in `imgs/sloane-places/` for Eddie's check, like the other places that differ.
+- **Three not settled:** `Thiln_os` in Call 3, `od_lonshin` in Call 4 and `a_sóbam` in Call 9 are wider than every gap inside a word and narrower than the word gaps on their lines. They keep the journal's division.
+- **Two not measured:** `z_chis` in Call 11 and `L_nibm` in the Aethyr call have a stroke or a point in the gap.
+- **What the measure rests on:** the kind of every gap on a line was typed by eye and has not been confirmed. The rule that turns a width into a word break is a choice made for this work.
+- **Sound:** `a` and `childao` both had entries in `calls/lexicon.json` already. How `childao` is pronounced is unknown. Its `dee_ipa` is what the letter rule makes from its letters.
+- **Not done:** no wav was made again, and nothing is committed.

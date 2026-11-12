@@ -4,6 +4,7 @@
     "Typed by hand from the page images in scratch/sloane-pages/ (ms/ for the manuscript pages, strips/ and zoom/ for the enlargements that were read).",
     "It is one reading by eye and has not been confirmed by anyone. It changes no call file and nothing in calls/journal/.",
     "A space is a clear gap between words. A hyphen is a stroke Dee draws under the line to tie two parts together. An underscore is a small gap with no tie: it may or may not be a word break, and it was judged by eye.",
+    "Every underscore stays typed as it was seen. tools/sloane/sloane-gaps.py measures each one on the page, and docs/sloane-gaps.txt lists the width and what it shows. A small gap is a word break where its width shows one, or where the journal breaks at that letter.",
     "A '?' after a letter means that letter was not read with certainty. Accents are typed where they were seen and are not compared.",
     "Only the places where the letters differ from the journal data were looked at again at full size. Words that agree were read once from the strips, so a reading that agrees may have been helped by knowing what to expect."
   ],
@@ -68,7 +69,8 @@
       "remarks": [
         "A small y is written above the first letter of 'ialpor'.",
         "'Ka' is written above the 'cá' of the second 'Sob cá' and above the 'ca' of 'i córs ca'; 'zod' above the z of 'z chis' and above the z of 'ethámz'; 'kil' above the 'chíl' of 'a chíldáo'.",
-        "The third letter of 'zumvi' was read as v: it has the same curl as the v of 'virq' on the next page and not the upright stroke of b."
+        "The third letter of 'zumvi' was read as v: it has the same curl as the v of 'virq' on the next page and not the upright stroke of b.",
+        "The gap in 'a_chíldáo' measures 60 pixels. It is wider than every gap measured inside a word in the manuscript (the widest is 41) and wider than the gap between 'chis' and 'pidiái' on the same line (55). It is taken as a word break by that measure: 'a' and 'chíldáo'. The journal prints the letters as one word, and its note beside them is 'A chil da o'."
       ]
     },
     "10": {

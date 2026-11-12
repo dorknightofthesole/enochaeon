@@ -1,0 +1,210 @@
+# Every gap that sloane-gaps.py marks on the lines of Enochian in Sloane 3191, and what kind of gap it is.
+#
+# One row for each line of a call that has a small gap in the reading: the call, the
+# number of the line (the number sloane-gaps.py writes beside it), then each gap from
+# left to right. The number is the width the script measured, in pixels. The letter
+# after it is typed by hand, from the marked page and tools/sloane/sloane-reading.json:
+#
+#   s   the gap between two words that the reading has as two words
+#   _   a small gap of the reading: the one in question
+#   -   a gap between two parts that Dee tied with a stroke under the line
+#   .   a gap between two letters of a word, where the reading has no mark
+#   c   a gap between two letters of a word written in capitals (ZACAR, MAD): not compared
+#   x   not a whole gap of the text: the margin, a note, or a gap that a comma, a point
+#       or the tail of a letter cuts in two
+#
+# Two marks have no measured width:
+#
+#   0_  a small gap of the reading where the script found no gap of 12 pixels or more
+#   /_  a small gap of the reading that a stroke or a point stands in, so it has no one width
+#
+# The words after the # are the words of the line as the reading has them.
+# `python3 tools/sloane/sloane-gaps.py judge` checks every width here against the page.
+
+03 1   28x 14. 79s 62s 12. 100s 21. 90s 29- 13. 126s 21_ 91x             # Micma gohó Piad zir Com-selh a_zien
+03 2   45x 69s 67s 14- 100s 62x 45x 127s 13. 226x 94x                    # biab Os Lón-doh Norz chis óthil
+03 3   66x 15. 13. 141s 36- 72s 89s 31_ 15- 154s 41_                     # Gigîpah vnd-L chis tá_pu-im Q_mos-pleh
+03 4   131s 16- 22- 109s 14. 111s 14. 110s 35_ 16. 25_                   # teloch Qui-i-n toltorg chis i_chis_ge
+03 5   104s 132s 99s 107s 105s 185x                                      # m ozien dst brgda od torzul
+03 6   28_ 135s 32_ 132s 21. 41x 75x 78s 12. 12. 115s 50_                # i_li E_ol balzarg od áâla Thiln_os
+03 7   16- 14x 135x 13. 139s 13. 124s 281x                               # ne-tâ-ab dluga vomsarg lonsa
+03 8   19- 19- 17. 172s 181s 14c 14c 126s 107s 93x                       # cap-mi-áli vors CLA homil cocasb
+03 9   17. 152s 20. 188s 131s 16- 15- 18x 87x                            # fafen izizop od mi-i-nôag de
+03 10  12_ 122s 58x 36x 25_ 13- 232s 15.                                 # gne_táab vaun na_na-e-el panpir
+03 11  73x 12. 12. 163s 16. 13. 141s 14. 133s 84s 36x                    # Malpirgi caosg Pild noan vnalah
+03 12  67x 101s 88s 96s 29- 32- 23- 140s 14c                             # balt od vooan do-o-i-ap MAD
+03 13  65x 12. 136s 100s 12. 12. 39x 93x 19. 15x 21x 13. 36x             # Gohólor gohús amiran Micma Iehúsoz
+03 14  26x 61x 22- 101s 31_ 19- 18- 146s 134s 16- 22- 15. 104x           # ca-cá-com od_do-o-â-in noar mi-cá-olz
+03 15  71x 38- 27- 180s 21. 136s 172s 15c 16c 83x 21x 14x 13x            # a-ai-om Casármg gohía ZACAR
+03 16  88x 12. 14. 81s 123s 26- 20- 230s 247x                            # v́niglag od Im-uâ-mar pugo
+03 17  116x 12. 18. 273s 13. 13. 212s 14- 24- 61x                        # plapli ananäel Q-a-an
+
+04 1   22. 94s 58s 12. 104s 79s 12. 90s 76s 15_ 13_ 136x                 # Othil lasdi babâge od dorpha Gohol G_chis_ge
+04 2   13. 13. 172s 99s 105s 12. 102s 33- 16- 148x 135x                  # auáuâgo Cormp pd dsonf vi-v́-di-v
+04 3   122s 177s 14. 19- 48x 63x 62s 91s 23x 135x                        # Casármi óâli Map-m Sobam ag cormpó
+04 4   27- 17- 173s 141s 15. 15- 22- 179s 12. 50s 34_ 155x               # c-rp-l Casarmg cro-od-zi chis od_vgeg
+04 5   88s 19_ 16_ 137s 14. 97s 12_ 19_ 14_ 104s 45_ 12. 44x 134x        # dst ca_pi_máli chis Ca_pi_mâ_on od_lonshin
+04 6   14. 120s 25_ 99s 19. 18. 152s 87s 15_ 139s 38x 131x               # chis ta_lo Cla Torgú Nor_quasáhi od
+04 7   14_ 132s 109s 19- 51x 114x 74s 28_ 16x 130x                       # F_caosga Bagle zi-re-nái-ad Dsi od_Apila
+04 8   24- 12- 110s 13- 13- 90s 21c 16c 52s 50s 17c 14c 174x 132x        # Do-o-â-ip Q-á-al ZACAR od ZAMRAN
+04 9   15. 191s 37- 152s 93s 36- 19- 155x 130x                           # Obelisong rest-el aaf Nor-mo-lap
+
+05 1   18- 54s 13. 43s 21- 14- 57s 45s 37s 12- 20- 50s 70s               # Sa-páh zimii du-i-b od noas ta-qu-a-nis adroch dorphal
+05 2   25x 26- 87s 73s 75s 67s 89s 44s 39x                               # Ca-ósg od faonts péripsol tablior Casarm amipzi
+05 3   20- 80s 79s 52s 12. 65s 85s 65s 45s 13-                           # na-zarth af od dlugar zizop z-lida caósgi tol-tórgi
+05 4   90s 41- 19. 102s 18- 77s 61x 25x 18- 12- 76s 83s 80s              # od z-chis e-siasch L ta-vi-u od iáod thild
+05 5   63s 86s 15- 16- 73s 99s 12. 84s 25_ 58s 93s                       # ds hubar Pe-ó-al Soba cormfa chis_ta la vls
+05 6   74s 21- 12- 104s 80s 85s 67s 60s 15- 18- 61s 27- 12-              # od Q-có-casb Ca niis od Darbs Q-á-as Feth-ár-zi
+05 7   76s 122s 12- 103s 12- 66s 12. 113s 91s                            # od blióra ia-ial éd-nas cicles Bágle Ge-iad
+
+06 1   36x 78s 26_ 17. 105s 92s 13. 79s 65s 15. 78s 52x                  # Gah s_diu chis em micalzo pilzin sobam
+06 2   83s 71s 64s 115s 71s 77s 190x                                     # El harg mir babálon od obloc samvelg
+06 3   12. 12. 146s 12x 126x 245s 81s 12. 125x                           # dlugar malprg arcaosgi od Acám
+06 4   78x 12. 188s 13- 20- 166s 178s 174x                               # Canal so-bol-zar tbliard caosgi
+06 5   24_ 177s 0_ 187s 193s 142s 25_ 12.                                # od_chif ané_tab od miam ta_viv
+06 6   38_ 152s 128s 30- 126s 17- 151s 20- 12- 146x                      # od_d Darsar Sol-peth bi-en B-ri-ta
+06 7   133s 109s 28- 175s 17- 19- 132s 74x                               # od zácam g-micálzo sob-há-ath trian
+06 8   17- 20- 166s 211s 156s 26- 19- 31- 104x                           # Lu-iá-he od-ecrin MAD Q-a-a-on
+
+07 1   26x 20. 19- 102s 100s 147s 12- 17- 95s 14- 18- 123x               # Ra-as isálman para-di-zod oe-crí-mi a-a-o
+07 2   36x 23- 18- 143s 15- 70s 79s 58x 66x 97s 12-                      # ial-pír-gah qui-in enáy butmon od in-óas
+07 3   120s 12. 138s 18. 14x 126x 120s 15.                               # ni paradíal Casármg vgéar chirlan
+07 4   64s 122s 15- 14. 13- 12. 103s 21_ 123s 24_                        # od zonac Lu-cif-tian cors_ta vaul_zirn
+07 5   22- 17- 117s 40s 68s 20_ 158s 23_ 110s 13-                        # tol-há-mi Soba Londóh od_miam chis_tad o-dés
+07 6   115s 98s 125s 27_ 51s 26_ 234x                                    # v-má-dea od pibliar Othil_rit od_miam
+07 7   17- 15- 52s 97s 13c 31x 26x 15c 117s 92x                          # C-no-quol Rit ZACAR ZAMRAN oëcrimi
+07 8   17- 12- 101s 99s 13- 20- 172s 159s                                # Q-á-dah od o-mi-ca-ol-z aaíom Bagle
+07 9   130s 12- 101s 19. 159s 114s                                       # papnor id-lú-gam lonshi od vmplif
+
+08 1   21. 134s 17_ 128s 23_ 74s 75s 16_ 262x                            # Bazmélo i_ta pi_ripson oln Na_závabh
+08 2   121s 92s 126s 102s 108s 21_ 179x                                  # ox casarmg Vrán chis vgeg dsa_bramg
+08 3   14. 156s 30_ 18. 182s 15. 154s 12. 200x 51x                       # baltóha gohó_iad Solámian trian
+08 4   26_ 24_ 79s 16. 13. 14_ 221s 184s 16. 14. 250x                    # ta_lól_cis Abai_uónin od aziágier
+08 5   267s 28_ 24_ 178s 17_ 16_ 18_ 94s 139x 39x                        # rior Irgil_chís_da ds_pá_a_ox bufd
+08 6   132s 13_ 97s 0_ 145s 172s 15. 14. 176x                            # Caósgo ds_chis odi_púran telóah cacrg
+08 7   32_ 114s 148s 84s 124s 276x 27x                                   # O_isálman loncho od Vouína carbaf
+08 8   14. 137s 105s 12. 72s 163s 12. 188x 116x                          # Niíso Bagle auáuágo gohón Niíso
+08 9   126s 140s 177s 160s 12. 272x                                      # bagle momáo siáion od mábza
+08 10  17_ 15_ 17_ 13_ 0_ 118x 118x 268s 14. 265x 114x                   # Iad_o_i_ás_mo_mar poilp Niis
+08 11  29c 13c 16c 18c 24c 177s 23. 21. 20. 19. 189s 13. 240s 75x 115x   # ZAMRAN ciáofi caósgo od
+08 12  12. 19. 192s 166s 13. 16. 173s 188s 24_ 14_ 14x 32x 28x 116x      # bliors od corsi ta a_brá_mig
+
+09 1   13. 20. 15. 71s 153s 114s 139s 13. 58x                            # Micáoli bransg prgel napta ialpor
+09 2   22_ 120s 12. 12. 94s 157s 141s 22. 24. 19. 135s 97x               # ds_brin efáfáfe P vonpho oláni od
+09 3   165s 0_ 93s 12. 125s 12. 106s 149s 126x                           # obza sob_ca vpáah chis tatan od
+09 4   56x 21x 13. 123s 13. 18x 73x 14. 113s 13. 184s 15. 14.            # tranan balýe alár lusda sobóln
+09 5   164s 12. 29_ 15_ 122s 22_ 16_ 0_ 170s 17.                         # od chís_hól_q C_no_quó_di cial
+09 6   14_ 135s 193s 234s 167s 192x                                      # v_nál aldon mom caósgo ta
+09 7   20_ 119s 134s 17. 265s 88s 14.                                    # Las_óllor gnay limlal Amma chiis
+09 8   0_ 104s 138s 29_ 30x 120x 20. 12. 91s 44s                         # Sob_cá madrid z_chis oöánöan chis auiny
+09 9   18_ 106s 31x 143x 142s 13. 126s 95x                               # dril_pi caósgin od butmóni parm
+09 10  27. 138s 21. 210s 18. 12. 122s 15. 17.                            # zumvi Cníla Dazis ethámz
+09 11  60_ 17. 15. 240s 143s 93s 102s 55s 18. 16.                        # a_chíldáo od mirc ózól chis pidiái
+09 12  23. 36x 167x 18. 19. 190s 44_ 116s 15.                            # Collal Vlcínin a_sóbam Vcim
+09 13  27x 13. 150s 13. 17_ 274s 148s 150x                               # Bagle Iad_báltoh chirlan par
+09 14  20. 16. 16. 157s 80s 153s 15. 13. 167s 229x                       # Niíso od ip ofáfáfe Bagle
+09 15  19_ 138s 15_ 15_ 153s 12. 157s 292x                               # a_cócasb i_córs_ca Vnig blior
+
+10 1   12. 449s 123s 106s                                                # Coráxo chis cormp od
+10 2   147s 12. 13. 149s 14. 15. 15. 161s 15. 169s                       # blans Lucal azíázor paeb Soba
+10 3   93s 103s 156s 149s 171s                                           # lilónon chis virq op eóphan od
+10 4   17. 142s 12. 175s 99s 130s 87s 13.                                # raclir maási bagle caosgi ds ialpon
+10 5   13. 46x 24x 90s 16. 136s 103s 12. 12x 85s 85s 12.                 # dosig od basgim od oxex dazís siátris
+10 6   134s 14. 115s 16. 64s 184s 13. 21_                                # od salbrox cynxir fabóan Vnál_chis
+10 7   14. 189s 151s 12. 111s 14. 164s 187x 15x 13x                      # Const ds dáox cocasg ol
+10 8   176s 256s 21. 229s 264x                                           # oánio yor vóhim ol
+10 9   89x 20. 12. 302s 267s 227s                                        # gizyax od eórs cocasg
+10 10  93x 14. 226s 259s 112s 13. 119s 12.                               # plósi molui ds pagéip larag
+10 11  66x 163s 196s 33_ 217s 196x                                       # om droln e?_matorb cocasb
+10 12  12. 348s 32_ 12. 154s 13. 156s 12.                                # émna L_pátralx yolci matb
+10 13  44x 124s 135s 141s 196s                                           # nomig monons olóra gnay angélard
+10 14  65x 17. 174s 12. 119s 123s 152s 107s 36x                          # Ohio Ohío ohío ohío ohío ohío
+10 15  17. 115s 26. 167s 17. 177s 86s 12. 58x                            # noib Ohío Caósgon Bagle madrid
+10 16  145s 21. 189s 12. 12. 165s 15. 47x 158x 12.                       # i zirop chiso drilpa Niíso
+
+11 1   18. 27. 15. 23. 202s 63x 28x 67s 53s 78s 16. 13. 67x              # Oxiáyal holdo od zirom O coráxo
+11 2   12. 112s 144s 16. 94s 100s 17. 112s 12. 110x                      # ds zildar raásy od vabzir camliax
+11 3   67x 105x 52x 16. 270s 53x 76x 211x 15.                            # od bahál Niíso salman
+11 4   19x 214x 16. 498s 12. 12. 17.                                     # telóch Casárman
+11 5   84x 13. 29_ 235s 112s 114s 164s /_ 99s 58x                        # hol_q od ti ta z_chis soba
+11 6   16. 106s 18_ 160s 115s 123s                                       # cormf i_ga Niísa Bagle abramg
+11 7   15. 283s 16c 19c 146s 14. 34s 52s 14c 14c 15c                     # noncp ZACARe ca od ZAMRAN
+11 8   125s 13. 78s 133s 14. 115s 77s 14.                                # Odo cicle Qaá Zorge lap zirdo
+11 9   131s 17. 198s 140s 39x                                            # Noco Mad Hoath Iaida
+
+13 1   12. 136s 14. 181s 15_ 69s 82s                                     # Napéai Babágen ds_brin vx ooáöna
+13 2   45x 23. 13. 99s 139s 14. 125s 171s                                # lring vonph doálim eólis ollog
+13 3   56x 136s 0_ 116s 214s 13. 15. 119s 13. 129x                       # orsba ds_chis affa Micma isro
+13 4   68x 17c 15c 140s 104s 19. 29_ 104s 157s 13. 185x                  # MAD od Lonshi_tox ds ivmd
+13 5   96s 13c 58x 138x 13c 77s 72s 12c 19c 14c 22x                      # aai GROSB ZACAR od ZAMRAN
+13 6   71x 92s 66s 54x 78x 30x 33x 53s 80s                               # odo cicle Qäa Zorge Lap zirdo NOCO
+13 7   25x 96x 95s 13.                                                   # MAD Hoath Iaïda
+
+14 1   115s 135s 124s 119s 83s 160x                                      # Norómi bagíe pasbs oíad ds trint
+14 2   84s 101s 95s 94s 12. 118s 103s 12. 104x                           # mirc ol thil dods tolham caósgo Homin
+14 3   23_ 79s 97s 246s 90s 65s 57x 126x                                 # ds_brin oroch Quar Micma bial oiad
+14 4   19. 14. 178s 85x 24x 0_ 21_ 106s 12. 12. 183s 280x                # aísro tox ds_i_vm aai Baltim
+14 5   13c 77s 61s 19c 13c 17c 19c 77s 58s 29s 13. 23x 151x              # ZACAR od ZAMRAN odo cicle Qaa
+14 6   32x 47x 92s 89s 46s 13c 24x 28x 38s 12. 72x 85x                   # Zorge lap zirdo NOCO MAD hoath Iaïda
+
+15 1   17. 93s 117s 15_ 14. 18. 72s 75s 18. 17. 59s 15.                  # Ils tabáan L_ialprt casárman vpaáhi chis
+15 2   37x 167s 113s 12. 146s 79s 104s                                   # darg dsoci?do caósgi orscor ds ómax
+15 3   36x 79s 167s 126s 89s 15. 12.                                     # monasci Baéöuib od emétgis iaíádix
+15 4   17c 73s 70s 12c 16c 16c 45x 72x 79s 18. 72s 15. 147x              # ZACAR od ZAMRAN odo cicle Qäa
+15 5   29x 59x 66s 74s 40s 42x 28x 13. 55s 12.                           # Zorge lap zirdo NOCO MAD hoath Iaïda
+
+16 1   47s 20. 245s 15. 110s 50s 53s 12. 12. 147x                        # Ils viuíalprt salman balt ds acroódzi
+16 2   152s 158s 19. 170s 115s 0_ 15_ 266x                               # busd od bliórax balit ds_in_si
+16 3   24. 143s 13. 163s 174s 0_ 65x 23x 14x 42x 33x 31x 72x 73x         # caosg lusdan Emod ds_om od
+16 4   33x 215s 21. 144s 54s 14. 49s 21_ 17. 187x                        # tliob drilpa geh yls Mad_zilodarp
+16 5   16c 17c 14c 15c 16c 116s 62s 19c 16c 19c 36c 18c 193s 13. 111s 16. 17. 12. 50s 12. 123x   # ZACAR od ZAMRAN Odo cicle Qaa
+16 6   13. 89s 19. 144s 39x 16x 58x 41s 40s 44s 18. 13. 31x 69x          # Zorge Lap zirdo Noco Mad hoath Iaida
+
+17 1   117s 14. 144s 54x 49x 13. 14. 74s 93s                             # Ils dialprt soba vpáah chis nanba
+17 2   77x 120s 18. 125s 16_ 161s 14. 117s 89x                           # zixlay dodsih od_brint Faxs hubáro
+17 3   46x 12. 141s 14. 35x 101x 0_ 0_ 68s 15_ 0_ 12_                    # tastax ylsi so_bai_ad I_vón_pó_vnph
+17 4   24. 14. 144s 19_ 168s 89s 39x 59x 20c 22c 12c 74s                 # Aldon dax_il od toátar ZACAR od
+17 5   14c 14c 187s 155s 15. 143s 15. 134s 13. 16.                       # ZAMRAN odo cicle Qáá Zorge
+17 6   24. 154s 13. 71x 70x 51s 12. 78s 90s 15. 13. 13. 12.              # lap zirdo Noco Mad hoath Iaída
+
+18 1   130s 16. 14. 12. 15. 35- 42x 21x 126x 18. 84s 20. 13. 135s 12. 14. 44x   # Ils Micaól-z Olpirt ialprg Bliors
+18 2   12. 104s 151s 154s 12. 159s 12. 96s                               # ds odo Busdir oíad ouóars caósgo
+18 3   12. 23. 16. 146s 13. 18. 161s 140s 81s 12.                        # Casarmg Laiad eran brints cafáfam
+18 4   113s 15. 119s 20_ 19_ 165s 21_ 105s 14c 151s                      # ds ivmd a_q_lo a_dóhi MOZ od
+18 5   21_ 14_ 142s 12. 178s 15. 13. 149s 127x                           # ma_of_fas Bolp Comobliort pambt
+18 6   31c 18c 12c 153s 174s 14c 16c 186s 67s 12. 46x                    # ZACAR od ZAMRAN odo cicle
+18 7   15. 14. 48x 169x 14. 147s 14. 115s 139s 41s 13c 12c               # Qaa Zorge lap zirdo Noco MAD
+
+aethyrs 1   16x 167s 15_ 117s 78s 38s 12. 12. 210x                       # Madriax ds_praf LIL chis Micáolz
+aethyrs 2   48x 13. 136s 186s 31s 121s 20_ 69s 87x                       # saánir Caósgo od fisis bal_zizras Iaída
+aethyrs 3   43x 90s 135s 14. 107s 109s 12c 151x                          # nonca gohúlim Micma adoían MAD
+aethyrs 4   38x 15. 19. 136s 178s 15. 14_ 93s 17. 59s 12. 140x           # Iáod bliorb Sába_ooáöna chis Luciftías
+aethyrs 5   35x 74s 81s 187s 146s 15. 175x                               # perípsol ds abraássa noncf netáäib
+aethyrs 6   52x 19. 147s 75s 96s 84s 13. 119s 57x                        # Caósgi od tilb adphaht dámploz toóat
+aethyrs 7   76x 129s 0_ 14_ 272s 16_ 144s 14. 119x                       # noncf g_mi_cálzóma L_rásd tófglo
+aethyrs 8   61x 194s 133x 112x 15c 20c 19c 186x 24x 34x 88x              # marb yárry IDOIGO
+aethyrs 9   12. 103s 17_ 152s 15. 12. 162s 151x 32x 12. 85x              # od tor_zulp iaódaf gohól Caósga
+aethyrs 10  26x 36x 13. 192s 175s 114s 19. 96s 17_ 71x                   # tabaord saánir od Christéos yr_póil
+aethyrs 11  12. 18. 165s 12_ 17. 37_ 248s 12. 107s 15. 97s 17. 43x       # tiobl Bus_dir_tilb noaln paid orsba
+aethyrs 12  26x 25x 13x 84x 16x 177s 171s 20_ 13_ 128s 14_ 20x           # od dodrmni zylna El_záp_tilb parm_gi
+aethyrs 13  26x 32x 14_ 30_ 190s 75s 12. 116s 12. 138s 19. 15. 188x      # pe_ríp_sax od ta qurlst booapiS
+aethyrs 14  23x 15x /_ 14. 187s 18_ 13. 165s 19x 101x 105s 15. 18. 54x   # L_nibm ov_cho symp od Christéos
+aethyrs 15  44x 47x 18_ 12_ 117s 110s 98s 15. 16. 105s 15. 38x 120x 71x  # Ag_tol_torn mirc Q tióbl LeL Ton
+aethyrs 16  53x 15. 93s 15. 22. 147s 15. 29x 67x 123s 19. 16. 17. 25x 114x   # paombd dilzmo aspían Od Christéos
+aethyrs 17  36x 30_ 20_ 17_ 172s 12. 13. 150s 25_ 13. 12. 41x 141x 22_ 33x 37x   # Ag_L_tor_torn parach a_symp Cord_ziz
+aethyrs 18  17_ 16. 101s 25x 97x 17. 29. 184s 21. 29_ 44x 133x 186x      # dod_pal od fifalz Ls_mnad Od
+aethyrs 19  19. 222s 247s 18. 18. 36x 156x 29x 66x                       # fargt bams omaóas Conisbra
+aethyrs 20  111x 142s 12. 14. 142s 14. 15x 59x 105x 18. 23_ 13. 23_ 255x # od auáuox tonug Ors_cát_bl
+aethyrs 21  35x 165s 12. 19x 145x 33. 20_ 15x 163x 17. 181x              # noásmi tabgés Leuith_mong vnchi
+aethyrs 22  56x 17_ 231s 35x 95x 14. 166s 14. 15. 241x                   # omp_tilb ors Bagle Moóöah
+aethyrs 23  50x 12. 26_ 18_ 14. 44x 110x 21_ 17_ 13. 141s 14_ 0_ 0_ 52s 24_ 0_ 13. 41x   # ol_córd_ziz L_ca_pímáo ix_o_máx_ip od_ca_cócasb
+aethyrs 24  47x 13. 37x 134x 14. 113s 12. 86s 115s 19_ 15. 30. 170x      # gosáa Baglen pii tiánta a_bábálond
+aethyrs 25  78x 20_ 213s 21_ 20_ 14_ 37x 149x 12. 13. 14. 108s 13. 12. 43x   # od_faórgt teloc_vo_v_im Mádríiax torzu
+aethyrs 26  37x 89s 215s 46x 101x 16. 15.                                # oádriax orócha aboápri Tabáóri
+aethyrs 27  50x 12. 13. 44x 80x 0_ 13. 44x 170x 18_ 17_ 103s 20_ 82s 16. 58x   # priáz ar_tabas A_dr_pan cor_sta dobix
+aethyrs 28  59x 17_ 13. 129s 13. 18. 147s 0_ 12. 27x 103x 22_ 26. 51s 21_ 14x   # Yol_cam priázi ar_coazior Od_quasb q_ting
+aethyrs 29  28x 13. 111s 13. 110s 0_ 13_ 35x 143x 19_ 77s 56s 23_ 15. 56x   # Ripír paaoxt sa_gá_cor vm_L od prd_zar
+aethyrs 30  43x 15. 112s 12. 14. 20. 12. 158s 33x 101x 15c 12c 61s 20c 18c 18c   # cacrg Aoivéáe cormpt TORZV ZACAR
+aethyrs 31  26x 38_ 13c 128s 114s 178s 12_ 112s 114x                     # od_ZAMRAN aspt sibsi but_móna ds
+aethyrs 32  38x 115x 76x 163s 32x 177x 21. 106s 20. 129x                 # surzas tia baltan Odo cicle
+aethyrs 33  89x 36x 173x 143s 103x 36x 12. 58s 12_ 12_ 75x               # Qáa od Ozazma plapli Iad_ná_mad

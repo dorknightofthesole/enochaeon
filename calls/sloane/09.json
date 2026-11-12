@@ -7,7 +7,8 @@
   "remarks": [
     "A small y is written above the first letter of 'ialpor'.",
     "'Ka' is written above the 'cá' of the second 'Sob cá' and above the 'ca' of 'i córs ca'; 'zod' above the z of 'z chis' and above the z of 'ethámz'; 'kil' above the 'chíl' of 'a chíldáo'.",
-    "The third letter of 'zumvi' was read as v: it has the same curl as the v of 'virq' on the next page and not the upright stroke of b."
+    "The third letter of 'zumvi' was read as v: it has the same curl as the v of 'virq' on the next page and not the upright stroke of b.",
+    "The gap in 'a_chíldáo' measures 60 pixels. It is wider than every gap measured inside a word in the manuscript (the widest is 41) and wider than the gap between 'chis' and 'pidiái' on the same line (55). It is taken as a word break by that measure: 'a' and 'chíldáo'. The journal prints the letters as one word, and its note beside them is 'A chil da o'."
   ],
   "words": [
     {
@@ -470,13 +471,22 @@
       "differs": ""
     },
     {
-      "letters": "ACHILDAO",
-      "written": "a_chíldáo",
+      "letters": "A",
+      "written": "a",
       "status": "read",
       "journal": [
         52
       ],
-      "differs": ""
+      "differs": "word break"
+    },
+    {
+      "letters": "CHILDAO",
+      "written": "chíldáo",
+      "status": "read",
+      "journal": [
+        52
+      ],
+      "differs": "word break"
     },
     {
       "letters": "OD",

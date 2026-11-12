@@ -16,10 +16,11 @@ Reading file, per call: "where" (which image), "words" (the words in the order
 the manuscript writes them, with its own word breaks, as one string or a list).
 A space is a clear gap. A hyphen is a stroke Dee draws to tie two parts
 together, so the parts are one word. An underscore is a small gap with no tie:
-the eye cannot say whether it is a word break, so it is taken as a break only
-where the journal has a break at that very letter, and otherwise as none. A
-'?' after a letter means that letter was not read with certainty; "[?]" is a
-word not read at all.
+the eye cannot say whether it is a word break. It is taken as a break where
+its width on the page shows one (tools/sloane/sloane-gaps.py measures it and
+says when), or where the journal has a break at that very letter, and
+otherwise as none. A '?' after a letter means that letter was not read with
+certainty; "[?]" is a word not read at all.
 
 Marks:
   agrees           the same letters as one word (capitals and accents ignored)
@@ -32,6 +33,7 @@ Marks:
 from __future__ import annotations
 
 import difflib
+import importlib.util
 import json
 import sys
 import unicodedata
@@ -77,31 +79,48 @@ def letter_places(journal: list[str], letters: str) -> tuple[list[int | None], l
     return letter_to_journal, before
 
 
-def settle_small_gaps(journal: list[str], reading: list[str]) -> list[str]:
-    """Decide each underscore: a word break only where the journal breaks there.
+def settle_small_gaps(journal: list[str], reading: list[str], measured: list[bool] | None = None) -> list[str]:
+    """Decide each underscore: a word break where the page or the journal has one.
 
-    The letters on each side of the underscore must stand in two different
-    journal words. Anywhere else the underscore stays inside the word, so a
-    small gap never counts as a difference by itself.
+    `measured` says, for each underscore in order, whether its width on the
+    page shows a word break. Where it does not, the underscore is a break only
+    if the letters on each side of it stand in two different journal words.
+    Anywhere else the underscore stays inside the word, so a small gap never
+    counts as a difference by itself.
     """
-    letter_to_journal, _ = letter_places(journal, "".join(plain(word) for word in reading))
+    in_journal = journal_breaks(journal, reading)
+    on_page = measured if measured is not None else [False] * len(in_journal)
+    if len(on_page) != len(in_journal):
+        raise ValueError(f"{len(in_journal)} small gaps in the reading, {len(on_page)} measured")
+    breaks = (page or printed for page, printed in zip(on_page, in_journal))
     settled: list[str] = []
-    position = 0
     for word in reading:
         pieces = word.split("_")
         current = pieces[0]
-        position += len(plain(pieces[0]))
         for piece in pieces[1:]:
-            left = letter_to_journal[position - 1] if position > 0 else None
-            right = letter_to_journal[position] if position < len(letter_to_journal) and plain(piece) else None
-            if left is not None and right is not None and left != right:
+            if next(breaks):
                 settled.append(current)
                 current = piece
             else:
                 current += "_" + piece
-            position += len(plain(piece))
         settled.append(current)
     return settled
+
+
+def journal_breaks(journal: list[str], reading: list[str]) -> list[bool]:
+    """For each underscore of the reading, in order: whether the journal has a word break there."""
+    letter_to_journal, _ = letter_places(journal, "".join(plain(word) for word in reading))
+    found: list[bool] = []
+    position = 0
+    for word in reading:
+        pieces = word.split("_")
+        position += len(plain(pieces[0]))
+        for piece in pieces[1:]:
+            left = letter_to_journal[position - 1] if position > 0 else None
+            right = letter_to_journal[position] if position < len(letter_to_journal) and plain(piece) else None
+            found.append(left is not None and right is not None and left != right)
+            position += len(plain(piece))
+    return found
 
 
 def line_up(journal: list[str], reading: list[str]) -> tuple[list[list[int]], list[tuple[int, int]]]:
@@ -146,10 +165,22 @@ def judge(journal_word: str, written: list[str], shared: bool) -> tuple[str, str
     return "differs", "letters"
 
 
-def reading_words(journal: list[str], reading: dict) -> list[str]:
-    """The words of one reading, with each small gap settled against the journal."""
+def measured_breaks(call: str) -> list[bool]:
+    """For each small gap of a call's reading, in order: whether its width on the page shows a word break."""
+    spec = importlib.util.spec_from_file_location("sloane_gaps", Path(__file__).resolve().parent / "sloane-gaps.py")
+    module = importlib.util.module_from_spec(spec)
+    spec.loader.exec_module(module)
+    return module.breaks(call)
+
+
+def reading_words(journal: list[str], reading: dict, call: str | None = None) -> list[str]:
+    """The words of one reading, with each small gap settled.
+
+    `call` names the call whose measured gaps settle them. Without it, only
+    the journal does: the thirty names have no small gap.
+    """
     words = reading["words"].split() if isinstance(reading["words"], str) else reading["words"]
-    return settle_small_gaps(journal, words)
+    return settle_small_gaps(journal, words, measured_breaks(call) if call else None)
 
 
 def compare(journal: list[str], words: list[str]) -> tuple[list[tuple[list[str], str, str]], list[tuple[int, str]]]:
@@ -171,14 +202,15 @@ def star(entry: dict) -> str:
     return "" if entry["status"] in SURE else "*"
 
 
-def sheet(title: str, data: dict, entries: list[dict], reading: dict | None, diff: list[str]) -> list[str]:
+def sheet(title: str, data: dict, entries: list[dict], reading: dict | None, diff: list[str],
+          call: str | None = None) -> list[str]:
     lines = [title, f"Journal: {data['printing']}, {data['pages']}.",
              "A star marks a word whose status is not printed or corrected."]
     journal = [entry["letters"].lower() for entry in entries]
     rows: list[tuple[list[str], str, str]] | None = None
     loose: list[tuple[int, str]] = []
     if reading and reading.get("words"):
-        rows, loose = compare(journal, reading_words(journal, reading))
+        rows, loose = compare(journal, reading_words(journal, reading, call))
         lines.append(f"Sloane 3191: {reading['where']}.")
         for remark in reading.get("remarks", []):
             lines.append(f"Sloane 3191: {remark}")
@@ -227,7 +259,7 @@ def main() -> int:
         title = "The call of the thirty Aethyrs" if stem == "aethyrs" else f"Call {int(stem)}"
         read = reading["calls"].get(stem)
         diff: list[str] = []
-        lines = sheet(title, data, data["words"], read, diff)
+        lines = sheet(title, data, data["words"], read, diff, stem)
         if stem == "aethyrs":
             names_read = {"where": read["names_where"], "words": read["names"]} if read and read.get("names") else None
             lines += ["", ""]

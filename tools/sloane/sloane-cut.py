@@ -270,7 +270,7 @@ def cut_places() -> int:
         entries = data["words"]
         journal = [entry["letters"].lower() for entry in entries]
         read = reading["calls"][stem]
-        rows, loose = sheets.compare(journal, sheets.reading_words(journal, read))
+        rows, loose = sheets.compare(journal, sheets.reading_words(journal, read, stem))
         for index, (_, mark, kind) in enumerate(rows):
             if mark != "agrees" and kind != "u/v or i/j/y only":
                 needed.add((stem, "word", index + 1))

@@ -1,0 +1,6 @@
+# Lines of Enochian in Sloane 3191 that sloane-gaps.py does not find by itself,
+# because the ink is too faint for the line to count as a line.
+# Typed by hand from the page: call, page, first row and last row of the small letters.
+#
+# call     page      top   bottom
+aethyrs    s04-f1l   2512  2538    # od auáuox tonug Ors cát bl: the last line of the page, in faint ink

@@ -10,8 +10,11 @@ here for three things only:
 
   small gaps   Where the reading has a small gap with no tie-stroke, the eye
                cannot say whether a new word begins. The gap is a word break
-               only where the journal breaks at that very letter. Otherwise
-               the letters on both sides stay one word.
+               where its width on the page shows one, by the measure of
+               tools/sloane/sloane-gaps.py. Where the width does not show
+               one, the gap is a word break only where the journal breaks at
+               that very letter. Otherwise the letters on both sides stay one
+               word.
   unsure       Where the reading marks a letter as not read with certainty,
                the word takes the journal's letters at that place and its
                status is `unsure`.
@@ -65,10 +68,14 @@ def sheets_module():
     return module
 
 
-def build(sheets, entries: list[dict], reading: dict, checked: dict[int, str], after_checked: dict[int, str]):
-    """Return (words, journal_only) for one list of journal entries and its reading."""
+def build(sheets, entries: list[dict], reading: dict, checked: dict[int, str], after_checked: dict[int, str],
+          call: str | None = None):
+    """Return (words, journal_only) for one list of journal entries and its reading.
+
+    `call` names the call whose measured gaps settle the small gaps of the reading.
+    """
     journal = [entry["letters"].lower() for entry in entries]
-    words = sheets.reading_words(journal, reading)
+    words = sheets.reading_words(journal, reading, call)
     places, _ = sheets.line_up(journal, words)
     rows, _ = sheets.compare(journal, words)
     at: list[list[int]] = [[] for _ in words]
@@ -127,7 +134,7 @@ def main() -> int:
                    for number in place.get("words", [])}
         after_checked = {number: place["checked"] for place in places if place["call"] == stem
                          for number in place.get("after", [])}
-        words, journal_only = build(sheets, journal["words"], read, checked, after_checked)
+        words, journal_only = build(sheets, journal["words"], read, checked, after_checked, stem)
         data = {
             "call": journal["call"],
             "manuscript": MANUSCRIPT,

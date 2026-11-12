@@ -328,15 +328,40 @@ Each file also has `where` (the page of the scan), `remarks` (what else is writt
 
 The journal is used in three ways when `calls/sloane/` is made, and in no other.
 
-- **Small gaps:** Dee often leaves a small gap inside a word, and the eye cannot always tell such a gap from the gap between two words. A small gap is a word break only where the journal breaks at that very letter. Everywhere else the letters on both sides stay one word. The reading has 166 small gaps. One is a break. The other 165 are inside 122 words, and the division of those words is the journal's.
+- **Small gaps:** Dee often leaves a small gap inside a word, and the eye cannot always tell such a gap from the gap between two words. The reading has 166 small gaps. Each was measured on the page, as described under [The small gaps](#the-small-gaps). One is a word break by its width. One more is a word break because the journal breaks at that very letter. The other 164 are inside 121 words, and the division of those words is the journal's.
 - **Letters not read with certainty:** two words have a `?`. They take the journal's letters: `MATORB` in Call 10 and `DSOCIDO` in Call 15.
 - **The differences:** every word says which journal words stand at its place and how they differ.
 
-`calls/sloane/` has 1,102 words, counting the thirty names. 70 differ from the journal words at their place, 3 are only in the manuscript, and 2 are `unsure`. 7 journal words are not in the manuscript. The same differences are listed by journal word in [`sloane-diff.txt`](sloane-diff.txt), which `tools/sloane/sloane-sheets.py` writes; it also writes a sheet for each call to `scratch/sloane-check/`, which is not in git.
+`calls/sloane/` has 1,103 words, counting the thirty names. 72 differ from the journal words at their place, 3 are only in the manuscript, and 2 are `unsure`. 7 journal words are not in the manuscript. The same differences are listed by journal word in [`sloane-diff.txt`](sloane-diff.txt), which `tools/sloane/sloane-sheets.py` writes; it also writes a sheet for each call to `scratch/sloane-check/`, which is not in git.
 
 The letters are the manuscript's as they were read, including u and v. Dee writes V for a capital U, so one word can be spelled two ways: `torzu` in Call 2 and `torzv` in the Aethyr call. No rule has been chosen to make them the same.
 
 Where the manuscript gives two spellings at one place, the call file has the one on the line. In Call 6 that is `tbliard`, with `f-bliard` written beneath it. In Call 4 it is `restel`, with a small `i` above the e. These are in `remarks`.
+
+### The small gaps
+
+The 166 small gaps were measured on the scan to see whether the page itself shows where a word ends. For 165 of them it does not.
+
+- **The measure:** `tools/sloane/sloane-gaps.py` finds each line of Enochian on the page and measures every gap in it of 12 pixels or more. A gap is a run of columns with no ink at the height where the small letters stand. A stroke above or below that height does not fill a gap, so a tie-stroke under the line and the tall stroke of a d are not counted.
+- **The kinds:** on each of the 172 lines that were typed, every measured gap was given a kind by eye, in [`tools/sloane/sloane-gap-kinds.txt`](../tools/sloane/sloane-gap-kinds.txt). The kinds are a gap between two words, a small gap, a gap Dee tied with a stroke, a gap between two letters of a word, a gap in a word written in capitals, and a gap that is not a whole gap of the text. The script checks that every width typed there is the width it measures, and that each call has as many small gaps there as in the reading.
+- **What the widths are:** 648 gaps between words were measured. The narrowest are 29, 31 and 34 pixels, and 11 are 41 pixels or less. Among the gaps inside a word, the widest that Dee tied is 41 pixels (`z-chis` in Call 5) and the widest between two letters is 33. So a gap of 29 to 41 pixels can be either. The width cannot tell a word break from a gap inside a word in that range, and no width shows that two parts are one word.
+- **The rule:** a small gap is a word break when it is wider than every gap measured inside a word, and at least as wide as a gap between two words on its own line.
+- **What it found:** one word break, `a chíldáo` in Call 9. Its gap is 60 pixels, and the gap between `chis` and `pidiái` on the same line is 55. The journal prints `ACHILDAO` as one word, with the note `A chil da o`.
+- **Wider than inside a word, narrower than between words:** three gaps: `Thiln_os` in Call 3 (50 pixels; the narrowest word gap on its line is 78), `od_lonshin` in Call 4 (45; 88) and `a_sóbam` in Call 9 (44; 116). They are not settled.
+- **Not measured:** two gaps have a stroke or a point standing in them: `z_chis` in Call 11, where the tail of the z runs to the c, and `L_nibm` in the Aethyr call.
+- **No break shown:** 140 gaps are no wider than a gap that stands inside a word, and at 20 the script found no gap of 12 pixels.
+
+[`sloane-gaps.txt`](sloane-gaps.txt) lists every small gap with its width, the narrowest word gap on its line, what the width shows, and whether the journal has one word or two there. At the one small gap where the journal has two words, `ds_brin` in Call 14, the gap is 23 pixels, which is no wider than a gap inside a word.
+
+What is not certain about this measure:
+
+- **The kinds are one reading by eye.** They were typed from the marked page images and have not been confirmed. A gap typed as inside a word that is in truth a word gap would raise the 41 pixels, and the reverse would lower it.
+- **The 41 pixels rests on one gap.** If `z-chis` in Call 5 were left out, the widest gap inside a word would be 38 pixels, and `Q_mos-pleh` in Call 3 (41 pixels) would move to the three that are not settled. Nothing else would change.
+- **Faint ink widens a gap.** A letter written lightly can fall below the darkness that counts as ink.
+- **The rule is a choice.** It was written for this work. A different rule could divide differently.
+- **Dee's English above the words was not used.** It may show the division at some of these places. It has not been typed out.
+
+The images are not in git. `python3 tools/sloane/sloane-gaps.py pages CALL` writes the marked pages of one call to `scratch/sloane-gaps/`.
 
 For checking the reading, `tools/sloane/sloane-cut.py` cuts one image of each call into [`imgs/sloane-calls/`](imgs/sloane-calls), and one full-size image of each place that differs into `imgs/sloane-places/`, where [`index.md`](imgs/sloane-places/index.md) shows each image beside the two spellings. Words that differ only in u/v or i/j/y get no image. Where each place stands on its page is typed in [`tools/sloane/sloane-places.json`](../tools/sloane/sloane-places.json), and what is seen at each place is recorded there in `checked`.
 

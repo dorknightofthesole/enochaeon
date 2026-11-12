@@ -1,0 +1,210 @@
+Every small gap of the reading of Sloane 3191, measured on the page.
+Written by tools/sloane/sloane-gaps.py judge, which explains the measure and the comparison.
+The kind of each gap on a line was typed by eye in tools/sloane/sloane-gap-kinds.txt. It has not been confirmed.
+
+line: the line of Enochian in that call, counted from 1 as the script numbers them.
+width: the gap, in pixels of the page image. 0: no gap of that size was found. -: a stroke stands in the gap.
+between: the narrowest gap between two words on the same line.
+The widest gap inside a word in all the rows is 41 pixels (call 05, line 4).
+journal: whether the 1659 printing has one word or two at this place.
+Only a gap marked `word break` is divided by its width. Every other gap has the journal's division.
+
+== 03: 11 small gaps in the reading, 11 typed
+   line  1  a_zien               width  21  between  62  no wider than inside a word  journal: one word
+   line  3  tá_pu-im             width  31  between  72  no wider than inside a word  journal: one word
+   line  3  Q_mos-pleh           width  41  between  72  no wider than inside a word  journal: one word
+   line  4  i_chis_ge            width  35  between 109  no wider than inside a word  journal: one word
+   line  4  i_chis_ge            width  25  between 109  no wider than inside a word  journal: one word
+   line  6  i_li                 width  28  between  78  no wider than inside a word  journal: one word
+   line  6  E_ol                 width  32  between  78  no wider than inside a word  journal: one word
+   line  6  Thiln_os             width  50  between  78  between                      journal: one word
+   line 10  gne_táab             width  12  between 122  no wider than inside a word  journal: one word
+   line 10  na_na-e-el           width  25  between 122  no wider than inside a word  journal: one word
+   line 14  od_do-o-â-in         width  31  between 101  no wider than inside a word  journal: one word
+
+== 04: 13 small gaps in the reading, 13 typed
+   line  1  G_chis_ge            width  15  between  58  no wider than inside a word  journal: one word
+   line  1  G_chis_ge            width  13  between  58  no wider than inside a word  journal: one word
+   line  4  od_vgeg              width  34  between  50  no wider than inside a word  journal: one word
+   line  5  ca_pi_máli           width  19  between  88  no wider than inside a word  journal: one word
+   line  5  ca_pi_máli           width  16  between  88  no wider than inside a word  journal: one word
+   line  5  Ca_pi_mâ_on          width  12  between  88  no wider than inside a word  journal: one word
+   line  5  Ca_pi_mâ_on          width  19  between  88  no wider than inside a word  journal: one word
+   line  5  Ca_pi_mâ_on          width  14  between  88  no wider than inside a word  journal: one word
+   line  5  od_lonshin           width  45  between  88  between                      journal: one word
+   line  6  ta_lo                width  25  between  87  no wider than inside a word  journal: one word
+   line  6  Nor_quasáhi          width  15  between  87  no wider than inside a word  journal: one word
+   line  7  F_caosga             width  14  between  74  no wider than inside a word  journal: one word
+   line  7  od_Apila             width  28  between  74  no wider than inside a word  journal: one word
+
+== 05: 1 small gaps in the reading, 1 typed
+   line  5  chis_ta              width  25  between  58  no wider than inside a word  journal: one word
+
+== 06: 5 small gaps in the reading, 5 typed
+   line  1  s_diu                width  26  between  65  no wider than inside a word  journal: one word
+   line  5  od_chif              width  24  between 142  no wider than inside a word  journal: one word
+   line  5  ané_tab              width   0  between 142  no gap                       journal: one word
+   line  5  ta_viv               width  25  between 142  no wider than inside a word  journal: one word
+   line  6  od_d                 width  38  between 126  no wider than inside a word  journal: one word
+
+== 07: 6 small gaps in the reading, 6 typed
+   line  4  cors_ta              width  21  between  64  no wider than inside a word  journal: one word
+   line  4  vaul_zirn            width  24  between  64  no wider than inside a word  journal: one word
+   line  5  od_miam              width  20  between  40  no wider than inside a word  journal: one word
+   line  5  chis_tad             width  23  between  40  no wider than inside a word  journal: one word
+   line  6  Othil_rit            width  27  between  51  no wider than inside a word  journal: one word
+   line  6  od_miam              width  26  between  51  no wider than inside a word  journal: one word
+
+== 08: 23 small gaps in the reading, 23 typed
+   line  1  i_ta                 width  17  between  74  no wider than inside a word  journal: one word
+   line  1  pi_ripson            width  23  between  74  no wider than inside a word  journal: one word
+   line  1  Na_závabh            width  16  between  74  no wider than inside a word  journal: one word
+   line  2  dsa_bramg            width  21  between  92  no wider than inside a word  journal: one word
+   line  3  gohó_iad             width  30  between 154  no wider than inside a word  journal: one word
+   line  4  ta_lól_cis           width  26  between  79  no wider than inside a word  journal: one word
+   line  4  ta_lól_cis           width  24  between  79  no wider than inside a word  journal: one word
+   line  4  Abai_uónin           width  14  between  79  no wider than inside a word  journal: one word
+   line  5  Irgil_chís_da        width  28  between  94  no wider than inside a word  journal: one word
+   line  5  Irgil_chís_da        width  24  between  94  no wider than inside a word  journal: one word
+   line  5  ds_pá_a_ox           width  17  between  94  no wider than inside a word  journal: one word
+   line  5  ds_pá_a_ox           width  16  between  94  no wider than inside a word  journal: one word
+   line  5  ds_pá_a_ox           width  18  between  94  no wider than inside a word  journal: one word
+   line  6  ds_chis              width  13  between  97  no wider than inside a word  journal: one word
+   line  6  odi_púran            width   0  between  97  no gap                       journal: one word
+   line  7  O_isálman            width  32  between  84  no wider than inside a word  journal: one word
+   line 10  Iad_o_i_ás_mo_mar    width  17  between 268  no wider than inside a word  journal: one word
+   line 10  Iad_o_i_ás_mo_mar    width  15  between 268  no wider than inside a word  journal: one word
+   line 10  Iad_o_i_ás_mo_mar    width  17  between 268  no wider than inside a word  journal: one word
+   line 10  Iad_o_i_ás_mo_mar    width  13  between 268  no wider than inside a word  journal: one word
+   line 10  Iad_o_i_ás_mo_mar    width   0  between 268  no gap                       journal: one word
+   line 12  a_brá_mig            width  24  between 166  no wider than inside a word  journal: one word
+   line 12  a_brá_mig            width  14  between 166  no wider than inside a word  journal: one word
+
+== 09: 18 small gaps in the reading, 18 typed
+   line  2  ds_brin              width  22  between  94  no wider than inside a word  journal: one word
+   line  3  sob_ca               width   0  between  93  no gap                       journal: one word
+   line  5  chís_hól_q           width  29  between 122  no wider than inside a word  journal: one word
+   line  5  chís_hól_q           width  15  between 122  no wider than inside a word  journal: one word
+   line  5  C_no_quó_di          width  22  between 122  no wider than inside a word  journal: one word
+   line  5  C_no_quó_di          width  16  between 122  no wider than inside a word  journal: one word
+   line  5  C_no_quó_di          width   0  between 122  no gap                       journal: one word
+   line  6  v_nál                width  14  between 135  no wider than inside a word  journal: one word
+   line  7  Las_óllor            width  20  between  88  no wider than inside a word  journal: one word
+   line  8  Sob_cá               width   0  between  44  no gap                       journal: one word
+   line  8  z_chis               width  29  between  44  no wider than inside a word  journal: one word
+   line  9  dril_pi              width  18  between 106  no wider than inside a word  journal: one word
+   line 11  a_chíldáo            width  60  between  55  word break                   journal: one word
+   line 12  a_sóbam              width  44  between 116  between                      journal: one word
+   line 13  Iad_báltoh           width  17  between 148  no wider than inside a word  journal: one word
+   line 15  a_cócasb             width  19  between 138  no wider than inside a word  journal: one word
+   line 15  i_córs_ca            width  15  between 138  no wider than inside a word  journal: one word
+   line 15  i_córs_ca            width  15  between 138  no wider than inside a word  journal: one word
+
+== 10: 3 small gaps in the reading, 3 typed
+   line  6  Vnál_chis            width  21  between  64  no wider than inside a word  journal: one word
+   line 11  e?_matorb            width  33  between 163  no wider than inside a word  journal: one word
+   line 12  L_pátralx            width  32  between 154  no wider than inside a word  journal: one word
+
+== 11: 3 small gaps in the reading, 3 typed
+   line  5  hol_q                width  29  between  99  no wider than inside a word  journal: one word
+   line  5  z_chis               width   -  between  99  cannot be measured           journal: one word
+   line  6  i_ga                 width  18  between 106  no wider than inside a word  journal: one word
+
+== 13: 3 small gaps in the reading, 3 typed
+   line  1  ds_brin              width  15  between  69  no wider than inside a word  journal: one word
+   line  3  ds_chis              width   0  between 116  no gap                       journal: one word
+   line  4  Lonshi_tox           width  29  between 104  no wider than inside a word  journal: one word
+
+== 14: 3 small gaps in the reading, 3 typed
+   line  3  ds_brin              width  23  between  65  no wider than inside a word  journal: two words
+   line  4  ds_i_vm              width   0  between 106  no gap                       journal: one word
+   line  4  ds_i_vm              width  21  between 106  no wider than inside a word  journal: one word
+
+== 15: 1 small gaps in the reading, 1 typed
+   line  1  L_ialprt             width  15  between  59  no wider than inside a word  journal: one word
+
+== 16: 4 small gaps in the reading, 4 typed
+   line  2  ds_in_si             width   0  between 115  no gap                       journal: one word
+   line  2  ds_in_si             width  15  between 115  no wider than inside a word  journal: one word
+   line  3  ds_om                width   0  between 143  no gap                       journal: one word
+   line  4  Mad_zilodarp         width  21  between  49  no wider than inside a word  journal: one word
+
+== 17: 7 small gaps in the reading, 7 typed
+   line  2  od_brint             width  16  between 117  no wider than inside a word  journal: one word
+   line  3  so_bai_ad            width   0  between  68  no gap                       journal: one word
+   line  3  so_bai_ad            width   0  between  68  no gap                       journal: one word
+   line  3  I_vón_pó_vnph        width  15  between  68  no wider than inside a word  journal: one word
+   line  3  I_vón_pó_vnph        width   0  between  68  no gap                       journal: one word
+   line  3  I_vón_pó_vnph        width  12  between  68  no wider than inside a word  journal: one word
+   line  4  dax_il               width  19  between  74  no wider than inside a word  journal: one word
+
+== 18: 5 small gaps in the reading, 5 typed
+   line  4  a_q_lo               width  20  between 105  no wider than inside a word  journal: one word
+   line  4  a_q_lo               width  19  between 105  no wider than inside a word  journal: one word
+   line  4  a_dóhi               width  21  between 105  no wider than inside a word  journal: one word
+   line  5  ma_of_fas            width  21  between 142  no wider than inside a word  journal: one word
+   line  5  ma_of_fas            width  14  between 142  no wider than inside a word  journal: one word
+
+== aethyrs: 60 small gaps in the reading, 60 typed
+   line  1  ds_praf              width  15  between  38  no wider than inside a word  journal: one word
+   line  2  bal_zizras           width  20  between  31  no wider than inside a word  journal: one word
+   line  4  Sába_ooáöna          width  14  between  59  no wider than inside a word  journal: one word
+   line  7  g_mi_cálzóma         width   0  between 129  no gap                       journal: one word
+   line  7  g_mi_cálzóma         width  14  between 129  no wider than inside a word  journal: one word
+   line  7  L_rásd               width  16  between 129  no wider than inside a word  journal: one word
+   line  9  tor_zulp             width  17  between 103  no wider than inside a word  journal: one word
+   line 10  yr_póil              width  17  between  96  no wider than inside a word  journal: one word
+   line 11  Bus_dir_tilb         width  12  between  97  no wider than inside a word  journal: one word
+   line 11  Bus_dir_tilb         width  37  between  97  no wider than inside a word  journal: one word
+   line 12  El_záp_tilb          width  20  between 128  no wider than inside a word  journal: one word
+   line 12  El_záp_tilb          width  13  between 128  no wider than inside a word  journal: one word
+   line 12  parm_gi              width  14  between 128  no wider than inside a word  journal: one word
+   line 13  pe_ríp_sax           width  14  between  75  no wider than inside a word  journal: one word
+   line 13  pe_ríp_sax           width  30  between  75  no wider than inside a word  journal: one word
+   line 14  L_nibm               width   -  between 105  cannot be measured           journal: one word
+   line 14  ov_cho               width  18  between 105  no wider than inside a word  journal: one word
+   line 15  Ag_tol_torn          width  18  between  98  no wider than inside a word  journal: one word
+   line 15  Ag_tol_torn          width  12  between  98  no wider than inside a word  journal: one word
+   line 17  Ag_L_tor_torn        width  30  between 150  no wider than inside a word  journal: one word
+   line 17  Ag_L_tor_torn        width  20  between 150  no wider than inside a word  journal: one word
+   line 17  Ag_L_tor_torn        width  17  between 150  no wider than inside a word  journal: one word
+   line 17  a_symp               width  25  between 150  no wider than inside a word  journal: one word
+   line 17  Cord_ziz             width  22  between 150  no wider than inside a word  journal: one word
+   line 18  dod_pal              width  17  between 101  no wider than inside a word  journal: one word
+   line 18  Ls_mnad              width  29  between 101  no wider than inside a word  journal: one word
+   line 20  Ors_cát_bl           width  23  between 142  no wider than inside a word  journal: one word
+   line 20  Ors_cát_bl           width  23  between 142  no wider than inside a word  journal: one word
+   line 21  Leuith_mong          width  20  between 165  no wider than inside a word  journal: one word
+   line 22  omp_tilb             width  17  between 166  no wider than inside a word  journal: one word
+   line 23  ol_córd_ziz          width  26  between  52  no wider than inside a word  journal: one word
+   line 23  ol_córd_ziz          width  18  between  52  no wider than inside a word  journal: one word
+   line 23  L_ca_pímáo           width  21  between  52  no wider than inside a word  journal: one word
+   line 23  L_ca_pímáo           width  17  between  52  no wider than inside a word  journal: one word
+   line 23  ix_o_máx_ip          width  14  between  52  no wider than inside a word  journal: one word
+   line 23  ix_o_máx_ip          width   0  between  52  no gap                       journal: one word
+   line 23  ix_o_máx_ip          width   0  between  52  no gap                       journal: one word
+   line 23  od_ca_cócasb         width  24  between  52  no wider than inside a word  journal: one word
+   line 23  od_ca_cócasb         width   0  between  52  no gap                       journal: one word
+   line 24  a_bábálond           width  19  between  86  no wider than inside a word  journal: one word
+   line 25  od_faórgt            width  20  between 108  no wider than inside a word  journal: one word
+   line 25  teloc_vo_v_im        width  21  between 108  no wider than inside a word  journal: one word
+   line 25  teloc_vo_v_im        width  20  between 108  no wider than inside a word  journal: one word
+   line 25  teloc_vo_v_im        width  14  between 108  no wider than inside a word  journal: one word
+   line 27  ar_tabas             width   0  between  82  no gap                       journal: one word
+   line 27  A_dr_pan             width  18  between  82  no wider than inside a word  journal: one word
+   line 27  A_dr_pan             width  17  between  82  no wider than inside a word  journal: one word
+   line 27  cor_sta              width  20  between  82  no wider than inside a word  journal: one word
+   line 28  Yol_cam              width  17  between  51  no wider than inside a word  journal: one word
+   line 28  ar_coazior           width   0  between  51  no gap                       journal: one word
+   line 28  Od_quasb             width  22  between  51  no wider than inside a word  journal: one word
+   line 28  q_ting               width  21  between  51  no wider than inside a word  journal: one word
+   line 29  sa_gá_cor            width   0  between  56  no gap                       journal: one word
+   line 29  sa_gá_cor            width  13  between  56  no wider than inside a word  journal: one word
+   line 29  vm_L                 width  19  between  56  no wider than inside a word  journal: one word
+   line 29  prd_zar              width  23  between  56  no wider than inside a word  journal: one word
+   line 31  od_ZAMRAN            width  38  between 112  no wider than inside a word  journal: one word
+   line 31  but_móna             width  12  between 112  no wider than inside a word  journal: one word
+   line 33  Iad_ná_mad           width  12  between  58  no wider than inside a word  journal: one word
+   line 33  Iad_ná_mad           width  12  between  58  no wider than inside a word  journal: one word
+
+Totals: 1 word break, 3 between, 140 no wider than inside a word, 20 no gap, 2 cannot be measured

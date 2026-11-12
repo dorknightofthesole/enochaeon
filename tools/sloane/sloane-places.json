@@ -38,6 +38,7 @@
     {"call": "08", "words": [19], "page": "s03-f1l", "box": [1420, 650, 320, 160], "checked": ""},
 
     {"call": "09", "words": [3], "page": "s03-f1r", "box": [770, 320, 250, 150], "checked": ""},
+    {"call": "09", "words": [52], "page": "s03-f1r", "box": [230, 1470, 300, 130], "checked": ""},
     {"call": "09", "words": [60], "page": "s03-f1r", "box": [940, 1580, 320, 150], "checked": ""},
 
     {"call": "10", "words": [12], "after": [13], "page": "s03-f2l", "box": [840, 520, 400, 160], "checked": ""},

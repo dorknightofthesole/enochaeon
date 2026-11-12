@@ -239,12 +239,21 @@ PDF page 3, first opening, right-hand page (scratch/sloane-pages/ms/s03-f1r.jpg)
 - Remark on the manuscript: A small y is written above the first letter of 'ialpor'.
 - Remark on the manuscript: 'Ka' is written above the 'cá' of the second 'Sob cá' and above the 'ca' of 'i córs ca'; 'zod' above the z of 'z chis' and above the z of 'ethámz'; 'kil' above the 'chíl' of 'a chíldáo'.
 - Remark on the manuscript: The third letter of 'zumvi' was read as v: it has the same curl as the v of 'virq' on the next page and not the upright stroke of b.
+- Remark on the manuscript: The gap in 'a_chíldáo' measures 60 pixels. It is wider than every gap measured inside a word in the manuscript (the widest is 41) and wider than the gap between 'chis' and 'pidiái' on the same line (55). It is taken as a word break by that measure: 'a' and 'chíldáo'. The journal prints the letters as one word, and its note beside them is 'A chil da o'.
 
 ### Call 9, word 3
 
 - Word 3: journal `PURGEL` (from_note, p. 127); Sloane as read `prgel`; differs: letters
 
 ![Call 9, word 3](09-w003.jpg)
+
+Checked: not yet
+
+### Call 9, word 52
+
+- Word 52: journal `ACHILDAO` (printed, p. 129); Sloane as read `a chíldáo`; differs: word break
+
+![Call 9, word 52](09-w052.jpg)
 
 Checked: not yet
 
