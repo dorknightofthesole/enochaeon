@@ -19,7 +19,6 @@ The name Enochaeon joins Enoch, the prophet who spoke with the angels, and the G
 ## Setup
 
 ```bash
-brew install espeak-ng
 pip install -e .
 python3 -m piper.download_voices --download-dir scratch/piper-voices en_US-john-medium
 enochaeon calibrate
@@ -46,7 +45,6 @@ enochaeon calibrate
     "hear_ms": 80
   },
   "calls": {
-    "engine": "piper",
     "ipa": "dee_ipa",
     "piper": {
       "length_scale": 1.6,
@@ -59,13 +57,12 @@ enochaeon calibrate
 }
 ```
 
-- `calls.engine` is `piper` or `espeak`. `--engine` overrides one Call run.
 - `calls.ipa` is `dee_ipa` or `golden_dawn_ipa`. Both are fields of `calls/lexicon.json`, which is the one place that says how a word is said. `golden_dawn_ipa` is empty.
 - `calls.piper.voice` is the model downloaded in Setup.
 - `calls.piper.ipa` is the lexicon field that lists what this Piper voice is given for each spelling. It is sent as written. Leave it out and Piper is given `calls.ipa`.
 - `calls.piper.word_end` is the mark that ends each word given to Piper.
 - `calls.piper.length_scale` is how long Piper holds each phoneme. `1.0` is conversational, and higher is slower.
-- `calls.piper.word_ms` is the silence between Piper breaths, in milliseconds. Leave it out and Piper keeps the 600 milliseconds espeak uses.
+- `calls.piper.word_ms` is the silence between Piper breaths, in milliseconds. Leave it out and the silence is 600 milliseconds.
 
 Every `cipher` setting must be there. Run `enochaeon calibrate` again after changing one.
 
@@ -93,7 +90,7 @@ Pass a `.txt` file of Enochian spellings to `enochaeon calls`. The wav is writte
 
 `enochaeon translate` writes a wav beside the English file, and `.enochaeon/<stem>-enochian.txt` lists the Call words that wav speaks. The same run writes `<stem>.html` beside the wav, showing the spoken spellings in Enochian letters and playing the recording. An English word with nothing close stays in that file in brackets and is left out of the wav. The wav is not read back.
 
-An [example](example/pangram.html) of the Enochian generated text:
+An [example](example/cipher/pangram.html) of the Enochian generated text:
 
 ![Enochaeon HTML](docs/imgs/Enochian-HTML.png)
 
@@ -111,13 +108,13 @@ Hebrew is the pointed transliteration. Enochian is the letter names. Phonetic is
 
 ## Example
 
-[`example/pangram.txt`](example/pangram.txt) is the pangram. Encoding it writes the WAV and the three stage files.
+[`example/cipher/pangram.txt`](example/cipher/pangram.txt) is the pangram. Encoding it writes the WAV and the three stage files.
 
 - [`example/.enochaeon/pangram-hebrew.txt`](example/.enochaeon/pangram-hebrew.txt) is the pointed Hebrew spelling.
 - [`example/.enochaeon/pangram-enochian.txt`](example/.enochaeon/pangram-enochian.txt) is the Enochian letter names.
 - [`example/.enochaeon/pangram-phonetic.txt`](example/.enochaeon/pangram-phonetic.txt) is the letter sounds of each English word, written the espeak way.
-- [`example/pangram.wav`](example/pangram.wav) is those sounds spoken, one letter at a time.
-- [`example/pangram.decoded.txt`](example/pangram.decoded.txt) is the English recovered from that WAV.
+- [`example/cipher/pangram.wav`](example/cipher/pangram.wav) is those sounds spoken, one letter at a time.
+- [`example/cipher/pangram.decoded.txt`](example/cipher/pangram.decoded.txt) is the English recovered from that WAV.
 
 https://github.com/user-attachments/assets/a6e506eb-6648-491f-80e6-3c3d229bb94f
 

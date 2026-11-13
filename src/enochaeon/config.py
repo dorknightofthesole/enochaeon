@@ -3,21 +3,19 @@
 from __future__ import annotations
 
 import json
-from dataclasses import dataclass, replace
+from dataclasses import dataclass
 from pathlib import Path
 
 from enochaeon.errors import EnochaeonError
 
 CONFIG_NAME = "enochaeon.json"
-ENGINES = frozenset({"espeak", "piper"})
 READINGS = frozenset({"dee_ipa", "golden_dawn_ipa"})
 
 
 @dataclass(frozen=True)
 class CallVoice:
-    """How a Call is spoken. English text never uses this."""
+    """How Piper speaks a Call. English text never uses this."""
 
-    engine: str = "espeak"
     ipa: str = "dee_ipa"
     length_scale: float = 1.6
     piper_voice: str = ""
@@ -27,17 +25,9 @@ class CallVoice:
     # What ends each word given to Piper. Empty: nothing.
     word_end: str = ""
 
-    def chosen(self, engine: str | None) -> CallVoice:
-        """The voice for one run. A command-line engine replaces the file."""
-        if engine is None:
-            return self
-        if engine not in ENGINES:
-            raise EnochaeonError(f"Call engine must be espeak or piper, not {engine!r}.")
-        return replace(self, engine=engine)
-
 
 def load_call_voice(path: Path | None = None) -> CallVoice:
-    """The Calls section of enochaeon.json, or espeak when that file is absent."""
+    """The Calls section of enochaeon.json. With no file, no Piper model is named and a Call cannot be spoken."""
     source = Path.cwd() / CONFIG_NAME if path is None else path
     if not source.is_file():
         return CallVoice()
@@ -45,7 +35,6 @@ def load_call_voice(path: Path | None = None) -> CallVoice:
         data = json.loads(source.read_text(encoding="utf-8"))
         calls = data.get("calls", {})
         piper = calls.get("piper", {})
-        engine = calls.get("engine", "espeak")
         ipa = calls.get("ipa", "dee_ipa")
         scale = float(piper.get("length_scale", 1.6))
         voice = str(piper.get("voice", ""))
@@ -54,8 +43,6 @@ def load_call_voice(path: Path | None = None) -> CallVoice:
         word_end = _text(piper.get("word_end"), "calls.piper.word_end")
     except (OSError, json.JSONDecodeError, TypeError, ValueError, AttributeError) as exc:
         raise EnochaeonError(f"{source} is not a Calls config. {exc}") from exc
-    if engine not in ENGINES:
-        raise EnochaeonError(f"{source} engine must be espeak or piper, not {engine!r}.")
     if ipa not in READINGS:
         raise EnochaeonError(f"{source} ipa must be dee_ipa or golden_dawn_ipa, not {ipa!r}.")
     if scale <= 0:
@@ -65,7 +52,6 @@ def load_call_voice(path: Path | None = None) -> CallVoice:
     if piper_ipa in READINGS:
         raise EnochaeonError(f"{source} calls.piper.ipa names a field written for the voice, not {piper_ipa}.")
     return CallVoice(
-        engine=engine,
         ipa=ipa,
         length_scale=scale,
         piper_voice=voice,

@@ -27,10 +27,9 @@ from enochaeon.alphabet import (
     TransliterationError,
     pronounce_syllables,
 )
-from enochaeon.audio import Gaps, silence, write_wav
+from enochaeon.audio import Gaps, write_wav
 from enochaeon.config import CallVoice
 from enochaeon.errors import EnochaeonError
-from enochaeon.synthesize import speak
 
 # A comma stays inside the line. A stop ends it. Digits have no Enochian letter.
 _BREAKS = PUNCT_BREAKS
@@ -166,10 +165,10 @@ def spoken_text(segments: list[list[Letter] | str]) -> str:
 
 
 def call_gaps(voice: CallVoice | None = None, gaps: Gaps | None = None) -> Gaps:
-    """Silences for one Call. Piper may shorten the breath; espeak keeps the shared gap."""
+    """Silences for one Call. The config may give the silence between two words."""
     voice = voice or CallVoice()
     chosen = gaps or Gaps()
-    if voice.engine == "piper" and voice.word_ms is not None:
+    if voice.word_ms is not None:
         return replace(chosen, word_ms=voice.word_ms)
     return chosen
 
@@ -181,38 +180,20 @@ def render(
     readings: dict[str, str] | None = None,
 ) -> np.ndarray:
     """One spoken breath per word, with a silence between words and lines."""
-    voice = voice or CallVoice()
-    gaps = call_gaps(voice, gaps)
-    readings = _readings(voice) if readings is None else readings
-    segments, _dropped = audible(text, readings)
-    if voice.engine == "piper":
-        from enochaeon.piper_voice import render as render_piper
+    from enochaeon.piper_voice import render as render_piper
 
-        return render_piper(text, voice, gaps, readings)
-    pieces: list[np.ndarray] = []
-    for segment in segments:
-        if isinstance(segment, str):
-            pieces.append(silence(gaps.nl_ms if segment == "\n" else gaps.word_ms))
-            continue
-        pieces.append(_speak_segment(segment, readings))
-    if not pieces:
-        return silence(gaps.word_ms)
-    return np.concatenate(pieces)
+    voice = voice or CallVoice()
+    readings = _readings(voice) if readings is None else readings
+    return render_piper(text, voice, call_gaps(voice, gaps), readings)
 
 
 def _readings(voice: CallVoice) -> dict[str, str]:
-    """The readings the voice speaks. A Piper voice with its own lexicon field speaks that field."""
+    """The readings the voice speaks. A voice with its own lexicon field speaks that field."""
     from enochaeon.roots import load_readings
 
-    if voice.engine == "piper" and voice.piper_ipa:
+    if voice.piper_ipa:
         return load_readings(voice.piper_ipa)
     return load_readings(voice.ipa)
-
-
-def _speak_segment(word: list[Letter], readings: dict[str, str]) -> np.ndarray:
-    from enochaeon.word_ipa import espeak_phones
-
-    return speak(espeak_phones(_listed(word, readings)))
 
 
 def _listed(word: list[Letter], readings: dict[str, str]) -> str:

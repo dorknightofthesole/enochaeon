@@ -14,7 +14,6 @@
     "hear_ms": 80
   },
   "calls": {
-    "engine": "piper",
     "ipa": "dee_ipa",
     "piper": {
       "length_scale": 1.6,

@@ -41,7 +41,7 @@ The rule is how a spelling gets its first `dee_ipa`. [tools/lexicon/letter-readi
 | Y | j | j'i: | |
 | Z | z | z'i: | |
 
-`letter_ipa` turns that espeak string into slash IPA. Each space-separated token is one piece, joined to the next with a dot. An apostrophe is stress on the vowel of that token. The symbol map is the reverse of the one `espeak_phones` already uses:
+`letter_ipa` turns that espeak string into slash IPA. Each space-separated token is one piece, joined to the next with a dot. An apostrophe is stress on the vowel of that token. The symbol map is the table in `src/enochaeon/word_ipa.py`, read from the espeak side:
 
 | Espeak | IPA |
 | --- | --- |
@@ -124,7 +124,7 @@ The lexicon is the one place that says how a word is said. An entry has a second
 
 `enochaeon.json` names that field in `calls.piper.ipa`. The speech code sends what stands between the slashes and changes nothing. It then adds the mark in `calls.piper.word_end`, a full stop, because each word is one breath and the voice was taught on sentences that end with a stop. A spelling with no string in the field is left out of the recording and named on the screen.
 
-To change how John says a word, change its string in the lexicon. `dee_ipa` stays the reading that says which sounds are meant, and the espeak voice still speaks it.
+To change how John says a word, change its string in the lexicon. `dee_ipa` stays the reading that says which sounds are meant.
 
 ### How the field was first filled
 
@@ -149,10 +149,7 @@ A word with more than one vowel has the `a` and no stress mark. Where its stress
 
 ### What the code works out
 
-Nothing about how a word is said. Every reading a voice speaks is a string in the lexicon. The code still does two things to a stored string, and neither adds a sound:
-
-- **For espeak:** `espeak_phones` rewrites a `dee_ipa` string in the letters espeak takes, one for one.
-- **For a Piper voice with no field of its own:** `piper_phones` rewrites it in the letters Piper takes, one for one. John has a field, so this is not used for John.
+Nothing about how a word is said. Every reading a voice speaks is a string in the lexicon. The code still does one thing to a stored string, and it adds no sound: for a Piper voice with no field of its own, `piper_phones` rewrites a `dee_ipa` string in the letters Piper takes, one for one. John has a field, so this is not used for John.
 
 The letter rule and its table are still in the package, and only the scripts in `tools/` run them.
 
@@ -168,7 +165,7 @@ A spelling with none of those six letters is spoken as the letter-names in the t
 
 The spellings in the call files are the ones in Dee's manuscript Sloane 3191, as it was read. [call-texts.md](call-texts.md) describes them, and lists Dee's notes from the 1659 printing of his journal beside each word where the printing has one. Apart from the two names above, those notes are not used by this rule.
 
-The name of `R` is `'Ar`. That `A` is stored as bare `ɑ`. espeak does not voice bare `A`: `[[A]]` is silent, and `[['A r]]` comes out as `r`. An espeak recording of a vowelless spelling that contains `R` loses the vowel of that letter-name. Piper speaks the same `ɑ`, and holds it when `R` is the whole word. The stored string matches the letter rule. That match is a check of the code.
+The name of `R` is `'Ar`. That `A` is stored as bare `ɑ`. Piper speaks that `ɑ`, and holds it when `R` is the whole word. The stored string matches the letter rule. That match is a check of the code.
 
 ## Confidence
 
