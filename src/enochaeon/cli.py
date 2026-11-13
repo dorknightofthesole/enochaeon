@@ -1,4 +1,4 @@
-"""Command line: a cipher WAV, a spoken Call, a text file spoken as Call words, or a WAV read back."""
+"""Command line: a cipher WAV, a spoken Call, a text file spoken as Call words, a dictionary, or a WAV read back."""
 
 from __future__ import annotations
 
@@ -21,16 +21,16 @@ AUDIO_SUFFIXES = {".wav"}
 def main(argv: list[str] | None = None) -> int:
     parser = argparse.ArgumentParser(
         prog="enochaeon",
-        description="Transliterate a text file, speak a call, speak a text file as Call words, or read a cipher wav back.",
+        description="Transliterate a text file, speak a call, speak a text file as Call words, write the dictionary, or read a cipher wav back.",
     )
     parser.add_argument(
         "target",
-        help="A .txt or .md file, a .wav file, 'calibrate', 'calls', or 'translate'",
+        help="A .txt or .md file, a .wav file, 'calibrate', 'calls', 'translate', or 'dictionary'",
     )
     parser.add_argument(
         "calls_path",
         nargs="?",
-        help="With 'calls', a .txt file or a directory. With 'translate', a .txt or .md file.",
+        help="With 'calls', a .txt file or a directory. With 'translate', a .txt or .md file. With 'dictionary', the directory that holds lexicon.json.",
     )
     parser.add_argument(
         "--force",
@@ -43,10 +43,12 @@ def main(argv: list[str] | None = None) -> int:
             return _translate(args.calls_path, args.force)
         if args.target == "calibrate":
             return calibrate()
+        if args.target == "dictionary":
+            return _dictionary(args.calls_path, args.force)
         if args.target == "calls":
             return generate_calls(Path(args.calls_path or "calls"), args.force, load_call_voice())
         if args.calls_path is not None:
-            raise EnochaeonError("A second path is only used with 'calls'.")
+            raise EnochaeonError("A second path is only used with 'calls', 'translate' and 'dictionary'.")
         path = Path(args.target)
         if not path.is_file():
             raise EnochaeonError(f"No such file: {path}")
@@ -86,6 +88,14 @@ def _translate(source: str | None, force: bool) -> int:
     print(trace)
     print(dest)
     print(dest.with_suffix(".html"))
+    return 0
+
+
+def _dictionary(folder: str | None, force: bool) -> int:
+    from enochaeon.dictionary import write_dictionary
+
+    for dest in write_dictionary(Path(folder) if folder else None, force):
+        print(dest)
     return 0
 
 

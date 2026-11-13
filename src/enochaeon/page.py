@@ -1,4 +1,7 @@
-"""An HTML page of a translation, in Enochian letters, beside its wav."""
+"""An HTML page of a translation, in Enochian letters, beside its wav.
+
+The dictionary page uses the same letters, the same folding and the same credit.
+"""
 
 from __future__ import annotations
 
@@ -12,13 +15,20 @@ from enochaeon.errors import EnochaeonError
 _FONT = DATA_DIR / "enochian.ttf"
 # Dee's alphabet has no J, K, V, W, or Y. Only an Enochian word is rewritten.
 _FOLD = {"j": "i", "k": "c", "v": "u", "w": "uu", "y": "i"}
+# The licence of the letters asks for this line wherever they are shown.
+LETTERS_CREDIT = 'Letters by Лорд Алекс, <a href="https://creativecommons.org/licenses/by-sa/3.0/">CC BY-SA 3.0</a>.'
+
+
+def font_base64() -> str:
+    """The Enochian letters, as text a page can carry inside itself."""
+    if not _FONT.is_file():
+        raise EnochaeonError(f"The Enochian letters are missing: {_FONT}")
+    return base64.b64encode(_FONT.read_bytes()).decode("ascii")
 
 
 def render_page(trace: str, wav_name: str, wav_bytes: bytes | None = None) -> str:
     """The trace in Enochian letters, with the recording embedded in the page."""
-    if not _FONT.is_file():
-        raise EnochaeonError(f"The Enochian letters are missing: {_FONT}")
-    font = base64.b64encode(_FONT.read_bytes()).decode("ascii")
+    font = font_base64()
     spoken = _without_brackets(trace)
     title = html.escape(Path(wav_name).stem)
     if wav_bytes is None:
@@ -30,6 +40,7 @@ def render_page(trace: str, wav_name: str, wav_bytes: bytes | None = None) -> st
         title=title,
         glyphs=_glyphs(spoken),
         wav=source,
+        credit=LETTERS_CREDIT,
     )
 
 
@@ -108,7 +119,7 @@ def _pieces(trace: str) -> list[tuple[str, str]]:
             end = index + 1
             while end < length and trace[end].isalpha():
                 end += 1
-            pieces.append(("en", _fold(trace[index:end])))
+            pieces.append(("en", fold(trace[index:end])))
             index = end
             continue
         end = index + 1
@@ -119,7 +130,8 @@ def _pieces(trace: str) -> list[tuple[str, str]]:
     return pieces
 
 
-def _fold(word: str) -> str:
+def fold(word: str) -> str:
+    """A word in the letters Dee's alphabet has, which the Enochian letters are drawn for."""
     letters: list[str] = []
     for character in word:
         folded = _FOLD.get(character.lower())
@@ -178,7 +190,7 @@ audio {{
 <body>
 <p class="glyphs">{glyphs}</p>
 <audio controls src="{wav}"></audio>
-<p class="credit">Letters by Лорд Алекс, <a href="https://creativecommons.org/licenses/by-sa/3.0/">CC BY-SA 3.0</a>.</p>
+<p class="credit">{credit}</p>
 </body>
 </html>
 """

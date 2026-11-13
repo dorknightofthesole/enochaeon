@@ -84,11 +84,14 @@ enochaeon notes.wav    # prints the text and writes notes.decoded.txt
 enochaeon calls        # speaks every .txt in ./calls
 enochaeon calls calls/01.txt # speaks one call 
 enochaeon translate ritual.txt #translate English text into spoken Enochian
+enochaeon dictionary   # generate an Enochian English dictionary from calls/lexicon.json
 ```
 
 Pass a `.txt` file of Enochian spellings to `enochaeon calls`. The wav is written beside that file.
 
 `enochaeon translate` writes a wav beside the English file, and `.enochaeon/<stem>-enochian.txt` lists the Call words that wav speaks. The same run writes `<stem>.html` beside the wav, showing the spoken spellings in Enochian letters and playing the recording. An English word with nothing close stays in that file in brackets and is left out of the wav. The wav is not read back.
+
+`enochaeon dictionary` writes [`calls/dictionary.md`](calls/dictionary.md) and `calls/dictionary.html` from the [lexicon](calls/lexicon.json): Enochian to English, English to Enochian, and a list of the words the lexicon gives no English. The HTML page shows each word in Enochian letters. Nothing is added to what the lexicon has, and how a word is said is not shown. Change the lexicon and run it again with `--force`; the dictionary is not edited by hand.
 
 An [example](example/cipher/pangram.html) of the Enochian generated text:
 

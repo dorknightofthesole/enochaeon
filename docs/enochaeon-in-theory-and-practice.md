@@ -109,6 +109,16 @@ Translation starts from the English. `justice` is an exact gloss of the `balt` f
 - `the` is nearest to `the mind`, a gloss of `manin`, at 0.549.
 - `fire` is an exact gloss of `prge`.
 
+### The dictionary
+
+`enochaeon dictionary` writes the lexicon out for a person to read, as [`calls/dictionary.md`](../calls/dictionary.md) and `calls/dictionary.html` beside it. Both files are made from `root`, `variants`, `pos` and `english_glosses`, and nothing else is added.
+
+- **Enochian to English** lists each root that has English, with its other spellings, its part of speech and its glosses.
+- **English to Enochian** lists each gloss with every root that has it. These are the glosses translation matches.
+- **Words with no English** lists the rest. No meaning has been filled in for them.
+
+The HTML page shows each word in Enochian letters, the same letters the translation page uses. How a word is said is not shown, because every stored reading was made by the letter rule and the pronunciation is unknown. The files are not edited by hand. `enochaeon dictionary --force` makes them again after the lexicon changes, and `src/enochaeon/dictionary.py` is the code.
+
 ## Calls
 
 A file in [`calls/`](../calls) is already Enochian, written in Dee's Latin letters. `01.txt` through `18.txt` are the first eighteen Keys. `19-lil.txt` through `48-tex.txt` are the Call of the Aethyrs, the same words with that aethyr's name. The words of these forty-eight files are the words in [`calls/journal/`](../calls/journal), and [call-texts.md](call-texts.md) says where they come from. Nothing in a Call is transliterated into Hebrew or into the English cipher.
