@@ -12,7 +12,7 @@ This page is about spelling. It says nothing about how a word is pronounced. The
 
 The source is Meric Casaubon, *A True & Faithful Relation of What Passed for Many Yeers Between Dr. John Dee ... and Some Spirits* (London: printed by D. Maxwell for T. Garthwait, 1659). Casaubon printed Dee's journal from the manuscript then in Sir Thomas Cotton's library. The calls are on pages 79 to 138 and 201 to 209. Dee's English for them is on pages 190 to 194 and beside the words of the Aethyr call.
 
-The printing was read in the keyed transcription made by the Text Creation Partnership, EEBO-TCP Phase 1, text A37412. It is saved unchanged as [`casaubon-1659-true-and-faithful-relation.xml`](casaubon-1659-true-and-faithful-relation.xml). The Partnership releases Phase 1 texts under [Creative Commons 0 1.0 Universal](https://creativecommons.org/publicdomain/zero/1.0/). The file was downloaded from the Partnership's own repository, [textcreationpartnership/A37412](https://github.com/textcreationpartnership/A37412). The Oxford Text Archive host did not answer.
+The printing was read in the keyed transcription made by the Text Creation Partnership, EEBO-TCP Phase 1, text A37412. It is saved unchanged as [`casaubon-1659-true-and-faithful-relation.xml`](sources/casaubon-1659-true-and-faithful-relation.xml). The Partnership releases Phase 1 texts under [Creative Commons 0 1.0 Universal](https://creativecommons.org/publicdomain/zero/1.0/). The file was downloaded from the Partnership's own repository, [textcreationpartnership/A37412](https://github.com/textcreationpartnership/A37412). The Oxford Text Archive host did not answer.
 
 The transcription was keyed from microfilm images of the Cambridge University Library copy. Pages 132 and 133 are not in it. Those two pages, and every other page of the calls, were read against page images of the same printing: the Internet Archive scan [`truefaithfulrela00deej`](https://archive.org/details/truefaithfulrela00deej). Where the keyers left a gap or keyed a wrong letter and the page image can be read, the word carries `read_from` and a `remark` that gives both readings. The XML file is not changed.
 
@@ -311,7 +311,7 @@ Other words carry `read_from` as well: every word on pages 132 and 133, and a fe
 
 British Library MS Sloane 3191 has the calls in Dee's own hand, as a fair copy he titled *48 Claves Angelicae*. On November 11, 2026 it was made the source of the call files, with the journal as the second source. The reasons, and everything that is not certain about the reading, are in [call-analysis-notes.md](call-analysis-notes.md#decision-sloane-3191-first).
 
-The manuscript was read from the scan [`998222247-Dee-MS-Sloane-3191.pdf`](998222247-Dee-MS-Sloane-3191.pdf). The reading is typed by hand in [`tools/sloane/sloane-reading.json`](../tools/sloane/sloane-reading.json). It is one reading by eye of handwriting on microfilm, and nobody has confirmed it. `tools/sloane/sloane-build.py` makes `calls/sloane/` from the reading and the journal record.
+The manuscript was read from the scan [`998222247-Dee-MS-Sloane-3191.pdf`](sources/998222247-Dee-MS-Sloane-3191.pdf). The reading is typed by hand in [`tools/sloane/sloane-reading.json`](../tools/sloane/sloane-reading.json). It is one reading by eye of handwriting on microfilm, and nobody has confirmed it. `tools/sloane/sloane-build.py` makes `calls/sloane/` from the reading and the journal record.
 
 Each file in `calls/sloane/` has these fields for a word.
 

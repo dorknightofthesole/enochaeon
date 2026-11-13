@@ -4,7 +4,7 @@
 
 Enochaeon is a spoken cipher. It is also a tool for speaking Dee's forty-eight Keys, and for translating English into spoken Enochian.
 
-The cipher takes a text file letter by letter from English into Hebrew and then into [Enochian](https://en.wikipedia.org/wiki/Enochian), the angelic language John Dee, Elizabeth I's astrologer, recorded in 1583. Each letter is spoken alone, as the sound assigned to that Enochian letter. A short silence follows a letter, a longer one stands between two words, and a longer one again between two lines. A phone recognizer hears each letter, and the same key turns the letters back into English. [`example/pangram.decoded.txt`](example/pangram.decoded.txt) was read back from [`example/cipher/pangram.mp4`](https://github.com/user-attachments/assets/0c8098d5-b723-42d4-ba3f-686fc75707e7).
+The cipher takes a text file letter by letter from English into Hebrew and then into [Enochian](https://en.wikipedia.org/wiki/Enochian), the angelic language John Dee, Elizabeth I's astrologer, recorded in 1583. Each letter is spoken alone, as the sound assigned to that Enochian letter. A short silence follows a letter, a longer one stands between two words, and a longer one again between two lines. A phone recognizer hears each letter, and the same key turns the letters back into English. [`example/cipher/pangram.decoded.txt`](example/cipher/pangram.decoded.txt) was read back from [`example/cipher/pangram.mp4`](https://github.com/user-attachments/assets/0c8098d5-b723-42d4-ba3f-686fc75707e7).
 
 The **Calls** are Dee's Keys already written in Enochian. A file in `calls/` is spoken from the pronunciation stored for each spelling.
 
@@ -104,7 +104,7 @@ The stage files go in a hidden folder next to the source. For `notes-test.txt` t
 .enochaeon/notes-test-phonetic.txt
 ```
 
-Hebrew is the pointed transliteration. Enochian is the letter names. Phonetic is the letter sounds of each English word, written the espeak way.
+Hebrew is the pointed transliteration. Enochian is the letter names. Phonetic is the letter sounds of each English word, written as the key file has them.
 
 ## Example
 
@@ -112,7 +112,7 @@ Hebrew is the pointed transliteration. Enochian is the letter names. Phonetic is
 
 - [`example/.enochaeon/pangram-hebrew.txt`](example/.enochaeon/pangram-hebrew.txt) is the pointed Hebrew spelling.
 - [`example/.enochaeon/pangram-enochian.txt`](example/.enochaeon/pangram-enochian.txt) is the Enochian letter names.
-- [`example/.enochaeon/pangram-phonetic.txt`](example/.enochaeon/pangram-phonetic.txt) is the letter sounds of each English word, written the espeak way.
+- [`example/.enochaeon/pangram-phonetic.txt`](example/.enochaeon/pangram-phonetic.txt) is the letter sounds of each English word, written as the key file has them.
 - [`example/cipher/pangram.wav`](example/cipher/pangram.wav) is those sounds spoken, one letter at a time.
 - [`example/cipher/pangram.decoded.txt`](example/cipher/pangram.decoded.txt) is the English recovered from that WAV.
 
@@ -120,7 +120,7 @@ https://github.com/user-attachments/assets/a6e506eb-6648-491f-80e6-3c3d229bb94f
 
 [`example/First Call.wav`](example/First%20Call.wav) is a spoken reading of [`calls/01.txt`](calls/01.txt).
 
-An output that is already there is left alone unless you pass `--force`. A cipher WAV carries a short comment with its three silences and a name for the voice that spoke it, and no plaintext. A WAV with no comment is still decoded, with a warning. A WAV spoken by a voice the calibration was not made with is refused, and so is one from the earlier espeak cipher.
+An output that is already there is left alone unless you pass `--force`. A cipher WAV carries a short comment with its three silences and a name for the voice that spoke it, and no plaintext. A WAV with no comment is still decoded, with a warning. A WAV spoken by a voice the calibration was not made with is refused, and so is one made by an earlier version of the cipher.
 
 ## License
 
